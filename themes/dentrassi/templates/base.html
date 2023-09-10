@@ -26,30 +26,43 @@
     {{ header::header(current_section="/") }}
   {% endblock header %}
 
-    <div class="de-layout container">
+    <div class="de-layout container pt-3">
 
-      <aside class="de-layout__left">
-        {% block leftside %}
-        <div class="de-sidebox">
-          <h3>Projects</h3>
-          <ul class="list-unstyled">
-            <li><a class="link-body-emphasis" href="">PatternFly Yew</a></li>
-            <li><a class="link-body-emphasis" href="">Yew OAuth2</a></li>
-            <li><a class="link-body-emphasis" href="">Maven RPM Builder</a></li>
-            <li><a class="link-body-emphasis" href="">Drogue IoT</a></li>
-            <li><a class="link-body-emphasis" href="">Eclipse IoT Packages</a></li>
-          </ul>
-        </div>
-        {% endblock leftside %}
-      </aside>
+      <div class="row d-flex align-items-start">
+        <aside class="col-2 sticky-top">
+          {% block leftside %}
+          <div class="de-sidebox">
+            <h3>Projects</h3>
+            <ul class="list-unstyled">
+              <li><a class="link-body-emphasis" href="">PatternFly Yew</a></li>
+              <li><a class="link-body-emphasis" href="">Yew OAuth2</a></li>
+              <li><a class="link-body-emphasis" href="">Maven RPM Builder</a></li>
+              <li><a class="link-body-emphasis" href="">Drogue IoT</a></li>
+              <li><a class="link-body-emphasis" href="">Eclipse IoT Packages</a></li>
+            </ul>
+          </div>
+          {% endblock leftside %}
+        </aside>
 
-      <main class="de-layout__main">
-        {% block content %}{% endblock content %}
-      </main>
+        <main class="col-7">
+          {% block content %}{% endblock content %}
+        </main>
 
-      <aside class="de-layout__right">
-        {% block rightside %}{% endblock rightside %}
-      </aside>
+        <aside class="col-3 sticky-top">
+          {% block rightside %}
+          <div class="de-sidebox">
+            <h3>Recent Posts</h3>
+            <ul class="list-unstyled">
+              {% set all_content = get_section(path="_index.md") %}
+              {% for post in all_content.pages | slice(end=5) %}
+              <li class="text-truncate"><a class="link-body-emphasis" href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endblock rightside %}
+        </aside>
+
+      </div>
     </div>
 
   {% block footer %}
