@@ -1,0 +1,34 @@
+{% macro info(page,more=false) %}
+
+<ul class="de-post-info list-inline">
+
+  <li class="list-inline-item">
+    <span>{{ page.reading_time }} minute read</span>
+    <meta itemprop="wordCount" content="{{page.word_count}}">
+  </li>
+
+  {% if page.date %}
+  <li class="list-inline-item">
+    <span itemprop="datePublished" content='{{page.date | date(format="%Y-%m-%d")}}'>{{ page.date | date(format="%_d %B %Y") }}</span>
+  </li>
+  {% endif %}
+
+  {% if page.category %}
+  <li class="list-inline-item">
+    {% if config.generate_categories_pages %}
+    <span><a href="/categories/{{page.category | slugify }}">{{ page.category }}</a></span>
+    {% else %}
+    <span>{{ page.category }}</span>
+    {% endif %}
+  </li>
+  {% endif %}
+
+  {% if more %}
+  <li class="list-inline-item">
+    <a href="{{ page.path | safe }}">Read&nbsp;more&nbsp;…</a>
+  </li>
+  {% endif %}
+
+</ul>
+
+{% endmacro %}

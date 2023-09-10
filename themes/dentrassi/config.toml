@@ -1,0 +1,9 @@
+name = "dentrassi"
+description = "The theme of dentrassi.de"
+license = "MIT"
+homepage = "https://github.com/ctron/dentrassi.de"
+# The minimum version of Zola required
+min_version = "0.17.0"
+
+[extra]
+

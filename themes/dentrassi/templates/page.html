@@ -1,0 +1,22 @@
+{%- import 'macros/post.html' as post -%}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+
+  <section>
+    <h1 itemprop="name headline">{{ page.title }}</h1>
+    <div class="">
+      {{ post::info(page=page) }}
+    </div>
+  </section>
+
+  <section class="content post-content" itemprop="articleBody">
+    {{ page.content | safe }}
+  </section>
+
+</article>
+
+{% endblock content %}

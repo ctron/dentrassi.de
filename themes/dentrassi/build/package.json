@@ -1,0 +1,14 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "author": "Jens Reimann <ctron@dentrassi.de>",
+  "private": true,
+  "scripts": {
+    "build": "bash build.sh"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "@fontsource/jost": "^5.0.8",
+    "feather-icons": "^4.29.1"
+  }
+}

@@ -1,0 +1,52 @@
+{%- import 'macros/head.html' as head -%}
+{%- import 'macros/javascript.html' as javascript -%}
+
+{%- import 'macros/header.html' as header -%}
+{%- import 'macros/footer.html' as footer -%}
+
+<!doctype html>
+<html lang="{{ config.extra.language_code | default(value='en-US') }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ head::resource() }}
+  {{ head::stylesheet() }}
+
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+  {% if config.generate_feed %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path=config.feed_filename, trailing_slash=false) | safe  }}">
+  {% endif %}
+
+</head>
+
+<body>
+  {% block header %}
+    {{ header::header(current_section="/") }}
+  {% endblock header %}
+
+    <div class="container">
+      <div class="row">
+        <aside class="col-3">
+          {% block leftside %}{% endblock leftside %}
+        </aside>
+
+        <main class="col-6">
+          {% block content %}{% endblock content %}
+        </main>
+
+        <aside class="col-3">
+          {% block rightside %}{% endblock rightside %}
+        </aside>
+      </div>
+    </div>
+
+  {% block footer %}
+    {{ footer::footer() }}
+  {% endblock footer %}
+
+  {{ javascript::javascript() }}
+</body>
+
+</html>
