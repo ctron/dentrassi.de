@@ -7,7 +7,7 @@
 {% for page in paginator.pages %}
   <section itemscope itemtype="http://schema.org/BlogPosting">
     <h2>
-      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-75-hover" href="{{ page.permalink | safe }}">{{ page.title }}</a>
     </h2>
 
     <div itemprop="articleSummary">
@@ -42,19 +42,6 @@
   </nav>
 
 {% endblock content %}
-
-{% block leftside %}
-<div class="de-sidebox">
-  <h3>Projects</h3>
-  <ul class="list-unstyled">
-    <li><a class="link-body-emphasis" href="">PatternFly Yew</a></li>
-    <li><a class="link-body-emphasis" href="">Yew OAuth2</a></li>
-    <li><a class="link-body-emphasis" href="">Maven RPM Builder</a></li>
-    <li><a class="link-body-emphasis" href="">Drogue IoT</a></li>
-    <li><a class="link-body-emphasis" href="">Eclipse IoT Packages</a></li>
-  </ul>
-</div>
-{% endblock leftside %}
 
 {% block rightside %}
 <div class="de-sidebox">

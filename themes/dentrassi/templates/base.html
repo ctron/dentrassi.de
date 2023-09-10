@@ -21,25 +21,35 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#toc">
   {% block header %}
     {{ header::header(current_section="/") }}
   {% endblock header %}
 
-    <div class="container">
-      <div class="row">
-        <aside class="col-3">
-          {% block leftside %}{% endblock leftside %}
-        </aside>
+    <div class="de-layout container">
 
-        <main class="col-6">
-          {% block content %}{% endblock content %}
-        </main>
+      <aside class="de-layout__left">
+        {% block leftside %}
+        <div class="de-sidebox">
+          <h3>Projects</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-body-emphasis" href="">PatternFly Yew</a></li>
+            <li><a class="link-body-emphasis" href="">Yew OAuth2</a></li>
+            <li><a class="link-body-emphasis" href="">Maven RPM Builder</a></li>
+            <li><a class="link-body-emphasis" href="">Drogue IoT</a></li>
+            <li><a class="link-body-emphasis" href="">Eclipse IoT Packages</a></li>
+          </ul>
+        </div>
+        {% endblock leftside %}
+      </aside>
 
-        <aside class="col-3">
-          {% block rightside %}{% endblock rightside %}
-        </aside>
-      </div>
+      <main class="de-layout__main">
+        {% block content %}{% endblock content %}
+      </main>
+
+      <aside class="de-layout__right">
+        {% block rightside %}{% endblock rightside %}
+      </aside>
     </div>
 
   {% block footer %}

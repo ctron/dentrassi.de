@@ -13,3 +13,27 @@
 .de-post-info li + li:before {
   content: '·';
 }
+
+.de-layout {
+  display: grid;
+  grid-template-areas: "left main right";
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.de-layout__left {
+  position: sticky;
+  top: 0;
+  grid-area: left;
+}
+
+.de-layout__main {
+  grid-area: main;
+}
+
+.de-layout__right {
+  position: sticky;
+  top: 0;
+  grid-area: right;
+}
