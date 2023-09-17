@@ -15,6 +15,8 @@ fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";N;s:11:"_thumb_type";s:10:"attachment";}'
 footnotes:
     - ''
+extra:
+    skipToc: true
 ---
 
 <dl><dt>E-Mail</dt><dd>ctron@dentrassi.de ([PGP Key](https://dentrassi.de/pgp-key/))</dd><dt>Fediverse (Mastodon)</dt><dd>[@ctron@dentrassi.de ](https://mastodon.dentrassi.de/@ctron)</dd><dt>Matrix</dt><dd>[@ctron:dentrassi.de](https://matrix.to/#/@ctron:dentrassi)</dd><dt>GitHub</dt><dd>[@ctron](https://github.com/ctron)</dd></dl>
