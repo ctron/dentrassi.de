@@ -1,6 +1,6 @@
 ---
 id: 878
-title: 'Eclipse Kura&#x2122; addons'
+title: 'Eclipse Kura™ addons'
 date: '2016-11-11T13:37:59+01:00'
 author: 'Jens Reimann'
 layout: page
@@ -18,6 +18,8 @@ fabulous-fluid-featured-image:
 ---
 
 This page lists a few addons I created for Eclipse Kura. Be sure to check out the GitHub repository [ctron/kura-addons](https://github.com/ctron/kura-addons) as well.
+
+<!-- more -->
 
 Most addons are directly available on Maven Central and/or through the Eclipse Marketplace. For using Eclipse Marketplace just drag and drop the “Install” button onto the Eclipse Kura Web UI.
 

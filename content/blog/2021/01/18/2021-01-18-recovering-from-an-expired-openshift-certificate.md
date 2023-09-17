@@ -70,7 +70,7 @@ Fortunately, when creating an OpenShift cluster you will also get a cluster cert
 
 Setting the `KUBECONFIG` environment variable to the generated, original configuration gives you direct access to your cluster, without the need to log in:
 
-```shell
+```bash
 export KUBECONFIG=/home/me/cluster/installation/auth/kubeconfig
 ```
 
@@ -78,7 +78,7 @@ After that, I was automatically “logged in”, and could re-run my custom scri
 
 The actual commands for re-creating the ingress certificates might be different in your case, depending on your settings and environment. Here is what works for me:
 
-```shell
+```bash
 oc delete secret -n openshift-ingress ingress-cert --ignore-not-found=true
 oc create secret tls ingress-cert \
   --cert=certs/apps.full.pem \

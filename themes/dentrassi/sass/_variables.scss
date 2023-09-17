@@ -1,10 +1,25 @@
 
+// navbar
+//$navbar-height: /*56px*/ $navbar-brand-height;
+$top-padding: 4rem;
+$sidebox-top-padding: calc($top-padding + .5rem);
+
 // fonts
 $font-family-sans-serif: "Jost";
 $font-family-base: $font-family-sans-serif;
 
 // headings
-$headings-font-family: null;
+$headings-font-family: $font-family-sans-serif;
 $headings-font-weight: 700;
 
-// $lead-font-weight: 400;
+// font size
+$font-size-base: 1.2rem;
+
+$h1-font-size:                $font-size-base * 1.75 !default;
+$h2-font-size:                $font-size-base * 1.5 !default;
+$h3-font-size:                $font-size-base * 1.25 !default;
+$h4-font-size:                $font-size-base * 1.125 !default;
+$h5-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-base !default;
+
+$blockquote-font-size: $font-size-base !default;

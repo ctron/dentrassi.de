@@ -1,8 +1,8 @@
 {%- import 'macros/head.html' as head -%}
 {%- import 'macros/javascript.html' as javascript -%}
-
 {%- import 'macros/header.html' as header -%}
 {%- import 'macros/footer.html' as footer -%}
+{%- import 'macros/side.html' as side -%}
 
 <!doctype html>
 <html lang="{{ config.extra.language_code | default(value='en-US') }}">
@@ -21,27 +21,21 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#toc">
+<body data-bs-spy="scroll" data-bs-target="#toc" tabindex="0">
   {% block header %}
     {{ header::header(current_section="/") }}
   {% endblock header %}
 
-    <div class="de-layout container pt-3">
+    <div class="de-layout container">
 
       <div class="row d-flex align-items-start">
         <aside class="col-2 sticky-top">
+          <div class="de-sidebox de-m-left">
           {% block leftside %}
-          <div class="de-sidebox">
-            <h3>Projects</h3>
-            <ul class="list-unstyled">
-              <li><a class="link-body-emphasis" href="">PatternFly Yew</a></li>
-              <li><a class="link-body-emphasis" href="">Yew OAuth2</a></li>
-              <li><a class="link-body-emphasis" href="">Maven RPM Builder</a></li>
-              <li><a class="link-body-emphasis" href="">Drogue IoT</a></li>
-              <li><a class="link-body-emphasis" href="">Eclipse IoT Packages</a></li>
-            </ul>
-          </div>
+            {{ side::projects() }}
+            {{ side::pages() }}
           {% endblock leftside %}
+          </div>
         </aside>
 
         <main class="col-7">
@@ -49,17 +43,11 @@
         </main>
 
         <aside class="col-3 sticky-top">
+          <div class="de-sidebox de-m-right">
           {% block rightside %}
-          <div class="de-sidebox">
-            <h3>Recent Posts</h3>
-            <ul class="list-unstyled">
-              {% set all_content = get_section(path="_index.md") %}
-              {% for post in all_content.pages | slice(end=5) %}
-              <li class="text-truncate"><a class="link-body-emphasis" href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
+            {{ side::recent_posts() }}
           {% endblock rightside %}
+          </div>
         </aside>
 
       </div>

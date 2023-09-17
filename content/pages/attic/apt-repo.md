@@ -9,6 +9,8 @@ guid: 'http://dentrassi.de/?page_id=383'
 
 A mojo which creates APT repositories from a set of .deb files.
 
+<!-- more -->
+
 This mojo can create an [APT repository](https://en.wikipedia.org/wiki/Advanced_Packaging_Tool) based on an input directory of .deb files.
 
 There are a number of other tools out there that can do the same task. “apt-repo” was created since:

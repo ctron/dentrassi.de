@@ -1,0 +1,26 @@
+.de-sidebox {
+
+  h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    border-bottom: $light-border-subtle solid 1px;
+  }
+}
+
+.de-sidebox.de-m-right {
+  padding-left: 0.25rem;
+}
+
+.de-sidebox a {
+  text-decoration: none;
+}
+
+.de-sidebox li {
+  padding-left: 1rem;
+  text-indent: -1rem;
+}

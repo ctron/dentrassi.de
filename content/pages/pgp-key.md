@@ -2,6 +2,7 @@
 id: 318
 title: 'PGP Key'
 date: '2013-07-15T14:45:41+02:00'
+weight: 400
 author: 'Jens Reimann'
 layout: page
 guid: 'http://dentrassi.de/?page_id=318'
@@ -23,12 +24,13 @@ post_slider_check_key:
     - '0'
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";N;s:11:"_thumb_type";s:10:"attachment";}'
+extra:
+    skipToc: true 
 ---
 
 Fingerprint: 10DA 7C61 C910 F794 91F7 8F0F DFD4 8B44 6B2F 168F
 
 ```
-<pre class="wp-block-code">```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQGNBFlARpgBDADH49r8XQ2eVVvfxvR+1zGvUUlEzx3cETJBfPKLzwSHd2jxNDHr
@@ -233,5 +235,4 @@ LXFsy7WlwT5y6IMEhgVe9zezkTWoMiu7KJoFABl4Wp2R1uRFBsewdTtiZFNOy10H
 ePLKffsPAXcPA4Cgl5zGQ6QLinEWSk7qhH44bBMW1dW6rS5GepQvawGotnqo4iI=
 =zDzo
 -----END PGP PUBLIC KEY BLOCK-----
-```
 ```

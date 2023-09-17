@@ -1,0 +1,35 @@
+{%- import 'macros/post.html' as post -%}
+{%- import 'macros/toc.html' as toc -%}
+{%- import 'macros/side.html' as side -%}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<article class="de-article" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div>
+
+    <section class="de-article__header">
+      <h1 itemprop="name headline">{{ page.title }}</h1>
+      <div class="">
+        {{ post::info(page=page) }}
+      </div>
+    </section>
+
+    <hr/>
+
+    <section class="de-article__body" itemprop="articleBody">
+      {{ page.content | safe }}
+    </section>
+
+  </div>
+
+</article>
+
+{% endblock content %}
+
+{% block rightside %}
+  {{ toc::toc(page=page) }}
+  {{ side::recent_posts() }}
+{% endblock rightside %}

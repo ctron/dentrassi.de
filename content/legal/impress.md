@@ -1,12 +1,10 @@
 ---
-id: 8
-title: Disclaimer
-date: '2011-01-26T10:45:22+01:00'
+id: 42
+title: 'Impressum / Impress'
+date: '2011-01-26T19:05:20+01:00'
 author: 'Jens Reimann'
 layout: page
-guid: 'http://dentrassi.de/wordpress/?page_id=6'
-spacious_page_layout:
-    - no_sidebar_content_centered
+guid: 'http://dentrassi.de/'
 fabulous-fluid-layout-option:
     - default
 fabulous-fluid-header-image:
@@ -14,6 +12,23 @@ fabulous-fluid-header-image:
 fabulous-fluid-featured-image:
     - default
 ---
+
+## Angaben gemäß § 5 TMG:
+
+Jens Reimann  
+Egilostraße 2  
+85614 Eglharting / Kirchseeon
+
+## Kontakt:
+
+Telefon: +49 / 171 / 3648411  
+E-Mail: ctron@dentrassi.de
+
+## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+
+Jens Reimann  
+Egilostraße 2  
+85614 Eglharting/Kirchseeon
 
 ### Haftung für Inhalte
 
@@ -32,6 +47,25 @@ Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konk
 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
 
 Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+
+# Site Notice
+
+## Information provided according to Sec. 5 German Telemedia Act (TMG):
+
+Jens Reimann  
+Egilostraße 2  
+85614 Eglharting / Kirchseeon
+
+## Contact:
+
+Telephone: +49 / 171 / 3648411  
+Email: ctron@dentrassi.de
+
+## Responsible for contents acc. to Sec. 55, para. 2 German Federal Broadcasting Agreement (RstV):
+
+Jens Reimann  
+Egilostraße 2  
+85614 Eglharting/Kirchseeon
 
 ### Liability for Contents
 

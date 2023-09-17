@@ -25,6 +25,8 @@ fpu-thumb-fld:
 
 This page is about an Apache Camel component for providing OPC DA 2.0 (not OPC UA) client support for Apache Camel
 
+<!-- more -->
+
 This component can be used with Camel or inside of Eclipse Kura. It is based on the [OpenSCADA Utgard](http://openscada.org/projects/utgard/) library and does not require any kind of native code. It runs on pure Java.
 
 More details are at my GitHub repository: [ctron/de.dentrassi.camel.utgard](https://github.com/ctron/de.dentrassi.camel.utgard)

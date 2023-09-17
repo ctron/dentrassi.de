@@ -1,0 +1,14 @@
+// table of contents
+
+.de-toc a.active {
+  border-left: 0.125rem $primary solid;
+  font-weight: 500;
+
+  padding-left: calc(0.5rem - 0.125rem);
+  margin-left: -0.5rem;
+}
+
+.de-toc .de-toc__second li {
+  padding-left: 1rem;
+}
+

@@ -2,21 +2,19 @@
 
 {% block content %}
 
-<div class="de-sidebox">
-  <h3>Archive</h3>
-  <ul class="list-unstyled">
-    {% set all_content = get_section(path="_index.md") %}
-    {% for year, posts in all_content.pages | group_by(attribute="year") %}
-    <li><h4>{{ year }}</h4>
-      <ul class="list-unstyled">
-        {% for post in posts %}
-        <li class="text-truncate"><a class="link-body-emphasis" href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+<h1 class="pt-1 pb-1">Archive</h1>
+<ul class="list-unstyled">
+  {% set all_content = get_section(path="_index.md") %}
+  {% for year, posts in all_content.pages | group_by(attribute="year") %}
+  <li><h2>{{ year }}</h2>
+    <ul class="list-unstyled pb-4">
+      {% for post in posts %}
+      <li><a class="link-body-emphasis" href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
+</ul>
 
 {% endblock content %}
 

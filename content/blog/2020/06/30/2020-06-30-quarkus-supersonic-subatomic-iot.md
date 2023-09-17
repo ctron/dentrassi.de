@@ -39,7 +39,12 @@ For quite a while, I wanted to try out Quarkus. I wanted to see what benefits it
 
 EnMasse provides the scalable messaging back-end, based on AMQP 1.0. It also takes care of the Eclipse Hono deployment, alongside EnMasse. Wiring up the different services, based on an infrastructure [custom resource](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/). In a nutshell, you create a snippet of YAML, and EnMasse takes care and deploys a messaging system for you, with first-class support for IoT.
 
-<div class="wp-block-image"><figure class="aligncenter size-large">![Architecture diagram, explaining the tenant service.](https://dentrassi.de/wp-content/uploads/architecture.svg)<figcaption>Architectural overview – showing the Tenant Service</figcaption></figure></div>This system requires a service called the “tenant service”. That service is responsible for looking up an IoT tenant, whenever the system needs to validate that a tenant exists or when its configuration is required. Like all the other services in Hono, this service is implemented using the default stack, based on Java, Vert.x, and Spring Boot. Most of the implementation is based on Vert.x alone, using its reactive and asynchronous programming model. Spring Boot is only used for wiring up the application, using dependency injection and configuration management. So this isn’t a typical Spring Boot application, it is neither using Spring Web or any of the Spring Messaging components. And the reason for choosing Vert.x over Spring in the past was performance. Vert.x provides an excellent performance, which we tested a while back in our [IoT scale test with Hono](https://dentrassi.de/2018/07/25/scaling-iot-eclipse-hono/).
+
+{% figure(caption="Architectural overview – showing the Tenant Service") %}
+![Architecture diagram, explaining the tenant service.](https://dentrassi.de/wp-content/uploads/architecture.svg)
+{% end %}
+
+This system requires a service called the “tenant service”. That service is responsible for looking up an IoT tenant, whenever the system needs to validate that a tenant exists or when its configuration is required. Like all the other services in Hono, this service is implemented using the default stack, based on Java, Vert.x, and Spring Boot. Most of the implementation is based on Vert.x alone, using its reactive and asynchronous programming model. Spring Boot is only used for wiring up the application, using dependency injection and configuration management. So this isn’t a typical Spring Boot application, it is neither using Spring Web or any of the Spring Messaging components. And the reason for choosing Vert.x over Spring in the past was performance. Vert.x provides an excellent performance, which we tested a while back in our [IoT scale test with Hono](https://dentrassi.de/2018/07/25/scaling-iot-eclipse-hono/).
 
 ## The goal
 
@@ -47,7 +52,12 @@ The goal was simple: make it use fewer resources, having the same functionality.
 
 So, change as little as possible and get out as much as we can. What else could it be?! And just to understand from where we started, here is a screenshot of the metrics of the tenant service instance on my test cluster:
 
-<div class="wp-block-image"><figure class="aligncenter size-large">![Screenshot of original resource consumption.](https://dentrassi.de/wp-content/uploads/before-1024x358.png)<figcaption>Metrics for the original Spring Boot application</figcaption></figure></div>Around 200MiB of RAM, a little bit of CPU, and not much to do. As mentioned before, the tenant service only gets queries to verify the existence of a tenant, and the system will cache this information for a bit.
+
+{% figure(caption="Metrics for the original Spring Boot application") %}
+![Screenshot of original resource consumption.](https://dentrassi.de/wp-content/uploads/before-1024x358.png)
+{% end %}
+
+Around 200MiB of RAM, a little bit of CPU, and not much to do. As mentioned before, the tenant service only gets queries to verify the existence of a tenant, and the system will cache this information for a bit.
 
 ## Step #1 – Migrate to Quarkus
 
@@ -65,7 +75,13 @@ Packaging the JAR into a container was no different than with the existing versi
 
 From a user perspective, nothing has changed. The tenant service still works the way it is expected to work and provides all the APIs as it did before. Just running with the Quarkus runtime, and the same <abbr title="Java Virtual Machine">JVM</abbr> as before:
 
-<div class="wp-block-image"><figure class="aligncenter size-large">![Screenshot of resource consumption with Quarkus in JVM mode.](https://dentrassi.de/wp-content/uploads/quarkus_jvm-1024x355.png)<figcaption>Metrics after the conversion to Quarkus, in JVM mode</figcaption></figure></div>We can directly see a drop of 50MiB from 200MiB to 150MiB of RAM, that isn’t bad. CPU isn’t really different, though. There also is a slight improvement of the startup time, from ~2.5 seconds down to ~2 seconds. But that isn’t a real game-changer, I would say. Considering that ~2.5 seconds startup time, for a Spring Boot application, is actually not too bad, other services take much longer.
+<div class="wp-block-image"><figure class="aligncenter size-large">
+
+{% figure(caption="Metrics after the conversion to Quarkus, in JVM mode") %}
+![Screenshot of resource consumption with Quarkus in JVM mode.](https://dentrassi.de/wp-content/uploads/quarkus_jvm-1024x355.png)
+{% end %}
+
+We can directly see a drop of 50MiB from 200MiB to 150MiB of RAM, that isn’t bad. CPU isn’t really different, though. There also is a slight improvement of the startup time, from ~2.5 seconds down to ~2 seconds. But that isn’t a real game-changer, I would say. Considering that ~2.5 seconds startup time, for a Spring Boot application, is actually not too bad, other services take much longer.
 
 ## Step #2 – The native image
 
@@ -83,7 +99,11 @@ However, the magic only works in areas that Quarkus is aware of. So we did run i
 
 After all the struggle, what did it give us?
 
-<div class="wp-block-image"><figure class="aligncenter size-large">![Screenshot of resource consumption with Quarkus in native image mode.](https://dentrassi.de/wp-content/uploads/quarkus_native-1024x355.png)<figcaption>Metrics when running as native image Quarkus application</figcaption></figure></div>So, we are down another 50MiB of RAM. Starting from ~200MiB, down to ~100MiB. That is only half the RAM! Also, this time, we see a reduction in CPU load. While in JVM mode (both Quarkus and Spring Boot), the CPU load was around 2 [millicores](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/), now the CPU is always below that, even during application startup. Startup time is down from ~2.5 seconds with Spring Boot, to ~2 seconds with Quarkus in JVM mode, to ~0.4 seconds for Quarkus in native image mode. Definitely an improvement, but still, neither of those times is really bad.
+{% figure(caption="Metrics when running as native image Quarkus application") %}
+![Screenshot of resource consumption with Quarkus in native image mode.](https://dentrassi.de/wp-content/uploads/quarkus_native-1024x355.png)
+{% end %}
+
+So, we are down another 50MiB of RAM. Starting from ~200MiB, down to ~100MiB. That is only half the RAM! Also, this time, we see a reduction in CPU load. While in JVM mode (both Quarkus and Spring Boot), the CPU load was around 2 [millicores](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/), now the CPU is always below that, even during application startup. Startup time is down from ~2.5 seconds with Spring Boot, to ~2 seconds with Quarkus in JVM mode, to ~0.4 seconds for Quarkus in native image mode. Definitely an improvement, but still, neither of those times is really bad.
 
 ## Pros and cons of Quarkus
 
@@ -113,6 +133,5 @@ This work is based on the work of others. Many thanks to:
 - [Dejan Bosanac](https://twitter.com/dejanb)
 - [Martin Stefanko](https://twitter.com/xstefank)
 
-<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">GitHub branch: [ctron/enmasse#feature/quarkus\_tenant\_1](https://github.com/ctron/enmasse/tree/feature/quarkus_tenant_1)
+GitHub branch: [ctron/enmasse#feature/quarkus\_tenant\_1](https://github.com/ctron/enmasse/tree/feature/quarkus_tenant_1)
 
-</div></div></div></div>

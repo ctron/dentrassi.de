@@ -25,6 +25,8 @@ fpu-thumb-fld:
 
 **Note:** The component is part of Apache Camel since version 2.19.x. Also see: <https://camel.apache.org/components/latest/milo-client-component.html> and <https://camel.apache.org/components/latest/milo-server-component.html>.
 
+<!-- more -->
+
 Maven Group Id: [de.dentrassi.camel.milo](https://search.maven.org/#search|ga|1|g%3A%22de.dentrassi.camel.milo%22)
 
 ```

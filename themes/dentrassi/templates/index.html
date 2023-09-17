@@ -5,16 +5,19 @@
 {% block content %}
 
 {% for page in paginator.pages %}
-  <section itemscope itemtype="http://schema.org/BlogPosting">
-    <h2>
+  <section class="de-c-post-info" itemscope itemtype="http://schema.org/BlogPosting">
+    <h2 class="de-c-post-info__title">
       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-75-hover" href="{{ page.permalink | safe }}">{{ page.title }}</a>
     </h2>
 
-    <div itemprop="articleSummary">
+    <div class="de-c-post-info__summary" itemprop="articleSummary">
       {{ page.summary | safe }}
     </div>
 
-    {{ post::info(page=page, more=true) }}
+    <div>
+      <hr />
+      {{ post::info(page=page, more=true) }}
+    </div>
   </section>
 {% endfor %}
 

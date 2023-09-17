@@ -17,5 +17,7 @@ This is a bit of information about the [Eclipse Kapua](https://eclipse.org/kapua
 
 The main goal of this project is to provide a client SDK for Kapua which can run with a minimal set of dependencies, even towards the JVM and JDK. It should be possible to use this SDK on something like the [Java CDLC 8](http://docs.oracle.com/javame/config/cldc/opt-pkgs/api/cldc/api/index.html).
 
+<!-- more -->
+
 - GitHub – [ctron/kapua-micro-client](https://github.com/ctron/kapua-micro-client)
 - [Documentation](https://ctron.github.io/kapua-micro-client/)

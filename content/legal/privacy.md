@@ -13,6 +13,8 @@ fabulous-fluid-featured-image:
     - default
 ---
 
+# Deutsch
+
 ## 1. Datenschutz auf einen Blick
 
 ### Allgemeine Hinweise
@@ -191,7 +193,7 @@ Wenn Ihr Browser Web Fonts nicht unterstützt, wird eine Standardschrift von Ihr
 
 Weitere Informationen zu Google Web Fonts finden Sie unter <https://developers.google.com/fonts/faq> und in der Datenschutzerklärung von Google: <https://www.google.com/policies/privacy/>.
 
-# Privacy Policy
+# English
 
 ## 1. An overview of data protection
 

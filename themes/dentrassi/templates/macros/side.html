@@ -1,0 +1,41 @@
+{% macro projects() %}
+<div class="mb-2">
+  <h2>Projects</h2>
+  <ul class="list-unstyled">
+    <li><a class="link-body-emphasis" target="_blank" href="https://github.com/patternfly-yew/patternfly-yew">PatternFly Yew</a></li>
+    <li><a class="link-body-emphasis" target="_blank" href="https://github.com/ctron/yew-oauth2">Yew OAuth2</a></li>
+    <li><a class="link-body-emphasis" target="_blank" href="https://github.com/ctron/rpm-builder">Maven RPM Builder</a></li>
+    <li><a class="link-body-emphasis" target="_blank" href="https://www.drogue.io">Drogue IoT</a></li>
+    <li><a class="link-body-emphasis" target="_blank" href="https://ctron.github.io/openshift-update-graph">OpenShift Update Graph</a></li>
+    <li><a class="link-body-emphasis" target="_blank" href="https://www.eclipse.org/packages/">Eclipse IoT Packages</a></li>
+  </ul>
+</div>
+{% endmacro %}
+
+{% macro pages() %}
+<div class="mb-2">
+  <h2>Pages</h2>
+  <ul class="list-unstyled">
+    {% set pages = get_section(path="pages/_index.md") %}
+    {% for page in pages.pages %}
+      <li><a class="link-body-emphasis" href="{{ page.path }}">{{ page.title }}</a></li>
+    {% endfor %}
+    {% for section_name in pages.subsections %}
+      {% set section = get_section(path=section_name) %}
+      <li><a class="link-body-emphasis" href="{{ section.path }}">{{ section.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endmacro %}
+
+{% macro recent_posts() %}
+<div class="de-c-recent-posts mb-2">
+  <h2>Recent Posts</h2>
+  <ul class="list-unstyled">
+    {% set all_content = get_section(path="_index.md") %}
+    {% for post in all_content.pages | slice(end=5) %}
+    <li><a class="link-body-emphasis" href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endmacro %}

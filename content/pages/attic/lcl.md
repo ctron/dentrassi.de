@@ -7,6 +7,10 @@ layout: page
 guid: 'http://dentrassi.de/wordpress/?page_id=12'
 ---
 
+The "Linux Class Library".
+
+<!-- more -->
+
 ## What was…
 
 The LCL was started in 1998 as a set of tools you need in your “every day C++ programmer day”. Using templates, exceptions but keeping it “all simple” it contains lots of stuff that make your life easier. During the following years the LCL was extended and ported from various Unix flavours even to native Windows. Considering different compilers back then (egcs, DEC C++, MSVC 5) it was quite a job to keep it all working on different platforms. The STL was quite unportable and still misses several features LCL has.

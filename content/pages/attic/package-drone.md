@@ -16,7 +16,9 @@ Package Drone is an open source (EPL), software artifact repository.
 
 The main purpose is to use it as OSGi bundle repository which can receive OSGi bundles either from a Maven Tycho, a plain Maven or Gradle build. Or you simply can upload the OSGi bundles using the web UI. These OSGi bundles (and Eclipse Features and Categories) can then be consumed using the P2 repository system from Eclipse, Maven Tycho and bndtools (using OSGi R5 XML Repositories).
 
-However the design is modular and extensible so that it should also be possible to, for example, add an <q>RPM</q> aspect and render a <q>YUM</q> repository out of it.
+<!-- more -->
+
+However, the design is modular and extensible so that it should also be possible to, for example, add an <q>RPM</q> aspect and render a <q>YUM</q> repository out of it.
 
 ### More Information
 

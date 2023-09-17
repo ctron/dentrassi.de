@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="pt-1 pb-1">Old projects &amp; memories</h1>
+
+{{ section.content | safe }}
+
+{% set all_content = get_section(path="pages/attic/_index.md") %}
+{% for page in all_content.pages %}
+<div class="de-c-project mt-5">
+  <h2>
+    <a class="link-body-emphasis text-decoration-none" href="{{ page.path }}" title="{{ page.title }}">{{ page.title }}</a>
+  </h2>
+
+  <div>
+    {{ page.summary | safe }}
+  </div>
+
+  <a class="link-body-emphasis" href="{{ page.path }}">Read more …</a>
+</div>
+
+{% endfor %}
+
+{% endblock content %}
+

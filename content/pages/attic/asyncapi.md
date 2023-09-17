@@ -17,5 +17,7 @@ fabulous-fluid-featured-image:
 
 This page contains a few links to Java based tools which help in using AsyncAPI.
 
+<!-- more -->
+
 - [ctron/asyncapi](https://github.com/ctron/asyncapi) – [Documentation](https://ctron.github.io/asyncapi) – AsyncAPI model parser and source generator
 - [ctron/asyncapi-maven](https://github.com/ctron/asyncapi-maven) – [Documentation](https://ctron.github.io/asyncapi-maven) – Maven Plugin

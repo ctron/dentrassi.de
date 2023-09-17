@@ -15,6 +15,8 @@ fabulous-fluid-featured-image:
 
 **GitHub:** <https://github.com/ctron/de.dentrassi.camel.iec60870>
 
+<!-- more -->
+
 #### Documentation
 
 - [Client endpoint](https://github.com/ctron/de.dentrassi.camel.iec60870/blob/master/camel-iec60870/src/main/docs/iec60870-client.adoc)

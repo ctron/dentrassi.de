@@ -1,0 +1,19 @@
+main {
+  padding-top: $top-padding;
+}
+
+main {
+  h2:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  h3, h4 {
+    margin-top: 2rem;
+  }
+}
+
+main {
+  pre {
+    padding: 1rem;
+  }
+}

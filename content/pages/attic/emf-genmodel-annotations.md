@@ -13,6 +13,8 @@ authorsure_include_css:
 
 A cheatsheet for EMF annotations which influence the code generation of GenModels.
 
+<!-- more -->
+
 ## The “Gen” pattern
 
 Although is has nothing to do with annotations, it is a powerful instrument during the generation process.
