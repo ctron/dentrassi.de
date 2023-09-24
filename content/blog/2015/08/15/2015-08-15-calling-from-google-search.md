@@ -23,7 +23,7 @@ tags:
 
 ![Bildschirmfoto 2015-08-15 um 17.18.49](//dentrassi.de/wp-content/uploads/Bildschirmfoto-2015-08-15-um-17.18.49.png)
 
-… I just did a search for some business an Google and actually the first hit and the suggestion box on the right side is the perfect match for what I was looking for. The [info box](http://dentrassi.de/wp-content/uploads/Bildschirmfoto-2015-08-15-um-17.18.49.png) contains all the relevant information, including the phone number, which is a clickable link.
+… I just did a search for some business an Google and actually the first hit and the suggestion box on the right side is the perfect match for what I was looking for. The [info box](/wp-content/uploads/Bildschirmfoto-2015-08-15-um-17.18.49.png) contains all the relevant information, including the phone number, which is a clickable link.
 
 <!-- more -->
 

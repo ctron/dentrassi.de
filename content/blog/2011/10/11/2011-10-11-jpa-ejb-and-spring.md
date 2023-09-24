@@ -30,7 +30,7 @@ The solution was quite and and lot cleaner than using the `jboss.entity.manager.
 
 In the “web.xml” of the servlet that starts the application context a reference has to be added to the persistence unit:
 
-```xmla
+```xml
 <persistence-unit-ref>
   <persistence-unit-ref-name>persistence/someModel</persistence-unit-ref-name>
   <persistence-unit-name>someModel</persistence-unit-name>

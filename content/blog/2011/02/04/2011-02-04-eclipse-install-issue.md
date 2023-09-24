@@ -28,4 +28,4 @@ I was unable to add any new plugin and searching Google for help was not success
 
 But I found one hint that deactivating the option “Contact all update sites during install to find required software” helps. And it did.
 
-[![Screenshot of Eclipse Dialog](http://dentrassi.de/wp-content/uploads/other_repos.png "other_repos")](http://dentrassi.de/wp-content/uploads/other_repos.png)
+![Screenshot of Eclipse Dialog](/wp-content/uploads/other_repos.png "other_repos")

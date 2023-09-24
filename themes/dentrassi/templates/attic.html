@@ -9,7 +9,7 @@
 {% set all_content = get_section(path="pages/attic/_index.md") %}
 {% for page in all_content.pages %}
 <div class="de-c-project mt-5">
-  <h2>
+  <h2 id="{{ page.slug }}">
     <a class="link-body-emphasis text-decoration-none" href="{{ page.path }}" title="{{ page.title }}">{{ page.title }}</a>
   </h2>
 
@@ -24,3 +24,18 @@
 
 {% endblock content %}
 
+{% block rightside %}
+
+<div class="mb-4 de-c-toc">
+  <h2>Projects</h2>
+
+  <ul class="list-unstyled" id="toc">
+    {% set pages = get_section(path="pages/attic/_index.md") %}
+    {% for page in pages.pages %}
+    <li><a class="link-body-emphasis" href="#{{ page.slug | safe }}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+  {{ side::recent_posts() }}
+{% endblock rightside %}

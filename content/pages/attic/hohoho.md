@@ -15,4 +15,5 @@ Please be kind ;-)
 
 Merry Christmas!
 
-[![](http://dentrassi.de/wp-content/uploads/device-2011-12-06-172004-180x300.png "Title Screen")](http://dentrassi.de/wp-content/uploads/device-2011-12-06-172004.png)[![](http://dentrassi.de/wp-content/uploads/device-2011-12-06-171436-180x300.png "Game Screen")](http://dentrassi.de/wp-content/uploads/device-2011-12-06-171436.png)
+![](/wp-content/uploads/device-2011-12-06-172004.png "Title Screen")
+![](/wp-content/uploads/device-2011-12-06-171436.png "Game Screen")

@@ -40,7 +40,7 @@ OleAutomation automation = new OleAutomation("WbemScripting.SWbemLocator");
 Variant service = automation.invoke(Helper.getId(automation, "ConnectServer"));
 ```
 
-The variant will hold a VT\_DISPATCH value which references the SWbemServices instance. Instead of calling the <q>ConnectServer</q> method with any parameters one can also call with full remote server support (see [MSDN](http://msdn.microsoft.com/en-us/library/aa393720%28v=VS.85%29.aspx)).
+The variant will hold a `VT_DISPATCH` value which references the SWbemServices instance. Instead of calling the <q>ConnectServer</q> method with any parameters one can also call with full remote server support (see [MSDN](http://msdn.microsoft.com/en-us/library/aa393720%28v=VS.85%29.aspx)).
 
 The next, and rather easy, step is to execute the query:
 
@@ -99,7 +99,7 @@ if (rc != OS.S_OK)
   return rc; // in case of error
 ```
 
-Looks actually like call in C. The result will be a pointer to a IEnumVARIANT in ppvObject. You should also be aware of the fact that QueryInterface also performes an AddRef, so you have to perform one Release call when you are done in order to decrease the usage count on the instance.
+Looks actually like call in C. The result will be a pointer to a IEnumVARIANT in ppvObject. You should also be aware of the fact that QueryInterface also performs as an AddRef, so you have to perform one Release call when you are done in order to decrease the usage count on the instance.
 
 Next one can pass the pointer to the instance to an instance of IEnumVARIANT (which is also from SWT internal) and already provides mapping to the function calls Reset, Next, Release.
 

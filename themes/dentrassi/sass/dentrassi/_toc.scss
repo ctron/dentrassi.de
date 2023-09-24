@@ -1,6 +1,6 @@
 // table of contents
 
-.de-toc a.active {
+.de-c-toc a.active {
   border-left: 0.125rem $primary solid;
   font-weight: 500;
 
@@ -8,7 +8,7 @@
   margin-left: -0.5rem;
 }
 
-.de-toc .de-toc__second li {
+.de-c-toc .de-c-toc__second li {
   padding-left: 1rem;
 }
 

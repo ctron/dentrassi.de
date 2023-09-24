@@ -1,6 +1,6 @@
 ---
 id: 3869
-title: 'Apache Camel Utgard &#8211; OPC DA'
+title: 'Apache Camel Utgard – OPC DA'
 date: '2018-04-25T10:19:38+02:00'
 author: 'Jens Reimann'
 layout: page

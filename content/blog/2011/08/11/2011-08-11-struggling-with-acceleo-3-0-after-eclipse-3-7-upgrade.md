@@ -33,7 +33,7 @@ Googling a bit I found out that Acceleo provides a different serialization model
 <figure aria-describedby="caption-attachment-112" class="wp-caption alignnone" id="attachment_112" style="width: 625px">
 
 {% figure(caption="Acceleo Project Settings") %}
-![](http://dentrassi.de/wp-content/uploads/acceleo.png "Acceleo Project Settings")
+![](/wp-content/uploads/acceleo.png "Acceleo Project Settings")
 {% end %}
 
 Which worked at first until I stumbled over the next problem a few hours later:

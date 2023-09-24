@@ -1,6 +1,6 @@
 ---
 id: 3541
-title: 'Apache Camel component for IEC 60870'
+title: 'Apache Camel component for IEC 60870'
 date: '2017-02-17T08:40:23+01:00'
 author: 'Jens Reimann'
 layout: page

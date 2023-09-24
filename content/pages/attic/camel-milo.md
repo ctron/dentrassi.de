@@ -1,6 +1,6 @@
 ---
 id: 3485
-title: 'Apache Camel component for OPC UA'
+title: 'Apache Camel component for OPC UA'
 date: '2017-01-11T15:35:19+01:00'
 author: 'Jens Reimann'
 layout: page

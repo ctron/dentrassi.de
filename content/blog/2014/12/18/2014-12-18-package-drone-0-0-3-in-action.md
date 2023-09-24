@@ -19,7 +19,7 @@ tags:
     - tycho
 ---
 
-Here is a short video showing how [package drone](http://dentrassi.de/my-projects/package-drone/ "Package Drone") works.
+Here is a short video showing how [package drone](/pages/projects/package-drone/ "Package Drone") works.
 
 <!-- more -->
 

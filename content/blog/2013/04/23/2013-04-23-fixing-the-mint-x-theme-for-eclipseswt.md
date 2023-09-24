@@ -21,6 +21,6 @@ If you are running Mint, Eclipse and you like the Mint-X theme, you might be a b
 
 <!-- more -->
 
-![eclipse1](http://dentrassi.de/wp-content/uploads/eclipse1.png)
+![eclipse1](/wp-content/uploads/eclipse1.png)
 
 Gladly this is only a minor glitch which [can be fixed easily](https://bugs.launchpad.net/linuxmint/+bug/1168281/+attachment/3651502/+files/mintx.patch). Hopefully the [change](https://github.com/ctron/mint-x-theme/commit/135f78193c17d51386c191f23ff11925b8714a61) of the github pull request will find its way into Mint.

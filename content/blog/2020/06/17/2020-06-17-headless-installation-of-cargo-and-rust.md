@@ -57,7 +57,7 @@ The solution is rather simple. If you take a look at the script, then you will f
 
 And you can still keep the “one liner” for installing:
 
-```shell
+```bash
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 ```
 
