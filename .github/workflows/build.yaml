@@ -19,6 +19,11 @@ jobs:
         with:
           tool: zola@0.17.1
 
+      - name: Install NPM dependencies
+        run: |
+          cd build
+          npm ci
+
       - run: |
           zola build --output-dir _site
 
