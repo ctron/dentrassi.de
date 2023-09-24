@@ -20,9 +20,14 @@ jobs:
           tool: zola@0.17.1
 
       - name: Install NPM dependencies
+        working-directory: themes/dentrassi/build
         run: |
-          cd build
           npm ci
+
+      - name: Build template
+        working-directory: themes/dentrassi/build
+        run: |
+          npm run build
 
       - run: |
           zola build --output-dir _site
