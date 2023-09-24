@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>ctron&#x27;s blog</title>
-    <subtitle>Life, the Universe and Everything</subtitle>
+    <subtitle>Life, the Universe and Everything. A personal blog, with a focus on software engineering.</subtitle>
     <link href="https://staging.dentrassi.de/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://staging.dentrassi.de"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
