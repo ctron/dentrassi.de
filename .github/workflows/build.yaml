@@ -33,11 +33,24 @@ jobs:
         run: |
           npm run build
 
-      - run: |
-          zola build --base-url /
+      - name: build prod
+        run: |
+          zola build
+
+      - name: build staging
+        run: |
+          zola build --base-url https://staging.dentrassi.de
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: publish/prod
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public.staging
+          publish_branch: publish/staging
