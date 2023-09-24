@@ -1,22 +1,14 @@
 @import "toc";
 @import "sidebox";
 @import "content";
-
-html {
-  scroll-padding-top: calc($nav-link-height + 2rem);
-}
+@import "top";
 
 .de-layout {
-  padding-top: $nav-link-height;
+  //padding-top: $nav-link-height;
 }
 
 .de-layout > .row > aside {
-  top: calc($nav-link-height + $sidebox-top-padding);
-}
-
-main {
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  //top: calc($nav-link-height + $sidebox-top-padding);
 }
 
 // post image

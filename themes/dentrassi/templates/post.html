@@ -31,5 +31,7 @@
 
 {% block rightside %}
   {{ toc::toc(page=page) }}
+  <div class="d-lg-block d-none">
   {{ side::recent_posts() }}
+  </div>
 {% endblock rightside %}

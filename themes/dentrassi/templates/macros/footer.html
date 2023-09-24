@@ -1,20 +1,20 @@
 {% macro footer() %}
 
-<footer class="bg-body-tertiary py-md-5 mt-5">
+<footer class="bg-body-tertiary py-5 mt-lg-5">
   <div class="container text-body-secondary">
     <div class="row">
-      <div class="col">
+      <div class="col-12 col-lg mb-2">
         &copy; {{ config.title }} – All rights reserved
       </div>
-      <div class="col">
-        <ul class="list-unstyled">
+      <div class="col-12 col-lg">
+        <ul class="list-unstyled mb-0">
           <li><a class="link-secondary" href="{{ get_url(path='@/legal/disclaimer.md')}}">Disclaimer</a></li>
           <li><a class="link-secondary" href="{{ get_url(path='@/legal/impress.md')}}">Impressum / Impress</a></li>
           <li><a class="link-secondary" href="{{ get_url(path='@/legal/privacy.md')}}">Datenschutzerklärung / Privacy Policy</a></li>
         </ul>
       </div>
 
-      <div class="col">
+      <div class="col-12 col-lg">
         <a class="link-secondary" href="{{ get_url(path='@/legal/contact.md')}}">Contact</a>
       </div>
 

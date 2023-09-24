@@ -22,14 +22,16 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#toc" tabindex="0">
-  {% block header %}
-    {{ header::header(current_section="/") }}
-  {% endblock header %}
+
+{% block header %}
+{{ header::header(current_section="/") }}
+{% endblock header %}
 
     <div class="de-layout container">
 
       <div class="row d-flex align-items-start">
-        <aside class="col-2 sticky-top">
+
+        <aside class="col-lg-2 order-last order-lg-0 sticky-top mt-4 mt-lg-5">
           <div class="de-sidebox de-m-left">
           {% block leftside %}
             {{ side::projects() }}
@@ -38,12 +40,12 @@
           </div>
         </aside>
 
-        <main class="col-7">
+        <main class="col-12 col-lg-7 px-lg-5 mt-3 mt-lg-4">
           {% block content %}{% endblock content %}
         </main>
 
-        <aside class="col-3 sticky-top">
-          <div class="de-sidebox de-m-right">
+        <aside class="col-lg-3 order-first order-lg-0 sticky-top mt-lg-5 de-m-collapsible">
+          <div class="de-sidebox de-m-right collapse d-lg-block" id="rightSidebox">
           {% block rightside %}
             {{ side::recent_posts() }}
           {% endblock rightside %}

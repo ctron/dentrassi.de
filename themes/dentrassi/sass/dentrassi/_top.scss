@@ -1,0 +1,30 @@
+html {
+  scroll-padding-top: calc($nav-link-height + 2rem);
+}
+
+$sidebox-top-padding: calc($top-padding + .5rem);
+
+@include media-breakpoint-up(lg) {
+  main {
+    padding-top: $top-padding;
+  }
+}
+
+.de-layout aside {
+  top: 0;
+  padding-top: $sidebox-top-padding;
+}
+
+@include media-breakpoint-down(lg) {
+  aside.de-m-collapsible {
+    background-color: var(--bs-light);
+  }
+
+  aside.de-m-collapsible:has(.collapse.show) {
+    border-bottom: var(--bs-secondary-border-subtle) solid var(--bs-border-width);
+  }
+
+  .de-layout aside.order-last {
+    padding-top: 0;
+  }
+}
