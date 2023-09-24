@@ -4,14 +4,15 @@
   <h2>Projects</h2>
 
   <ul class="list-unstyled">
-    <li><a class="link-body-emphasis" target="_blank" href="https://github.com/patternfly-yew/patternfly-yew">PatternFly Yew</a></li>
-    <li><a class="link-body-emphasis" target="_blank" href="https://github.com/ctron/yew-oauth2">Yew OAuth2</a></li>
-    <li><a class="link-body-emphasis" target="_blank" href="https://github.com/ctron/rpm-builder">Maven RPM Builder</a></li>
-    <li><a class="link-body-emphasis" target="_blank" href="https://www.drogue.io">Drogue IoT</a></li>
-    <li><a class="link-body-emphasis" target="_blank" href="https://ctron.github.io/openshift-update-graph">OpenShift Update Graph</a></li>
-    <li><a class="link-body-emphasis" target="_blank" href="https://www.eclipse.org/packages/">Eclipse IoT Packages</a></li>
+
+    {% set pages = get_section(path="projects/_index.md") %}
+    {% for page in pages.pages %}
+    <li><a class="link-body-emphasis" href="{{ page.path | safe }}">{{ page.title }}</a></li>
+    {% endfor %}
+
   </ul>
 </div>
+
 {% endmacro %}
 
 {% macro pages(skip_title=true) %}
