@@ -34,7 +34,7 @@ jobs:
           npm run build
 
       - run: |
-          zola build
+          zola build --base-url /
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
