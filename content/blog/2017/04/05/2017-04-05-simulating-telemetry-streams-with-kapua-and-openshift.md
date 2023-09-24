@@ -35,8 +35,8 @@ The Kura simulator has the ability now to also send telemetry data. In addition 
 
 From a programmatic perspective creating a simple telemetry stream would look this:
 
-```
-<pre class="lang:java">GatewayConfiguration configuration = new GatewayConfiguration("tcp://kapua-broker:kapua-password@localhost:1883", "kapua-sys", "sim-1");
+```java
+GatewayConfiguration configuration = new GatewayConfiguration("tcp://kapua-broker:kapua-password@localhost:1883", "kapua-sys", "sim-1");
 try (GeneratorScheduler scheduler = new GeneratorScheduler(Duration.ofSeconds(1))) {
   Set apps = new HashSet<>();
   apps.add(simpleDataApplication("data-1", scheduler, "sine", sine(ofSeconds(120), 100, 0, null)));
@@ -53,8 +53,8 @@ Now one might ask, why is this a `Function<Instant,?>`, wouldn’t a simple `Sup
 
 When using the [SimulationRunner](http://download.eclipse.org/kapua/docs/develop/user-manual/en/simulator.html), it is possible to configure data generators instead of coding:
 
-```
-<pre class="lang:js" title="example1.json">{
+```json
+{
  "applications": {
   "example1": {
    "scheduler": { "period": 1000 },
@@ -93,8 +93,7 @@ For more details about this model see: [Simple simulation model](http://download
 
 And of course this can also be managed with the OpenShift setup. Loading a JSON file works like this:
 
-```
-<pre class="lang:sh ">
+```bash
 oc create configmap data-simulator-config --from-file=KSIM_SIMULATION_CONFIGURATION=../src/test/resources/example1.json
 oc set env --from=configmap/data-simulator-config dc/simulator
 ```

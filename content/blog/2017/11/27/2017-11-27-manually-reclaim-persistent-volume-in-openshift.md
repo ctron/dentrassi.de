@@ -30,15 +30,13 @@ When you have a persistent volume in OpenShift configured with “Retain”, the
 
 Delete the persistent volume *claim* in OpenShift is simple, either using the Web UI or by executing:
 
-```
-
+```bash
 $ oc delete pvc/my-claim
 ```
 
 If you check, then you will see the persistent volume is “Released” but not “Available”:
 
 ```
-
 $ oc get pv
 NAME              CAPACITY   ACCESSMODES   RECLAIMPOLICY   STATUS     CLAIM                         REASON    AGE
 my-pv             40Gi       RWO           Retain          Released   my-project/my-claim                     2d
@@ -63,7 +61,6 @@ First of all ensure that the data is actually deleted. Using NFS you will need t
 Now it is time to actually make the PV available again for being claimed. For this the reference to the previous claim (`spec/claimRef`) has to be removed from the persistent volume. You can manually do this from the Web UI or with short command from the shell (assuming you are using `bash`):
 
 ```
-
 $ oc patch pv/my-pv --type json -p $'- op: remove\n  path: /spec/claimRef'
 "my-pv" patched
 ```
@@ -71,7 +68,6 @@ $ oc patch pv/my-pv --type json -p $'- op: remove\n  path: /spec/claimRef'
 This should return the volume into state “Available”:
 
 ```
-
 $ oc get pv
 NAME              CAPACITY   ACCESSMODES   RECLAIMPOLICY   STATUS     CLAIM                         REASON    AGE
 my-pv             40Gi       RWO           Retain          Available  my-project/my-claim                     2d

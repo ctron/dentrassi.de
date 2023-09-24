@@ -15,7 +15,7 @@ tags:
     - Eclipse
 ---
 
-It seems that migrating from Eclipse RCP 3.x to E4 (Eclipse 4.x) is not a quick win. If you already have an RCP based application the switch to E4 turns out to be a real problem. As is the E4 way if you want some sort of “custom” application that features some IDE components (like a perspective switcher or about dialog). It seems a bit strange that the migration from 3 to 4 is such a bumpy ride. Although there a are lots of tutorials, they mostly only scratch the surface of the task to convert a full blown RCP application. But this should be a rant on E4, I hope that the next releases improve that situation a lot.
+It seems that migrating from Eclipse RCP 3.x to E4 (Eclipse 4.x) is not a quick win. If you already have an RCP based application the switch to E4 turns out to be a real problem. As is the E4 way if you want some sort of “custom” application that features some IDE components (like a perspective switcher or about dialog). It seems a bit strange that the migration from 3 to 4 is such a bumpy ride. Although there a are lots of tutorials, they mostly only scratch the surface of the task to convert a full-blown RCP application. But this should be a rant on E4, I hope that the next releases improve that situation a lot.
 
 <!-- more -->
 

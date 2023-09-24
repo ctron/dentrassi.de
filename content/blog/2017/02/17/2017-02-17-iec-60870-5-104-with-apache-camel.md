@@ -28,7 +28,7 @@ tags:
     - IoT
 ---
 
-Yesterday the release 0.4.0 of Eclipse NeoSCADA™ was made available. This release features a cool new feature, an IEC 60870-5-104 stack, written in Java, licensed under the EPL and available on Maven Central. See also the Eclipse Wiki: https://wiki.eclipse.org/EclipseNeoSCADA/Components/IEC60870
+Yesterday the release 0.4.0 of Eclipse NeoSCADA™ was made available. This release features a cool new feature, an IEC 60870-5-104 stack, written in Java, licensed under the EPL and available on Maven Central. See also the Eclipse Wiki: <https://wiki.eclipse.org/EclipseNeoSCADA/Components/IEC60870>
 
 <!-- more -->
 
@@ -42,7 +42,6 @@ In a nutshell you can install it with the following commands into a running Kara
 feature:repo-add mvn:org.apache.camel.karaf/apache-camel/2.18.0/xml/features
 feature:repo-add mvn:de.dentrassi.camel.iec60870/feature/0.1.1/xml/features
 feature:install camel-iec60870
-
 ```
 
 But of course it can also be used outside of OSGi. In a standalone Java application or in the various other ways you can use Apache Camel.

@@ -34,7 +34,13 @@ tags:
 
 Eclipse Hono is an IoT abstraction layer. It defines APIs in order to build an IoT stack in the cloud, taking care of things like device credentials, protocols, and scalability. For some of those APIs, it comes with a ready-to-run implementation, such as the MQTT protocol adapter. For others, such as the device registry, it only defines the necessary API. The actual implementation must be provided to the system.
 
-<div class="wp-block-image"><figure class="aligncenter is-resized">![Eclipse Hono IoT architecture overview](https://dentrassi.de/wp-content/uploads/hono-overview.svg)<figcaption>Eclipse Hono overview</figcaption></figure></div>A key feature of Hono is that it normalizes the different IoT-specific protocols on [AMQP 1.0](http://www.amqp.org/specification/1.0/amqp-org-download). This protocol is common on the data center side, and it is quite capable of handling the requirements on throughput and back-pressure. However, on the IoT devices side, other protocols might have more benefits for certain use cases. MQTT is a favorite for many people, as is plain HTTP due to its simplicity. LoRaWAN, CoAP, Sigfox, etc. all have their pros and cons. If you want to play in the world of IoT, you simply have to support them all. Even when it comes to custom protocols, Hono provides a software stack to easily implement your custom protocol.
+<figure>
+
+![Eclipse Hono IoT architecture overview](https://dentrassi.de/wp-content/uploads/hono-overview.svg)
+
+<figcaption>Eclipse Hono overview</figcaption></figure>
+
+A key feature of Hono is that it normalizes the different IoT-specific protocols on [AMQP 1.0](http://www.amqp.org/specification/1.0/amqp-org-download). This protocol is common on the data center side, and it is quite capable of handling the requirements on throughput and back-pressure. However, on the IoT devices side, other protocols might have more benefits for certain use cases. MQTT is a favorite for many people, as is plain HTTP due to its simplicity. LoRaWAN, CoAP, Sigfox, etc. all have their pros and cons. If you want to play in the world of IoT, you simply have to support them all. Even when it comes to custom protocols, Hono provides a software stack to easily implement your custom protocol.
 
 ## AMQ Online
 
@@ -44,8 +50,7 @@ Hono requires an AMQP 1.0 messaging backend. It requires a broker and a componen
 
 In a world of Kubernetes and operators, the thing that you are actually looking for is more like this:
 
-```
-<pre class="wp-block-code">```
+```yaml
 kind: IoTProject
  apiVersion: iot.enmasse.io/v1alpha1
  metadata:
@@ -65,7 +70,6 @@ kind: IoTProject
          command:
            plan: standard-small-anycast
 ```
-```
 
 You simply define your IoT project, by creating a new custom resource using `kubectl create -f` and you are done. If you have the IoT operator of AMQ Online 1.1 deployed, then it will create the necessary address space for you, and set up the required addresses.
 
@@ -73,8 +77,7 @@ The IoT project will also automatically act as a Hono tenant. In this example, t
 
 With the [Hono admin tool,](https://github.com/ctron/hat) you can quickly register a new device with your installation (the documentation will also tell you how to achieve the same with `curl`):
 
-```
-<pre class="wp-block-code">```
+```bash
 # register the new context once with 'hat'
 hat context create myapp1 --default-tenant myapp.iot https://$(oc -n messaging-infra get routes device-registry --template='{{ .spec.host }}')
 
@@ -82,26 +85,21 @@ hat context create myapp1 --default-tenant myapp.iot https://$(oc -n messaging-i
 hat reg create 4711
 hat cred set-password sensor1 sha-512 hono-secret --device 4711
 ```
-```
 
 With that, you can simply use Hono as always. First, start the consumer:
 
-```
-<pre class="wp-block-code">```
+```bash
 # from the hono/cli directory
 export MESSAGING_HOST=$(oc -n myapp get addressspace iot -o jsonpath={.status.endpointStatuses[?(@.name==\'messaging\')].externalHost})
 export MESSAGING_PORT=443
 
 mvn spring-boot:run -Drun.arguments=--hono.client.host=$MESSAGING_HOST,--hono.client.port=$MESSAGING_PORT,--hono.client.username=consumer,--hono.client.password=foobar,--tenant.id=myapp.iot,--hono.client.trustStorePath=target/config/hono-demo-certs-jar/tls.crt,--message.type=telemetry
 ```
-```
 
 And then publish some data to the telemetry channel:
 
-```
-<pre class="wp-block-code">```
+```bash
 curl -X POST -i -u sensor1@myapp.iot:hono-secret -H 'Content-Type: application/json' --data-binary '{"temp": 5}' https://$(oc -n enmasse-infra get routes iot-http-adapter --template='{{ .spec.host }}')/telemetry
-```
 ```
 
 For more detailed instructions, see: [Getting Started with Internet of Things (IoT) on AMQ Online](https://access.redhat.com/documentation/en-us/red_hat_amq/7.2/html/evaluating_amq_online_on_openshift_container_platform/assembly-iot-messaging).
@@ -110,8 +108,7 @@ For more detailed instructions, see: [Getting Started with Internet of Things (I
 
 As mentioned before, you don’t do IoT just for the fun of it (well, maybe at home, with a Raspberry Pi, Node.js, OpenHAB, and mosquitto). But when you want to connect millions of devices with your cloud backend, you want to start working with that data. Using Hono gives you a pretty simple start. Everything you need is an AMQP 1.0 connectivity. Assuming you use Apache Camel, pushing telemetry data towards a Kafka cluster is as easy as (also see [ctron/hono-example-bridge](https://github.com/ctron/hono-example-bridge)):
 
-```
-<pre class="wp-block-code">```
+```xml
 <route id="store">
   <from uri="amqp:telemetry/myapp.iot" />
 
@@ -121,7 +118,6 @@ As mentioned before, you don’t do IoT just for the fun of it (well, maybe at h
 
   <to uri="kafka:telemetry?brokers={{kafka.brokers}}" />
 </route>
-```
 ```
 
 Bringing together solutions like [Red Hat Fuse](https://www.redhat.com/en/technologies/jboss-middleware/fuse), [AMQ](https://www.redhat.com/en/technologies/jboss-middleware/amq) and [Decision Manager](https://www.redhat.com/en/technologies/jboss-middleware/decision-manager) makes it a lot easier to give your custom logic in the data center (your value add‑on) access to the Internet of Things.

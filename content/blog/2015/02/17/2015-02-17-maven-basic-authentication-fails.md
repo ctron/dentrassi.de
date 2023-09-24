@@ -31,25 +31,21 @@ This worked fine as long as I started “maven deploy” from inside the Eclipse
 
 ```
 Caused by: org.apache.maven.wagon.TransferFailedException: Failed to transfer file: http://localhost:8080/maven/m2test/de/dentrassi/test/felixtest1/0.0.1-SNAPSHOT/felixtest1-0.0.1-20150217.162541-1.jar. Return code is: 401, ReasonPhrase: Unauthorized.
-
 ```
 
-Although I did configure Maven to use the correct credentials in the “settings.xml” file:
+Although I did configure Maven to use the correct credentials in the `settings.xml` file:
 
-```
-…
+```xml
 <server>
   <username></username>
   <password>abc123</password>
   <id>pdrone.test</id>
 </server>
-…
-
 ```
 
 After several hours of googling, source code reading and debugging maven it was actually pretty easy.
 
-First of all, the embedded Maven instance in Eclipse uses “AetherRepositoryConnector” instead of “BasicRepositoryConnector” for accessing repositories. “Aether” simply takes the username and password values, as provided, and uses them.
+First of all, the embedded Maven instance in Eclipse uses `AetherRepositoryConnector` instead of `BasicRepositoryConnector` for accessing repositories. “Aether” simply takes the username and password values, as provided, and uses them.
 
 The “BasicRepositoryConnector” however decided that an empty username (or an empty password) is not good at all and simply dropped the whole configuration without warning.
 

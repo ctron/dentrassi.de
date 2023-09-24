@@ -88,7 +88,7 @@ If you find any bugs or have improvements, contributions are always welcome.
 
 I would have never been able to figure all of this out, without the help of:
 
-- <https://quickhack.net/nom/blog/2019-05-14-build-rust-environment-for-esp32.html >
+- <https://quickhack.net/nom/blog/2019-05-14-build-rust-environment-for-esp32.html>
 - <https://esp32.com/viewtopic.php?t=9226>
 - <https://github.com/MabezDev/rust-xtensa>
 - <https://github.com/lexxvir/esp32-hello>

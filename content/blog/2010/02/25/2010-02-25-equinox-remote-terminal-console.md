@@ -27,4 +27,4 @@ Our equinox console works around the limits of the original OSGi TCP console and
 
 SVN Link to the project: <http://pubsvn.inavare.net/openscada/modules/aurora/trunk/org.openscada.osgi.equinox.console/>
 
-Also we played a little bit with an IRC bot that exposes the OSGi console of Equinox to an IRC server. This is not really tested and just a proof of concept. But it works. If you like check out <http://pubsvn.inavare.net/openscada/modules/aurora/trunk/org.openscada.osgi.equinox.ircbot/> and play with it ;-)
+Also, we played a little bit with an IRC bot that exposes the OSGi console of Equinox to an IRC server. This is not really tested and just a proof of concept. But it works. If you like check out <http://pubsvn.inavare.net/openscada/modules/aurora/trunk/org.openscada.osgi.equinox.ircbot/> and play with it ;-)

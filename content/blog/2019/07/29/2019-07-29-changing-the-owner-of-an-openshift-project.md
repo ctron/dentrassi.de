@@ -38,8 +38,7 @@ The access to the project is tied to the cluster role `admin` for the project. E
 
 Assuming that the user `admin` created the project `test`, doing `oc -n test rolebinding admin -o yaml` would give you:
 
-```
-<pre class="wp-block-code">```
+```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
@@ -54,12 +53,10 @@ subjects:
   kind: User
   name: admin
 ```
-```
 
 Now you can simply replace (or add) the subject in the `subjects` list. Moving the project over to `newuser` would look like this:
 
-```
-<pre class="wp-block-code">```
+```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
@@ -74,34 +71,30 @@ subjects:
   kind: User
   name: newuser
 ```
-```
 
 ## The one liner
 
 The `oc` command line tool can actually do this for you with a single call:
 
-```
-<pre class="wp-block-code">```
+```bash
 oc policy add-role-to-user admin newuser -n test
-```
 ```
 
 Of course this only adds the new user, but you can also remove the old user by:
 
-```
-<pre class="wp-block-code">```
+```bash
 oc policy remove-role-from-user admin olduser -n test
-```
 ```
 
 ## One more thing
 
 When you take a look at the list of projects in the Web UI, you will still see the old user as the “requester”:
 
-<div class="wp-block-image"><figure class="aligncenter">![Web UI project list](https://dentrassi.de/wp-content/uploads/ocp_projects_test.png)</figure></div>This information is read from the annotation `openshift.io/requester` from the “project”:
+![Web UI project list](https://dentrassi.de/wp-content/uploads/ocp_projects_test.png)
 
-```
-<pre class="wp-block-code">```
+This information is read from the annotation `openshift.io/requester` from the “project”:
+
+```yaml
 apiVersion: project.openshift.io/v1
 kind: Project
 metadata:
@@ -111,7 +104,6 @@ metadata:
     openshift.io/requester: admin
   name: test
 …
-```
 ```
 
 Unfortunately OpenShift considers the project information immutable. However the OpenShift “project” is backed by the Kubernetes “namespace”, which has the same annotation and it allows editing. So you can change the “requester” there, and it will be reflected in the project as well.

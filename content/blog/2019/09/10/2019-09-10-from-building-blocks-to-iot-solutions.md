@@ -26,7 +26,9 @@ tags:
     - IoT
 ---
 
-<div class="wp-block-image"><figure class="alignright is-resized">[![Eclipse IoT](https://dentrassi.de/wp-content/uploads/eclipse-IoT-light-300x269.png)](https://iot.eclipse.org)</figure></div>The Eclipse IoT ecosystem consists of around 40 different projects, ranging from embedded devices, to IoT gateways and up to cloud scale solutions. Many of those projects stand alone as “building blocks”, rather than ready to run solutions. And there is a good reason for that: you can take these building blocks, and incorporate them into your own solution, rather than adopting a complete, pre-built solution.
+[![Eclipse IoT](https://dentrassi.de/wp-content/uploads/eclipse-IoT-light-300x269.png)](https://iot.eclipse.org)
+
+The Eclipse IoT ecosystem consists of around 40 different projects, ranging from embedded devices, to IoT gateways and up to cloud scale solutions. Many of those projects stand alone as “building blocks”, rather than ready to run solutions. And there is a good reason for that: you can take these building blocks, and incorporate them into your own solution, rather than adopting a complete, pre-built solution.
 
 <!-- more -->
 
@@ -36,7 +38,13 @@ Of course, the “getting started” experience is extremely important. You can 
 
 ## Getting started. Quickly!
 
-<div class="wp-block-image"><figure class="alignright">[![Eclipse IoT building blocks](https://dentrassi.de/wp-content/uploads/Selection_583-300x236.png)](https://dentrassi.de/2019/02/20/integrating-eclipse-iot/)</figure></div>During the [Eclipse IoT face-to-face meeting in Berlin](https://www.eclipse.org/lists/iot-wg/msg01495.html), early this year, the Eclipse IoT working group discussed various ideas. How can we enable interested parties to get started, with as little effort as possible. And still, give you full control. Not only with a single component, which doesn’t provide much benefit on its own. But get you started with a complete solution, which solves actual IoT related problems.
+<div class="float-start">
+
+[![Eclipse IoT building blocks](https://dentrassi.de/wp-content/uploads/Selection_583-300x236.png)](https://dentrassi.de/2019/02/20/integrating-eclipse-iot/)
+
+</div>
+
+During the [Eclipse IoT face-to-face meeting in Berlin](https://www.eclipse.org/lists/iot-wg/msg01495.html), early this year, the Eclipse IoT working group discussed various ideas. How can we enable interested parties to get started, with as little effort as possible. And still, give you full control. Not only with a single component, which doesn’t provide much benefit on its own. But get you started with a complete solution, which solves actual IoT related problems.
 
 The goal was simple. Take an IoT use case, which is easy to understand by IoT related people. And provide some form of deployment, which gets people up and running in less than 15 minutes. With as little as possible external requirements. At best, run everything on your local laptop. Still, create everything in a close-to-production style of deployment. Not something completely stripped down. But use a way of deployment, that you could actually use as a basis for extending it further.
 
@@ -46,7 +54,13 @@ We quickly agreed on [Kubernetes](https://kubernetes.io/) as the runtime platfor
 
 ## Challenges, moving towards an IoT solution
 
-<div class="wp-block-image"><figure class="alignright">![](https://dentrassi.de/wp-content/uploads/logo_stack_proper_200px.png)</figure></div>A much tougher question was: how do we structure this, from a project perspective. During the meeting, it soon turned out, there would be two good initial candidates for “stacks” or “groups of projects”, which we would like to create.
+<div class="float-end">
+
+![](https://dentrassi.de/wp-content/uploads/logo_stack_proper_200px.png)
+
+</div>
+
+A much tougher question was: how do we structure this, from a project perspective. During the meeting, it soon turned out, there would be two good initial candidates for “stacks” or “groups of projects”, which we would like to create.
 
 It also turned out that we would need some “glue” components for a package like that. Even though it may only be a script here, or a “readme” file there. Some artifacts just don’t fit into either of those projects. And what about “in development” versions of the projects? How can you point people towards a stable deployment, only using a stable (released) group of projects, when scripts and readme’s are spread all over the place, in different branches.
 
@@ -64,7 +78,13 @@ Of course everything will be open source, licensed under the EPL. So go ahead an
 
 ## Let’s get started
 
-<div class="wp-block-image"><figure class="alignright">[![EclipseCon Europe 2019](https://dentrassi.de/wp-content/uploads/https___www.eclipsecon.org_sites_default_files_ECE_only_round_200x200.png.png)](https://www.eclipsecon.org/europe2019)</figure></div>We created a new project [proposal for the Eclipse IoT packages](https://projects.eclipse.org/proposals/eclipse-iot-packages) project. The project is currently in the community review phase. Once we pass the creation review, we will start publishing the content for the first package we have.
+<div class="float-end">
+
+[![EclipseCon Europe 2019](https://dentrassi.de/wp-content/uploads/https___www.eclipsecon.org_sites_default_files_ECE_only_round_200x200.png.png)](https://www.eclipsecon.org/europe2019)
+
+</div>
+
+We created a new project [proposal for the Eclipse IoT packages](https://projects.eclipse.org/proposals/eclipse-iot-packages) project. The project is currently in the community review phase. Once we pass the creation review, we will start publishing the content for the first package we have.
 
 The Eclipse IoT working group will also meet at the [IoT community day](https://www.eclipsecon.org/europe2019/eclipse-community-day) of [EclipseCon Europe 2019](https://www.eclipsecon.org/europe2019). Our goal is to present an initial version of the initial package. Ready to run!
 

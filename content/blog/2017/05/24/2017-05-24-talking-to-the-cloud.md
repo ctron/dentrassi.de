@@ -41,7 +41,7 @@ I wanted to have a simple API, easy to understand, readable. Preventing you from
 
 Now here is with what I came up with:
 
-```
+```java
 try (Client client = KuraMqttProfile.newProfile(FuseClient.Builder::new)
   .accountName("kapua-sys")
   .clientId("foo-bar-1")
@@ -71,7 +71,6 @@ try (Client client = KuraMqttProfile.newProfile(FuseClient.Builder::new)
     }
   }
 }
-</runtimeexception>
 ```
 
 Looks pretty simple right? On the background the MQTT connection is managed, payload gets encoded, birth certificates get exchanges and subscriptions get managed. But still the main application is in control of the data flow.
@@ -82,13 +81,12 @@ If you want to have a look at the code, it is available on GitHub ([ctron/kapua-
 
 Simply adding the following dependency to your project should be enough:
 
-```
+```xml
 <dependency>
   <groupId>de.dentrassi.kapua</groupId>
   <artifactId>kapua-gateway-client-provider-mqtt-fuse</artifactId>
   <version>0.2.0</version> <!-- check for a more recent version -->
 </dependency>
-
 ```
 
 With this dependency you can use the example above. If you want to got for Paho instead of FUSE use `kapua-gateway-client-provider-mqtt-paho` instead.
@@ -100,7 +98,6 @@ Now taking this for a test drive as even more fun. [Eclipse SmartHome](https://e
 ```
 openhab> repo-add mvn:de.dentrassi.kapua/karaf/0.2.0/xml/features
 openhab> feature:install eclipse-smarthome-kapua-persistence
-
 ```
 
 Then you need to re-configure the component over the “Paper UI” and point it towards your Kapua setup. Maybe you will need to tweak the “kapua.persist” file in order to define what gets persisted and when. And if everything goes well, your temperate readings will get pushed from SmartHome to Kapua.

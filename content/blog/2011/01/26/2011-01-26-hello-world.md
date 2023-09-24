@@ -12,7 +12,9 @@ categories:
     - Uncategorized
 ---
 
-After upgrading my server and cleanup up stuff I thought it would be nice to work a little bit on the homepage again. Since iWeb seems to be stuck and I am working mostly on Linux now I though it would be interesting to give WordPress a try.
+After upgrading my server and cleanup up stuff I thought it would be nice to work a little bit on the homepage again.
+Since iWeb seems to be stuck and I am working mostly on Linux now I thought it would be interesting to give WordPress
+a try.
 
 Let’s see what happens …
 

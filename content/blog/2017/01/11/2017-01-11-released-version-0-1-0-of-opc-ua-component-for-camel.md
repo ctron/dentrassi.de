@@ -32,7 +32,7 @@ After [Eclipse Milo™](http://eclipse.org/milo) 0.1.0 was released a few days b
 
 > Finally! :-) [@Eclipse](https://twitter.com/eclipse) [\#Milo](https://twitter.com/hashtag/Milo?src=hash) 0.1.0 is released and on Maven Central! Super Awesome!! [@kevinherron](https://twitter.com/kevinherron) [@EclipseIoT](https://twitter.com/EclipseIoT) <https://t.co/nRdSx66B34>
 > 
-> — Jens Reimann (@ctron) [January 10, 2017](https://twitter.com/ctron/status/818863065630384128)
+> <cite>Jens Reimann (@ctron) [January 10, 2017](https://twitter.com/ctron/status/818863065630384128)</cite>
 
 <script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
 
@@ -46,8 +46,7 @@ For more details also see: [Apache Camel component for OPC UA](https://dentrassi
 
 If you want to use is as a dependency use:
 
-```
-<pre class="lang:xml">
+```xml
 <dependency>
   <groupid>de.dentrassi.camel.milo</groupid>
   <artifactid>camel-milo</artifactid>
@@ -58,15 +57,15 @@ If you want to use is as a dependency use:
 Or for the Apache Karaf feature:
 
 ```
-<pre class="highlight:0">mvn:de.dentrassi.camel.milo/feature/0.1.0/xml/features
+mvn:de.dentrassi.camel.milo/feature/0.1.0/xml/features
 ```
 
 #### Plain Java
 
 If you want to have a quick example you can clone the GitHub repository and simply compile and run an example using the following commands:
 
-```
-<pre class="highlight:0">git clone https://github.com/ctron/de.dentrassi.camel.milo
+```bash
+git clone https://github.com/ctron/de.dentrassi.camel.milo
 cd de.dentrassi.camel.milo/examples/milo-example1
 mvn camel:run
 ```
@@ -75,8 +74,8 @@ This will compile and run a simple example which transfers all temperate measure
 
 The project is a simple OSGi Blueprint bundle which can be also be run by Apache Camel directly. The only configuration is the blueprint file:
 
-```
-<pre class="lang:xml mark:3-5,12 decode:true "><blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+```xml
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
 
     <bean id="milo-server" class="org.apache.camel.component.milo.server.MiloServerComponent">
         <property name="enableAnonymousAuthentication" value="true"/>
@@ -100,14 +99,13 @@ This configures a Camel Milo server component and routes the data from MQTT to O
 
 If you compile the previous example using:
 
-```
-<pre class="highlight:0">mvn package
+```bash
+mvn package
 ```
 
 You can download and start an Apache Karaf instance, add the Camel Milo component as a feature and deploy the bundle:
 
 ```
-<pre class="highlight:0">
 feature:repo-add mvn:de.dentrassi.camel.milo/feature/0.1.0/xml/features
 feature:repo-add mvn:org.apache.camel.karaf/apache-camel/2.18.0/xml/features
 feature:install aries-blueprint shell-compat camel camel-blueprint camel-paho camel-milo
@@ -117,14 +115,13 @@ The next step will download and install the example bundle. If you did compile t
 path of your locally compiled JAR. Otherwise you can also use a pre-compiled example bundle:
 
 ```
-<pre class="highlight:0">
 bundle:install -s https://dentrassi.de/download/camel-milo/milo-example1-0.1.0-SNAPSHOT.jar
 ```
 
 To check if it works you can cannot using an OPC UA client or peek into the log file of Karaf:
 
 ```
-<pre class="highlight:0">karaf> log:tail
+karaf> log:tail
 2017-01-11 15:11:45,348 | INFO  | -930541343163004 | milo1  | 146 - org.apache.camel.camel-core - 2.18.0 | iot.eclipse.org - temperature: 21.19
 2017-01-11 15:11:45,958 | INFO  | -930541343163004 | milo1  | 146 - org.apache.camel.camel-core - 2.18.0 | iot.eclipse.org - temperature: 21.09
 2017-01-11 15:11:49,648 | INFO  | -930541343163004 | milo1  | 146 - org.apache.camel.camel-core - 2.18.0 | iot.eclipse.org - temperature: 21.19
@@ -134,7 +131,13 @@ To check if it works you can cannot using an OPC UA client or peek into the log 
 
 If you want some more IDE integration you can quickly install the [JBoss FUSE tooling](https://developers.redhat.com/products/fuse/get-started/) and connect via JMX to either the Maven controlled instance (`mvn camel:run`) or the Karaf instance and monitor, debug and trace the active Camel routes:
 
-<figure aria-describedby="caption-attachment-3496" class="wp-caption aligncenter" id="attachment_3496" style="width: 840px">[![FUSE tooling with Milo](https://dentrassi.de/wp-content/uploads/milo_fuse-1024x621.png)](https://dentrassi.de/wp-content/uploads/milo_fuse.png)<figcaption class="wp-caption-text" id="caption-attachment-3496">FUSE tooling with Milo</figcaption></figure>#### What is next?
+<figure>
+
+![FUSE tooling with Milo](https://dentrassi.de/wp-content/uploads/milo_fuse.png)
+
+<figcaption>FUSE tooling with Milo</figcaption></figure>
+
+#### What is next?
 
 For one this component will hopefully become part of Apache Camel itself. And of course there is always something to improve ;-)
 

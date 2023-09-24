@@ -48,7 +48,9 @@ To be honest, there is nothing too difficult about it. You have all the data. Th
 
 A few hours later, and with the help of [visjs](https://visjs.org/), jQuery, Bootstrap, and some plain old Javascript, you have something more interactive: <https://ctron.github.io/openshift-update-graph/>
 
-<figure class="wp-block-image size-large">[![Screenshot of OpenShift Update Graph Visualizer](https://dentrassi.de/wp-content/uploads/image-1024x722.png)](https://ctron.github.io/openshift-update-graph)</figure>## The challenges
+[![Screenshot of OpenShift Update Graph Visualizer](https://dentrassi.de/wp-content/uploads/image-1024x722.png)](https://ctron.github.io/openshift-update-graph)
+
+## The challenges
 
 As always, it should be simple. But in real life, nothing is. Of course I encountered a few obstacles to work around …
 
@@ -72,8 +74,7 @@ Now I was glad that I chose GitHub for all of this. Setting up a GitHub Actions 
 
 … the data format is not stable. Doing multiple GET operations on the endpoint give you back different content. True, the information is the same, but the “byte content” is different. The data format describes updates as nodes and edges, very simple and a perfect match for our purpose. However, the edges reference the nodes by their position in the list of nodes, and not by some stable identifier. Assume the following two examples:
 
-<div class="wp-block-columns is-layout-flex wp-container-8 wp-block-columns-is-layout-flex"><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">```
-<pre class="wp-block-code">```
+```json
 {
   "nodes": [ "A", "B", "C" ],
   "edges": [
@@ -82,10 +83,8 @@ Now I was glad that I chose GitHub for all of this. Setting up a GitHub Actions 
   ]
 }
 ```
-```
 
-</div><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">```
-<pre class="wp-block-code">```
+```json
 {
   "nodes": [ "C", "B", "A" ],
   "edges": [
@@ -94,11 +93,10 @@ Now I was glad that I chose GitHub for all of this. Setting up a GitHub Actions 
   ]
 }
 ```
-```
 
-</div></div>Both examples contain the same information (`A → B → C`), however the raw bytes are different (can you spot the difference). And `git diff` only works with the bytes, and not the actual information conveyed by those.
+Both examples contain the same information (`A → B → C`), however the raw bytes are different (can you spot the difference). And `git diff` only works with the bytes, and not the actual information conveyed by those.
 
-So my plan of periodically fetching the data, and letting `git diff` check for differences wouldn’t work work. Unless I would create [a small script that normalizes the data](https://github.com/ctron/openshift-update-graph/blob/master/.github/workflows/expand.js). Running that as part of the update job isn’t complicated at all. And now the diff can check if the normalized data changed, and only act on that.
+So my plan of periodically fetching the data, and letting `git diff` check for differences wouldn’t work. Unless I would create [a small script that normalizes the data](https://github.com/ctron/openshift-update-graph/blob/master/.github/workflows/expand.js). Running that as part of the update job isn’t complicated at all. And now the diff can check if the normalized data changed, and only act on that.
 
 Why do I keep the non-normalized data? Yes, I could let the visualizer use the normalized data. However, I would like to use the original data format. In the hope that some day, I would be able to use the API endpoint directly.
 

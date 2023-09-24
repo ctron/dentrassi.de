@@ -1,6 +1,6 @@
 ---
 id: 714
-title: 'Test driving &#8220;Mattermost&#8221; at the Eclipse Foundation'
+title: 'Test driving "Mattermost" at the Eclipse Foundation'
 date: '2015-12-16T13:05:59+01:00'
 author: 'Jens Reimann'
 layout: post

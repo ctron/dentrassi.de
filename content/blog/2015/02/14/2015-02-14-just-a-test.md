@@ -1,6 +1,6 @@
 ---
 id: 518
-title: '&#x1f638; Just a Test'
+title: '😸 Just a Test'
 date: '2015-02-14T11:16:18+01:00'
 author: 'Jens Reimann'
 layout: post

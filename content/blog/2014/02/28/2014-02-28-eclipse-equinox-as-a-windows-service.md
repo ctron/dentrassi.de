@@ -30,7 +30,7 @@ Now comes the facepalm part: While the start method sure must have a signature o
 
 So it was necessary to wrap the call to EclipseStarter in a separate class and provide the correct method signatures:
 
-```
+```java
 @SuppressWarnings ( "restriction" )
 public class EclipseDaemon
 {
@@ -41,7 +41,6 @@ public class EclipseDaemon
         EclipseStarter.shutdown ();
     }
 }
-
 ```
 
 Since the EclipseStarter class marks itself as “internal” it necessary (or convenient) to use `@SuppressWarnings ( "restriction" )` for masking out the warnings.
@@ -59,7 +58,6 @@ prunsrv.exe //IS/MyService
   --StopMode jvm
   --StopClass org.eclipse.scada.utils.osgi.daemon.EclipseDaemon
   --StopMethod stop
-
 ```
 
 See also:

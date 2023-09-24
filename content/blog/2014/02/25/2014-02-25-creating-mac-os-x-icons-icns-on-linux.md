@@ -33,16 +33,16 @@ Create your icon files as “png” in multiple resolutions. If you are creating
 
 Ensure that you have the “png2icns” application installed. On Ubuntu it comes with the package “icnsutils”, which can simply be installed by executing:
 
-```
+```bash
 sudo apt-get install icnsutils
 ```
 
 Now call “png2icns”. As the man page suggest you need to provide all PNG files, that you want to be part of the icon, as argument. The first argument is the output filename. Also you can let the shell find the correct PNG file by using the wildcard (\*):
 
-```
+```bash
 png2icns icon.icns icon_*px.png
 ```
 
 Easy! ;-)
 
-PS: If anything goes wrong, “png2icns” will complain at the command line (e.g. due to some wrong resolution).
+PS: If anything goes wrong, `png2icns` will complain at the command line (e.g. due to some wrong resolution).

@@ -37,32 +37,27 @@ This blog post will focus on the changes, compared to the old blog post. As the 
 
 This is the first situation where you run into the changed API, getting the endpoints. Although the new code is not much different, the old will no longer work:
 
-```
-<pre class="wp-block-code">```
+```java
 List<EndpointDescription> endpoints =
   DiscoveryClient.getEndpoints("opc.tcp://localhost:4840")
     .get();
-```
 ```
 
 When you compare that to the old code, then you will notice that instead of an array, now a list is being used and the class name changed. Not too bad.
 
 Also, the way you create a new client instance with Milo 0.3.x is a bit different now:
 
-```
-<pre class="wp-block-code">```
+```java
 OpcUaClientConfigBuilder cfg = new OpcUaClientConfigBuilder();
 cfg.setEndpoint(endpoints[0]); // please do better, and not only pick the first entry
 
 OpcUaClient client = OpcUaClient.create(cfg.build());
 client.connect().get();
 ```
-```
 
 Using the static `create` method instead of the constructor allows for a bit more processing, before the class instance is actually created. Also may this new method throw an exception now. Handling this in an async way isn’t too hard when you are using Java 9+:
 
-```
-<pre class="wp-block-code">```
+```java
 public static CompletableFuture<OpcUaClient> createClient(String uri) {
   return DiscoveryClient
     .getEndpoints(uri) // look up endpoints from remote
@@ -76,7 +71,6 @@ public static CompletableFuture<OpcUaClient> createClient(String uri) {
       }
     });
 }
-```
 ```
 
 ## That’s it? That’s it!

@@ -42,7 +42,7 @@ This patch file and the docker build instructions are now located at a different
 
 There is a more detailed [README file](https://github.com/ctron/kura-emulator/blob/master/README.md) in the GitHub repository which explains how to use and build the emulator yourself. In a nutshell you can start it with:
 
-```
+```bash
 docker run -ti -p 8080:8080 ctron/kura-emulator
 ```
 
@@ -62,13 +62,19 @@ Apache Felix File Install to the rescue! In the past I created an [Apache Felix 
 
 So I pre-seeded the Kura docker image with the File Install DP and declared a volume mount, so that you can simply mount a path of the docker image onto your host system. Dropping a file into the directory on the host system will make it available to the docker container and File Install will automatically pick it up and start it, but inside the docker container.
 
-```
+```bash
 docker run -ti -p 8080:8080 -v c:/path/to/bundles:/opt/eclipse/kura/load ctron/kura-emulator
 ```
 
 And this even works with Docker for Windows, if you share your drive first:
 
-<figure aria-describedby="caption-attachment-3563" class="wp-caption aligncenter" id="attachment_3563" style="width: 852px">[![](https://dentrassi.de/wp-content/uploads/kura_docker_win_1.png)](https://dentrassi.de/wp-content/uploads/kura_docker_win_1.png)<figcaption class="wp-caption-text" id="caption-attachment-3563">Share drive with Docker</figcaption></figure>### Choose your tools
+<figure>
+
+[![](https://dentrassi.de/wp-content/uploads/kura_docker_win_1.png)](https://dentrassi.de/wp-content/uploads/kura_docker_win_1.png)
+
+<figcaption>Share drive with Docker</figcaption></figure>
+
+### Choose your tools
 
 Currently Kura requires you to use a rather complicated setup for developing applications for Kura. You will need to learn about Eclipse PDE, target platforms, Tycho for Maven and bunch of other things to get your Kura application developed, built and packaged.
 
@@ -94,6 +100,26 @@ So if you wanted, you could already use your favorite IDE and start developing K
 			}
 			/* see gallery_shortcode() in wp-includes/media.php */
 		</style><div class="gallery galleryid-3555 gallery-columns-3 gallery-size-thumbnail" id="gallery-3"><dl class="gallery-item"> <dt class="gallery-icon landscape"> [![](https://dentrassi.de/wp-content/uploads/kura_docker_win_2-150x150.png)](https://dentrassi.de/wp-content/uploads/kura_docker_win_2.png) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-3-3566"> Start docker container </dd></dl><dl class="gallery-item"> <dt class="gallery-icon landscape"> [![](https://dentrassi.de/wp-content/uploads/kura_docker_win_3-150x150.png)](https://dentrassi.de/wp-content/uploads/kura_docker_win_3.png) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-3-3567"> Deploy application </dd></dl><dl class="gallery-item"> <dt class="gallery-icon landscape"> [![](https://dentrassi.de/wp-content/uploads/kura_docker_win_4-150x150.png)](https://dentrassi.de/wp-content/uploads/kura_docker_win_4.png) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-3-3568"> Application is activated </dd></dl>  
- </div>### Summary
+ </div>
+
+<figure>
+
+![](https://dentrassi.de/wp-content/uploads/kura_docker_win_2.png)
+
+<figcaption>Start docker container</figcaption></figure>
+
+<figure>
+
+![](https://dentrassi.de/wp-content/uploads/kura_docker_win_3.png)
+
+<figcaption>Deploy application</figcaption></figure>
+
+<figure>
+
+![](https://dentrassi.de/wp-content/uploads/kura_docker_win_4.png)
+
+<figcaption>Application is activated</figcaption></figure>
+
+### Summary
 
 So yes, it is possible to use IntelliJ on Windows to develop and debug your Kura application, in a stylish fashion. Or you can simply do the same, just using an excellent IDE like Eclipse and an awesome operating system like Linux, with the same stylish approach ;-)

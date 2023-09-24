@@ -1,6 +1,6 @@
 ---
 id: 727
-title: 'Testing Diaspora &#8211; Part 3'
+title: 'Testing Diaspora – Part 3'
 date: '2015-12-31T17:26:21+01:00'
 author: 'Jens Reimann'
 layout: post

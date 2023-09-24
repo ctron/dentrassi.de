@@ -86,7 +86,7 @@ The routes configuration, which is the same for all entry points, is located in 
 
 Let’s have a quick look at the OSGi startup:
 
-```
+```java
 @Activate
 public void start(final BundleContext context) throws Exception {
   this.context = new OsgiDefaultCamelContext(context, SwaggerUi.createRegistry());
@@ -97,7 +97,6 @@ public void start(final BundleContext context) throws Exception {
   properties.put("camel.context.id", "camel.example.4");
   this.registration = context.registerService(CamelContext.class, this.context, properties);
 }
-
 ```
 
 Once the component is placed inside an OSGi container, the start method will be called and set up the Camel context. This is all pretty straightforward Camel code. As the last step, the Camel context will be registered with the OSGi service layer. Setting the service property `camel.context.id` in the process. This property is important, as we will, later on, use it to locate the Camel context from the Kura Wires graph by it.
@@ -106,27 +105,25 @@ Once the component is placed inside an OSGi container, the start method will be 
 
 The routes configuration is pretty simple Camel stuff. First, the REST DSL will be used to configure the REST API. For example, the “GET” operation to receive the currently active parameters:
 
-```
+```java
 …
   .get()
   .description("Get the current parameters")
   .outType(Parameters.class)
   .to("direct:getParameters")
 …
-
 ```
 
 This creates a get operation, which is being redirected to the internal “direct:getParameters” endpoint. Which is a way of forwarding that call to another Camel Route. This way Camel routes can be re-used from different callers.
 
 Like for example the `direct:updateParameters` route, which will be called by all routes which want to update the parameters, no matter if that call originated in the IEC 60870, the REST or the Kura Wires component:
 
-```
+```java
 from("direct:updateParameters")
   .routeId("updateParameters")
   .bean(this.state, "updateCurrentParameters")
   .multicast()
   .to("direct:update.wires", "direct:update.iec.p1", "direct:update.iec.p2").end();
-
 ```
 
 The route will forward the new parameters to the method `updateCurrentParameters` of the `State` class. This class is a plain Java class, holding the state and filling in `null` parameters with the current state. The result of this method will be forwarded to the other routes, for updating Kura Wires and the two parameters in the IEC 60870 data layer.
@@ -135,10 +132,9 @@ The route will forward the new parameters to the method `updateCurrentParameters
 
 If you have Java and Maven installed, then you can simply compile the package by running:
 
-```
+```bash
 cd camel/camel-example4
 mvn clean package
-
 ```
 
 This will compile, run the unit tests and create the `.dp` package in the folder `target`.
@@ -177,7 +173,6 @@ In the console of Kura you should see the following output:
 2018-09-17T13:35:49,589 […] INFO  o.e.k.i.w.l.Logger -     P1 : 3.0
 2018-09-17T13:35:49,589 […] INFO  o.e.k.i.w.l.Logger -     P2 : 2.0
 2018-09-17T13:35:49,589 […] INFO  o.e.k.i.w.l.Logger -
-
 ```
 
 This is the result of the “Logger” component from Kura Wires. Which did receive the new parameter updates from the Camel Context, as they got triggered through the Web UI. At the same time, the [IEC 60870 server](https://dentrassi.de/2017/02/17/iec-60870-5-104-with-apache-camel/) would update all clients being subscribed to those data items.

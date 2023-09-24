@@ -58,7 +58,7 @@ Traditionally OPC UA frameworks are split up in “stack” and “SDK”. The �
 Eclipse Milo offers both “stack” and “SDK” for both “client” and “server”. “core” is the common code shared between client and server. This should explain the module structure of Milo when doing a [search for “org.eclipse.milo” on Maven Central](https://search.maven.org/#search%7Cga%7C1%7Corg.eclipse.milo):
 
 ```
-<pre class="boxed">org.eclipse.milo : stack-core
+org.eclipse.milo : stack-core
 org.eclipse.milo : stack-client
 org.eclipse.milo : stack-server
 org.eclipse.milo : sdk-core
@@ -74,7 +74,7 @@ Focusing on the most common use case of OPC, data acquisition and command &amp; 
 
 The first step is to look up the “endpoint descriptors” from the remote server:
 
-```
+```java
 EndpointDescription[] endpoints =
   UaTcpStackClient.getEndpoints("opc.tcp://localhost:4840")
     .get();
@@ -84,18 +84,16 @@ The trailing `.get()` might have tipped you off that Milo makes use of Java 8 fu
 
 Normally the next step would be to pick the “best” endpoint descriptor. However “best” is relative and highly depends on your security and connectivity requirements. So we simply pick the first one:
 
-```
+```java
 OpcUaClientConfigBuilder cfg = new OpcUaClientConfigBuilder();
 cfg.setEndpoint(endpoints[0]);
-
 ```
 
 Next we will create and connect the OPC client instance based on this configuration. Of course the configuration offers a lot more options. Feel free to explore them all.
 
-```
+```java
 OpcUaClient client = new OpcUaClient(cfg.build());
 client.connect().get();
-
 ```
 
 ### Node IDs &amp; the namespace
@@ -104,18 +102,16 @@ OPC UA does identify its elements, objects, folders, items by using “Node IDs�
 
 The following examples will assume that a node ID has been parsed into variables like `nodeId`, which can be done by the following code with Milo:
 
-```
+```java
 NodeId nodeIdNumeric = NodeId.parse("ns=1;i=42");
 NodeId nodeIdString  = NodeId.parse("ns=1;s=foo-bar");
-
 ```
 
 Of course instances of “NodeId” can also be created using the different constructors. This approach is more performant than using the `parse` method.
 
-```
+```java
 NodeId nodeIdNumeric = new NodeId(1, 42);
 NodeId nodeIdString  = new NodeId(1, "foo-bar");
-
 ```
 
 The main reason behind using Node IDs is, that those can be efficiently encoded when they are transmitted. For example is it possible to lookup an item by a larger string based browse path and then only use the numeric Node ID for further interaction. Node IDs can also be efficiently encoded in the OPC UA binary protocol.
@@ -126,18 +122,17 @@ Additionally there is a set of “well known” node IDs. For example the root f
 
 After the connection has been established we will request a single read of a value. Normally OPC UA is used in an event driven manner, but we will start simple by using a single requested read:
 
-```
+```java
 DataValue value =
   client.readValue(0, TimestampsToReturn.Both, nodeId)
     .get();
-
 ```
 
 The first parameter, max age, lets the server know that we may be ok reading a value which is a bit older. This could reduce traffic to the underlying device/system. However using zero as a parameter we request a fresh update from the value source.
 
 The above call is actually a simplified version of a more complex read call. In OPC UA items do have attributes and there is a “main” attribute, the value. This call defaults to reading the “value” attribute. However it is possible to read all kinds of other attributes from the same item. The next snippet shows the more complex read call, which allows to not only read different attributes of the item, but also multiple items at the same time:
 
-```
+```java
 ReadValueId readValueId =
   new ReadValueId(nodeId, AttributeId.Value.uid(), null, null);
 
@@ -145,7 +140,6 @@ ReadResponse response =
   client
     .read(0, TimestampsToReturn.Both, Arrays.asList(readValueId))
       .get();
-
 ```
 
 Also for this read call we do request both, the server and source timestamp. OPC UA will timestamp values and so you know when the value switched to this reported value. But it is also possible that the device itself does the timestamping. Depending on your device and application, this can be a real benefit to your use case.
@@ -168,7 +162,7 @@ In order to achieve this in OPC UA the client will request a subscription from t
 
 The following code snippets will create a new subscription in Milo. The first step is to use the subscription manager and create a new subscription context:
 
-```
+```java
 // what to read
 ReadValueId readValueId =
     new ReadValueId(nodeId, AttributeId.Value.uid(), null, null);
@@ -181,14 +175,13 @@ MonitoringParameters parameters =
 // creation request
 MonitoredItemCreateRequest request =
     new MonitoredItemCreateRequest(readValueId, MonitoringMode.Reporting, parameters);
-
 ```
 
 The “client handle” is a client assigned identifier which allows the client to reference the subscribed item later on. If you don’t need to reference by client handle, simply set it so some random or incrementing number.
 
 The next step will define an initial setup callback and add the items to the subscription. The setup callback will ensure that the newly created subscription will be able to hook up listeners before the first values are received from the server side, without any race condition:
 
-```
+```java
 // The actual consumer
 
 BiConsumer<UaMonitoredItem, DataValue> consumer =
@@ -211,14 +204,13 @@ List<UaMonitoredItem> items = subscription.createMonitoredItems(
     Arrays.asList(request),
     onItemCreated)
   .get();
-
 ```
 
 ### Taking Control
 
 Of course consuming telemetry data is fun, but sometimes it is necessary to issue control commands as well. Issuing a command or setting a value on the target device is as easy as:
 
-```
+```java
 client
   .writeValue(nodeId, DataValue.valueOnly(new Variant(true)))
     .get();

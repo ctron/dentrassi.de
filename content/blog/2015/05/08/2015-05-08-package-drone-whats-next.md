@@ -1,6 +1,6 @@
 ---
 id: 537
-title: 'Package Drone &#8211; what&#8217;s next?!'
+title: "Package Drone – what' next?!"
 date: '2015-05-08T19:09:43+02:00'
 author: 'Jens Reimann'
 layout: post
@@ -23,7 +23,7 @@ tags:
 
 Every now and then there is some time for Package Drone. So let’s peek ahead what will happen in the next few weeks.
 
-First of all, there is the [Eclipse DemoCamp](http://packagedrone.org/2015/05/06/package-drone-eclipse-democamp-mars-2015-in-munich/) in Munich, at which Package Drone will he presented. So if you want to talk in person, come over and pay us a visit.
+First of all, there is the [Eclipse DemoCamp](http://packagedrone.org/2015/05/06/package-drone-eclipse-democamp-mars-2015-in-munich/) in Munich, at which Package Drone will be presented. So if you want to talk in person, come over and pay us a visit.
 
 <!-- more -->
 

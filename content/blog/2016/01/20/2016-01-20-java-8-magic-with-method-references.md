@@ -28,13 +28,13 @@ It all started with the problem of having a `Stream<T>` and wanting to “for-ea
 
 Now there are many solutions (good and bad) out there for this problem. However [one solution](http://codereview.stackexchange.com/questions/70469/streamiterable-create-an-iterable-from-a-java-8-stream#92424 "Solution #9242") really fascinated me:
 
-\[code language=”java”\]  
-Stream&lt;String&gt; s = …;
+```java
+Stream<String> s = …;
 
-for (String v : (Iterable&lt;String&gt;) s::iterator) {  
- …  
-}  
-\[/code\]
+for (String v : (Iterable<String>) s::iterator) {
+…
+}
+```
 
 Now wait … `Stream<T>` does have a method `iterator` which returns an `Iterator<T>`. But `Iterator<T>` cannot be cast to `Iterable<T>`! And also is “`s::iterator`” not calling the method, but referencing the method.
 
@@ -44,22 +44,22 @@ Pasting this code fragment into the Eclipse IDE helps to understand what actuall
 
 So, lets see how this code fragment get expanded to a lambda expression:
 
-\[code language=”java”\]  
-for ( final String v : (Iterable&lt;String&gt;)() -&gt; s.iterator () ) {  
- …  
-}  
-\[/code\]
+```java  
+for ( final String v : (Iterable<String>)() -> s.iterator () ) {
+…
+}
+```
 
 And this lambda expression is equivalent to:
 
-\[code language=”java”\]  
-for ( final String v : new Iterable&lt;String&gt; () {  
- public Iterator&lt;String&gt; iterator () {  
- return s.iterator ();  
- }} ) {  
- …  
-}  
-\[/code\]
+```java
+for ( final String v : new Iterable<String> () {
+  public Iterator<String> iterator () {
+    return s.iterator ();
+  }} ) {
+  …
+}
+```
 
 The last snippet is rather bloated, as inner classes have always been in Java.
 

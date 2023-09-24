@@ -33,32 +33,32 @@ But there is a better way thanks to the adapter framework. First of all your cla
 
 Now a typical implementation of this class in Java 5+ looked like this:
 
-\[code language=”Java”\]  
-public class MyAdapterFactory implements IAdapterFactory {  
- @SuppressWarnings ( "unchecked" )  
- @Override  
- public Object getAdapter (  
- final Object adaptableObject,  
- final Class adapterType ) {
+```java
+public class MyAdapterFactory implements IAdapterFactory {
+  @SuppressWarnings ("unchecked")
+  @Override
+  public Object getAdapter (
+    final Object adaptableObject,
+    final Class adapterType ) {
 
- if ( !(adaptableObject instanceof MyModelDocument) ) {  
- return null;  
- }
+    if ( !(adaptableObject instanceof MyModelDocument) ) {
+      return null;
+    }
 
- if ( IPropertySource.class.equals ( adapterType ) ) {  
- return new MyModelDocumentPropertySourceAdapter ( adaptableObject );  
- }
+    if ( IPropertySource.class.equals ( adapterType ) ) {
+      return new MyModelDocumentPropertySourceAdapter ( adaptableObject );
+    }
 
- return null;  
- }
+    return null;
+  }
 
- @SuppressWarnings ( "unchecked" )  
- @Override  
- public Class\[\] getAdapterList () {  
- return new Class\[\] { IPropertySource.class };  
- }  
-}  
-\[/code\]
+  @SuppressWarnings ( “unchecked” )
+  @Override
+  public Class[] getAdapterList () {
+    return new Class[] { IPropertySource.class };
+  }
+}
+```
 
 Of course the `@SuppressWarnings` for “unchecked” could be left out, but would trigger a bunch of warnings. The cause simply was that `IAdapterFactory` did not provide make use of Java 5 generics.
 
@@ -66,40 +66,41 @@ In a recent update of the Eclipse platform this interface has been extended to a
 
 Keep in mind that the type parameter `<T>` is a complete variable thing for the factory itself, since it will allow adapting to any kind if type some other class requests. So you actually will never be able to make a specific substitution for `<T>`. The return type of `getAdapter()` will change to `T`, which requires you to actually cast to `T`. Which can be done in two ways. Either by casting using:
 
-\[code language=”Java”\]  
-return (T)new MyModelDocumentPropertySourceAdapter ( adaptableObject );  
-\[/code\]
+```java  
+return (T)new MyModelDocumentPropertySourceAdapter ( adaptableObject );
+```
 
 Which will trigger the next warning right away. Since there is no way to actually do the cast. Type erasure will kill the type information during runtime! The way to work around this has always been in Java to actually pass the type in such situations. Like a `TypedQuery` in JPA, the `IAdapterFactory` already has the type information as a parameter an so you can a programmatic cast instead:
 
-\[code language=”Java”\]  
-return adapterType.cast ( new MyModelDocumentPropertySourceAdapter ( adaptableObject ) );  
-\[/code\]
+```java  
+return adapterType.cast ( new MyModelDocumentPropertySourceAdapter ( adaptableObject ) );
+```
 
 So the full code would look like:  
-\[code language=”Java”\]  
-public class MyAdapterFactory implements IAdapterFactory {  
- @Override  
- public &lt;T&gt; T getAdapter (  
- final Object adaptableObject,  
- final Class&lt;T&gt; adapterType ) {
 
- if ( !(adaptableObject instanceof MyModelDocument) ) {  
- return null;  
- }
+```java  
+public class MyAdapterFactory implements IAdapterFactory {
+  @Override
+  public <T> T getAdapter (
+    final Object adaptableObject,
+    final Class<T> adapterType ) {
 
- if ( IPropertySource.class.equals ( adapterType ) ) {  
- return adapterType.cast (  
- new MyModelDocumentPropertySourceAdapter ( adaptableObject )  
- );  
- }
+    if ( !(adaptableObject instanceof MyModelDocument) ) {
+      return null;
+    }
 
- return null;  
- }
+    if ( IPropertySource.class.equals ( adapterType ) ) {
+      return adapterType.cast (
+        new MyModelDocumentPropertySourceAdapter ( adaptableObject )
+      );
+    }
 
- @Override  
- public Class&lt;?&gt;\[\] getAdapterList () {  
- return new Class&lt;?&gt;\[\] { IPropertySource.class };  
- }  
-}  
-\[/code\]
+  return null;
+}
+
+  @Override
+  public Class<?>[] getAdapterList () {
+    return new Class<?>[] { IPropertySource.class };
+  }
+}
+```

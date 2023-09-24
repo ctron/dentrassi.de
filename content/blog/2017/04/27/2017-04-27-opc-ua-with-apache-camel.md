@@ -39,10 +39,15 @@ The Camel Milo component offers both an OPC UA client (`milo-client`) and server
 
 The following Camel example is based on Camel Blueprint and provides some random data over OPC UA, acting as a server:
 
-<figure aria-describedby="caption-attachment-3598" class="wp-caption left" id="attachment_3598" style="width: 259px">[![Example project layout](https://dentrassi.de/wp-content/uploads/camel_milo_ex_prj_1.png)](https://dentrassi.de/wp-content/uploads/camel_milo_ex_prj_1.png)<figcaption class="wp-caption-text" id="caption-attachment-3598">Example project layout</figcaption></figure>The blueprint configuration would be:
+<figure>
 
-```
-<pre title="milo.xml">```
+[![Example project layout](https://dentrassi.de/wp-content/uploads/camel_milo_ex_prj_1.png)](https://dentrassi.de/wp-content/uploads/camel_milo_ex_prj_1.png)
+
+<figcaption class="wp-caption-text" id="caption-attachment-3598">Example project layout</figcaption></figure>
+
+The blueprint configuration would be:
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -68,11 +73,10 @@ The following Camel example is based on Camel Blueprint and provides some random
 
 </blueprint>
 ```
-```
 
 And adding the following Maven build configuration:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -128,7 +132,7 @@ And adding the following Maven build configuration:
 
 This allows you to simply run the OPC UA server with:
 
-```
+```bash
 mvn package camel:run
 ```
 
@@ -139,8 +143,7 @@ Afterwards you can connect with the OPC UA client of your choice and subscribe t
 As this is currently the release candidate of Camel 2.19.0, it is necessary to add the release candidate Maven repository to the `pom.xml`. I did omit  
 this in the example above, as this will no longer be necessary when Camel 2.19.0 is released:
 
-```
-<pre class="tab-convert:true tab-size:2 lang:xhtml mark:4,11 decode:true ">```
+```xml
 <repositories>
 		<repository>
 			<id>camel</id>
@@ -154,7 +157,6 @@ this in the example above, as this will no longer be necessary when Camel 2.19.0
 			<url>https://repository.apache.org/content/repositories/orgapachecamel-1073/</url>
 		</pluginRepository>
 	</pluginRepositories>
-```
 ```
 
 It may also be that the URLs (marked above) will change as a new release candidate gets built. In this case it is necessary that you update the URLs to the appropriate  

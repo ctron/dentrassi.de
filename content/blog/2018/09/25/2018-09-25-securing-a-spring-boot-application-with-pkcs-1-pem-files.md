@@ -43,7 +43,6 @@ server.ssl.key-store-type=PKCS12
 server.ssl.key-store-password=secret
 server.ssl.key-alias=server
 server.ssl.key-password=secret
-
 ```
 
 But most of the tutorial actually is about converting from PKCS #1 PEM files to PKCS #12. Because all that Java can directly process is PKCS #12 or its own JKS format.
@@ -58,7 +57,6 @@ server.ssl.key-store=/path/to/keystore.properties
 server.ssl.key-store-type=PEMCFG
 server.ssl.key-store-password=dummy
 server.ssl.key-alias=keycert
-
 ```
 
 And then you create the file `keystore.properties`:
@@ -67,12 +65,11 @@ And then you create the file `keystore.properties`:
 alias=keycert
 source.cert=/etc/…/fullchain.pem
 source.key=/etc/…/privkey.pem
-
 ```
 
 Now you need to make the Java security system aware of the `PEMCFG` KeyStore provider. Gladly Java doesn’t easily allow to tamper with the security sub-system. So this needs to be an explicit action. In some way, you have to manually register the provider with Java. With Spring Boot the easiest option is in the main application entry-point:
 
-```
+```java
 import de.dentrassi.crypto.pem.PemKeyStoreProvider;
 
 …
@@ -88,7 +85,7 @@ public static void main(final String[] args) throws Exception {
 
 This also works with the OpenShift Service CA. Assuming you mapped the TLS secret to `/etc/tls`, you could use the following `application.yaml` file for Spring Boot:
 
-```
+```yaml
 server:
   port: 8443
   ssl:
@@ -99,7 +96,6 @@ server:
 
 security:
   require-ssl: true
-
 ```
 
 And the following “keystore.properties” file, which you put in your JAR:
@@ -108,5 +104,4 @@ And the following “keystore.properties” file, which you put in your JAR:
 alias=keycert
 source.key=/etc/tls/tls.key
 source.cert=/etc/tls/tls.crt
-
 ```

@@ -21,6 +21,7 @@ tags:
 
 Here is a short video showing how [package drone](http://dentrassi.de/my-projects/package-drone/ "Package Drone") works.
 
-<iframe allowfullscreen="" frameborder="0" height="360" loading="lazy" src="//www.youtube.com/embed/kUJ5SWfAuxU?rel=0" width="640"></iframe>
-
 <!-- more -->
+
+<iframe allowfullscreen="" frameborder="0" height="360" loading="lazy" src="https://www.youtube.com/embed/kUJ5SWfAuxU?rel=0" width="640"></iframe>
+

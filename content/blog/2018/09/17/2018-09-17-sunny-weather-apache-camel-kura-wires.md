@@ -44,7 +44,7 @@ In addition to the installation of the package, you will also need to create an 
 
 Next, create a new Camel context, like before, and give it the ID “camel2”. Add the required component `weather`, the required language `groovy` and set the following XML router content (be sure to replace &lt;appid&gt; with your API token):
 
-```
+```xml
 <routes xmlns="http://camel.apache.org/schema/spring">
 
   <route>
@@ -64,7 +64,6 @@ Next, create a new Camel context, like before, and give it the ID “camel2”. 
   </route>
 
 </routes>
-
 ```
 
 After applying the changes, you can create two new components in the Wire graph:
@@ -97,7 +96,6 @@ As soon as you apply the changes, you should see some output on the console, whi
 {"coord":{"lon":11.58,"lat":48.14},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"stations","main":{"temp":297.72,"pressure":1021,"humidity":53,"temp_min":295.15,"temp_max":299.15},"visibility":10000,"wind":{"speed":1.5},"clouds":{"all":20},"dt":1537190400,"sys":{"type":1,"id":4914,"message":0.0022,"country":"DE","sunrise":1537160035,"sunset":1537204873},"id":2867714,"name":"Muenchen","cod":200}
 297.72
 {TEMP=24.57000000000005}
-
 ```
 
 Every change, which should happen every second, shows three lines. First the raw JSON data, directly from the Open Weather Map API. Then the raw temperature in degree Kelvin, parsed by Camel and converted into a Java type already. Followed by the custom Map structure, created by the Groovy script. The beauty here is again, that you don’t need to fiddle around with custom data structures of the Kura Wires system, but can rely on standard data structures likes plain Java maps.
@@ -110,7 +108,6 @@ Looking at the Kura log file, which is by default `/var/log/kura.log`, you shoul
 2018-09-17T13:57:10,118 [Camel (camel-15) thread #31 - seda://output1] INFO  o.e.k.i.w.l.Logger -   Record content:
 2018-09-17T13:57:10,118 [Camel (camel-15) thread #31 - seda://output1] INFO  o.e.k.i.w.l.Logger -     TEMP : 24.57000000000005
 2018-09-17T13:57:10,118 [Camel (camel-15) thread #31 - seda://output1] INFO  o.e.k.i.w.l.Logger -
-
 ```
 
 This shows the same value, as processed by the Camel context but received by Kura Wires.

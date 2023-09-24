@@ -28,21 +28,26 @@ I was not able to synchronize the “Sent” folder. Since the “Sent” folder
 
 Converting e-mails takes some time and for some users the process just stopped with a timeout message like this:
 
-`Could not fetch message #123 from MyFolder timeout waiting 600s for data from server`
+
+```
+Could not fetch message #123 from MyFolder timeout waiting 600s for data from server
+```
 
 Re-running the task continued with the messages that were not converted up to now (thanks to imapsync) but immediately stopped at the first message with the same timeout. Looking on the domino server side I noticed that the “imap” process was idling at 0% CPU load, which is strange since it normally takes up to 200% when converting messages.
 
-Running “imapsync” the flags –debug and –debugimap showed a strange response in the protocol stream at the end of attachments:
+Running `imapsync` the flags –debug and –debugimap showed a strange response in the protocol stream at the end of attachments:
 
 While the normal response seem to be something like:
 
-`10 OK FETCH completed`
+```
+10 OK FETCH completed
+```
 
 in these cases the response was:
 
 `10 O   K FETCH completed` (or something similar).
 
-Which was not interpreted by “imapsync” as response and kept it waiting until it timed out.
+Which was not interpreted by `imapsync` as response and kept it waiting until it timed out.
 
 Scrolling up in the log file a little bit showed the message that caused the problem and fiddling around with the message a little bit provided a workaround that helped.
 
@@ -54,7 +59,17 @@ Bye bye Notes!
 
 PS: I used the following parameters with imapsync:
 
-`imapsync --host1 domino.mydomain.com --user1 "Ford Prefect" --passfile1 passfile1 --ssl1 --authmech1 PLAIN --host2 localhost --user2 ford.prefect@mydomain.com --passfile2 passfile2 --ssl2 --authmech2 PLAIN --skipsize  --nofoldersizes  --regextrans2 "s/\\\\/\\./g"  --useheader Subject --useheader Date  --allowsizemismatch --skipsize  --regextrans2 "s/\\//_/g" --include "^Folder Prefix"`
+```bash
+imapsync --host1 domino.mydomain.com \
+  --user1 "Ford Prefect" --passfile1 passfile1 \
+  --ssl1 --authmech1 PLAIN --host2 localhost \
+  --user2 ford.prefect@mydomain.com --passfile2 passfile2 \
+  --ssl2 --authmech2 PLAIN --skipsize  \
+  --nofoldersizes  --regextrans2 "s/\\\\/\\./g"  \
+  --useheader Subject --useheader Date  \
+  --allowsizemismatch --skipsize  \
+  --regextrans2 "s/\\//_/g" --include "^Folder Prefix"
+```
 
 `--useheader Date --useheader Subject` : was necessary since Notes seemed to change the message IDs, which caused duplicate messages each time imapsync was run. These two arguments limited the equality of messages to Subject and Date, which was OK for me.
 

@@ -45,7 +45,13 @@ Open up the Kura Web UI, navigate to “Packages” and select “Install/Update
 
 **Note:**  As an alternative you can also download the “dp” package with your desktop browser and deploy the file using the “file” upload instead of “URL”.
 
-<figure aria-describedby="caption-attachment-932" class="wp-caption aligncenter" id="attachment_932" style="width: 607px">[![Adding packages to Kura](https://dentrassi.de/wp-content/uploads/kura_add_package.png)](https://dentrassi.de/wp-content/uploads/kura_add_package.png)<figcaption class="wp-caption-text" id="caption-attachment-932">Adding packages to Kura</figcaption></figure>The installation may take a bit and it may be necessary to press the “Refresh” button in order to see the installed package. After the packages was installed you should be able to see the service “Camel example publisher” on the left side.
+<figure>
+
+![Adding packages to Kura](https://dentrassi.de/wp-content/uploads/kura_add_package.png)
+
+<figcaption>Adding packages to Kura</figcaption></figure>
+
+The installation may take a bit and it may be necessary to press the “Refresh” button in order to see the installed package. After the packages was installed you should be able to see the service “Camel example publisher” on the left side.
 
 Now we need to install the “Milo component for Camel”. Press “Install/Update” again and enter the following URL:
 
@@ -65,7 +71,7 @@ After the instance has been created select it and configure it with the followin
 
 Router XML:
 
-```
+```xml
 <routes xmlns="http://camel.apache.org/schema/spring">
     <route id="opc-ua-example">
        <from uri="vm:camel:example"/>
@@ -85,13 +91,19 @@ Router XML:
 
 Initialzation Code:
 
-```
+```java
 var milo = new org.apache.camel.component.milo.server.MiloServerComponent();
 milo.setEnableAnonymousAuthentication(true);
 camelContext.addComponent("my-milo", milo);
 ```
 
-<figure aria-describedby="caption-attachment-933" class="wp-caption aligncenter" id="attachment_933" style="width: 1123px">[![Screenshot of cloud service configuration](https://dentrassi.de/wp-content/uploads/kura_opcua_cs.png)](https://dentrassi.de/wp-content/uploads/kura_opcua_cs.png)<figcaption class="wp-caption-text" id="caption-attachment-933">OPC UA configuration</figcaption></figure>#### Assigning the cloud service
+<figure>
+
+![Screenshot of cloud service configuration](https://dentrassi.de/wp-content/uploads/kura_opcua_cs.png)
+
+<figcaption>OPC UA configuration</figcaption></figure>
+
+#### Assigning the cloud service
 
 Now we need to configure the example publisher to actually use our new cloud service instance. Select “Camel example publisher” from the left navigation bar and enter “opcua” (or whatever PID you used before) as “Cloud Service PID”. Apply the changes.
 
@@ -108,25 +120,23 @@ Now you can connect to your device using any OPC UA explorer to the URI: `opc.tc
 
 I am using Android and the [“ProSYS OPC UA Client”](https://play.google.com/store/apps/details?id=com.prosysopc.ua.android2)
 
- <style>
-			#gallery-2 {
-				margin: auto;
-			}
-			#gallery-2 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-2 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-2 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		</style><div class="gallery galleryid-905 gallery-columns-2 gallery-size-thumbnail" id="gallery-2"><dl class="gallery-item"> <dt class="gallery-icon landscape"> [![Screenshot of OPC UA client](https://dentrassi.de/wp-content/uploads/kura_milo_browse-150x150.png)](https://dentrassi.de/wp-content/uploads/kura_milo_browse.png) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-2-926"> Screenshot of OPC UA client browsing </dd></dl><dl class="gallery-item"> <dt class="gallery-icon landscape"> [![Screenshot of OPC UA client](https://dentrassi.de/wp-content/uploads/kura_milo_monitor-150x150.png)](https://dentrassi.de/wp-content/uploads/kura_milo_monitor.png) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-2-927"> Screenshot of OPC UA client browsing </dd></dl>  
- </div>#### Summing it up
+<div class="d-flex">
+
+<figure>
+
+![Screenshot of OPC UA client](https://dentrassi.de/wp-content/uploads/kura_milo_browse.png)
+
+<figcaption>Screenshot of OPC UA client browsing</figcaption></figure>
+
+<figure>
+
+![Screenshot of OPC UA client](https://dentrassi.de/wp-content/uploads/kura_milo_monitor.png)
+
+<figcaption>Screenshot of OPC UA client browsing</figcaption></figure>
+
+</div>
+
+#### Summing it up
 
 This tutorial uses a SNAPSHOT version of Eclipse Milo. Simply due to the fact that no version of Milo is released just yet. This should change in the following weeks and my play is to update the blog post once it is available. However the functionality of Milo will not change and using the Camel component, most internals of Milo are hidden anyway.
 

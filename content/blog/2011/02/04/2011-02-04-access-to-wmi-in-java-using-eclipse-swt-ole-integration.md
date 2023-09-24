@@ -29,7 +29,7 @@ Today I ran into a problem which could easily solved using a short WMI query. Th
 
 After some digging I remembered that SWT brings an OLE interface which provides direct COM access. So I started poking around and finally come up with a solution that works quite well.
 
-[![](https://dentrassi.de/wp-content/uploads/wmisample-150x150.png "wmisample")](https://dentrassi.de/wp-content/uploads/wmisample.png) For the impatient: The full source code is available from github <https://github.com/ctron/wmisample> and the screenshot is here.
+![](/wp-content/uploads/wmisample.png "wmisample") For the impatient: The full source code is available from github <https://github.com/ctron/wmisample> and the screenshot is here.
 
 The solution requires: win32 or win64, SWT and some classes from the SWT internal namespace. The latter is a catch that does not hurt too much.
 
@@ -53,7 +53,6 @@ Variant resultList = serviceAutomation.invoke(
       new Variant(query),
       new Variant("WQL"),
       new Variant(32) });
-
 ```
 
 The Helper.getId method fetches the dispatch id (function number) from the name of the function. So instead of calling a function by name you call it by id and look up the id by the name first:
@@ -128,9 +127,9 @@ try {
 
 First a new Variant structure is allocated (again, this is OS memory allocation, not JVM!). Next the while loop iterates over the enumeration using Next calls and passes the variants to the visitor interface. The try-finally block ensures that when something goes wrong, at least the memory is freed in order to prevent memory leaks.
 
-Actually is was asking myself why this IEnumVARIANT implementation does not perform the full magic and provides a way to access enums without using internal stuff. But I guess the SWT team has not too much interest in working on OLE/COM stuff and likes to keeps things as minimalistic as possible.
+Actually is was asking myself why this IEnumVARIANT implementation does not perform the full magic and provides a way to access enums without using internal stuff. But I guess the SWT team has not too much interest in working on OLE/COM stuff and likes to keep things as minimalistic as possible.
 
-As last step the while executeQuery method iterates over the <q>SWbemObjectSet</q> enumeration which returns Variants (VT\_DISPATCH) pointing to instances of <q>SWbemObject</q>. They again have a property <q>Properties\_</q> that, which again is an enumeration of <q>Name</q> and <q>Value</q> pairs. The one needs to iterate again in order to request all properties.
+As last step the while executeQuery method iterates over the <q>SWbemObjectSet</q> enumeration which returns Variants (`VT_DISPATCH`) pointing to instances of <q>SWbemObject</q>. They again have a property <q>Properties\_</q> that, which again is an enumeration of <q>Name</q> and <q>Value</q> pairs. The one needs to iterate again in order to request all properties.
 
 it was quite interesting to see what is possible with Eclipse SWT and quite annoying to dig through incomplete COM documentation. But in the end it worked :)
 
@@ -138,7 +137,7 @@ Don’t forget to check the full source code at github: <https://github.com/ctro
 
 Just clone (aka check out) the source:
 
-```shell
+```bash
 git clone git://github.com/ctron/wmisample.git wmisample.git
 ```
 
@@ -147,102 +146,101 @@ If you don’t like to use git, you can also use the “Downloads” button on g
 The full forEach method is:
 
 ```java
-public static int forEachVariant(Variant enumerable,
-			VariantVisitor variantVisitor) {
-		OleAutomation enumerableAuto = enumerable.getAutomation();
+public static int forEachVariant(Variant enumerable, VariantVisitor variantVisitor) {
+    OleAutomation enumerableAuto = enumerable.getAutomation();
 
-		try {
-			Variant enumObject = enumerableAuto.getProperty(Helper.getId(
-					enumerableAuto, "_NewEnum"));
+    try {
+        Variant enumObject = enumerableAuto.getProperty(Helper.getId(
+           enumerableAuto, "_NewEnum"));
 
-			long /* int */[] ppvObject = new long /* int */[1];
-			int rc = enumObject.getUnknown().QueryInterface(
-					COM.IIDIEnumVARIANT, ppvObject);
+        long /* int */[] ppvObject = new long /* int */[1];
+        int rc = enumObject.getUnknown().QueryInterface(
+            COM.IIDIEnumVARIANT, ppvObject);
 
-			if (rc != OS.S_OK)
-				return rc;
+        if (rc != OS.S_OK)
+            return rc;
 
-			IEnumVARIANT enumVariant = new IEnumVARIANT(ppvObject[0]);
+        IEnumVARIANT enumVariant = new IEnumVARIANT(ppvObject[0]);
 
-			try {
-				enumVariant.Reset();
+        try {
+            enumVariant.Reset();
 
-				int[] pceltFetched = new int[1];
+            int[] pceltFetched = new int[1];
 
-				long rgelt = OS.GlobalAlloc(OS.GMEM_FIXED | OS.GMEM_ZEROINIT,
-						Variant.sizeof);
+            long rgelt = OS.GlobalAlloc(OS.GMEM_FIXED | OS.GMEM_ZEROINIT,
+                    Variant.sizeof);
 
-				try {
-					while (enumVariant.Next(1, rgelt, pceltFetched) == OLE.S_OK
-							&& pceltFetched[0] == 1) {
-						Variant v = Variant.win32_new(rgelt);
-						variantVisitor.visit(v);
-					}
-				} finally {
-					OS.GlobalFree(rgelt);
-				}
-			} finally {
-				enumVariant.Release();
-			}
+            try {
+                while (enumVariant.Next(1, rgelt, pceltFetched) == OLE.S_OK
+                        && pceltFetched[0] == 1) {
+                    Variant v = Variant.win32_new(rgelt);
+                    variantVisitor.visit(v);
+                }
+            } finally {
+                OS.GlobalFree(rgelt);
+            }
+        } finally {
+            enumVariant.Release();
+        }
 
-			return OLE.S_OK;
+        return OLE.S_OK;
 
-		} finally {
-			enumerableAuto.dispose();
-		}
-	}
+    } finally {
+        enumerableAuto.dispose();
+    }
+}
 ```
 
 And the full query logic method is:
 
 ```java
 public List<WMIObjectInformation> executeQuery(String query) {
-		OleAutomation serviceAutomation = service.getAutomation();
-		try {
-			final List<WMIObjectInformation> result = new LinkedList<WMIObjectInformation>();
+    OleAutomation serviceAutomation = service.getAutomation();
+    try {
+        final List<WMIObjectInformation> result = new LinkedList<WMIObjectInformation>();
 
-			Variant resultList = serviceAutomation.invoke(
-					Helper.getId(serviceAutomation, "ExecQuery"),
-					new Variant[] { new Variant(query), new Variant("WQL"),
-							new Variant(32) });
+        Variant resultList = serviceAutomation.invoke(
+                Helper.getId(serviceAutomation, "ExecQuery"),
+                new Variant[] { new Variant(query), new Variant("WQL"),
+                        new Variant(32) });
 
-			if (resultList == null) {
-				throw new RuntimeException(serviceAutomation.getLastError());
-			}
+        if (resultList == null) {
+            throw new RuntimeException(serviceAutomation.getLastError());
+        }
 
-			Helper.forEachVariant(resultList, new VariantVisitor() {
+        Helper.forEachVariant(resultList, new VariantVisitor() {
 
-				@Override
-				public void visit(Variant variant) {
+            @Override
+            public void visit(Variant variant) {
 
-					final Map<String, Object> params = new HashMap<String, Object>();
+                final Map<String, Object> params = new HashMap<String, Object>();
 
-					Variant properties = Helper.getParameter(variant,
-							"Properties_");
+                Variant properties = Helper.getParameter(variant,
+                        "Properties_");
 
-					Helper.forEachVariant(properties, new VariantVisitor() {
+                Helper.forEachVariant(properties, new VariantVisitor() {
 
-						@Override
-						public void visit(Variant variant) {
+                    @Override
+                    public void visit(Variant variant) {
 
-							Variant name = Helper.getParameter(variant, "Name");
-							Variant value = Helper.getParameter(variant,
-									"Value");
-							Object objectValue = Helper.convertVariant(value);
+                        Variant name = Helper.getParameter(variant, "Name");
+                        Variant value = Helper.getParameter(variant,
+                                "Value");
+                        Object objectValue = Helper.convertVariant(value);
 
-							params.put(name.getString(), objectValue);
-						}
-					});
+                        params.put(name.getString(), objectValue);
+                    }
+                });
 
-					result.add(new WMIObjectInformation(Helper.getParameter(
-							Helper.getParameter(variant, "Path_"), "Path")
-							.getString(), params));
-				}
-			});
+                result.add(new WMIObjectInformation(Helper.getParameter(
+                        Helper.getParameter(variant, "Path_"), "Path")
+                        .getString(), params));
+            }
+        });
 
-			return result;
-		} finally {
-			serviceAutomation.dispose();
-		}
-	}
+        return result;
+    } finally {
+        serviceAutomation.dispose();
+    }
+}
 ```

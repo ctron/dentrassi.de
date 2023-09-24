@@ -47,7 +47,13 @@ One of the biggest problems, and not only when you are a newcomer to Eclipse IoT
 
 So we tried to find a format on how to bring this all together, and also motivate projects to actively contribute to that format. A single person cannot know and understand how all those different projects work together, but the committers on each project know their projects and existing integration points best. And they can also easily point you to the necessary documentation. The result, that resonated quite well with people is a simple, interactive map of the integrated projects:
 
-<figure class="wp-block-image is-resized">[![](https://dentrassi.de/wp-content/uploads/Selection_583.png)](https://ctron.github.io/eclipse-iot-integration-map/)<figcaption>Eclipse IoT integration map – <https://ctron.github.io/eclipse-iot-integration-map/></figcaption></figure>This map represents a condensed view on the current state of [Eclipse IoT integration](https://ctron.github.io/eclipse-iot-integration-map/), to the best of my knowledge. But please fix that latter part, by using the “[Fork me!](https://github.com/ctron/eclipse-iot-integration-map)” button. Adding a new project to that map is only one pull request away. And if you are new to Eclipse IoT, then go ahead and explore the map.
+<figure>
+
+[![](https://dentrassi.de/wp-content/uploads/Selection_583.png)](https://ctron.github.io/eclipse-iot-integration-map/)
+
+<figcaption>Eclipse IoT integration map – <a href="https://ctron.github.io/eclipse-iot-integration-map/">https://ctron.github.io/eclipse-iot-integration-map/</a></figcaption></figure>
+
+This map represents a condensed view on the current state of [Eclipse IoT integration](https://ctron.github.io/eclipse-iot-integration-map/), to the best of my knowledge. But please fix that latter part, by using the “[Fork me!](https://github.com/ctron/eclipse-iot-integration-map)” button. Adding a new project to that map is only one pull request away. And if you are new to Eclipse IoT, then go ahead and explore the map.
 
 ### Get started quickly
 

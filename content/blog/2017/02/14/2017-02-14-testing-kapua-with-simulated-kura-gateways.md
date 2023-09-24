@@ -31,12 +31,17 @@ Now you got your pretty new OpenShift setup of Eclipse Kapua and want to give yo
 
 In order to provide some automatic testing for Kapua I started working on a simulator framework which does simulate Kura instances completely in Java. No backend needed, no hardware needed, able to run multiple instances in a single JVM. And all hosted on GitHub at [ctron/kura-simulator](https://github.com/ctron/kura-simulator).
 
-<figure aria-describedby="caption-attachment-3531" class="wp-caption aligncenter" id="attachment_3531" style="width: 840px">[![A screenshot of Kura simulator instances in Kapua](https://dentrassi.de/wp-content/uploads/kapua_sim_1-1024x630.png)](https://dentrassi.de/wp-content/uploads/kapua_sim_1.png)<figcaption class="wp-caption-text" id="caption-attachment-3531">Kura simulator instances in Kapua</figcaption></figure>The basic idea was to create a set of classes which can be used in automated unit tests in order to simulate a Kura gateway, but allow for a finer grained control over it for testing the good, the bad and the ugly. A real Kura instance would of course be a more realistic test partner, but then again this would have quite a few drawbacks. First of all, Kura cannot be embedded into a unit or integration test. It has far too many dependencies to directory structures, command line utilities, native libraries and it would also require an OSGi container to be started. Second, Kura would always behave like Kura. Now for some tests this may be fine, but if you want to test corner cases where the gateway responds in a way which is not expected by Kapua, then this cannot be done with Kura.
+<figure>
+
+![A screenshot of Kura simulator instances in Kapua](https://dentrassi.de/wp-content/uploads/kapua_sim_1.png)
+
+<figcaption >Kura simulator instances in Kapua</figcaption></figure>
+
+The basic idea was to create a set of classes which can be used in automated unit tests in order to simulate a Kura gateway, but allow for a finer grained control over it for testing the good, the bad and the ugly. A real Kura instance would of course be a more realistic test partner, but then again this would have quite a few drawbacks. First of all, Kura cannot be embedded into a unit or integration test. It has far too many dependencies to directory structures, command line utilities, native libraries and it would also require an OSGi container to be started. Second, Kura would always behave like Kura. Now for some tests this may be fine, but if you want to test corner cases where the gateway responds in a way which is not expected by Kapua, then this cannot be done with Kura.
 
 So running a single Kura simulator can be as easy as:
 
-```
-<pre class="lang:java decode:true ">
+```java
 ScheduledExecutorService downloadExecutor = 
    Executors.newSingleThreadScheduledExecutor(new NameThreadFactory("DownloadSimulator"));
 

@@ -48,17 +48,17 @@ Looking at the [source code of the test case](https://github.com/eclipse/package
 
 The following example shows how to extract metadata and content from an RPM file.
 
-\[code language=”java”\]  
+```java
 try(RpmInputStream in = new RpmInputStream(new FileInputStream("file.rpm"))) {  
  String name = (String)in.getPayloadHeader ().getTag (RpmTag.NAME);
 
- CpioArchiveInputStream cpio = in.getCpioStream ();  
- CpioArchiveEntry entry;  
- while ((entry = cpio.getNextCPIOEntry ()) != null) {  
- process ( entry );  
- }  
-}  
-\[/code\]
+ CpioArchiveInputStream cpio = in.getCpioStream ();
+ CpioArchiveEntry entry;
+ while ((entry = cpio.getNextCPIOEntry ()) != null) {
+   process ( entry );  
+ }
+}
+```
 
 There is also the [older JavaDoc](http://doc.packagedrone.org/javadoc/de/dentrassi/rpm/package-summary.html), which has to be updated to reflect the change to `org.eclipse.packagedrone`.
 

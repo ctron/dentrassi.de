@@ -82,7 +82,7 @@ As already described, OpenShift supports different build types to create new ima
 
 That way, for Hono you can simply reuse this existing S2I image in a build template like:
 
-```
+```yaml
 source:
   type: Git
   git:
@@ -101,7 +101,6 @@ strategy:
         value: "services/messaging/target"
       - name: ARTIFACT_COPY_ARGS
         value: "*-exec.jar"
-
 ```
 
 This simple template allows you to reuse the complete existing Hono source code repository and build system. And yet you can start making modifications using custom base images or changes in Git right away.

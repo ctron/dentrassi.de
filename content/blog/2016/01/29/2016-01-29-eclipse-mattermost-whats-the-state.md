@@ -1,6 +1,6 @@
 ---
 id: 753
-title: 'Eclipse Mattermost &#8211; What&#8217;s the state?!'
+title: "Eclipse Mattermost – What's the state?!"
 date: '2016-01-29T16:47:40+01:00'
 author: 'Jens Reimann'
 layout: post

@@ -31,8 +31,8 @@ Sometimes you write something and then you nearly forget that you did it … alt
 
 I just wanted to publish some random data from [Kura](https://eclipse.org/kura) to [Kapua](https://eclipse.org/kapua), without the need to code, deploy or build anything. Camel came to the rescue:
 
-```
-<pre class="lang:xhtml mark:5 decode:true "><routes xmlns="http://camel.apache.org/schema/spring">
+```xml
+<routes xmlns="http://camel.apache.org/schema/spring">
   <route id="route1">
 
     <from uri="timer:1"/>

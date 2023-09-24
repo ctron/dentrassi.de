@@ -26,10 +26,8 @@ When you want to containerize your Rust application, you might be using a prepar
 
 Getting `cargo`, the Rust build tool, into the image is probably one of the first tasks in your `Dockerfile`. And it is rather easy on an interactive command line:
 
-```
-<pre class="wp-block-code">```
+```bash
 curl https://sh.rustup.rs -sSf | sh
-```
 ```
 
 ## Automated container build
@@ -37,7 +35,6 @@ curl https://sh.rustup.rs -sSf | sh
 However, running inside a container build, you will be greeted by the nice little helper script, asking you for some input:
 
 ```
-<pre class="wp-block-code">```
 Current installation options:
 
 
@@ -51,7 +48,6 @@ Current installation options:
 3) Cancel installation
 >
 ```
-```
 
 In a terminal window this is no problem. But in an automated build, you want the script to proceed without the need for manual input.
 
@@ -61,10 +57,8 @@ The solution is rather simple. If you take a look at the script, then you will f
 
 And you can still keep the “one liner” for installing:
 
-```
-<pre class="wp-block-code">```
+```shell
 curl https://sh.rustup.rs -sSf | sh -s -- -y
-```
 ```
 
 The `-s` will instruct the shell to process the script from “standard input”, rather than reading the script from a file. In the original command it already did that, but implicitly, because there was no other argument to the shell.

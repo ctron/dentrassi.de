@@ -28,27 +28,27 @@ My intention was to provide a simple way to stream metrics into OpenTSDB using [
 
 All components are already available in Maven Central, and although they have the version number 0.0.3, they are working quite well ;-)
 
-\[code language=”xml”\]  
-&lt;dependency&gt;  
- &lt;groupId&gt;de.dentrassi.iot&lt;/groupId&gt;  
- &lt;artifactId&gt;de.dentrassi.iot.opentsdb.collector&lt;/artifactId&gt;  
- &lt;version&gt;0.0.3&lt;/version&gt;  
-&lt;/dependency&gt;  
-&lt;dependency&gt;  
- &lt;groupId&gt;de.dentrassi.iot&lt;/groupId&gt;  
- &lt;artifactId&gt;de.dentrassi.iot.opentsdb.collector.http&lt;/artifactId&gt;  
- &lt;version&gt;0.0.3&lt;/version&gt;  
-&lt;/dependency&gt;  
-&lt;dependency&gt;  
- &lt;groupId&gt;de.dentrassi.iot&lt;/groupId&gt;  
- &lt;artifactId&gt;de.dentrassi.iot.opentsdb.collector.camel&lt;/artifactId&gt;  
- &lt;version&gt;0.0.3&lt;/version&gt;  
-&lt;/dependency&gt;  
-\[/code\]
+```xml
+<dependency>
+  <groupId>de.dentrassi.iot</groupId>
+  <artifactId>de.dentrassi.iot.opentsdb.collector</artifactId>
+  <version>0.0.3</version>
+</dependency>
+<dependency>
+  <groupId>de.dentrassi.iot</groupId>
+  <artifactId>de.dentrassi.iot.opentsdb.collector.http</artifactId>
+  <version>0.0.3</version>
+</dependency>
+<dependency>
+  <groupId>de.dentrassi.iot</groupId>
+  <artifactId>de.dentrassi.iot.opentsdb.collector.camel</artifactId>
+  <version>0.0.3</version>
+</dependency>
+```
 
 Dropping those dependencies into your classpath, or into your OSGi container ;-), you can use the following code to easily push data coming from MQTT directly into OpenTSDB:
 
-\[code language=”java”\]  
+```java  
 CamelContext context = new DefaultCamelContext();
 
 // add routes
@@ -71,7 +71,7 @@ public void configure() throws Exception {
 
 // start the context  
 context.start();  
-\[/code\]
+```
 
 You can directly push Floats or Integers into OpenTSDB. The example above shows a “to” component which does directly address a metric. Using `#test3/value=temp` If you need more tags, then those can be added using `#test3/value=temp/foo=bar`.
 

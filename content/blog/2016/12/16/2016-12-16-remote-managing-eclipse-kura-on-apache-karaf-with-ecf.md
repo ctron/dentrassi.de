@@ -40,8 +40,8 @@ So I asked Scott for some help in getting this up and running and the set of ins
 
 First we need to spin up a new Kura emulator instance:
 
-```
-<pre class="lang:sh decode:true">sudo docker run -ti --net=host ctron/kura:karaf-stable
+```bash
+sudo docker run -ti --net=host ctron/kura:karaf-stable
 ```
 
 We are mapping all network to the host instance, since we are using another port, which is not configured in the upstream Dockerfile. There is probably another way, but this is just a quick example.
@@ -49,7 +49,6 @@ We are mapping all network to the host instance, since we are using another port
 Then, inside the Karaf instance install ECF. We configure it first to use “ecftcp” instead of MQTT. But of course you can also got with MQTT or some other adapter ECF provides:
 
 ```
-<pre class="highlight:0">
 property -p service.exported.configs ecf.generic.server
 property -p ecf.generic.server.id ecftcp://localhost:3289/server
 
@@ -79,4 +78,10 @@ You should already see some information about that target device now. But when y
 
 If you just want to have a quick look, here it is:
 
-<figure aria-describedby="caption-attachment-959" class="wp-caption aligncenter" id="attachment_959" style="width: 750px">[![ECF connecting to Kura on Karaf](https://dentrassi.de/wp-content/uploads/kura_karaf_ecf_1-1024x549.png)](https://dentrassi.de/wp-content/uploads/kura_karaf_ecf_1.png)<figcaption class="wp-caption-text" id="caption-attachment-959">ECF connecting to Kura on Karaf</figcaption></figure>Of course you don’t need to use an IDE for managing Karaf. But having such an integration as an option, is a nice addition. And it shows how powerful a great OSGi setup can be ;-)
+<figure>
+
+![ECF connecting to Kura on Karaf](https://dentrassi.de/wp-content/uploads/kura_karaf_ecf_1.png)
+
+<figcaption>ECF connecting to Kura on Karaf</figcaption></figure>
+
+Of course you don’t need to use an IDE for managing Karaf. But having such an integration as an option, is a nice addition. And it shows how powerful a great OSGi setup can be ;-)

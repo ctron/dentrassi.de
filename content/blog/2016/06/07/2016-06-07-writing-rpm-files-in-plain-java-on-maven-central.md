@@ -28,13 +28,13 @@ What was left over was the fact that the library was not available outside of Pa
 
 With the recent [release of Package Drone 0.13.0](https://packagedrone.org/2016/06/06/package-drone-0-13-0-released/) I was finally able to officially push the module to [Maven Central](https://search.maven.org/#artifactdetails|org.eclipse.packagedrone|org.eclipse.packagedrone.utils.rpm|0.13.0|jar).
 
-\[code language=”xml”\]  
-&lt;dependency&gt;  
- &lt;groupId&gt;org.eclipse.packagedrone&lt;/groupId&gt;  
- &lt;artifactId&gt;org.eclipse.packagedrone.utils.rpm&lt;/artifactId&gt;  
- &lt;version&gt;0.13.0&lt;/version&gt;  
-&lt;/dependency&gt;  
-\[/code\]
+```xml
+<dependency>
+  <groupId>org.eclipse.packagedrone</groupId>
+  <artifactId>org.eclipse.packagedrone.utils.rpm</artifactId>
+  <version>0.13.0</version>
+</dependency>
+```
 
 In the meanwhile I did work on a [Maven RPM builder plugin](https://dentrassi.de/2016/04/26/building-rpms-on-any-platform-with-maven/), which allows creating RPM files on any platform. The newest version (0.5.0) has been released today as well, which already uses the new library.
 

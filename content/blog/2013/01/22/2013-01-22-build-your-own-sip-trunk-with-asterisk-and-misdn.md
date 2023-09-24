@@ -30,7 +30,7 @@ The mission: “save some bucks by using a free PBX using a cheap isdn card”. 
 
 The idea was to replace [trixbox](http://trixbox.org/ "trixbox") using an AVM Fritz!PCI card with something more up to date and not that buggy. FreePBX Distro kicked itself out because of the issues with mISDN. Elastix brought in mISDN support but still failed in configuring it. Since the setup was for only 3 users for now and the idea was to later buy something more professional (I really hope it comes to this point), I used [Starface free](http://www.starface.de/en/Produkte/softswitch/starface-free.php "Starface free"). It has 4 users and 10 extensions for free. Yet the free version only allows using SIP providers. Also it was not possible to buy a [Patton SmartNode 4120](http://www.patton.com/products/product_detail.asp?id=452) at the moment, which I still hope to get somewhere in the future. So I needed to build our own SIP trunk since the provider used (M-NET) does not provide SIP trunks as a product.
 
-Everything is done as user <q>root</q> unless noted otherwise.
+Everything is done as user `root` unless noted otherwise.
 
 ## mISDN + gateway setup
 
@@ -38,7 +38,7 @@ Everything is done as user <q>root</q> unless noted otherwise.
 - Be sure to update: yum update
 - add the elastix repository: elastix, epel
     
-    create file /etc/yum.repos.d/epel.repo
+    create file `/etc/yum.repos.d/epel.repo`
     
     ```
     [epel]
@@ -70,7 +70,7 @@ Everything is done as user <q>root</q> unless noted otherwise.
     
     ```
     
-    create file /etc/yum.repos.d/elastix.repo
+    create file `/etc/yum.repos.d/elastix.repo`
     
     ```
     [elastix-base]
@@ -104,17 +104,15 @@ Everything is done as user <q>root</q> unless noted otherwise.
     gpgcheck=1
     enabled=1
     gpgkey=http://repo.elastix.org/elastix/RPM-GPG-KEY-Elastix
-    
     ```
-- import the required keys: ```
+- import the required keys:
+    ```
     rpm --import http://repo.elastix.org/elastix/RPM-GPG-KEY-Elastix
     rpm --import http://fedoraproject.org/static/217521F6.txt
-    
     ```
 Now comes the tricky part. The mISDN modules from elastix require an older kernel than the current from centos. This might change in the future but for me, right now, this is the case.
 
 Find oud the most recent mISDN version:
-
 
 ```
 yum deplist mISDN | grep "package:"
@@ -123,7 +121,6 @@ yum deplist mISDN | grep "package:"
 This will give you a list of mISDN versions currently known to yum. Write don’t the most recent one.
 
 ```
-
 package: mISDN-modules.i686 1.1.9.1-2
 package: mISDN-modules.i686 1.1.9.1-1.2.6.18_164.6.1.el5
 package: mISDN-modules.i686 1.1.9.1-1.2.6.18_194.el5
@@ -131,17 +128,16 @@ package: mISDN-modules.i686 1.1.9.1-1.2.6.18_164.el5
 package: mISDN-modules.i686 1.1.9.1-1.2.6.18_164.11.1.el5
 package: mISDN-modules.i686 1.1.9.1-1.2.6.18_238.12.1.el5
 package: mISDN-modules.i686 1.1.9.1-1.2.6.18_194.3.1.el5
-
 ```
 
-In this case <q>mISDN-modules.i686 1.1.9.1-2</q>.  
+In this case `mISDN-modules.i686 1.1.9.1-2`.  
 So check for the kernel of this version:
 
 ```
 yum deplist mISDN-modules-1.1.9.1-2
 ```
 
-Note the different syntax on the version! You need to specify “mISDN-$VERSION” and without the “i686” identifier!
+Note the different syntax on the version! You need to specify `mISDN-$VERSION` and without the `i686` identifier!
 
 ```
 package: mISDN-modules.i686 1.1.9.1-2
@@ -167,12 +163,11 @@ package: mISDN-modules.i686 1.1.9.1-2
    provider: module-init-tools.i386 3.3-0.pre3.1.60.el5_5.1
   dependency: /bin/sh
    provider: bash.i386 3.2-32.el5
-
 ```
 
-So the required kernel is <q>2.6.18-238.12.1.el5</q>. So we need to install it:
+The required kernel is `2.6.18-238.12.1.el5`. So we need to install it:
 
-```
+```bash
 yum install kernel-2.6.18-238.12.1.el5
 ```
 
@@ -180,7 +175,7 @@ Depending on your setup you need to use “yum downgrade kernel 2.6.18-238.12.1.
 
 Check if the kernel is installed:
 
-```
+```bash
 yum list "*kernel*"
 ```
 
@@ -195,7 +190,6 @@ kernel.i686                    2.6.18-348.el5                          base
 kernel-PAE-devel.i686          2.6.18-348.el5                          base           
 kernel-debug.i686              2.6.18-348.el5                          base           
 …
-
 ```
 
 So I got one that I don’t want (kernel-PAE.i686 2.6.18-348.el5) and one possible upgrade which must not be installed!
@@ -206,7 +200,7 @@ Removing the kernel is easy. But be careful not to uninstall the wrong one!
 rpm -e kernel-PAE-2.6.18-348.el5
 ```
 
-Checking the file “/boot/grub/menu.lst” shows only one kernel now, the correct one!
+Checking the file `/boot/grub/menu.lst` shows only one kernel now, the correct one!
 
 ```
 
@@ -216,17 +210,16 @@ Checking the file “/boot/grub/menu.lst” shows only one kernel now, the corre
 
 Now we can install mISDN and asterisk.
 
-```
+```bash
 yum install libxslt
 yum install asterisk-mISDN mISDN
-
 ```
 
 One possible way out of this update mess is to disable the original centos repositories and rely only on the elastix sources.
 
 Now reboot
 
-```
+```bash
 reboot
 ```
 
@@ -234,23 +227,21 @@ reboot
 
 Scan for your mISDN card:
 
-```
+```bash
 /etc/init.d/mISDN scan
 ```
 
 You should get something like:
 
-```
+```bash
 1 mISDN compatible device(s) found:
 >> avmfritz
-
 ```
 
 Now store that configuration:
 
 ```
 /etc/init.d/mISDN config
-
 ```
 
 Not check the config file <q>/etc/mISDN.conf</q> if this is really your configuration. Depends on what setup you have. Maybe you need to change it.
@@ -267,22 +258,19 @@ This should give you something like:
 >> /sbin/modprobe --ignore-install mISDN_capi
 >> /sbin/modprobe --ignore-install avmfritz protocol=0x2 layermask=0xf
 >> /sbin/modprobe --ignore-install mISDN_dsp debug=0 options=0
-
 ```
 
 And activate on boot:
 
-```
+```bash
 chkconfig mISDN on
 chkconfig --list mISDN
-
 ```
 
 Now you should be able to see the card in action:
 
-```
+```bash
 misdnportinfo
-
 ```
 
 For me:
@@ -295,7 +283,6 @@ Port  1: TE-mode BRI S/T interface line (for phone lines)
 --------
 
 mISDN_close: fid(3) isize(131072) inbuf(0x8cec060) irp(0x8cec060) iend(0x8cec060)
-
 ```
 
 Now we need to re-create the configuration in a different format \*sigh\*
@@ -308,14 +295,13 @@ Finally edit asterisks own misdn configuration file: /etc/asterisk/misdn.conf
 
 Check the section “\[intern\]” near the end of the file and remove/rename the section to something like:
 
-```
+```ini
 [fpstn]
 ; define your ports, e.g. 1,2 (depends on mISDN-driver loading order)
 ports=1,2
 ; context where to go to when incoming Call on one of the above ports
 context=from-pstn
 msns=*
-
 ```
 
 Again this depends heavly on your setup. Important is that the section is named \[fpstn\] and “context=from-pstn” since we need that later.
@@ -328,7 +314,7 @@ At https://confluence.terena.org/pages/viewpage.action?pageId=131104 there is qu
 
 Asterisk had to be configured to provide a SIP user (the trunk). So replace the file “/etc/asterisk/sip.conf” with the following content:
 
-```
+```ini
 [general]
 context=guest                   ; Default context for incoming calls (non authenticated)
 
@@ -356,14 +342,13 @@ type=friend
 host=dynamic
 context=sip
 insecure=port,invite
-
 ```
 
 This is a quite short configuration, but we only need one account for starface to hook up to the asterisk server. You should change the secret of course. The “insecure=port,invite” was necessary since asterisk otherwise rejected the starface pbx when making calls, although the initial registration using the username and password was successful. In pre-1.8 versions of asterisk this was “insecure=very”, but this is not working anymore.
 
 So now we have two parts in the asterisk box, an mISDN trunk and a SIP account which will act as a trunk. Now we need to pass calls between them. Therefore we configure some dialplans in the “/etc/asterisk/extensions.conf”:
 
-```
+```ini
 [general]
 static=yes
 writeprotect=yes
@@ -373,7 +358,6 @@ exten => _1234.,1,Dial(SIP/600/${EXTEN})
 
 [sip]
 exten => _0.,1,Dial(misdn/g:fpstn/${EXTEN})
-
 ```
 
 So everthing that comes in using ISDN (from-pstn) will be directed to the SIP account 600 passing on the original number so that starface can use it. The rule “\_1234.” must be adapted to match your telephone number.
@@ -384,7 +368,9 @@ Tweaking the rules will be a task, then everybody needs something different here
 
 Finally re-start asterisk:
 
-\[code\]/etc/init.d/asterisk restart\[/code\]
+```bash
+/etc/init.d/asterisk restart
+```
 
 ## starface
 
@@ -400,7 +386,7 @@ Installing Starface was simply booting from the ISO image and installing to the 
 
 ### setting up starface
 
-This is pretty straigt forward now. Provision your phone. Setup a number. And make a call!
+This is pretty straight forward now. Provision your phone. Setup a number. And make a call!
 
 ## Some checks
 
@@ -408,10 +394,9 @@ This is pretty straigt forward now. Provision your phone. Setup a number. And ma
 
 Check if starface registeres with your sip trunk using the asterisk command line on the gateway:
 
-```
+```bash
 asterisk -r
 sip show peers
-
 ```
 
 ### SIP Debugging
@@ -420,4 +405,4 @@ SIP Debugging can be enabled using the asterisk command `sip set debug on`.
 
 ### Turn on the full log
 
-Edit `/etc/asterisk/logger.conf` and comment in the “full” line
+Edit `/etc/asterisk/logger.conf` and comment in the `full` line

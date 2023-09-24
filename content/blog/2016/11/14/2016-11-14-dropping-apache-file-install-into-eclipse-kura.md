@@ -41,7 +41,7 @@ And installing Apache File Install into Eclipe Kura now just got a bit simpler.
 
 Simply navigate to the <q>Packages</q> section of the Eclipse Kura Web UI. Press the “Install” button and choose “URL” and enter the following URL:
 
-> https://repo1.maven.org/maven2/de/dentrassi/kura/addons/de.dentrassi.kura.addons.utils.fileinstall/0.1.0/de.dentrassi.kura.addons.utils.fileinstall-0.1.0.dp
+<https://repo1.maven.org/maven2/de/dentrassi/kura/addons/de.dentrassi.kura.addons.utils.fileinstall/0.1.0/de.dentrassi.kura.addons.utils.fileinstall-0.1.0.dp>
 
 After confirming using the <q>Submit</q> button it will take a bit and then File Install will be installed into your Kura installation. Sometimes it takes as bit longer than Kura expects and you need to reload the Web UI (Ctrl-R) until Kura has performed the installation.
 
@@ -57,11 +57,10 @@ Dragging this button into the Kura Web UI will bring up a confirmation dialog if
 
 Now it is time to deploy some bundles. By default the directory where Apache File Install looks for bundles is `/opt/eclipse/kura/load`. At first this directory will not exist, so it has to be created. Next we simply fetch and example bundle using `wget`:
 
-```
-$ cd /opt/eclipse/kura
-$ mkdir load
-$ wget "https://dentrassi.de/download/kura/org.eclipse.kura.example.camel.publisher-1.0.0.jar"
-
+```bash
+cd /opt/eclipse/kura
+mkdir load
+wget "https://dentrassi.de/download/kura/org.eclipse.kura.example.camel.publisher-1.0.0.jar"
 ```
 
 This is an example publisher bundle from the upcoming Kura 2.1.0 release. So if you are still using Kura 2.0, then you can either try a different OSGi bundle, or maybe give Kura 2.1 a try ;-)
@@ -83,7 +82,6 @@ osgi> ss example
 id	State       Bundle
 116	ACTIVE      org.eclipse.kura.example.camel.publisher_1.0.0
 osgi>
-
 ```
 
 Now once this initial activate has been performed, File Install and OSGi will keep the bundle active. You can re-deploy this OSGi bundle by simply copying a new version over the old one. File Install will detect the change and refresh the bundle.

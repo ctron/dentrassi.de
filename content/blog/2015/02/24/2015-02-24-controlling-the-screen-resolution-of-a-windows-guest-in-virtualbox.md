@@ -31,6 +31,8 @@ Googling around you will find the idea of adding a custom screen resolution to t
 
 But there is simple command which will tells your guest session to change to a specific resolution, directly from the command line:
 
-\[code\]VBoxManage controlvm "My virtual machine" setvideomodehint 1280 720 32\[/code\]
+```
+VBoxManage controlvm "My virtual machine" setvideomodehint 1280 720 32
+```
 
 This will tell the *currently running* virtual machine to change resolution to 1280×720 at 32bit.

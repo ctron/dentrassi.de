@@ -1,6 +1,6 @@
 ---
 id: 3814
-title: 'CEP &#038; Machine learning for IoT – Drools on Kura'
+title: 'CEP & Machine learning for IoT – Drools on Kura'
 date: '2018-03-15T18:05:13+01:00'
 author: 'Jens Reimann'
 layout: post
@@ -50,7 +50,31 @@ The actual rules document comes from the file [SimpleScorecard.pmml](https://git
 
 Next we will use Kura Wires in order to mesh up the model with some “data”. A need to use a timer as input source, as Kura currently doesn’t offer any kind of value creating like a function or sine curve. So create a new “timer”, you can leave the default of 10 seconds. Add a new logger, which we simply use for testing, you should set the “verbosity” to “VERBOSE”. And then create a new “DroolsProcess” component with the following configuration:
 
-<dl><dt>ID</dt><dd>`pmml1` – The ID of the drools session</dd><dt>Fire all rules</dt><dd>`true` – After the fact has been injected, rules have to fired</dd><dt>Delete after fire</dt><dd>`true` – After the rules have been fired, we can remove the fact from the session</dd><dt>Fact Package</dt><dd>`org.drools.scorecards.example` – The package name, from the rules model</dd><dt>Fact Type</dt><dd>`SampleScore` – The type name, from the rules model</dd><dt>Inputs</dt><dd>`age=TIMER` – comma separated list for Wire record names to fact object properties</dd><dt>Outputs</dt><dd>`result=scorecard_calculatedScore` – comma separated list for Wire record names to fact object properties</dd></dl>Finally wire that all up:
+<dl>
+<dt>ID</dt>
+<dd><code>pmml1</code> – The ID of the drools session</dd>
+
+<dt>Fire all rules</dt>
+<dd><code>true</code> – After the fact has been injected, rules have to fired</dd>
+
+<dt>Delete after fire</dt>
+<dd><code>true</code> – After the rules have been fired, we can remove the fact from the session</dd>
+
+<dt>Fact Package</dt>
+<dd><code>org.drools.scorecards.example</code> – The package name, from the rules model</dd>
+
+<dt>Fact Type</dt>
+<dd><code>SampleScore</code> – The type name, from the rules model</dd>
+
+<dt>Inputs</dt>
+<dd><code>age=TIMER</code> – comma separated list for Wire record names to fact object properties</dd>
+
+<dt>Outputs</dt>
+<dd><code>result=scorecard_calculatedScore</code> – comma separated list for Wire record names to fact object properties</dd>
+
+</dl>
+
+Finally wire that all up:
 
 [![](https://dentrassi.de/wp-content/uploads/Selection_457.png)](https://dentrassi.de/wp-content/uploads/Selection_457.png)
 
@@ -59,7 +83,6 @@ Next we will use Kura Wires in order to mesh up the model with some “data”. 
 Looking at the Kura log file `/var/log/kura.log` should show you something like (where `result` is coming from the PMML model):
 
 ```
-
 2018-03-15 16:07:12,165 [DefaultQuartzScheduler_Worker-6] INFO  d.d.k.a.d.c.w.DroolsProcess - Result - type: class java.lang.Double, value: 24.0
 2018-03-15 16:07:12,165 [DefaultQuartzScheduler_Worker-6] INFO  o.e.k.i.w.l.Logger - Received WireEnvelope from de.dentrassi.kura.addons.drools.component.wires.DroolsProcess-1521129031885-7
 2018-03-15 16:07:12,165 [DefaultQuartzScheduler_Worker-6] INFO  o.e.k.i.w.l.Logger - Record List content: 

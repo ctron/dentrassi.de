@@ -1,6 +1,6 @@
 ---
 id: 454
-title: 'Released &#8220;Package Drone 0.0.2&#8221;'
+title: 'Released "Package Drone 0.0.2"'
 date: '2014-11-28T17:53:49+01:00'
 author: 'Jens Reimann'
 layout: post

@@ -1,6 +1,6 @@
 ---
 id: 417
-title: 'OSGi EE &#8211; Modular Web Applications'
+title: 'OSGi EE – Modular Web Applications'
 date: '2014-11-14T17:10:12+01:00'
 author: 'Jens Reimann'
 layout: post

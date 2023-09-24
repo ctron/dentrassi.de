@@ -1,6 +1,6 @@
 ---
 id: 779
-title: 'Writing RPM files &#8230; in plain Java'
+title: 'Writing RPM files … in plain Java'
 date: '2016-04-15T11:12:51+02:00'
 author: 'Jens Reimann'
 layout: post

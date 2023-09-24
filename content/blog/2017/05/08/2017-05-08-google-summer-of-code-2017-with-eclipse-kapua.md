@@ -35,7 +35,7 @@ For Kapua this will definitely mean evolving the simulator framework based on th
 
 If you want to read more about Anastasiya and Arthur just read through their introductions on [kapua-dev@eclipse.org](https://dev.eclipse.org/mailman/listinfo/kapua-dev) and give them a warm welcome:
 
-[read Anastasiya’s introduction](https://dev.eclipse.org/mhonarc/lists/kapua-dev/msg00272.html)  
-[read Arthur’s introduction](https://dev.eclipse.org/mhonarc/lists/kapua-dev/msg00271.html)
+* [read Anastasiya’s introduction](https://dev.eclipse.org/mhonarc/lists/kapua-dev/msg00272.html)  
+* [read Arthur’s introduction](https://dev.eclipse.org/mhonarc/lists/kapua-dev/msg00271.html)
 
 Best of luck to you!

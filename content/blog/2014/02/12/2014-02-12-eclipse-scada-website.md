@@ -12,6 +12,6 @@ categories:
     - Uncategorized
 ---
 
-Finally we had the time to complete the [Eclipse SCADA Website](http://www.eclipse.org/eclipsescada). There is still a lot missing, but I think it is a good start.
+Finally, we had the time to complete the [Eclipse SCADA Website](http://www.eclipse.org/eclipsescada). There is still a lot missing, but I think it is a good start.
 
 <!-- more -->

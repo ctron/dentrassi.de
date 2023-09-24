@@ -1,6 +1,6 @@
 ---
 id: 440
-title: 'Spring WebMVC &#8211; Bad request for most pages'
+title: 'Spring WebMVC – Bad request for most pages'
 date: '2014-11-21T13:21:29+01:00'
 author: 'Jens Reimann'
 layout: post
@@ -24,28 +24,28 @@ It turned out that all requests were directed to my newly added @Controller clas
 
 It was a missing “value” property in the @RequestMapping annotation. I had:
 
-\[code language=”Java”\]  
-@Controller  
-public class ArtifactController {  
- @RequestMapping ( name = "/artifact/{artifactId}/get", method = RequestMethod.GET )  
- public void get ( HttpServletResponse response,  
- @PathVariable ( "artifactId" ) String artifactId ) {  
- final StorageService service = Activator.getTracker ().getStorageService ();  
- }  
-}  
-\[/code\]
+```java  
+@Controller
+  public class ArtifactController {
+  @RequestMapping ( name = "/artifact/{artifactId}/get", method = RequestMethod.GET )
+  public void get ( HttpServletResponse response,
+    @PathVariable ( "artifactId" ) String artifactId ) {
+    final StorageService service = Activator.getTracker ().getStorageService ();
+  }
+}
+```
 
 Where it should have been:
 
-\[code language=”Java”\]  
-@Controller  
-public class ArtifactController {  
- @RequestMapping ( value = "/artifact/{artifactId}/get", method = RequestMethod.GET )  
- public void get ( HttpServletResponse response,  
- @PathVariable ( "artifactId" ) String artifactId ) {  
- final StorageService service = Activator.getTracker ().getStorageService ();  
- }  
-}  
-\[/code\]
+```java
+@Controller
+public class ArtifactController {
+  @RequestMapping ( value = "/artifact/{artifactId}/get", method = RequestMethod.GET )
+  public void get ( HttpServletResponse response,
+    @PathVariable ( "artifactId" ) String artifactId ) {
+    final StorageService service = Activator.getTracker ().getStorageService ();
+  }
+} 
+```
 
-**Note:** the @RequestMapping attribute should have been “value” instead of “name”.
+**Note:** the `@RequestMapping` attribute should have been "value" instead of "name".

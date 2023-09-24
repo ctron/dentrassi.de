@@ -34,11 +34,16 @@ Text editors and the tree view inherit a light gray background from the operatin
 
 There seems to be a simple fix for that however. Edit the file `/usr/share/themes/Mint-X/gtk-2.0/gtkrc` and change the first real line from:
 
-\[code\]gtk\_color\_scheme = "bg\_color:#d6d6d6\\nselected\_bg\_color:#9ab87c\\nbase\_color:#F7F7F7" # Background, base.\[/code\]
+```
+gtk_color_scheme = "bg_color:#d6d6d6\nselected_bg_color:#9ab87c\nbase_color:#F7F7F7" # Background, base.
+```
 
 to:
 
-\[code\]gtk\_color\_scheme = "bg\_color:#d6d6d6\\nselected\_bg\_color:#9ab87c\\nbase\_color:#FFFFFF" # Background, base.\[/code\]
+
+```
+gtk_color_scheme = "bg_color:#d6d6d6\nselected_bg_color:#9ab87c\nbase_color:#FFFFFF" # Background, base.
+```
 
 However, and that is why I stumbled over this after the upgrade to Mint 17.1, this change will be overridden after an upgrade of the theme package. This never happened one in version 17, but you never know.
 

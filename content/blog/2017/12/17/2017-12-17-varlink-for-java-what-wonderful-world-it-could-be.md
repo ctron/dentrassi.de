@@ -1,6 +1,6 @@
 ---
 id: 3786
-title: '&#x1f517; Varlink for Java – What wonderful world it could be'
+title: '🔗 Varlink for Java – What wonderful world it could be'
 date: '2017-12-17T13:23:08+01:00'
 author: 'Jens Reimann'
 layout: post
@@ -57,7 +57,7 @@ Of course talking to the resolver is using the same functionality as talking to 
 
 After around two to three hours I came up with the following API, contacting the varlink interface `io.systemd.network`, querying all the existing network interfaces of the system:
 
-```
+```java
 try (Varlink v = varlink()) {
 
   // shorter & sync way
@@ -80,7 +80,6 @@ try (Varlink v = varlink()) {
 
   dump(devices2);
 }
-
 ```
 
 To be honest, for this specific task, I could have also used the [Java NetworkInterface API](https://docs.oracle.com/javase/8/docs/api/java/net/NetworkInterface.html). But the same way I am querying the network interfaces with varlink, I could also access the `io.systemd.journal` interface or `org.kernel.kmod` and interface with the system log or the kernel module system.
@@ -91,7 +90,13 @@ Just for comparison you can have a look at the [Eclipse Kura USB modem functiona
 
 If you don’t know [Xtext](https://www.eclipse.org/Xtext/), it is a toolchain for creating your own DSL. Living in the Eclipse modeling ecosystem, it allows you to define your DSL grammar and it will take care of creating a parser, a complete editor with code completion, syntax highlighting, support for the [language server protocol](https://github.com/Microsoft/language-server-protocol) and much more. It does support the Eclipse IDE, IntelliJ and plain web. And of course you can create an Xtext grammar for the Varlink IDL quite easily. After around one hour of fighting with grammars, I came up with the following editor:
 
-<figure aria-describedby="caption-attachment-3798" class="wp-caption aligncenter" id="attachment_3798" style="width: 1048px">[![Varlink IDL editor](https://dentrassi.de/wp-content/uploads/Selection_409.png)](https://dentrassi.de/wp-content/uploads/Selection_409.png)<figcaption class="wp-caption-text" id="caption-attachment-3798">Varlink IDL editor</figcaption></figure>As you can see, the Varlink IDL has been parsed. I am pretty sure there are still some issues with grammar, but it is quite a good start. Now everything is available in a parsed ECore model and can be visualized or transformed with any of the Eclipse Modeling tools/libraries. Creating a quick diagram editor with Eclipse Sirius is only a few more minutes away.
+<figure>
+
+[![Varlink IDL editor](https://dentrassi.de/wp-content/uploads/Selection_409.png)](https://dentrassi.de/wp-content/uploads/Selection_409.png)
+
+<figcaption>Varlink IDL editor</figcaption></figure>
+
+As you can see, the Varlink IDL has been parsed. I am pretty sure there are still some issues with grammar, but it is quite a good start. Now everything is available in a parsed ECore model and can be visualized or transformed with any of the Eclipse Modeling tools/libraries. Creating a quick diagram editor with Eclipse Sirius is only a few more minutes away.
 
 ### What is next, what is missing
 
@@ -119,10 +124,9 @@ Varlink is an amazing piece of technology. And mostly because it is that simple.
 
 How to install varlink (on Fedora 27, for CentOS use “yum”):
 
-```
+```bash
 sudo dnf copr enable "@varlink/varlink"
 sudo dnf install fedora-varlink
 sudo systemctl enable --now org.varlink.resolver.socket
 varlink help
-
 ```

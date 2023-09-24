@@ -74,7 +74,7 @@ As soon as you set a hostname, the Routes get created.
 
 So for Ingress resources, you need to know the application domain name. So far, the only way I found to extract that information from the cluster is be inspecting the ingress controller resource:
 
-```shell
+```bash
 kubectl -n openshift-ingress-operator get ingresscontrollers.operator.openshift.io default -o jsonpath='{.status.domain}'
 ```
 

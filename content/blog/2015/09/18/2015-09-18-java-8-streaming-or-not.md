@@ -26,27 +26,27 @@ So starting with a real-life problem of a map `Map<ResultKey, List> result` whic
 
 Before Java 8, I had something like:
 
-\[code language=”java”\]  
-Set&lt;String&gt; ids = new HashSet&lt;&gt; ();  
-for ( List&lt;ResultEntry&gt; list : result.values () ) {  
- for ( ResultEntry entry : list ) {  
- if ( entry.getAction () == Action.DELETE ) {  
- String id = entry.getArtifact ().getId ();  
- ids.add ( id );  
- }  
- }  
-}  
-\[/code\]
+```java
+Set<String> ids = new HashSet<> ();
+for ( List<ResultEntry> list : result.values () ) {
+  for ( ResultEntry entry : list ) {
+    if ( entry.getAction () == Action.DELETE ) {
+      String id = entry.getArtifact ().getId ();
+      ids.add ( id );
+    }
+  }
+}
+```
 
 Now, with Java 8, I can do:
 
-\[code language=”java”\]  
-Set&lt;String&gt; deleteSet = result.values ().stream ()  
- .flatMap ( list -&gt; list.stream () )  
- .filter ( entry -&gt; entry.getAction () == Action.DELETE )  
- .map ( entry -&gt; entry.getArtifact ().getId () )  
- .collect ( Collectors.toSet () );  
-context.deleteArtifacts ( deleteSet );  
-\[/code\]
+```java
+Set<String> deleteSet = result.values ().stream ()
+  .flatMap ( list -> list.stream () )
+  .filter ( entry -> entry.getAction () == Action.DELETE )
+  .map ( entry -> entry.getArtifact ().getId () )
+  .collect ( Collectors.toSet () );
+context.deleteArtifacts ( deleteSet );
+```
 
 Neither one is shorter nor seems less complex from an initial view. So, which one is <q>better</q>?

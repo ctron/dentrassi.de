@@ -8,7 +8,7 @@
 {% for page in paginator.pages %}
   <section class="de-c-post-info" itemscope itemtype="http://schema.org/BlogPosting">
     <h2 class="de-c-post-info__title">
-      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-75-hover" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-75-hover" href="{{ page.path | safe }}">{{ page.title }}</a>
     </h2>
 
     <div class="de-c-post-info__summary" itemprop="articleSummary">

@@ -63,7 +63,7 @@ Interested in how this would look like in the form of source code? Well, here ar
 
 First we need to create a builder for either the server or the client implementation:
 
-```
+```java
 Builder<JmsClient> builder = JmsClient.newBuilder()
   .host("localhost")
   .profile(AmqpProfile.DEFAULT_PROFILE)
@@ -72,7 +72,7 @@ Builder<JmsClient> builder = JmsClient.newBuilder()
 
 Next create an instance from it, the following is a client instance which will listen to some server-side event:
 
-```
+```java
 try (JmsClient client = builder.build();
      ListenerHandle listener =
         client.accounts()
@@ -86,7 +86,7 @@ try (JmsClient client = builder.build();
 
 The of course we need a server to publish messages:
 
-```
+```java
 try (JmsServer client = builder.build()) {
 
   client.accounts().eventUserSignup()

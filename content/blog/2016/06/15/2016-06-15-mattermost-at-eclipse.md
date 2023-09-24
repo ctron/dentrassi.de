@@ -24,11 +24,9 @@ About half a year back [Cédric](https://twitter.com/bruncedric) and I did [star
 
 The server this instance was running on was sponsored by my current employer, [IBH SYSTEMS GmbH](http://ibh-systems.com). The test was scheduled to be terminate at the end of June. And since I will change to RedHat, starting in July, we were forced to make a decision:
 
-> The mattermost instance of Eclipse has been migrated to a new server and has a new url: <https://t.co/Aa24zyLi69> ! [pic.twitter.com/mL9GouQTN2](https://t.co/mL9GouQTN2)
+> The mattermost instance of Eclipse has been migrated to a new server and has a new url: <https://t.co/Aa24zyLi69> [![](https://pic.twitter.com/mL9GouQTN2)](https://t.co/mL9GouQTN2)
 > 
-> — Cédric Brun (@bruncedric) [June 10, 2016](https://twitter.com/bruncedric/status/741255782885363712)
-
-<script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
+> <cite>Cédric Brun (@bruncedric) [June 10, 2016](https://twitter.com/bruncedric/status/741255782885363712)</cite>
 
 :-) Mattermost now is a permanent, community supported service of the Eclipse Foundation. Hosted on the Eclipse Foundation’s infrastructure, but supported by its community. We also dropped the “-test” in the domain name. So please update your links, if you had some. All content was migrated to the new server.
 

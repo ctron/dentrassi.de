@@ -42,7 +42,7 @@ Working for [Red Hat](https://jobs.redhat.com) is awesome. Not only can you work
 
 From the full test cluster, we received an allocation of 16 nodes with a bit of storage (mostly HDDs), Intel Xeon E5-2620, 2×6 cores (24 threads) each and a mix of 64GB/128GB RAM. 12 nodes got assigned for the IoT cluster, running Eclipse Hono, EnMasse and OpenShift. The remaining 4 nodes made up the simulation cluster for generating the IoT workload. For the simulation cluster, we also deployed OpenShift, simply to re-use the same features like scaling, deploying, building as we did for the IoT cluster. Both clusters are a single master setup. For the IoT cluster, we went with [GlusterFS](https://docs.openshift.com/container-platform/3.9/install_config/persistent_storage/persistent_storage_glusterfs.html) as the storage provider as we wanted to have dynamic provisioning for the broker deployments. Everything is connected by a 1GBit Ethernet link. In the IoT cluster, we allocated 3 nodes for infrastructure-only purposes (like the Docker registry and the OpenShift router). Which left 8 general-purpose compute nodes that Hono could make use of.
 
-[<object class="aligncenter size-full wp-image-3943" data="https://dentrassi.de/wp-content/uploads/eclipse-hono-scaletest2-nodes.svg"></object>](https://dentrassi.de/wp-content/uploads/eclipse-hono-scaletest2-nodes.svg)
+[<object class="img-fluid" data="https://dentrassi.de/wp-content/uploads/eclipse-hono-scaletest2-nodes.svg"></object>](https://dentrassi.de/wp-content/uploads/eclipse-hono-scaletest2-nodes.svg)
 
 ## The test
 

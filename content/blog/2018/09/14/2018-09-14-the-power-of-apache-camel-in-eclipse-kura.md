@@ -52,7 +52,7 @@ If you don’t want to set up a dedicated device just for playing around, you ca
 
 Starting a new Kura instance is as easy as:
 
-```
+```bash
 docker run -ti ctron/kura:develop -p 8080:8080
 ```
 
@@ -78,10 +78,9 @@ A new service should appear in the left side navigation area. Sometimes it happe
 
 Now select the service and edit the newly created context. Clear out the “Router XML” and only leave the root element:
 
-```
+```xml
 <routes xmlns="http://camel.apache.org/schema/spring">
 </routes>
-
 ```
 
 In the field “Required Camel Components” add the `stream` component. Click on “Apply” to activate the changes. This will configure the Camel context to have no routes, but wait for the `stream` component to be present in the OSGi runtime. The `stream` component is a default component, provided by the Eclipse Kura Camel runtime. The Camel context should be ready immediately and will be registered as an OSGi service for others to consume.
@@ -110,7 +109,6 @@ org.eclipse.kura.wire.WireEnvelope@bdc823c
 org.eclipse.kura.wire.WireEnvelope@5b1f50f4
 org.eclipse.kura.wire.WireEnvelope@50851555
 org.eclipse.kura.wire.WireEnvelope@34cce95d
-
 ```
 
 **Note:** If you are running Kura on an actual device, then the output might be in the file `/var/log/kura-console.log`.
@@ -140,14 +138,13 @@ So as a first step, let’s decouple the Camel endpoint from Kura Wires and prov
 
 In the `camel1` configurations screen, change the “Router XML” to:
 
-```
+```xml
 <routes xmlns="http://camel.apache.org/schema/spring">
     <route>
         <from uri="seda:input1"/>
         <to uri="stream:out"/>
     </route>
 </routes>
-
 ```
 
 Then configure the `producer1` component in the Wire Graph to use the “Endpoint URI” `seda:input1` instead of directly using `stream:out`.
@@ -173,7 +170,7 @@ Instead of downloading the package directly to the Kura installation you can als
 
 As a next step, you need to change the “Router XML” of the Camel context `camel1` to the following configuration:
 
-```
+```xml
 <routes xmlns="http://camel.apache.org/schema/spring">
     <route>
         <from uri="seda:input1"/>
@@ -182,14 +179,12 @@ As a next step, you need to change the “Router XML” of the Camel context `ca
         <to uri="stream:out"/>
     </route>
 </routes>
-
 ```
 
 In the Kura console you will now see that we successfully transformed the internal Kura Wires data format to simple JSON:
 
-```
+```json
 {"value":[{"properties":{"TIMER":{}}}],"identification":"org.eclipse.kura.wire.Timer-1536913933101-5","scope":"WIRES"}
-
 ```
 
 This change did intercept the internal Kura wires objects and serialized them into proper JSON structures. The following step simply appends the content with a “newline” character in order to have a more readable output on the command line.
@@ -202,16 +197,15 @@ As the next step will use the “Groovy” script language to transform data, we
 
 Then go ahead and modify the “Router XML” to include a transformation step, add the following content before the JSON conversion:
 
-```
+```xml
 <transform><groovy>
 return  ["value": new Random().nextInt(10), "timer": request.body.identification ];
 </groovy></transform>
-
 ```
 
 The full XML context should now be:
 
-```
+```xml
 <routes xmlns="http://camel.apache.org/schema/spring">
     <route>
         <from uri="seda:input1"/>
@@ -223,12 +217,11 @@ The full XML context should now be:
         <to uri="stream:out"/>
     </route>
 </routes>
-
 ```
 
 After applying the changes, the output on the console should change to something like:
 
-```
+```json
 {"value":2,"timer":"org.eclipse.kura.wire.Timer-1536913933101-5"}
 ```
 
@@ -246,10 +239,9 @@ The next step requires an instance of Eclipse Hono, thankfully there is a [Hono 
 
 In the XML Router we need two steps for this. You can add them after the `to` element, so that we still see the JSON on the command line:
 
-```
-<setHeader headerName=”Content-Type”><constant>application/json</constant></setHeader>
+```xml
+<setHeader headerName="Content-Type"><constant>application/json</constant></setHeader>
 <to uri="https4://hono.eclipse.org:28080/telemetry?authenticationPreemptive=true&amp;authUsername=sensor1@DEFAULT_TENANT&amp;authPassword=hono-secret"/>
-
 ```
 
 The first step sets the content type to `application/json`, which is passed along by Hono to the AMQP network.
@@ -260,9 +252,8 @@ You may need to register the device with Hono before actually publishing data to
 
 If you are using a custom deployment of Hono using the [OpenShift S2I](https://www.eclipse.org/hono/deployment/openshift_s2i/) approach, then the `to` URL would look more like:
 
-```
+```xml
 <to uri="https4://hono-adapter-http-vertx-sec-hono.my.openshift.cluster/telemetry?authenticationPreemptive=true&amp;authUsername=sensor1@DEFAULT_TENANT&amp;authPassword=hono-secret"/>
-
 ```
 
 ## Wrapping it up

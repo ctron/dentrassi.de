@@ -44,22 +44,18 @@ So I went along and simply created my own provider. For my own use case, which i
 
 In case you need to use a PEM encoded X.509 certificate in Java, you now can either re-encode that with `openssl `on the command line or simply drop on this provider and use `PEM` as the KeyStore type:
 
-```
-<pre class="wp-block-code">```
+```xml
 <dependency>
   <groupId>de.dentrassi.crypto</groupId>
   <artifactId>pem-keystore</artifactId>
   <version>2.0.0</version>
 </dependency>
 ```
-```
 
 And then:
 
-```
-<pre class="wp-block-code">```
+```java
 KeyStore keyStore = KeyStore.getInstance("PEM");
-```
 ```
 
 For more information see: [ctron/pem-keystore](https://github.com/ctron/pem-keystore) at GitHub

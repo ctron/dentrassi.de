@@ -14,7 +14,9 @@ categories:
 
 Today I stumbled over an issue that was unsolved in my workspace for some days now. Finally I got the time to fix it. I have a ECore meta-model which consists of three sub-packages and has no class in the main package. Generating model, edit and editor for this I had a nice start for my task. Then I wanted to generate code from this meta model and ran into a strange problem. On the console I simply got the following message when I tried to launch the Acceleo UI generator action:
 
-`The type of the first parameter of the main template named 'generateElement' is a proxy.`
+```
+The type of the first parameter of the main template named 'generateElement' is a proxy.
+```
 
 <!-- more -->
 
@@ -39,4 +41,4 @@ model
       -> class1
 ```
 
-Adding a dummy class to my main package and re-generating all files (including new plugin.xml files) solved the issue with Acceleo. Although I am still not sure where the problem actually lies. It is not in the Eclipse Bugzilla: https://bugs.eclipse.org/bugs/show\_bug.cgi?id=401075
+Adding a dummy class to my main package and re-generating all files (including new `plugin.xml` files) solved the issue with Acceleo. Although I am still not sure where the problem actually lies. It is not in the Eclipse Bugzilla: <https://bugs.eclipse.org/bugs/show\_bug.cgi?id=401075>

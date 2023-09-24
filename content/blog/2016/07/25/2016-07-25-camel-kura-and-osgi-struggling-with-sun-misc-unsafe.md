@@ -1,6 +1,6 @@
 ---
 id: 842
-title: 'Camel, Kura and OSGi, struggling with &#8216;sun.misc.Unsafe&#8217;'
+title: 'Camel, Kura and OSGi, struggling with `sun.misc.Unsafe`'
 date: '2016-07-25T13:23:44+02:00'
 author: 'Jens Reimann'
 layout: post
@@ -38,7 +38,13 @@ As always, there are a few. There may be a few more possible than I describe her
 
 ### Fragments
 
-<figure aria-describedby="caption-attachment-847" class="wp-caption alignright" id="attachment_847" style="width: 300px">[![Two Fragments](https://dentrassi.de/wp-content/uploads/sun_misc_1-300x67.png)](https://dentrassi.de/2016/07/25/camel-kura-and-osgi-struggling-with-sun-misc-unsafe/sun_misc_1/)<figcaption class="wp-caption-text" id="caption-attachment-847">Two Fragments</figcaption></figure>OSGi fragments are a way to enhance an already existing OSGi bundle. So the kind of merge in into the bundle. So it is possible to create a fragment for Apache Camel which does `Import-Package: sun.misc`. This should quickly resolve the issue as long as the bundle is installed into you OSGi container at the same time Apache Camel is, so that it is available at the time Apache Camel is started. The host bundle has to be `org.apache.camel.camel-core`, since this is the bundle requiring `sun.misc.Unsafe`.
+<figure>
+
+[![Two Fragments](https://dentrassi.de/wp-content/uploads/sun_misc_1.png)](https://dentrassi.de/2016/07/25/camel-kura-and-osgi-struggling-with-sun-misc-unsafe/sun_misc_1/)
+
+<figcaption>Two Fragments</figcaption></figure>
+
+OSGi fragments are a way to enhance an already existing OSGi bundle. So the kind of merge in into the bundle. So it is possible to create a fragment for Apache Camel which does `Import-Package: sun.misc`. This should quickly resolve the issue as long as the bundle is installed into you OSGi container at the same time Apache Camel is, so that it is available at the time Apache Camel is started. The host bundle has to be `org.apache.camel.camel-core`, since this is the bundle requiring `sun.misc.Unsafe`.
 
 Of course this brings up the next issue, there is nobody who exports `sun.misc`. But there is again a way to fix this.
 
@@ -55,7 +61,6 @@ Bundle-SymbolicName: my.sun.misc.provider
 Bundle-Version: 1.0.0
 Fragment-Host: system.bundle; extension:=framework
 Export-Package: sun.misc
-
 ```
 
 Of course you can also export other JVM internal packages using that way.
@@ -74,11 +79,15 @@ Eclipse Equinox also allows to set a few system properties in order to allow fal
 
 Also see: [https://wiki.eclipse.org/Equinox\_Boot\_Delegation](https://wiki.eclipse.org/Equinox_Boot_Delegation)
 
-<dl><dt>osgi.compatibility.bootdelegation=true</dt><dd>This fill fall back to the bootclassloader like using the launcher “org.eclipse.equinox.launcher”</dd></dl>### Bootclasspath delegation for all
+<dl><dt>osgi.compatibility.bootdelegation=true</dt><dd>This fill fall back to the bootclassloader like using the launcher `org.eclipse.equinox.launcher`</dd></dl>
 
-The OSGi core specification also allows to configure direct delegation of lookups to the boot classloader (Section 3.9.3 of the OSGi core specificion):
+### Bootclasspath delegation for all
 
-<dl><dt>org.osgi.framework.bootdelegation=sun.misc.\*</dt><dd>This will forward requests for “sun.misc.\*” directly to the boot class loader. </dd></dl>## Conclusion
+The OSGi core specification also allows to configure direct delegation of lookups to the boot classloader (Section 3.9.3 of the OSGi core specification):
+
+<dl><dt>org.osgi.framework.bootdelegation=sun.misc.\*</dt><dd>This will forward requests for `sun.misc.\*` directly to the boot class loader.</dd></dl>
+
+## Conclusion
 
 Now people may complain “oh how complicates this OSGi-thingy is”. Well, “sun.misc.Unsafe” was never intended to be used outside the JVM. Java 9 will correct this with their module system. OSGi already can do that. But it also provides a way to solve this.
 
@@ -88,4 +97,4 @@ If you prefer to use system properties, a different launcher or the “two fragm
 
 I am just writing this down in order to help others. And I got help from others to solve this myself. So thanks to some people who posted this “on the net”, it is a long time, I stumbled over you googling about a solutions some time ago. Sorry I forgot where I initially found this solution.
 
-Also thanks to [Neil Bartlett](https://twitter.com/nbartlett) for pointing out the OSGi conform solution with “org.osgi.framework.bootdelegation”.
+Also thanks to [Neil Bartlett](https://twitter.com/nbartlett) for pointing out the OSGi conform solution with `org.osgi.framework.bootdelegation`.

@@ -20,34 +20,35 @@ After I finished an export to “ods” (aka spreadsheet) it simply wanted to se
 
 First create your spreadsheet and sheet ( you might already have done that):
 
-\[code language=”Java”\]  
-OdfSpreadsheetDocument output = OdfSpreadsheetDocument.newSpreadsheetDocument ();  
-final OdfTable sheet = OdfTable.newTable ( output );  
-\[/code\]
+```java
+OdfSpreadsheetDocument output = OdfSpreadsheetDocument.newSpreadsheetDocument ();
+final OdfTable sheet = OdfTable.newTable ( output );
+```
 
 Now change the styles to “A4 landscape”:
 
 First we need to get the “master page” named “Default”:  
-\[code language=”Java”\]  
-StyleMasterPageElement defaultPage = output.getOfficeMasterStyles ().getMasterPage ( "Default" );  
-\[/code\]
+```java
+StyleMasterPageElement defaultPage = output.getOfficeMasterStyles ().getMasterPage ( “Default” );
+```
 
 The master page tells us the name of the page style:  
-\[code language=”Java”\]  
+```java
 String pageLayoutName = defaultPage.getStylePageLayoutNameAttribute ();  
-\[/code\]
+```
 
 Which gives us the page layout object:  
-\[code language=”Java”\]  
+```java  
 OdfStylePageLayout pageLayout = defaultPage.getAutomaticStyles ().getPageLayout ( pageLayoutName );  
-\[/code\]
+```
 
-Finally we can set “A4 landscape”:  
-\[code language=”Java”\]  
+Finally, we can set “A4 landscape”:
+
+```java  
 pageLayout.setProperty ( OdfPageLayoutProperties.PrintOrientation, "landscape" );  
 pageLayout.setProperty ( OdfPageLayoutProperties.PageHeight, "210.01mm" );  
 pageLayout.setProperty ( OdfPageLayoutProperties.PageWidth, "297mm" );  
 pageLayout.setProperty ( OdfPageLayoutProperties.NumFormat, "1" );  
-\[/code\]
+```
 
-All four properties seem to be required. Also the width and height have to be rotatate according to “landscape”.
+All four properties seem to be required. Also, the width and height have to be rotated according to “landscape”.

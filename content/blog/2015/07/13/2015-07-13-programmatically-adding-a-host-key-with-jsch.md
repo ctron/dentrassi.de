@@ -45,7 +45,7 @@ Gladly JSch allows to programmatically add host keys. Although the approach is r
 
 Creating a new Jsch instance allows to specify the location of the host keys, but also allows to add them manually:
 
-```
+```java
 String keyString = "....";
 
 // parse the key
@@ -56,7 +56,6 @@ HostKey hostKey = new HostKey ( info.getHostname (), key );
 
 // add the host key
 jsch.getHostKeyRepository ().add ( hostKey, null );
-
 ```
 
 Basically this does the trick. The only question is, what exactly is they “keyString”. It is not the fingerprint from the exception and it is not the full line from your known hosts file, just the last segment.
@@ -65,14 +64,12 @@ So for example if your “known\_hosts” entry is:
 
 ```
 |1|DvS0JwyQni+Jqoht2n8BSYQjze4=|zHORICsezHdR1nIYhqsOxrgnUe4= ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAwht8wWW+cqmGJa5KrgfgydvlgHxSmlV+8oSUINSm8ix+wG87jQHz56MeaFf0F3IvxiivfvIUxBGlb05CZC1rCTfinvS7H1ktDIwVUK3gv+SGNYtGGwWbtg+oMXAevpV5pMTvDS7Ue6OUnSXGDbAxcqXBA+ApKCG5oizhyrtzOrU=
-
 ```
 
 Then the “keyString” is:
 
 ```
 AAAAB3NzaC1yc2EAAAABIwAAAIEAwht8wWW+cqmGJa5KrgfgydvlgHxSmlV+8oSUINSm8ix+wG87jQHz56MeaFf0F3IvxiivfvIUxBGlb05CZC1rCTfinvS7H1ktDIwVUK3gv+SGNYtGGwWbtg+oMXAevpV5pMTvDS7Ue6OUnSXGDbAxcqXBA+ApKCG5oizhyrtzOrU=
-
 ```
 
 Problem solved ;-)

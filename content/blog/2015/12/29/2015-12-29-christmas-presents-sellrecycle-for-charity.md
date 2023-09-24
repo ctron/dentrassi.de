@@ -23,6 +23,6 @@ But after Christmas there are lots of unwanted presents and things you don’t n
 
 <!-- more -->
 
-Now just think of a different way. If you could just put those presents up at E-Bay, in a charity special. You start an auction, put up your unwanted presents and select some registered non-profit organization that will received the money. E-bay won’t charge you for the transaction, at least for those charity auctions.
+Now just think of a different way. If you could just put those presents up at E-Bay, in a charity special. You start an auction, put up your unwanted presents and select some registered non-profit organization that will receive the money. E-bay won’t charge you for the transaction, at least for those charity auctions.
 
 Sounds like a great idea to me.

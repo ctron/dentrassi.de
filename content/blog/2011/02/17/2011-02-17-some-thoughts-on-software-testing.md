@@ -46,13 +46,13 @@ Cutting of the network access or relocating the machines to a different part of 
 
 At least one person <q>non developer</q> should be responsible for testing. This does not mean that no developer should test but people tend to test the same way all over again. Just using the system another way might turn up lots of interesting issues. You will encounter situations you only can get out of using a developer, which will not be possible in the productive system. So the earlier you let people test that do not know the source code and can influence system internals the earlier you will get a system that can be managed by administrators of your customer alone (if this is what you wish). In the end the customer will click in a different way and will find issues with his approach on the system.
 
-Also if you focus on special &lt;q&gt;test users&lt;/q&gt; reduce the problem of having all developers think &lt;q&gt;the other one&lt;/q&gt; tested that cool new feature which went out untested.
+Also, if you focus on special &lt;q&gt;test users&lt;/q&gt; reduce the problem of having all developers think &lt;q&gt;the other one&lt;/q&gt; tested that cool new feature which went out untested.
 
 # Test cases
 
-I am a little biased about automated test cases. In the end you will have a manual test. Most systems I know cannot be completely tested using an automated test system. Developing a specialized solution in one project is totally different to a product that developed once and sold many times. Writing test cases can be quite difficult and time consuming. if you have to re-write them for every new project it might turn out easier to just perform then <q>manually</q>.
+I am a little biased about automated test cases. In the end you will have a manual test. Most systems I know cannot be completely tested using an automated test system. Developing a specialized solution in one project is totally different to a product that developed once and sold many times. Writing test cases can be quite difficult and time-consuming. if you have to re-write them for every new project it might turn out easier to just perform then <q>manually</q>.
 
-On the other hand automated test cases definitely will improve quality. But the are no guarantee for successful test with your customer. You will never reach a point where you have your system covered 100% by your automated tests. See it reaching light speed. You never can and getting closer will cost you more and more energy. Also automated test cases are just source code that might contains bugs ore may simply be wrong.
+On the other hand automated test cases definitely will improve quality. But, the are no guarantee for successful test with your customer. You will never reach a point where you have your system covered 100% by your automated tests. See it reaching light speed. You never can and getting closer will cost you more and more energy. Also automated test cases are just source code that might contain bugs ore may simply be wrong.
 
 # Finally
 

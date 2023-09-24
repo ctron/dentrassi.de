@@ -22,56 +22,59 @@ Assuming you already have set up your Maven Tycho RCP build and are building pro
 
 Extend the configuration in the “eclipse-repository” project by calling (or enhancing the call) to:
 
-\[code language=”xml”\]&lt;plugin&gt;  
- &lt;groupId&gt;org.eclipse.tycho&lt;/groupId&gt;  
- &lt;artifactId&gt;tycho-p2-director-plugin&lt;/artifactId&gt;  
- &lt;version&gt;${tycho-version}&lt;/version&gt;  
-&lt;/plugin&gt;\[/code\]
+```xml
+<plugin>
+  <groupId>org.eclipse.tycho</groupId>
+  <artifactId>tycho-p2-director-plugin</artifactId>
+  <version>${tycho-version}</version>
+</plugin>
+```
 
-If you don’t have a “configuration” element for this plugin yet, then add it as a child element and configure the specific product you are building:
 
-\[code language=”xml”\]  
-&lt;plugin&gt;  
- &lt;groupId&gt;org.eclipse.tycho&lt;/groupId&gt;  
- &lt;artifactId&gt;tycho-p2-director-plugin&lt;/artifactId&gt;  
- &lt;version&gt;${tycho-version}&lt;/version&gt;  
- &lt;configuration&gt;  
- &lt;formats&gt;  
- &lt;win32&gt;zip&lt;/win32&gt;  
- &lt;linux&gt;tar.gz&lt;/linux&gt;  
- &lt;macosx&gt;tar.gz&lt;/macosx&gt;  
- &lt;/formats&gt;
+If you don’t have a `configuration` element for this plugin yet, then add it as a child element and configure the specific product you are building:
 
- &lt;products&gt;  
- &lt;product&gt;  
- &lt;id&gt;&lt;&lt;group.id&gt;&gt;.&lt;&lt;artifact.id&gt;&gt;&lt;/id&gt;  
- &lt;rootFolders&gt;  
- &lt;macosx&gt;My Application.app&lt;/macosx&gt;  
- &lt;/rootFolders&gt;  
- &lt;/product&gt;  
- &lt;/products&gt;  
- &lt;/configuration&gt;  
-&lt;/plugin&gt;  
-\[/code\]
+```xml
+<plugin>
+  <groupId>org.eclipse.tycho</groupId>
+  <artifactId>tycho-p2-director-plugin</artifactId>
+  <version>${tycho-version}</version>
+  <configuration>
+    <formats>
+      <win32>zip</win32>
+      <linux>tar.gz</linux>
+      <macosx>tar.gz</macosx>
+    </formats>
 
-“group.id” and “artifact.id” make up the id of your application. Which must be consistent with the “id” property in the “.product” file.
+    <products>
+      <product>
+        <id>${group.id}.${artifact.id}</id>
+        <rootFolders>
+          <macosx>My Application.app</macosx>
+        </rootFolders>
+      </product>
+    </products>
+  </configuration>
+</plugin>
+```
 
-The most important thing is is the configuration of the “rootFolder” for the target type Mac OS X here. It would also be possible to use the plain “rootFolder” property, but using “rootFolders” (with the “s”) it is possible to just make an alternate name for Mac OS X.
+`${group.id}` and `${artifact.id}` make up the id of your application. Which must be consistent with the `id` property in the `.product` file.
+
+The most important thing is the configuration of the “rootFolder” for the target type Mac OS X here. It would also be possible to use the plain “rootFolder” property, but using “rootFolders” (with the “s”) it is possible to just make an alternate name for Mac OS X.
 
 In addition to that tell the repository bundle (in the same Maven project) to generate for Mac OS X.
 
-\[code language=”xml”\]  
-&lt;plugin&gt;  
- &lt;groupId&gt;org.eclipse.tycho&lt;/groupId&gt;  
- &lt;artifactId&gt;tycho-p2-repository-plugin&lt;/artifactId&gt;  
- &lt;version&gt;${tycho-version}&lt;/version&gt;  
- &lt;configuration&gt;  
- &lt;includeAllDependencies&gt;true&lt;/includeAllDependencies&gt;  
- &lt;profileProperties&gt;  
- &lt;macosx-bundled&gt;true&lt;/macosx-bundled&gt;  
- &lt;/profileProperties&gt;  
- &lt;/configuration&gt;  
-&lt;/plugin&gt;  
-\[/code\]
+```xml
+<plugin>
+  <groupId>org.eclipse.tycho</groupId>
+  <artifactId>tycho-p2-repository-plugin</artifactId>
+  <version>${tycho-version}</version>
+  <configuration>
+    <includeAllDependencies>true</includeAllDependencies>
+    <profileProperties>
+      <macosx-bundled>true</macosx-bundled>
+    </profileProperties>
+  </configuration>
+</plugin>
+```
 
-Running “maven package” will now give you a “products” folder under your output folder (normally “target”) which hosts a zipped version of your Mac OS X app bundle, which extracts to “My Application.app” and shows in the finder as “My Application”.
+Running `maven package` will now give you a `products` folder under your output folder (normally `target`) which hosts a zipped version of your Mac OS X app bundle, which extracts to “My Application.app” and shows in the finder as “My Application”.

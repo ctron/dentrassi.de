@@ -27,25 +27,19 @@ The first phase was focused on creating a simple logistic network simulation and
 
 So let’s have a quick look:
 
- <style>
-			#gallery-4 {
-				margin: auto;
-			}
-			#gallery-4 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-4 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-4 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		</style><div class="gallery galleryid-3632 gallery-columns-2 gallery-size-medium" id="gallery-4"><dl class="gallery-item"> <dt class="gallery-icon landscape"> [![](https://dentrassi.de/wp-content/uploads/kapua_sim_1-1-300x192.png)](https://dentrassi.de/wp-content/uploads/kapua_sim_1-1.png) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-4-3633"> Kapua logistics simulator – world overview </dd></dl><dl class="gallery-item"> <dt class="gallery-icon portrait"> [![](https://dentrassi.de/wp-content/uploads/kapua_sim_2-297x300.png)](https://dentrassi.de/wp-content/uploads/kapua_sim_2.png) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-4-3634"> Kapua logistics simulator – economic overview </dd></dl>  
- </div>Now, as you can see, trains driving through oceans isn’t that realistic ;-) But we agreed on not taking things like this under consideration. Companies and locations are  
+<figure>
+
+![Kapua logistics simulator – world overview](https://dentrassi.de/wp-content/uploads/kapua_sim_1-1.png)
+
+<figcaption>Kapua logistics simulator – world overview</figcaption></figure>
+
+<figure>
+
+![Kapua logistics simulator – economic overview](https://dentrassi.de/wp-content/uploads/kapua_sim_2.png)
+
+<figcaption>Kapua logistics simulator – economic overview</figcaption></figure>
+
+Now, as you can see, trains driving through oceans isn’t that realistic ;-) But we agreed on not taking things like this under consideration. Companies and locations are  
 randomly generated and figuring out which vehicles could drive on which roads between locations would simple be too much for this project.
 
 The dashboard component is implemented using [Dart](https://www.dartlang.org/) and simply because it was considered cool ;-)

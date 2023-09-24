@@ -50,10 +50,10 @@ In addition to that a few bugs in Kura had to be fixed. Kura did make a few assu
 
 If you just want to start up a stable build (not a release) you can easily do this with Docker:
 
-\[code language=”bash”\]  
+```bash
 sudo docker run -ti ctron/kura:karaf-stable # stable milestone  
 sudo docker run -ti ctron/kura:karaf-develop # latest develop build  
-\[/code\]
+```
 
 This will drop you in a Karaf shell of Kura running inside docker. You can play around with the console, install some additional functionality or try out an example like [OPC UA with Apache Camel](https://github.com/ctron/de.dentrassi.camel.milo/tree/master/examples/milo-example1).
 

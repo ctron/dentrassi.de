@@ -33,7 +33,9 @@ A lot has happened, since [I wrote last about the Eclipse IoT Packages project](
 
 One of the first things we wanted to get started, was a home for the content we plan on creating. An important piece of the puzzle is to explain to people, what we have in mind. Not only for people that want to try out the various Eclipse IoT projects, but also to possible contributors. And in the end, an important goal of the project is to attract interested parties. For consuming our ideas, or growing them even further.
 
-<div class="wp-block-image"><figure class="aligncenter is-resized">![Eclipse IoT Packages logo](https://dentrassi.de/wp-content/uploads/logo.svg)</figure></div>So we now have a logo, [a homepage](https://www.eclipse.org/packages/), built using using templates in a continuous build system. We are in a position to start focusing on the actual content, and on the more tricky tasks and questions ahead. And should you want to create a PR for the homepage, you are more than welcome. There is also already some content, explaining the main goals, the way we want to move forward, and demo of a first package: “Package Zero”.
+![Eclipse IoT Packages logo](https://dentrassi.de/wp-content/uploads/logo.svg)
+
+So we now have a logo, [a homepage](https://www.eclipse.org/packages/), built using templates in a continuous build system. We are in a position to start focusing on the actual content, and on the more tricky tasks and questions ahead. And should you want to create a PR for the homepage, you are more than welcome. There is also already some content, explaining the main goals, the way we want to move forward, and demo of a first package: “Package Zero”.
 
 ## Community
 
@@ -53,7 +55,10 @@ On the other side, having a one-stop shop, for getting your Eclipse IoT Helm cha
 
 Thanks to a company called [Kiwigrid](https://github.com/kiwigrid/helm-charts), who contributed a CI pipeline for validating charts, we could easily extend our existing homepage publishing job, to also publish Helm charts. As a first chart, we published the [Eclipse Ditto](https://www.eclipse.org/ditto/) chart. And, as expected with Helm, installing it is as easy as:
 
-<div class="wp-block-columns is-layout-flex wp-container-3 wp-block-columns-is-layout-flex"><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><figure class="wp-block-image size-large">[![](https://dentrassi.de/wp-content/uploads/h1-1024x427.png)](https://dentrassi.de/wp-content/uploads/h1.png)</figure></div><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><figure class="wp-block-image size-large">[![](https://dentrassi.de/wp-content/uploads/h2-1024x427.png)](https://dentrassi.de/wp-content/uploads/h2.png)</figure></div></div>Of course having a single chart is only the first step. Publishing a single Helm charts isn’t that impressive. But getting an agreement on the community, getting the validation and publishing pipeline set up, attracting new contributors, that is definitely a big step in the right direction.
+[![](https://dentrassi.de/wp-content/uploads/h1-1024x427.png)](https://dentrassi.de/wp-content/uploads/h1.png)
+[![](https://dentrassi.de/wp-content/uploads/h2-1024x427.png)](https://dentrassi.de/wp-content/uploads/h2.png)
+
+Of course having a single chart is only the first step. Publishing a single Helm charts isn’t that impressive. But getting an agreement on the community, getting the validation and publishing pipeline set up, attracting new contributors, that is definitely a big step in the right direction.
 
 ## Outlook
 

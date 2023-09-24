@@ -17,8 +17,7 @@ In my day to day work I encounter several interesting programming pattern that I
 <!-- more -->
 
 ```java  
-if ( !trans.getWeights ().isEmpty () )  
-{  
+if ( !trans.getWeights ().isEmpty () ) {
  final Collection&lt;Weight&gt; weightList = trans.getWeights ();  
  WeightVo weightVo = null;  
  for ( final Weight weight : weightList )  
@@ -27,7 +26,7 @@ if ( !trans.getWeights ().isEmpty () )
  break;  
  }  
  truckVo.setWeightVo ( weightVo );  
-}  
+}
 ```
 
 While one can argue if this one-liner is more readable and understandable:
@@ -39,8 +38,7 @@ truckVo.setWeightVo ( trans.getWeights().isEmpty() ? null : getWeightDao ().toWe
 The following definitely is:
 
 ```java  
-if ( !trans.getWeights ().isEmpty () )  
-{  
+if ( !trans.getWeights ().isEmpty () ) {
  truckVo.setWeightVo ( getWeightDao ().toWeightVo ( trans.getWeights().get ( 0 ) ) );  
 }  
 ```

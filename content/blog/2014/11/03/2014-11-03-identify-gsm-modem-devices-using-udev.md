@@ -19,7 +19,7 @@ categories:
     - Infrastructure
 ---
 
-Again an interesting problem, I do have a Linux box and it has two GSM modems and a RS-232 FTDI USB device built in. Each GSM modem brings three USB serial devices. Now I do want to dial up using the first of these modems and therefore I do need the device name, e.g. `/dev/ttyUSB2`.
+Again an interesting problem, I do have a Linux box and it has two GSM modems and an RS-232 FTDI USB device built in. Each GSM modem brings three USB serial devices. Now I do want to dial up using the first of these modems and therefore I do need the device name, e.g. `/dev/ttyUSB2`.
 
 <!-- more -->
 
@@ -29,7 +29,9 @@ However, each time the box boots up, either the RS-232 device or the modems are 
 
 Now my modems can be identified by vendor and product id (12d1, 1404) so a simply udev rule should be fine:
 
-\[code\]SUBSYSTEM=="tty", ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1404", SYMLINK+="gsm%s{bInterfaceNumber}"\[/code\]
+```
+SUBSYSTEM==“tty”, ATTRS{idVendor}==“12d1”, ATTRS{idProduct}==“1404”, SYMLINK+=“gsm%s{bInterfaceNumber}”
+```
 
 In theory this should create additional entries under “/dev/” with map to the kernel assigned device names. For example `/dev/gsm00` -&gt; `/dev/ttyUSBXX`. So I could just access `/dev/gsm01`, whatever the boot order was.
 
@@ -40,11 +42,10 @@ Still it is possible to record the interface number of a first rule, and use it 
 ```
 SUBSYSTEMS=="usb", ENV{.LOCAL_ifNum}="$attr{bInterfaceNumber}"
 SUBSYSTEM=="tty", ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1404", SYMLINK+="gsm%E{.LOCAL_ifNum}"
-
 ```
 
 This stores the attribute “bInterfaceNumber” into the environment variable `.LOCAL_ifNum` (the prefixed dot is a notation for temporary or hidden variables). In the second rule the same variable is pulled on using the `%E` syntax. Newer udev versions also support `$env` instead of `%E`.
 
-Thanks to \[1\] for mentioning this trick!
+Thanks to[^1] for mentioning this trick!
 
-\[1\] https://unix.stackexchange.com/questions/60154/udev-rule-file-for-modem-not-working
+[^1] https://unix.stackexchange.com/questions/60154/udev-rule-file-for-modem-not-working

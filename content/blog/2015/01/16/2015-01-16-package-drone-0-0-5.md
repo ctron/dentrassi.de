@@ -36,23 +36,19 @@ Also a few bugs where fixed. Sadly in 0.0.4 there was a bug which prevented the 
 
 ## Screenshots
 
- <style>
-			#gallery-1 {
-				margin: auto;
-			}
-			#gallery-1 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-1 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-1 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		</style><div class="gallery galleryid-480 gallery-columns-3 gallery-size-thumbnail" id="gallery-1"><dl class="gallery-item"> <dt class="gallery-icon landscape"> [![Screenshot of channel view](https://dentrassi.de/wp-content/uploads/pd005_001-150x150.png)](https://dentrassi.de/2015/01/16/package-drone-0-0-5/pd005_001/) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-1-483"> Package Drone 0.0.5 – Channel View </dd></dl><dl class="gallery-item"> <dt class="gallery-icon landscape"> [![](https://dentrassi.de/wp-content/uploads/pd005_002-150x150.png)](https://dentrassi.de/2015/01/16/package-drone-0-0-5/pd005_002/) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-1-489"> Package Drone 0.0.5 – Artifact View </dd></dl><dl class="gallery-item"> <dt class="gallery-icon landscape"> [![](https://dentrassi.de/wp-content/uploads/pd005_003-150x150.png)](https://dentrassi.de/2015/01/16/package-drone-0-0-5/pd005_003/) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-1-490"> Package Drone 0.0.5 – Aspect Selection </dd></dl>  
-<dl class="gallery-item"> <dt class="gallery-icon landscape"> [![](https://dentrassi.de/wp-content/uploads/pd005_004-150x150.png)](https://dentrassi.de/2015/01/16/package-drone-0-0-5/pd005_004/) </dt> <dd class="wp-caption-text gallery-caption" id="gallery-1-491"> Package Drone 0.0.5 – P2 Virtual Feature Form </dd></dl>   
- </div>
+{% figure(caption="Package Drone 0.0.5 – Channel View")%}
+![Screenshot of channel view](/wp-content/uploads/pd005_001.png)
+{% end %}
+
+{% figure(caption="Package Drone 0.0.5 – Artifact View")%}
+![Screenshot of channel view](/wp-content/uploads/pd005_002.png)
+{% end %}
+
+{% figure(caption="Package Drone 0.0.5 – Aspect Selection")%}
+![Screenshot of channel view](/wp-content/uploads/pd005_003.png)
+{% end %}
+
+{% figure(caption="Package Drone 0.0.5 – P2 Virtual Feature Form")%}
+![Screenshot of channel view](/wp-content/uploads/pd005_004.png)
+{% end %}
+
