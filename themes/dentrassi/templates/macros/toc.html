@@ -1,4 +1,7 @@
 {% macro toc(page) %}
+
+{% if page.toc | length > 0 %}
+
 <div class="de-toc mb-4">
   <h2>Table of Content</h2>
 
@@ -21,4 +24,7 @@
   </ul>
   {% endif %}
 </div>
+
+{% endif %}
+
 {% endmacro %}
