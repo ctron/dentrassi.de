@@ -4,6 +4,10 @@
 
 {% extends "base.html" %}
 
+{% block head %}
+{{ head::meta(page=page) }}
+{% endblock head %}
+
 {% block content %}
 
 <article class="de-article" itemscope itemtype="http://schema.org/BlogPosting">

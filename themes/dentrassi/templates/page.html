@@ -3,6 +3,10 @@
 
 {% extends "base.html" %}
 
+{% block head %}
+{{ head::meta(page=page) }}
+{% endblock head %}
+
 {% block content %}
 
 <section>

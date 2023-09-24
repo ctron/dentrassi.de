@@ -13,6 +13,10 @@
   {{ head::resource() }}
   {{ head::stylesheet() }}
 
+  {% block head %}
+  <meta name="description" content="{{ config.description }}">
+  {% endblock head %}
+
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
   {% if config.generate_feed %}

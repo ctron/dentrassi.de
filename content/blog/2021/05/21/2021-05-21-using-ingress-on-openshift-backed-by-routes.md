@@ -1,6 +1,7 @@
 ---
 id: 4551
 title: 'Using Ingress on OpenShift backed by Routes'
+description: 'A blog post on using Kubernetes Ingres resources with OpenShift Routes'
 date: '2021-05-21T21:10:42+02:00'
 author: 'Jens Reimann'
 layout: post
