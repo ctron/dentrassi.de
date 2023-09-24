@@ -10,6 +10,26 @@
     font-size: 1.5rem;
     border-bottom: $light-border-subtle solid 1px;
   }
+
+  line-height: 1.2;
+
+  ul li {
+    padding-bottom: 0.5rem;
+  }
+
+  .de-c-title__action {
+    text-transform: none;
+    font-weight: normal;
+
+    margin-left: auto;
+
+    a {
+      font-size: $font-size-base;
+      color: $secondary;
+      text-decoration: underline $secondary-border-subtle;
+    }
+  }
+
 }
 
 .de-sidebox.de-m-right {

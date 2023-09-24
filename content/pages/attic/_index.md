@@ -1,5 +1,5 @@
 ---
-title: "Old projects"
+title: "Attic"
 sort_by: date
 weight: 200
 template: attic.html

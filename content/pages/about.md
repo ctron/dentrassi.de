@@ -10,18 +10,20 @@ authorsure_include_css:
     - ''
 spacious_page_layout:
     - default_layout
+extra:
+  skipToc: true
 ---
 
 This is a personal blog about technical stuff, life, the universe and everything. Sometimes I write down ideas so that others might find them, implement them and send me a copy ;-) Some posts are “note to self”, stuff that I would like to rediscover once I forgot it. And of course a blog is great toy to play around with :-)
 
 
-<figure>
+<figure class="de-c-blockquote">
 
-<blockquote class="blockquote">
+<blockquote>
 Sometimes found employed on Vogon Constructor Fleets, the Dentrassis are The best cooks and The best drink mixers, and they don’t give a wet slap about anything else. They’ll usually help Hitchhikers aboard, partly because they like the company, but mostly because it annoys the Vogons.
 </blockquote>
 
-<figcaption class="blockquote-footer">
+<figcaption>
 
 <cite>
 

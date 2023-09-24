@@ -12,6 +12,10 @@
 
 // header paragraphs
 
+h1, h2, h3, h4, h5 {
+  // color: var(--bs-secondary-color);
+}
+
 main {
   h2:after:hover,
   h3:after:hover,
@@ -27,4 +31,9 @@ main {
 
 footer {
   font-size: 1rem;
+}
+
+main {
+  font-family: $article-font-family, sans-serif;
+  font-size: $article-font-size;
 }

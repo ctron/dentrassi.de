@@ -1,6 +1,8 @@
 {% macro projects() %}
 <div class="mb-4">
+
   <h2>Projects</h2>
+
   <ul class="list-unstyled">
     <li><a class="link-body-emphasis" target="_blank" href="https://github.com/patternfly-yew/patternfly-yew">PatternFly Yew</a></li>
     <li><a class="link-body-emphasis" target="_blank" href="https://github.com/ctron/yew-oauth2">Yew OAuth2</a></li>
@@ -12,9 +14,10 @@
 </div>
 {% endmacro %}
 
-{% macro pages() %}
+{% macro pages(skip_title=true) %}
 <div class="mb-4">
-  <h2>Pages</h2>
+  <h2>More</h2>
+
   <ul class="list-unstyled">
     {% set pages = get_section(path="pages/_index.md") %}
     {% for page in pages.pages %}
@@ -28,14 +31,24 @@
 </div>
 {% endmacro %}
 
-{% macro recent_posts() %}
+{% macro recent_posts(skip_action=false) %}
 <div class="de-c-recent-posts mb-2">
-  <h2>Recent Posts</h2>
+
+  <h2 class="d-flex">
+    <span>Recent Posts</span>
+    {% if not skip_action %}
+    <span class="de-c-title__action">
+      <a href="{{ get_url(path='archive') | safe }}">Archive</a>
+    </span>
+    {% endif %}
+  </h2>
+
   <ul class="list-unstyled">
     {% set all_content = get_section(path="_index.md") %}
     {% for post in all_content.pages | slice(end=5) %}
     <li><a class="link-body-emphasis" href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+
 </div>
 {% endmacro %}

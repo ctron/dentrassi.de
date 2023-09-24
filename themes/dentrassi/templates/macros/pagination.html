@@ -1,0 +1,39 @@
+
+{% macro page_item(paginator,i) %}
+<li class="page-item">
+  <a
+      href="{{ paginator.base_url}}{{i+1}}"
+      class="page-link {% if paginator.current_index == i + 1 %}active{% endif %}" {% if paginator.current_index == i + 1 %}aria-current="page"{% endif %} aria-label="Page {{ i + 1 }}" aria-current="page">{{ i + 1}}</a>
+</li>
+{% endmacro %}
+
+{% macro pagination(paginator) %}
+<nav class="" role="navigation" aria-label="pagination">
+
+  <ul class="pagination justify-content-center">
+    <li class="page-item {% if not paginator.previous %}disabled{% endif %}">
+      <a class="page-link" {% if paginator.previous %}href='{{ paginator.previous }}' {% endif %} aria-label="Previous">&laquo;</a>
+    </li>
+
+
+    {% if paginator.number_pagers > 10 %}
+
+      {% for i in range(end=paginator.number_pagers) %}
+      {{ pagination::page_item(paginator=paginator,i=i) }}
+      {% endfor %}
+
+    {% else %}
+
+      {% for i in range(end=paginator.number_pagers) %}
+        {{ pagination::page_item(paginator=paginator,i=i) }}
+      {% endfor %}
+
+    {% endif %}
+
+    <li class="page-item {% if not paginator.next %}disabled{% endif %}">
+      <a class="page-link" {% if paginator.next %}href='{{ paginator.next }}'{% endif %} aria-label="Next">&raquo;</a>
+    </li>
+  </ul>
+
+</nav>
+{% endmacro %}

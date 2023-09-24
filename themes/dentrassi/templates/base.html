@@ -31,11 +31,11 @@
 
       <div class="row d-flex align-items-start">
 
-        <aside class="col-lg-2 order-last order-lg-0 sticky-top mt-4 mt-lg-5">
+        <aside class="col-lg-2 order-last order-lg-0 sticky-lg-top mt-4 mt-lg-5">
           <div class="de-sidebox de-m-left">
           {% block leftside %}
-            {{ side::projects() }}
             {{ side::pages() }}
+            {{ side::projects() }}
           {% endblock leftside %}
           </div>
         </aside>

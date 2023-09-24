@@ -2,14 +2,8 @@
 @import "sidebox";
 @import "content";
 @import "top";
-
-.de-layout {
-  //padding-top: $nav-link-height;
-}
-
-.de-layout > .row > aside {
-  //top: calc($nav-link-height + $sidebox-top-padding);
-}
+@import "blockquote";
+@import "code";
 
 // post image
 .de-c-post-info {

@@ -1,0 +1,16 @@
+
+
+.de-c-blockquote {
+  padding: 1.5rem 2rem 1rem 2rem;
+
+  background: var(--bs-secondary-bg);
+  border-left: solid $secondary-border-subtle 5px;
+
+  cite {
+    text-align: end;
+  }
+
+  figcaption p {
+    margin: 0;
+  }
+}

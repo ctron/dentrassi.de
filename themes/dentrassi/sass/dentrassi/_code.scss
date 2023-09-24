@@ -1,0 +1,13 @@
+code {
+  background: var(--bs-secondary-bg);
+  padding: 0.125rem 0.25rem 0.125rem 0.25rem;
+  border-radius: .25rem;
+  font-weight: 600;
+}
+
+// reset for block code sections
+pre code {
+  padding: 0;
+  font-weight: normal;
+  background: inherit;
+}
