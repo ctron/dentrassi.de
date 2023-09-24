@@ -1,0 +1,11 @@
+{% macro main(page) %}
+<meta name="description" content="{{ meta::description(page=page) }}">
+{% endmacro %}
+
+{% macro description(page) -%}
+{% if page.description -%}
+{{ page.description }}
+{%- elif page.summary -%}
+{{ page.summary | striptags }}
+{%- endif %}
+{%- endmacro description %}
