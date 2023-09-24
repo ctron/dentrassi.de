@@ -5,6 +5,11 @@
   <li class="list-inline-item">
     <span>{{ page.reading_time }} minute read</span>
     <meta itemprop="wordCount" content="{{page.word_count}}">
+    <span class="d-none" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <a itemprop="url" href="https://dentrassi.de">
+        <span itemprop="name">Jens Reimann</span>
+      </a>
+    </span>
   </li>
 
   {% if page.date %}
