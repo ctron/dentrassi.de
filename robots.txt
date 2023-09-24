@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: dentrassi.de/sitemap.xml
+Sitemap: https://dentrassi.de/sitemap.xml
