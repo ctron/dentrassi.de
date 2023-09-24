@@ -22,7 +22,7 @@ An error occurred while collecting items to be installed<br></br>session context
 No repository found containing: osgi.bundle,org.eclipse.team.cvs.ssh,3.2.100.I20090508-2000
 ```  
 
-I was unable to add any new plugin and searching Google for help was not successfull. There was an issue somewhere in the Eclipse Bugzilla that the plugin <tt>org.eclipse.team.cvs.ssh</tt> was optional and no longer installed or required. Seems that P2 thinks the somewhat required for the installation process.
+I was unable to add any new plugin and searching Google for help was not successful. There was an issue somewhere in the Eclipse Bugzilla that the plugin <tt>org.eclipse.team.cvs.ssh</tt> was optional and no longer installed or required. Seems that P2 thinks the somewhat required for the installation process.
 
 <!-- more -->
 
