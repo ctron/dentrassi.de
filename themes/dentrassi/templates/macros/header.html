@@ -5,7 +5,7 @@
 <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" href="{{ get_url(path='/') | safe }}">{{ config.title }}</a>
-    <div class="d-flex ms-auto me-4 me-lg-0">
+    <div class="d-none d-md-flex ms-auto me-4 me-lg-0">
       {{ social::icons() }}
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rightSidebox" aria-controls="rightSidebox" aria-expanded="false" aria-label="Toggle navigation">

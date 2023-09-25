@@ -50,6 +50,11 @@
 
         <aside class="col-lg-3 order-first order-lg-0 sticky-top mt-lg-5 de-m-collapsible">
           <div class="de-sidebox de-m-right collapse d-lg-block" id="rightSidebox">
+
+            <div class="d-flex d-md-none pb-3">
+              {{ social::icons() }}
+            </div>
+
           {% block rightside %}
             {{ side::recent_posts() }}
           {% endblock rightside %}

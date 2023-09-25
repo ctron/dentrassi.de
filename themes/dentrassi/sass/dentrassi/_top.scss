@@ -2,7 +2,7 @@ html {
   scroll-padding-top: calc($nav-link-height + 2rem);
 }
 
-$sidebox-top-padding: calc($top-padding + .5rem);
+$sidebox-top-padding: calc($top-padding);
 
 @include media-breakpoint-up(lg) {
   main {
@@ -16,6 +16,15 @@ $sidebox-top-padding: calc($top-padding + .5rem);
 }
 
 @include media-breakpoint-down(lg) {
+
+  nav.navbar {
+    min-height: $sidebox-top-padding;
+  }
+
+  #rightSidebox {
+    padding-top: 1rem;
+  }
+
   aside.de-m-collapsible {
     background-color: var(--bs-light);
   }
