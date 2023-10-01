@@ -18,9 +18,13 @@ tags:
     - Eclipse
     - mattermost
     - packagedrone
+extra:
+    article_image:
+        src: /wp-content/uploads/matermost_square.png
+        alt: Mattermost Logo
 ---
 
-![Mattermost Logo](https://dentrassi.de/wp-content/uploads/matermost_square.png) Thanks to [@bruncedric](https://twitter.com/bruncedric) and the Eclipse Webmasters we were able to quickly start a test of [Mattermost](http://www.mattermost.org/) at <https://mattermost-test.eclipse.org>.
+Thanks to [@bruncedric](https://twitter.com/bruncedric) and the Eclipse Webmasters we were able to quickly start a test of [Mattermost](http://www.mattermost.org/) at <https://mattermost-test.eclipse.org>.
 
 “Mattermost” is a [Slack](https://slack.com/)/[HipChat](https://www.hipchat.com/)/… like web messaging system (aka webchat). I don’t want to go into too much detail of the system itself, but the main idea is to have a “faster-than-email” communication form for a team of people. Comparable to [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat), but more HTML5-ish. It also features a REST API, which can be used to automate inbound and outbound messages to the different channels.
 
