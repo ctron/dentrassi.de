@@ -6,7 +6,7 @@
 * [ ] `Uncaught DOMException: Element.querySelector: '#/@ctron:dentrassi.de' is not a valid selector`
 * [x] Add more "old projects"
 * [x] Fix for mobile
-* [ ] Fix search 
+* [x] Fix search 
 * [ ] Improve SEO
 * [ ] Fix lead images (metadata, index, and post)
 * [ ] Pagination
