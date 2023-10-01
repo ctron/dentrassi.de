@@ -12,7 +12,7 @@
 
   <ul class="pagination justify-content-center">
     <li class="page-item {% if not paginator.previous %}disabled{% endif %}">
-      <a class="page-link" {% if paginator.previous %}href='{{ paginator.previous }}' {% endif %} aria-label="Previous">&laquo;</a>
+      <a class="page-link" {% if paginator.previous %}href='{{ paginator.previous }}'{% else%}href=''{% endif %} aria-label="Previous">&laquo;</a>
     </li>
 
 
@@ -37,7 +37,7 @@
     {% endif %}
 
     <li class="page-item {% if not paginator.next %}disabled{% endif %}">
-      <a class="page-link" {% if paginator.next %}href='{{ paginator.next }}'{% endif %} aria-label="Next">&raquo;</a>
+      <a class="page-link" {% if paginator.next %}href='{{ paginator.next }}'{% else%}href=''{% endif %} aria-label="Next">&raquo;</a>
     </li>
   </ul>
 
