@@ -2,7 +2,7 @@ html {
   scroll-padding-top: calc($nav-link-height + 2rem);
 }
 
-$sidebox-top-padding: calc($top-padding);
+$sidebox-top-padding: $top-padding;
 
 @include media-breakpoint-up(lg) {
   main {
