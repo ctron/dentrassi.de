@@ -9,7 +9,9 @@ theme = "dentrassi"
 
 compile_sass = true
 minify_html = false
+
 generate_feed = true
+feed_filename = "rss.xml"
 
 build_search_index = true
 
