@@ -15,9 +15,9 @@
 <meta name="twitter:description" content="{{ meta::description(page=page) }}">
 
 {% if page.extra.article_image.src %}
-<meta property="og:image" content="{{ page.extra.article_image.src }}">
+<meta property="og:image" content="{{ meta::abs_url(page=page, url= page.extra.article_image.src) }}">
 
-<meta name="twitter:image" content="{{ page.extra.article_image.src }} ">
+<meta name="twitter:image" content="{{ meta::abs_url(page=page, url=page.extra.article_image.src) }} ">
 <meta name="twitter:image:alt" content="{{ page.extra.article_image.alt }}">
 {% endif %}
 
@@ -30,3 +30,14 @@
 {{ page.summary | striptags }}
 {%- endif %}
 {%- endmacro description %}
+
+{# generate absolute URL for image #}
+{% macro abs_url(page, url) -%}
+{% if ( url is starting_with("http://") ) or (url is starting_with("https://")) -%}
+{{ url | safe }}
+{%- elif url is starting_with("/") -%}
+{{ get_url(path=url) | safe }}
+{%- else -%}
+{{ get_url(path=page.path ~ url) | safe }}
+{%- endif %}
+{%- endmacro abs_url %}
