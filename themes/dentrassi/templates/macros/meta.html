@@ -1,5 +1,26 @@
 {% macro main(page) %}
 <meta name="description" content="{{ meta::description(page=page) }}">
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="{{ config.title }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:url" content="{{ get_url(path=page.path) | safe  }}">
+<meta property="og:description" content="{{ meta::description(page=page) }}">
+<meta property="og:author_name" content="Jens Reimann" />
+<meta property="og:author_url" content="https://dentrassi.de" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ctron" />
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:description" content="{{ meta::description(page=page) }}">
+
+{% if page.extra.articleImage.src %}
+<meta property="og:image" content="{{ page.extra.articleImage.src }}">
+
+<meta name="twitter:image" content="{{ page.extra.articleImage.src }} ">
+<meta name="twitter:image:alt" content="{{ page.extra.articleImage.alt }}">
+{% endif %}
+
 {% endmacro %}
 
 {% macro description(page) -%}
