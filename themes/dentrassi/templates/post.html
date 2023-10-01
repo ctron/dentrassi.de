@@ -26,8 +26,8 @@
 
     <section class="de-article__body" itemprop="articleBody">
 
-      {% if page.extra.articleImage.src %}
-      <img class="de-c-article-image" itemprop="image" src="{{ page.extra.articleImage.src }}" alt="{{ page.extra.articleImage.alt }}">
+      {% if page.extra.article_image.src %}
+      <img class="de-c-article-image" itemprop="image" src="{{ page.extra.article_image.src }}" alt="{{ page.extra.article_image.alt }}">
       {%  endif %}
 
       {{ page.content | safe }}

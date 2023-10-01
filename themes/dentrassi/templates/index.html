@@ -14,8 +14,8 @@
     </h2>
 
     <div class="de-c-post-info__summary clearfix" itemprop="articleSummary">
-      {% if page.extra.articleImage.src %}
-      <img class="de-c-article-image" itemprop="image" src="{{ page.extra.articleImage.src }}" alt="{{ page.extra.articleImage.alt }}">
+      {% if page.extra.article_image.src %}
+      <img class="de-c-article-image" itemprop="image" src="{{ page.extra.article_image.src }}" alt="{{ page.extra.article_image.alt }}">
       {%  endif %}
 
       {{ page.summary | safe }}

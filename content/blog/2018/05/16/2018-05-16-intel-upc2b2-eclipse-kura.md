@@ -5,7 +5,7 @@ date: '2018-05-16T13:01:27+02:00'
 author: 'Jens Reimann'
 layout: post
 extra:
-    articleImage:
+    article_image:
         src: /wp-content/uploads/20180515_171043.jpg
         alt: "Intel UP²"
 guid: 'https://dentrassi.de/?p=3874'

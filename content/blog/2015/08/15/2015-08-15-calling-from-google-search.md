@@ -18,7 +18,7 @@ tags:
     - Mobile
     - Phone
 extra:
-    articleImage:
+    article_image:
         src: /wp-content/uploads/Bildschirmfoto-2015-08-15-um-17.18.49.png
         alt: Screenshot of Google Maps result
 ---

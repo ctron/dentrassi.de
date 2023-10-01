@@ -15,7 +15,7 @@ categories:
 tags:
     - diaspora
 extra:
-    articleImage:
+    article_image:
         src: /wp-content/uploads/diaspora.png
         alt: diaspora logo
 ---

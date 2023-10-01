@@ -32,7 +32,7 @@ tags:
     - Milo
     - 'OPC UA'
 extra:
-  articleImage:
+  article_image:
     src: /wp-content/uploads/eclipse-IoT-light.png
     alt: Eclipse IoT
 ---

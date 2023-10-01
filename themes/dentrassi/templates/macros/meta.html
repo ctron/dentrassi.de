@@ -14,11 +14,11 @@
 <meta name="twitter:title" content="{{ page.title }}" />
 <meta name="twitter:description" content="{{ meta::description(page=page) }}">
 
-{% if page.extra.articleImage.src %}
-<meta property="og:image" content="{{ page.extra.articleImage.src }}">
+{% if page.extra.article_image.src %}
+<meta property="og:image" content="{{ page.extra.article_image.src }}">
 
-<meta name="twitter:image" content="{{ page.extra.articleImage.src }} ">
-<meta name="twitter:image:alt" content="{{ page.extra.articleImage.alt }}">
+<meta name="twitter:image" content="{{ page.extra.article_image.src }} ">
+<meta name="twitter:image:alt" content="{{ page.extra.article_image.alt }}">
 {% endif %}
 
 {% endmacro %}

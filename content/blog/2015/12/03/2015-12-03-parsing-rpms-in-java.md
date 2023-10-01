@@ -19,7 +19,7 @@ tags:
     - 'Package Drone'
     - RPM
 extra:
-  articleImage:
+  article_image:
     src: /wp-content/uploads/RPM_Logo.svg_.png
     alt: RPM
 ---

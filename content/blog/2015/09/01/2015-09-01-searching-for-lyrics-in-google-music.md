@@ -18,7 +18,7 @@ tags:
     - Ideas
     - music
 extra:
-  articleImage:
+  article_image:
     src: /wp-content/uploads/gmusic.png
     alt: google music logo
 ---
