@@ -18,9 +18,15 @@
 
     {% if paginator.number_pagers > 10 %}
 
-      {% for i in range(end=paginator.number_pagers) %}
+      {{ pagination::page_item(paginator=paginator,i=0) }}
+
+      {% for i in range(start=1, end=paginator.number_pagers-1) %}
+      {% if i % 5 == 4 or i + 1 == paginator.current_index %}
       {{ pagination::page_item(paginator=paginator,i=i) }}
+      {% endif %}
       {% endfor %}
+
+      {{ pagination::page_item(paginator=paginator,i=paginator.number_pagers-1) }}
 
     {% else %}
 
