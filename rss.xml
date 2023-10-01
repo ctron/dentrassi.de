@@ -21,8 +21,8 @@
           <title>Using Ingress on OpenShift backed by Routes</title>
           <pubDate>Fri, 21 May 2021 21:10:42 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2021/05/21/using-ingress-on-openshift-backed-by-routes/</link>
-          <guid>https://dentrassi.de/blog/2021/05/21/using-ingress-on-openshift-backed-by-routes/</guid>
+          <link>https://dentrassi.de/2021/05/21/using-ingress-on-openshift-backed-by-routes/</link>
+          <guid>https://dentrassi.de/2021/05/21/using-ingress-on-openshift-backed-by-routes/</guid>
           <description>&lt;p&gt;When you want to get traffic into your OpenShift cluster, &lt;code&gt;Routes&lt;&#x2F;code&gt; are just awesome. But every now and then, using &lt;code&gt;Ingress&lt;&#x2F;code&gt; instead might provide some benefits. Here are a few tricks how you can have the best of both worlds.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -30,8 +30,8 @@
           <title>Recovering from an expired OpenShift certificate</title>
           <pubDate>Mon, 18 Jan 2021 12:29:21 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2021/01/18/recovering-from-an-expired-openshift-certificate/</link>
-          <guid>https://dentrassi.de/blog/2021/01/18/recovering-from-an-expired-openshift-certificate/</guid>
+          <link>https://dentrassi.de/2021/01/18/recovering-from-an-expired-openshift-certificate/</link>
+          <guid>https://dentrassi.de/2021/01/18/recovering-from-an-expired-openshift-certificate/</guid>
           <description>&lt;p&gt;A not-so-great way to start into a new week, is to figure out that the certificate of your API server expired on the weekend. Fixing and expired OpenShift certificate should be straight forward, but it wasn’t. Here is what happened, or you can directly scroll down for the solution.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -39,8 +39,8 @@
           <title>A Rusty frontend: Patternfly &amp; Yew</title>
           <pubDate>Fri, 08 Jan 2021 17:52:54 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2021/01/08/rusty-frontend-patternfly-yew/</link>
-          <guid>https://dentrassi.de/blog/2021/01/08/rusty-frontend-patternfly-yew/</guid>
+          <link>https://dentrassi.de/2021/01/08/rusty-frontend-patternfly-yew/</link>
+          <guid>https://dentrassi.de/2021/01/08/rusty-frontend-patternfly-yew/</guid>
           <description>&lt;p&gt;A while back I started to become a real Rust fanboy, so when I wanted to “scratch an itch” of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.elkato.de&#x2F;&quot;&gt;our car sharing booking system&lt;&#x2F;a&gt;, of course I was using Rust for the backend. When it came to the frontend stuff, I was wondering if there is an alternative to JavaScript and so I found &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yew.rs&quot;&gt;Yew Stack&lt;&#x2F;a&gt;, which is simply awesome and allows for a full-Rust solution.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -48,8 +48,8 @@
           <title>OpenShift Update Graph Visualizer, lessons learned</title>
           <pubDate>Sun, 02 Aug 2020 14:01:21 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2020/08/02/openshift-update-graph-visualizer-lessons-learned/</link>
-          <guid>https://dentrassi.de/blog/2020/08/02/openshift-update-graph-visualizer-lessons-learned/</guid>
+          <link>https://dentrassi.de/2020/08/02/openshift-update-graph-visualizer-lessons-learned/</link>
+          <guid>https://dentrassi.de/2020/08/02/openshift-update-graph-visualizer-lessons-learned/</guid>
           <description>&lt;p&gt;Since OpenShift 4, updates are rather trivial. You wait for the new update to appear, press the button (or use the CLI), wait a bit, and the update is done. True, in production you might want to complicate that process a bit, for good reason.&lt;&#x2F;p&gt;
 &lt;p&gt;Running an OpenShift 4 cluster now for a while myself, and developing apps on top of Kubernetes on my day job, I am curious about the next release. Is it GA already? Can I deploy it? Is there an upgrade for my current version? Is that in “candidate”, “fast”, or “stable”? Checking that turned out to be no as easy as it should be.&lt;&#x2F;p&gt;
 </description>
@@ -58,8 +58,8 @@
           <title>Quarkus – Supersonic Subatomic IoT</title>
           <pubDate>Tue, 30 Jun 2020 17:22:14 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2020/06/30/quarkus-supersonic-subatomic-iot/</link>
-          <guid>https://dentrassi.de/blog/2020/06/30/quarkus-supersonic-subatomic-iot/</guid>
+          <link>https://dentrassi.de/2020/06/30/quarkus-supersonic-subatomic-iot/</link>
+          <guid>https://dentrassi.de/2020/06/30/quarkus-supersonic-subatomic-iot/</guid>
           <description>&lt;p&gt;Quarkus is advertised as a “Kubernetes Native Java stack, …”, so we took it to a test, and checked what benefits we can get, by replacing an existing service from the IoT components of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;enmasse.io&#x2F;&quot;&gt;EnMasse&lt;&#x2F;a&gt;, the cloud-native, self-service messaging system.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -67,8 +67,8 @@
           <title>Headless installation of Cargo and Rust</title>
           <pubDate>Wed, 17 Jun 2020 15:56:22 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2020/06/17/headless-installation-of-cargo-and-rust/</link>
-          <guid>https://dentrassi.de/blog/2020/06/17/headless-installation-of-cargo-and-rust/</guid>
+          <link>https://dentrassi.de/2020/06/17/headless-installation-of-cargo-and-rust/</link>
+          <guid>https://dentrassi.de/2020/06/17/headless-installation-of-cargo-and-rust/</guid>
           <description>&lt;p&gt;When you want to containerize your Rust application, you might be using a prepared Rust image. But maybe you are a bit more paranoid when it comes to trusting base layers and you want to create your own Rust base image. Or maybe you are just curios and want to try it yourself.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -76,8 +76,8 @@
           <title>An update on Eclipse IoT Packages</title>
           <pubDate>Thu, 19 Dec 2019 13:17:44 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2019/12/19/update-on-eclipse-iot-packages/</link>
-          <guid>https://dentrassi.de/blog/2019/12/19/update-on-eclipse-iot-packages/</guid>
+          <link>https://dentrassi.de/2019/12/19/update-on-eclipse-iot-packages/</link>
+          <guid>https://dentrassi.de/2019/12/19/update-on-eclipse-iot-packages/</guid>
           <description>&lt;p&gt;A lot has happened, since &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2019&#x2F;09&#x2F;10&#x2F;from-building-blocks-to-iot-solutions&#x2F;&quot;&gt;I wrote last about the Eclipse IoT Packages project&lt;&#x2F;a&gt;. We had some great discussions at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipsecon.org&#x2F;europe2019&quot;&gt;EclipseCon Europe&lt;&#x2F;a&gt;, and started to work together online, having new ideas in the progress. Right before the end of the year, I think it is a good time to give an update, and peek a bit into the future.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -85,8 +85,8 @@
           <title>From building blocks to IoT solutions</title>
           <pubDate>Tue, 10 Sep 2019 09:07:37 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2019/09/10/from-building-blocks-to-iot-solutions/</link>
-          <guid>https://dentrassi.de/blog/2019/09/10/from-building-blocks-to-iot-solutions/</guid>
+          <link>https://dentrassi.de/2019/09/10/from-building-blocks-to-iot-solutions/</link>
+          <guid>https://dentrassi.de/2019/09/10/from-building-blocks-to-iot-solutions/</guid>
           <description>&lt;p&gt;The Eclipse IoT ecosystem consists of around 40 different projects, ranging from embedded devices, to IoT gateways and up to cloud scale solutions. Many of those projects stand alone as “building blocks”, rather than ready to run solutions. And there is a good reason for that: you can take these building blocks, and incorporate them into your own solution, rather than adopting a complete, pre-built solution.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -94,8 +94,8 @@
           <title>Changing the owner of an OpenShift project</title>
           <pubDate>Mon, 29 Jul 2019 16:56:50 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2019/07/29/changing-the-owner-of-an-openshift-project/</link>
-          <guid>https://dentrassi.de/blog/2019/07/29/changing-the-owner-of-an-openshift-project/</guid>
+          <link>https://dentrassi.de/2019/07/29/changing-the-owner-of-an-openshift-project/</link>
+          <guid>https://dentrassi.de/2019/07/29/changing-the-owner-of-an-openshift-project/</guid>
           <description>&lt;p&gt;Today I wanted to change the owner of an OpenShift project. It actually is rather trivial. However finding out how, wasn’t so easy. Googling didn’t help much, and also the documentation has room for improvement. So I took a few minutes to document how it works.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -103,8 +103,8 @@
           <title>Eclipse Milo 0.3, updated examples</title>
           <pubDate>Sat, 06 Jul 2019 22:22:28 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2019/07/06/eclipse-milo-0-3-updated-examples/</link>
-          <guid>https://dentrassi.de/blog/2019/07/06/eclipse-milo-0-3-updated-examples/</guid>
+          <link>https://dentrassi.de/2019/07/06/eclipse-milo-0-3-updated-examples/</link>
+          <guid>https://dentrassi.de/2019/07/06/eclipse-milo-0-3-updated-examples/</guid>
           <description>&lt;p&gt;A while back I wrote&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2017&#x2F;09&#x2F;14&#x2F;creating-opc-ua-solutions-eclipse-milo&#x2F;&quot;&gt; a blog post about OPC UA, using Milo&lt;&#x2F;a&gt; and added a bunch of examples, in order to get you started. Time passed by and now Milo 0.3.x is released, with a changed API and so those examples no longer work. Not too much has changed, but the experience of running into compile errors isn’t a good one. Finally I found some time to update the examples.&lt;&#x2F;p&gt;
 &lt;p&gt;This blog post will focus on the changes, compared to the old blog post. As the old blog post is still valid, I though it might make sense to keep it, and introduce the changes of Milo here. The examples repository however is updated to show the new APIs on the &lt;code&gt;master&lt;&#x2F;code&gt; branch.&lt;&#x2F;p&gt;
 </description>
@@ -113,8 +113,8 @@
           <title>Bringing IoT to Red Hat AMQ Online</title>
           <pubDate>Mon, 24 Jun 2019 09:47:59 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2019/06/24/bringing-iot-to-red-hat-amq-online/</link>
-          <guid>https://dentrassi.de/blog/2019/06/24/bringing-iot-to-red-hat-amq-online/</guid>
+          <link>https://dentrassi.de/2019/06/24/bringing-iot-to-red-hat-amq-online/</link>
+          <guid>https://dentrassi.de/2019/06/24/bringing-iot-to-red-hat-amq-online/</guid>
           <description>&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;access.redhat.com&#x2F;documentation&#x2F;en-us&#x2F;red_hat_amq&#x2F;7.2&#x2F;html&#x2F;amq_online_1.1_on_openshift_container_platform_release_notes&#x2F;index&quot;&gt;Red Hat AMQ Online 1.1&lt;&#x2F;a&gt; was recently announced, and I am excited about it because it contains a tech preview of our Internet of Things &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;access.redhat.com&#x2F;documentation&#x2F;en-us&#x2F;red_hat_amq&#x2F;7.2&#x2F;html&#x2F;amq_online_1.1_on_openshift_container_platform_release_notes&#x2F;tech-preview-online#internet_of_things_iot_functionality&quot;&gt;(IoT) support&lt;&#x2F;a&gt;. AMQ Online is the “messaging as service solution” from Red Hat AMQ. Leveraging the work we did on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;hono&#x2F;&quot;&gt;Eclipse Hono&lt;&#x2F;a&gt; allows us to integrate a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2018&#x2F;07&#x2F;25&#x2F;scaling-iot-eclipse-hono&#x2F;&quot;&gt;scalable&lt;&#x2F;a&gt;, cloud-native IoT personality into this general-purpose messaging layer. And the whole reason why you need an IoT messaging layer is so you can focus on connecting your cloud-side application with the millions of devices that you have out there.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -122,8 +122,8 @@
           <title>Rust on the ESP and how to get started</title>
           <pubDate>Sun, 16 Jun 2019 16:18:55 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2019/06/16/rust-on-the-esp-and-how-to-get-started/</link>
-          <guid>https://dentrassi.de/blog/2019/06/16/rust-on-the-esp-and-how-to-get-started/</guid>
+          <link>https://dentrassi.de/2019/06/16/rust-on-the-esp-and-how-to-get-started/</link>
+          <guid>https://dentrassi.de/2019/06/16/rust-on-the-esp-and-how-to-get-started/</guid>
           <description>&lt;p&gt;I have been working with ESPs, for playing around in the space of IoT, for a while now. Mostly using the ESP8266 and Espressif, through platform.io. In recent times, I have also started to really like Rust as programming language. And I really believe that all Rust has to offer, would be great match for embedded development. So when I had a bit of time, I wanted to give it a try. And here is what came out of it &lt;em&gt;…&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Up until now I only used the ESP and Rust on a very high level. So I was hoping to get some kind of an “out-of-the-box” solution. Well, we are not there yet. But my only intention was to play around a bit with the technology. And so I started to search what others had done in this area already.&lt;&#x2F;p&gt;
 </description>
@@ -132,8 +132,8 @@
           <title>Integrating Eclipse IoT</title>
           <pubDate>Wed, 20 Feb 2019 13:28:51 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2019/02/20/integrating-eclipse-iot/</link>
-          <guid>https://dentrassi.de/blog/2019/02/20/integrating-eclipse-iot/</guid>
+          <link>https://dentrassi.de/2019/02/20/integrating-eclipse-iot/</link>
+          <guid>https://dentrassi.de/2019/02/20/integrating-eclipse-iot/</guid>
           <description>&lt;p&gt;The Eclipse IoT project is a top level project at the Eclipse Foundation. It currently consists of around 40 projects, which focus on different aspects of IoT. This may either be complete solutions, like the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;smarthome&#x2F;&quot;&gt;Eclipse SmartHome&lt;&#x2F;a&gt; project, the PLC runtime and IDE, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;4diac&#x2F;&quot;&gt;Eclipse 4DIAC&lt;&#x2F;a&gt;. Or it may be building block projects, like the MQTT libraries of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;paho&#x2F;&quot;&gt;Eclipse Paho&lt;&#x2F;a&gt;, or the cloud scale IoT messaging infrastructure of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;hono&#x2F;&quot;&gt;Eclipse Hono&lt;&#x2F;a&gt;. I can only encourage you to have a look at the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iot.eclipse.org&#x2F;projects&#x2F;&quot;&gt;list of projects&lt;&#x2F;a&gt; and do a bit of exploring.&lt;&#x2F;p&gt;
 &lt;p&gt;And while it is great to a have a diverse set of projects, covering &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iot.eclipse.org&#x2F;white-papers&#x2F;iot-architectures&#x2F;&quot;&gt;the three tiers of IoT &lt;&#x2F;a&gt;(Device, Gateway and Cloud), it can be a challenge to explain people, how all of those projects can create something, which is bigger than the individual projects. Because having 40 different IoT projects is great, but imagine the possibilities of having a whole IoT ecosystem of projects. Mixing and matching, building your IoT solution as you see fit.&lt;&#x2F;p&gt;
 </description>
@@ -142,8 +142,8 @@
           <title>Securing a Spring Boot application with PKCS #1 PEM files</title>
           <pubDate>Tue, 25 Sep 2018 17:17:27 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2018/09/25/securing-a-spring-boot-application-with-pkcs-1-pem-files/</link>
-          <guid>https://dentrassi.de/blog/2018/09/25/securing-a-spring-boot-application-with-pkcs-1-pem-files/</guid>
+          <link>https://dentrassi.de/2018/09/25/securing-a-spring-boot-application-with-pkcs-1-pem-files/</link>
+          <guid>https://dentrassi.de/2018/09/25/securing-a-spring-boot-application-with-pkcs-1-pem-files/</guid>
           <description>&lt;p&gt;When you want to secure a Spring Boot application with e.g. &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;letsencrypt.org&#x2F;&quot;&gt;Let’s Encrypt&lt;&#x2F;a&gt; or the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.openshift.com&#x2F;container-platform&#x2F;3.10&#x2F;dev_guide&#x2F;secrets.html#service-serving-certificate-secrets&quot;&gt;OpenShift Service CA&lt;&#x2F;a&gt;, then you will pretty soon figure out that working with PKCS #1 PEM files is a nightmare when it comes to Java. When you Google for PKCS #1 and Java, you will find all kinds of tutorials which suggest to use &lt;code&gt;openssl&lt;&#x2F;code&gt; and &lt;code&gt;keytool&lt;&#x2F;code&gt; to create a JKS or PKCS #12 keystore. As Java actually supports pluggable KeyStore implementations, I think there is a better solution for that.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -151,8 +151,8 @@
           <title>Apache Camel Java DSL in combination Eclipse Kura Wires</title>
           <pubDate>Wed, 19 Sep 2018 10:30:33 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2018/09/19/apache-camel-java-dsl-eclipse-kura-wires/</link>
-          <guid>https://dentrassi.de/blog/2018/09/19/apache-camel-java-dsl-eclipse-kura-wires/</guid>
+          <link>https://dentrassi.de/2018/09/19/apache-camel-java-dsl-eclipse-kura-wires/</link>
+          <guid>https://dentrassi.de/2018/09/19/apache-camel-java-dsl-eclipse-kura-wires/</guid>
           <description>&lt;p&gt;In &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2018&#x2F;09&#x2F;14&#x2F;the-power-of-apache-camel-in-eclipse-kura&#x2F;&quot;&gt;part #1&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2018&#x2F;09&#x2F;17&#x2F;sunny-weather-apache-camel-kura-wires&#x2F;&quot;&gt;part #2&lt;&#x2F;a&gt;, we saw how easy it is to interface &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;camel.apache.org&quot;&gt;Apache Camel&lt;&#x2F;a&gt; with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eclipse.org&#x2F;kura&quot;&gt;Kura&lt;&#x2F;a&gt; Wires. Simply by re-using some existing functionality. A few lines of XML, Groovy and you can already build an IoT solution based on the Camel ecosystem and the Eclipse Kura runtime. This part will focus on the Java DSL of Apache Camel.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -160,8 +160,8 @@
           <title>Sunny weather with Apache Camel and Kura Wires</title>
           <pubDate>Mon, 17 Sep 2018 16:48:37 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2018/09/17/sunny-weather-apache-camel-kura-wires/</link>
-          <guid>https://dentrassi.de/blog/2018/09/17/sunny-weather-apache-camel-kura-wires/</guid>
+          <link>https://dentrassi.de/2018/09/17/sunny-weather-apache-camel-kura-wires/</link>
+          <guid>https://dentrassi.de/2018/09/17/sunny-weather-apache-camel-kura-wires/</guid>
           <description>&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2018&#x2F;09&#x2F;14&#x2F;the-power-of-apache-camel-in-eclipse-kura&#x2F;&quot;&gt;Part #1&lt;&#x2F;a&gt; of the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;camel.apache.org&quot;&gt;Apache Camel&lt;&#x2F;a&gt; to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eclipse.org&#x2F;kura&quot;&gt;Kura&lt;&#x2F;a&gt; Wires integration tutorial did focus on pushing data from Kura Wires to Camel and processing it there. But part #1 already mentioned that it is also possible to pull in data from Camel into Kura Wires.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -169,8 +169,8 @@
           <title>Leveraging the power of Apache Camel in Eclipse Kura</title>
           <pubDate>Fri, 14 Sep 2018 15:52:25 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2018/09/14/the-power-of-apache-camel-in-eclipse-kura/</link>
-          <guid>https://dentrassi.de/blog/2018/09/14/the-power-of-apache-camel-in-eclipse-kura/</guid>
+          <link>https://dentrassi.de/2018/09/14/the-power-of-apache-camel-in-eclipse-kura/</link>
+          <guid>https://dentrassi.de/2018/09/14/the-power-of-apache-camel-in-eclipse-kura/</guid>
           <description>&lt;p&gt;With the upcoming version of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eclipse.org&#x2F;kura&quot;&gt;Eclipse Kura&lt;&#x2F;a&gt; 4, we will see some nice new features for the embedded &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;camel.apache.org&quot;&gt;Apache Camel&lt;&#x2F;a&gt; runtime. This tutorial walks you through the Camel integration of Kura wires, which allows you to bridge both technologies, and leverage the power of Apache Camel for your solutions on the IoT gateway.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -178,8 +178,8 @@
           <title>We scaled IoT – Eclipse Hono in the lab</title>
           <pubDate>Wed, 25 Jul 2018 14:03:45 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2018/07/25/scaling-iot-eclipse-hono/</link>
-          <guid>https://dentrassi.de/blog/2018/07/25/scaling-iot-eclipse-hono/</guid>
+          <link>https://dentrassi.de/2018/07/25/scaling-iot-eclipse-hono/</link>
+          <guid>https://dentrassi.de/2018/07/25/scaling-iot-eclipse-hono/</guid>
           <description>&lt;p&gt;Working for &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jobs.redhat.com&quot;&gt;Red Hat&lt;&#x2F;a&gt; is awesome. Not only can you work on amazing things, you will also get the tools you need in order to do just that. We wanted to test &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eclipse.org&#x2F;hono&quot;&gt;Eclipse Hono&lt;&#x2F;a&gt; (yes, again) and see how far we can scale it. And of course which limits and issues we encounter on the way. So we took the current development version of Hono (0.7) from Eclipse IoT, backed by &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;enmasse.io&quot;&gt;EnMasse&lt;&#x2F;a&gt; 0.21 and ran it on an OpenShift 3.9 cluster.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -187,8 +187,8 @@
           <title>Using PKCS #1 PEM encoded X.509 certificates in Java</title>
           <pubDate>Fri, 18 May 2018 14:43:19 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2018/05/18/pem-encoded-x-509-certificates-java/</link>
-          <guid>https://dentrassi.de/blog/2018/05/18/pem-encoded-x-509-certificates-java/</guid>
+          <link>https://dentrassi.de/2018/05/18/pem-encoded-x-509-certificates-java/</link>
+          <guid>https://dentrassi.de/2018/05/18/pem-encoded-x-509-certificates-java/</guid>
           <description>&lt;p&gt;PEM is a well know file format when it comes to certificates. And when using Kubernetes (or OpenShift in my case) it is so easy to re-use the internal CA for some tasks.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -196,8 +196,8 @@
           <title>Eclipse Kura on the Intel UP² with CentOS</title>
           <pubDate>Wed, 16 May 2018 13:01:27 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2018/05/16/intel-upc2b2-eclipse-kura/</link>
-          <guid>https://dentrassi.de/blog/2018/05/16/intel-upc2b2-eclipse-kura/</guid>
+          <link>https://dentrassi.de/2018/05/16/intel-upc2b2-eclipse-kura/</link>
+          <guid>https://dentrassi.de/2018/05/16/intel-upc2b2-eclipse-kura/</guid>
           <description>&lt;p&gt;In the past I was testing modifications to Kura with a Raspberry Pi 3 and Fedora for ARM. But I got a nice little Intel UP² just recently, and so I decided to perform my next Kura tests, with the modifications to the Apache Camel runtime in Kura, on this nice board. Creating a new device profile for Kura using CentOS 7 and the Intel UP² looked like a good idea anyway.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -414,8 +414,8 @@ Email: ctron@dentrassi.de&lt;&#x2F;p&gt;
           <title>Build your own IoT cloud platform</title>
           <pubDate>Wed, 04 Apr 2018 16:37:31 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2018/04/04/build-your-own-iot-cloud-platform/</link>
-          <guid>https://dentrassi.de/blog/2018/04/04/build-your-own-iot-cloud-platform/</guid>
+          <link>https://dentrassi.de/2018/04/04/build-your-own-iot-cloud-platform/</link>
+          <guid>https://dentrassi.de/2018/04/04/build-your-own-iot-cloud-platform/</guid>
           <description>&lt;p&gt;If you want to do large scale IoT and build your own IoT cloud platform, then you will need a messaging layer which can actually handle this. Not only handle the sheer load of messages, the number of connections. Even more important may be ability to integrate your custom bits and pieces and be able to make changes to every layer of that installation, in a controlled, yet simple way.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -423,8 +423,8 @@ Email: ctron@dentrassi.de&lt;&#x2F;p&gt;
           <title>CEP &amp; Machine learning for IoT – Drools on Kura</title>
           <pubDate>Thu, 15 Mar 2018 18:05:13 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2018/03/15/complex-event-processing-machine-learning-iot/</link>
-          <guid>https://dentrassi.de/blog/2018/03/15/complex-event-processing-machine-learning-iot/</guid>
+          <link>https://dentrassi.de/2018/03/15/complex-event-processing-machine-learning-iot/</link>
+          <guid>https://dentrassi.de/2018/03/15/complex-event-processing-machine-learning-iot/</guid>
           <description>&lt;p&gt;Machine learning and predicate maintenance we are the role models of IoT use cases. Having an IoT gateway allows you to pre-process data before you send it upstream to your cloud. It also allows you to do local decisions, without the actual need for a cloud upload. But as you know from sitting at your favorite restaurant, staring at the menu, making decisions can be quite hard ;-) Complex event process and machine learning models can help you with IoT use cases though.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -432,8 +432,8 @@ Email: ctron@dentrassi.de&lt;&#x2F;p&gt;
           <title>🔗 Varlink for Java – What wonderful world it could be</title>
           <pubDate>Sun, 17 Dec 2017 13:23:08 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/12/17/varlink-for-java-what-wonderful-world-it-could-be/</link>
-          <guid>https://dentrassi.de/blog/2017/12/17/varlink-for-java-what-wonderful-world-it-could-be/</guid>
+          <link>https://dentrassi.de/2017/12/17/varlink-for-java-what-wonderful-world-it-could-be/</link>
+          <guid>https://dentrassi.de/2017/12/17/varlink-for-java-what-wonderful-world-it-could-be/</guid>
           <description>&lt;p&gt;Varlink for Java is a Java based implementation of the Varlink interface. This blog post shows how varlink can be used in the Java world to solve the problem of accessing operating system functionality.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -441,8 +441,8 @@ Email: ctron@dentrassi.de&lt;&#x2F;p&gt;
           <title>Manually reclaiming a persistent volume in OpenShift</title>
           <pubDate>Mon, 27 Nov 2017 11:01:08 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/11/27/manually-reclaim-persistent-volume-in-openshift/</link>
-          <guid>https://dentrassi.de/blog/2017/11/27/manually-reclaim-persistent-volume-in-openshift/</guid>
+          <link>https://dentrassi.de/2017/11/27/manually-reclaim-persistent-volume-in-openshift/</link>
+          <guid>https://dentrassi.de/2017/11/27/manually-reclaim-persistent-volume-in-openshift/</guid>
           <description>&lt;p&gt;When you have a persistent volume in OpenShift configured with “Retain”, the volume will switch to “Released” after the claim has been deleted. But what now? How to manually recycle it? This post will give a brief overview on how to manually reclaim the volume.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -463,8 +463,8 @@ Email: ctron@dentrassi.de&lt;&#x2F;p&gt;
           <title>OPC UA solutions with Eclipse Milo</title>
           <pubDate>Thu, 14 Sep 2017 09:55:15 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/09/14/creating-opc-ua-solutions-eclipse-milo/</link>
-          <guid>https://dentrassi.de/blog/2017/09/14/creating-opc-ua-solutions-eclipse-milo/</guid>
+          <link>https://dentrassi.de/2017/09/14/creating-opc-ua-solutions-eclipse-milo/</link>
+          <guid>https://dentrassi.de/2017/09/14/creating-opc-ua-solutions-eclipse-milo/</guid>
           <description>&lt;p&gt;This article walks you through the first steps of creating an OPC UA solution based on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eclipse.org&#x2F;milo&quot;&gt;Eclipse Milo&lt;&#x2F;a&gt;. OPC UA, also known as IEC 62541, is an IoT solution for connecting industrial automation systems. Eclipse Milo™ is an open-source Java based implementation.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -499,8 +499,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>AsyncAPI Java Tools 0.0.4 released</title>
           <pubDate>Mon, 21 Aug 2017 16:35:16 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/08/21/asyncapi-java-tools-0-0-4-released/</link>
-          <guid>https://dentrassi.de/blog/2017/08/21/asyncapi-java-tools-0-0-4-released/</guid>
+          <link>https://dentrassi.de/2017/08/21/asyncapi-java-tools-0-0-4-released/</link>
+          <guid>https://dentrassi.de/2017/08/21/asyncapi-java-tools-0-0-4-released/</guid>
           <description>&lt;p&gt;It started a as proof-of-concept, checking out AsyncAPI and learning something about it. Actually that topic came to me from two different angles. We where looking into solutions for RPC over messaging (namely AMQP 1.0) instead of HTTP&#x2F;REST. The second angle was a discussion with a very good friend of mine of “how do you define today an API about messages from the server to the client”. Everyone is talking about Swagger and OpenAPI, but this seems to be all request&#x2F;response for HTTP based APIs.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -508,8 +508,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Kapua micro client SDK, running on a microcontroller</title>
           <pubDate>Sat, 12 Aug 2017 20:23:41 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/08/12/kapua-micro-client-sdk-running-on-a-microcontroller/</link>
-          <guid>https://dentrassi.de/blog/2017/08/12/kapua-micro-client-sdk-running-on-a-microcontroller/</guid>
+          <link>https://dentrassi.de/2017/08/12/kapua-micro-client-sdk-running-on-a-microcontroller/</link>
+          <guid>https://dentrassi.de/2017/08/12/kapua-micro-client-sdk-running-on-a-microcontroller/</guid>
           <description>&lt;p&gt;A few weeks back, while being at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipsecon.org&#x2F;france2017&#x2F;&quot;&gt;EclipseCon France&lt;&#x2F;a&gt;, I did stumble over a nice little gadget. There was talk from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;developer.microej.com&#x2F;getting-started.html#top_anchor&quot;&gt;MicroEJ&lt;&#x2F;a&gt; around Java on microcontrollers. And they where showing an IoT related demo based on their development environment. And it seemed they did have &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;paho&#x2F;&quot;&gt;Eclipse Paho&lt;&#x2F;a&gt; (including TLS) and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;developers.google.com&#x2F;protocol-buffers&#x2F;&quot;&gt;Google Protobuf&lt;&#x2F;a&gt; running on their JVM without too much troubles.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -527,8 +527,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>GSoC with Kapua – Just peeking</title>
           <pubDate>Thu, 27 Jul 2017 13:12:45 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/07/27/gsoc-with-kapua-just-peeking/</link>
-          <guid>https://dentrassi.de/blog/2017/07/27/gsoc-with-kapua-just-peeking/</guid>
+          <link>https://dentrassi.de/2017/07/27/gsoc-with-kapua-just-peeking/</link>
+          <guid>https://dentrassi.de/2017/07/27/gsoc-with-kapua-just-peeking/</guid>
           <description>&lt;p&gt;The deadline for the evaluations of phase for Google Summer of Code are pretty close. So it was time to take another look at what &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;arthurdeschamps&quot;&gt;Arthur&lt;&#x2F;a&gt; did with the logistics simulation for &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;kapua&#x2F;&quot;&gt;Eclipse Kapua&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -546,8 +546,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Just a bit of Apache Camel</title>
           <pubDate>Mon, 03 Jul 2017 15:25:45 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/07/03/just-a-bit-of-apache-camel/</link>
-          <guid>https://dentrassi.de/blog/2017/07/03/just-a-bit-of-apache-camel/</guid>
+          <link>https://dentrassi.de/2017/07/03/just-a-bit-of-apache-camel/</link>
+          <guid>https://dentrassi.de/2017/07/03/just-a-bit-of-apache-camel/</guid>
           <description>&lt;p&gt;Sometimes you write something and then you nearly forget that you did it … although it is quite handy sometimes, here are a few lines of Apache Camel XML running in Eclipse Kura:&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -555,8 +555,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Talking to the cloud</title>
           <pubDate>Wed, 24 May 2017 17:49:18 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/05/24/talking-to-the-cloud/</link>
-          <guid>https://dentrassi.de/blog/2017/05/24/talking-to-the-cloud/</guid>
+          <link>https://dentrassi.de/2017/05/24/talking-to-the-cloud/</link>
+          <guid>https://dentrassi.de/2017/05/24/talking-to-the-cloud/</guid>
           <description>&lt;p&gt;While working on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;kapua&#x2F;&quot;&gt;Eclipse Kapua&lt;&#x2F;a&gt;, I wanted to do different tests, pushing telemetry data into the system. So I started to work on the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;eclipse&#x2F;kapua&#x2F;tree&#x2F;develop&#x2F;simulator-kura&quot;&gt;Kura simulator&lt;&#x2F;a&gt;, which can used to simulator an Eclipse Kura IoT gateway in a plain Java project, no special setup required. Now that helped a lot for unit testing and scale testing. Even &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;download.eclipse.org&#x2F;kapua&#x2F;docs&#x2F;develop&#x2F;user-manual&#x2F;en&#x2F;simulator.html&quot;&gt;generating a few simple telemetry data streams&lt;&#x2F;a&gt; for simulating data works out of the box.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -564,8 +564,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Google Summer of Code 2017 with Eclipse Kapua</title>
           <pubDate>Mon, 08 May 2017 10:18:31 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/05/08/google-summer-of-code-2017-with-eclipse-kapua/</link>
-          <guid>https://dentrassi.de/blog/2017/05/08/google-summer-of-code-2017-with-eclipse-kapua/</guid>
+          <link>https://dentrassi.de/2017/05/08/google-summer-of-code-2017-with-eclipse-kapua/</link>
+          <guid>https://dentrassi.de/2017/05/08/google-summer-of-code-2017-with-eclipse-kapua/</guid>
           <description>&lt;p&gt;I am happy to announce that Eclipse Kapua got two slots in this year’s &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;summerofcode.withgoogle.com&#x2F;&quot;&gt;Google Summer of Code&lt;&#x2F;a&gt;. Yes, two projects got accepted, and both are for the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;kapua&#x2F;&quot;&gt;Eclipse Kapua&lt;&#x2F;a&gt; project.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -573,8 +573,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>OPC UA with Apache Camel</title>
           <pubDate>Thu, 27 Apr 2017 14:44:42 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/04/27/opc-ua-with-apache-camel/</link>
-          <guid>https://dentrassi.de/blog/2017/04/27/opc-ua-with-apache-camel/</guid>
+          <link>https://dentrassi.de/2017/04/27/opc-ua-with-apache-camel/</link>
+          <guid>https://dentrassi.de/2017/04/27/opc-ua-with-apache-camel/</guid>
           <description>&lt;p&gt;Apache Camel 2.19.0 is close to is release and the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;OPC_Unified_Architecture&quot;&gt;OPC UA&lt;&#x2F;a&gt; component called “camel-milo” will be part of it. This is my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eclipse.org&#x2F;milo&quot;&gt;Eclipse Milo&lt;&#x2F;a&gt; backed component which was previously hosted in my personal GitHub repository &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;de.dentrassi.camel.milo&quot;&gt;ctron&#x2F;de.dentrassi.camel.milo&lt;&#x2F;a&gt;. It now got accepted into Apache Camel and will be part of the 2.19.0 release. As there are already a release candidates available, I think it is a great time to give a short introduction.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -582,8 +582,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Simulating telemetry streams with Kapua and OpenShift</title>
           <pubDate>Wed, 05 Apr 2017 16:30:44 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/04/05/simulating-telemetry-streams-with-kapua-and-openshift/</link>
-          <guid>https://dentrassi.de/blog/2017/04/05/simulating-telemetry-streams-with-kapua-and-openshift/</guid>
+          <link>https://dentrassi.de/2017/04/05/simulating-telemetry-streams-with-kapua-and-openshift/</link>
+          <guid>https://dentrassi.de/2017/04/05/simulating-telemetry-streams-with-kapua-and-openshift/</guid>
           <description>&lt;p&gt;Sometimes it is necessary to have some simulated data instead of fancy sensors attached to your IoT setup. As Eclipse Kapua starts to adopt Elasticsearch, it started to seem necessary to actually unit test the inbound telemetry stream of Kapua. Data coming from the gateway, being processed by Kapua, then stored into Elasticsearch and then retrieved back from Elasticsearch over the Kapua REST API. A lot can go wrong here ;-)&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -591,8 +591,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Developing for Eclipse Kura on Windows</title>
           <pubDate>Tue, 21 Mar 2017 16:54:58 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/03/21/developing-for-eclipse-kura-on-windows/</link>
-          <guid>https://dentrassi.de/blog/2017/03/21/developing-for-eclipse-kura-on-windows/</guid>
+          <link>https://dentrassi.de/2017/03/21/developing-for-eclipse-kura-on-windows/</link>
+          <guid>https://dentrassi.de/2017/03/21/developing-for-eclipse-kura-on-windows/</guid>
           <description>&lt;p&gt;Every now and then it is fun to leave the environment you are used to and do something completely different. So this journey take me to IntelliJ and Windows 10. And yes, I am glad to be back in Linux&#x2F;Eclipse-land. But still, I think something rather interesting came out of this.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -600,8 +600,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>IEC 60870-5-104 with Apache Camel</title>
           <pubDate>Fri, 17 Feb 2017 10:10:23 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/02/17/iec-60870-5-104-with-apache-camel/</link>
-          <guid>https://dentrassi.de/blog/2017/02/17/iec-60870-5-104-with-apache-camel/</guid>
+          <link>https://dentrassi.de/2017/02/17/iec-60870-5-104-with-apache-camel/</link>
+          <guid>https://dentrassi.de/2017/02/17/iec-60870-5-104-with-apache-camel/</guid>
           <description>&lt;p&gt;Yesterday the release 0.4.0 of Eclipse NeoSCADA™ was made available. This release features a cool new feature, an IEC 60870-5-104 stack, written in Java, licensed under the EPL and available on Maven Central. See also the Eclipse Wiki: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.eclipse.org&#x2F;EclipseNeoSCADA&#x2F;Components&#x2F;IEC60870&quot;&gt;https:&#x2F;&#x2F;wiki.eclipse.org&#x2F;EclipseNeoSCADA&#x2F;Components&#x2F;IEC60870&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -618,8 +618,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Testing Kapua with simulated Kura gateways</title>
           <pubDate>Tue, 14 Feb 2017 15:01:12 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/02/14/testing-kapua-with-simulated-kura-gateways/</link>
-          <guid>https://dentrassi.de/blog/2017/02/14/testing-kapua-with-simulated-kura-gateways/</guid>
+          <link>https://dentrassi.de/2017/02/14/testing-kapua-with-simulated-kura-gateways/</link>
+          <guid>https://dentrassi.de/2017/02/14/testing-kapua-with-simulated-kura-gateways/</guid>
           <description>&lt;p&gt;Now you got your pretty new OpenShift setup of Eclipse Kapua and want to give your IoT cloud a test run?! Testing it out with 100 devices, just for fun? Or even more? But you are too lazy to flash 1000 SD cards for your Raspberry Pi cluster? Here comes the Kura simulator framework. ;-)&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -627,8 +627,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Camel and IEC 60870-5-104</title>
           <pubDate>Tue, 24 Jan 2017 00:07:20 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/01/24/camel-and-iec-60870-5-104/</link>
-          <guid>https://dentrassi.de/blog/2017/01/24/camel-and-iec-60870-5-104/</guid>
+          <link>https://dentrassi.de/2017/01/24/camel-and-iec-60870-5-104/</link>
+          <guid>https://dentrassi.de/2017/01/24/camel-and-iec-60870-5-104/</guid>
           <description>&lt;p&gt;With the upcoming release 0.4.0 of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eclipse.org&#x2F;eclipsescada&quot;&gt;Eclipse NeoSCADA™&lt;&#x2F;a&gt;, the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;IEC_60870-5&quot;&gt;IEC 60870-5-105&lt;&#x2F;a&gt; implementation will finally make its way back into NeoSCADA. This will allow me to finally release the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;de.dentrassi.camel.iec60870&quot;&gt;IEC 60870 component Apache Camel&lt;&#x2F;a&gt; to Maven Central.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -636,8 +636,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Released version 0.1.0 of OPC UA component for Camel</title>
           <pubDate>Wed, 11 Jan 2017 15:55:03 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2017/01/11/released-version-0-1-0-of-opc-ua-component-for-camel/</link>
-          <guid>https://dentrassi.de/blog/2017/01/11/released-version-0-1-0-of-opc-ua-component-for-camel/</guid>
+          <link>https://dentrassi.de/2017/01/11/released-version-0-1-0-of-opc-ua-component-for-camel/</link>
+          <guid>https://dentrassi.de/2017/01/11/released-version-0-1-0-of-opc-ua-component-for-camel/</guid>
           <description>&lt;p&gt;After &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;eclipse.org&#x2F;milo&quot;&gt;Eclipse Milo™&lt;&#x2F;a&gt; 0.1.0 was released a few days back and is available on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;search.maven.org&#x2F;#search%7Cga%7C1%7Cg%3A%22org.eclipse.milo%22&quot;&gt;Maven Central&lt;&#x2F;a&gt; since this week it was time to update my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;camel-milo&#x2F;&quot;&gt;OPC UA component for Apache Camel&lt;&#x2F;a&gt; to use the release version of Milo:&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -654,8 +654,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Remote managing Eclipse Kura on Apache Karaf with ECF</title>
           <pubDate>Fri, 16 Dec 2016 11:39:36 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/12/16/remote-managing-eclipse-kura-on-apache-karaf-with-ecf/</link>
-          <guid>https://dentrassi.de/blog/2016/12/16/remote-managing-eclipse-kura-on-apache-karaf-with-ecf/</guid>
+          <link>https://dentrassi.de/2016/12/16/remote-managing-eclipse-kura-on-apache-karaf-with-ecf/</link>
+          <guid>https://dentrassi.de/2016/12/16/remote-managing-eclipse-kura-on-apache-karaf-with-ecf/</guid>
           <description>&lt;p&gt;To be honest, I had my troubles in the past with the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eclipse.org&#x2F;ecf&#x2F;&quot;&gt;Eclipse Communication Framework&lt;&#x2F;a&gt; (ECF), not that it is a bad framework, but whatever I started it was complicated and never really worked for me. This story is different!&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -663,8 +663,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Providing telemetry data with OPC UA on Eclipse Kura</title>
           <pubDate>Thu, 24 Nov 2016 16:00:31 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/11/24/providing-telemetry-data-with-opc-ua-on-eclipse-kura/</link>
-          <guid>https://dentrassi.de/blog/2016/11/24/providing-telemetry-data-with-opc-ua-on-eclipse-kura/</guid>
+          <link>https://dentrassi.de/2016/11/24/providing-telemetry-data-with-opc-ua-on-eclipse-kura/</link>
+          <guid>https://dentrassi.de/2016/11/24/providing-telemetry-data-with-opc-ua-on-eclipse-kura/</guid>
           <description>&lt;p&gt;The upcoming version 2.1.0 of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;kura&#x2F;&quot;&gt;Eclipse Kura™&lt;&#x2F;a&gt; will feature an enhanced version of the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;camel.apache.org&#x2F;&quot;&gt;Apache Camel™&lt;&#x2F;a&gt; integration which was introduced in Kura 2.0.0. There are various new ways on how to run Camel routes, configured either by XML routes or using the Java DSL. Apache Camel can act as a Kura application but, new in this release, there is also a way to simply configure Camel as a “cloud service”. In past releases of Kura, applications could only push data to one cloud target. The new 2.1.0 release will add the functionality of adding multiple cloud targets and one of those targets can be Apache Camel router instances.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -672,8 +672,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Dropping Apache File Install into Eclipse Kura</title>
           <pubDate>Mon, 14 Nov 2016 16:48:59 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/11/14/dropping-apache-file-install-into-eclipse-kura/</link>
-          <guid>https://dentrassi.de/blog/2016/11/14/dropping-apache-file-install-into-eclipse-kura/</guid>
+          <link>https://dentrassi.de/2016/11/14/dropping-apache-file-install-into-eclipse-kura/</link>
+          <guid>https://dentrassi.de/2016/11/14/dropping-apache-file-install-into-eclipse-kura/</guid>
           <description>&lt;p&gt;Sometimes the simple things may be the most valuable. Testing with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;kura&#x2F;&quot;&gt;Eclipse Kura™&lt;&#x2F;a&gt; on a Raspberry Pi (or any other Eclipse Kura device) may be a bit tricky. Of course can use the Eclipse UI in combination with mToolkit. But if you want to edit, compile, deploy from a local desktop machine, to a Kura device, then you either need to click through the Web UI for uploading your application. But for this to work you also need to assembly a DP (distribution package).&lt;&#x2F;p&gt;
 &lt;p&gt;But what if you could simply drop an OSGi bundle into a directory and let it get picked up by Kura automatically. Thanks to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;felix.apache.org&#x2F;documentation&#x2F;subprojects&#x2F;apache-felix-file-install.html&quot;&gt;Apache File Install&lt;&#x2F;a&gt;, there already is such a solution. File Install scans a folder and loads every OSGi bundle located in this folder. If a bundle is started and it gets overwritten in the file system, then File Install will reload and restart the bundle.&lt;&#x2F;p&gt;
 </description>
@@ -700,8 +700,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Eclipse Kura on Apache Karaf</title>
           <pubDate>Thu, 20 Oct 2016 16:13:39 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/10/20/eclipse-kura-on-apache-karaf/</link>
-          <guid>https://dentrassi.de/blog/2016/10/20/eclipse-kura-on-apache-karaf/</guid>
+          <link>https://dentrassi.de/2016/10/20/eclipse-kura-on-apache-karaf/</link>
+          <guid>https://dentrassi.de/2016/10/20/eclipse-kura-on-apache-karaf/</guid>
           <description>&lt;p&gt;It took quite a while and triggered a bunch of pull request upstream, but finally I do have &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;kura&#x2F;&quot;&gt;Eclipse Kura™&lt;&#x2F;a&gt; running with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;karaf.apache.org&#x2F;&quot;&gt;Apache Karaf™&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Now of course I immediately got the question: Why is that good? After all the recent setup still uses Equinox underneath in Karaf. Now what? … isn’t Equinox and Karaf something different? Read on …&lt;&#x2F;p&gt;
 </description>
@@ -710,8 +710,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Collecting data to OpenTSDB with Apache Camel</title>
           <pubDate>Fri, 09 Sep 2016 15:12:35 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/09/09/collecting-data-to-opentsdb-with-apache-camel/</link>
-          <guid>https://dentrassi.de/blog/2016/09/09/collecting-data-to-opentsdb-with-apache-camel/</guid>
+          <link>https://dentrassi.de/2016/09/09/collecting-data-to-opentsdb-with-apache-camel/</link>
+          <guid>https://dentrassi.de/2016/09/09/collecting-data-to-opentsdb-with-apache-camel/</guid>
           <description>&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;opentsdb.net&#x2F;&quot;&gt;OpenTSDB&lt;&#x2F;a&gt; is an open source, scalable, &amp;lt;buzzword&amp;gt;big data&amp;lt;&#x2F;buzzword&amp;gt; solution for storing time series data. Well, that what the name of the project actually says ;-) In combination with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;grafana.org&#x2F;&quot;&gt;Grafana&lt;&#x2F;a&gt; you can pretty easy build a few nice dashboards for visualizing that data. The only question is of course, how do you get your data into that system.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -719,8 +719,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Camel, Kura and OSGi, struggling with `sun.misc.Unsafe`</title>
           <pubDate>Mon, 25 Jul 2016 13:23:44 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/07/25/camel-kura-and-osgi-struggling-with-sun-misc-unsafe/</link>
-          <guid>https://dentrassi.de/blog/2016/07/25/camel-kura-and-osgi-struggling-with-sun-misc-unsafe/</guid>
+          <link>https://dentrassi.de/2016/07/25/camel-kura-and-osgi-struggling-with-sun-misc-unsafe/</link>
+          <guid>https://dentrassi.de/2016/07/25/camel-kura-and-osgi-struggling-with-sun-misc-unsafe/</guid>
           <description>&lt;p&gt;So here comes a puzzle for you … You do have Apache Camel (2.17), which internally uses &lt;code&gt;com.googlecode.concurrentlinkedhashmap&lt;&#x2F;code&gt;, which uses &lt;code&gt;sun.misc.Unsafe&lt;&#x2F;code&gt;. Now you can argue a lot about this is necessary or not. I just is that way. So starting up Apache Camel in an OSGi container which does strict processing of classes, using Apache Camel will run into a “java.lang.NoClassDefFoundError” issue due to “sun&#x2F;misc&#x2F;Unsafe”.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -728,8 +728,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Bringing OPC UA to Apache Camel</title>
           <pubDate>Mon, 18 Jul 2016 10:22:09 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/07/18/bringing-opc-ua-to-apache-camel/</link>
-          <guid>https://dentrassi.de/blog/2016/07/18/bringing-opc-ua-to-apache-camel/</guid>
+          <link>https://dentrassi.de/2016/07/18/bringing-opc-ua-to-apache-camel/</link>
+          <guid>https://dentrassi.de/2016/07/18/bringing-opc-ua-to-apache-camel/</guid>
           <description>&lt;p&gt;My first two weeks at Red Hat have been quite awesome! There is a lot to learn and one the first things I checked out was &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;camel.apache.org&#x2F;&quot;&gt;Apache Camel&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;eclipse.org&#x2F;milo&quot;&gt;Eclipse Milo&lt;&#x2F;a&gt;. While Camel is more known open source project, Eclipse Milo is a newcomer project at the Eclipse Foundation. And while it is officially still in the Incubation Phase, it is a tool you can really work with! Eclipse Milo is an &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;opcfoundation.org&#x2F;about&#x2F;opc-technologies&#x2F;opc-ua&#x2F;&quot;&gt;OPC UA&lt;&#x2F;a&gt; client and server implementation.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -737,8 +737,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>10 years</title>
           <pubDate>Thu, 30 Jun 2016 14:47:23 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/06/30/10-years/</link>
-          <guid>https://dentrassi.de/blog/2016/06/30/10-years/</guid>
+          <link>https://dentrassi.de/2016/06/30/10-years/</link>
+          <guid>https://dentrassi.de/2016/06/30/10-years/</guid>
           <description>&lt;p&gt;Many of my blog posts are actually a “note to self”. Things I write down in order not to forget them. This one even goes a bit further. So save yourself some time and skip it ;-)&lt;&#x2F;p&gt;
 &lt;p&gt;10 years ago I started an adventure. Creating an open source SCADA system and a business with that. Having an open source SCADA system was not the business case back then, it was just a side effect.&lt;&#x2F;p&gt;
 </description>
@@ -747,8 +747,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>New version of Maven RPM builder</title>
           <pubDate>Fri, 24 Jun 2016 13:03:30 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/06/24/new-version-of-maven-rpm-builder/</link>
-          <guid>https://dentrassi.de/blog/2016/06/24/new-version-of-maven-rpm-builder/</guid>
+          <link>https://dentrassi.de/2016/06/24/new-version-of-maven-rpm-builder/</link>
+          <guid>https://dentrassi.de/2016/06/24/new-version-of-maven-rpm-builder/</guid>
           <description>&lt;p&gt;I just released a new version of the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ctron.github.io&#x2F;rpm-builder&#x2F;&quot;&gt;Maven RPM builder&lt;&#x2F;a&gt;. Version 0.6.0 allows one to influence the way the RPM release information is generated during a SNAPSHOT build (also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;rpm-builder&#x2F;issues&#x2F;2&quot;&gt;issue #2&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -756,8 +756,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Mattermost at Eclipse</title>
           <pubDate>Wed, 15 Jun 2016 16:24:55 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/06/15/mattermost-at-eclipse/</link>
-          <guid>https://dentrassi.de/blog/2016/06/15/mattermost-at-eclipse/</guid>
+          <link>https://dentrassi.de/2016/06/15/mattermost-at-eclipse/</link>
+          <guid>https://dentrassi.de/2016/06/15/mattermost-at-eclipse/</guid>
           <description>&lt;p&gt;About half a year back &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;bruncedric&quot;&gt;Cédric&lt;&#x2F;a&gt; and I did &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2015&#x2F;12&#x2F;16&#x2F;test-driving-mattermost-at-the-eclipse-foundation&#x2F;&quot;&gt;start a test&lt;&#x2F;a&gt; to see if Mattermost is a valuable tool for the Eclipse community. Failure was an option, since a new tool should bring some benefit to the community.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -765,8 +765,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Writing RPM files … in plain Java … on Maven Central</title>
           <pubDate>Tue, 07 Jun 2016 15:05:44 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/06/07/writing-rpm-files-in-plain-java-on-maven-central/</link>
-          <guid>https://dentrassi.de/blog/2016/06/07/writing-rpm-files-in-plain-java-on-maven-central/</guid>
+          <link>https://dentrassi.de/2016/06/07/writing-rpm-files-in-plain-java-on-maven-central/</link>
+          <guid>https://dentrassi.de/2016/06/07/writing-rpm-files-in-plain-java-on-maven-central/</guid>
           <description>&lt;p&gt;A few weeks back I wrote a blog post about &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2016&#x2F;04&#x2F;15&#x2F;writing-rpm-files-in-plain-java&#x2F;&quot;&gt;writing RPM files in plain Java&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;What was left over was the fact that the library was not available outside of Package Drone itself. Although it was created as a stand alone functionality you would need to fetch the JAR and somehow integrate it into your build.&lt;&#x2F;p&gt;
 </description>
@@ -775,8 +775,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Maven RPM builder, enhanced</title>
           <pubDate>Mon, 02 May 2016 12:04:36 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/05/02/maven-rpm-builder-enhanced/</link>
-          <guid>https://dentrassi.de/blog/2016/05/02/maven-rpm-builder-enhanced/</guid>
+          <link>https://dentrassi.de/2016/05/02/maven-rpm-builder-enhanced/</link>
+          <guid>https://dentrassi.de/2016/05/02/maven-rpm-builder-enhanced/</guid>
           <description>&lt;p&gt;The &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ctron.github.io&#x2F;rpm-builder&#x2F;&quot;&gt;Maven RPM Builder&lt;&#x2F;a&gt; got a few new features. Version 0.3.0 can now:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ctron.github.io&#x2F;rpm-builder&#x2F;entry.html&quot;&gt;symbolic links&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -790,8 +790,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Building RPMs on any platform with Maven</title>
           <pubDate>Tue, 26 Apr 2016 11:52:53 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/04/26/building-rpms-on-any-platform-with-maven/</link>
-          <guid>https://dentrassi.de/blog/2016/04/26/building-rpms-on-any-platform-with-maven/</guid>
+          <link>https://dentrassi.de/2016/04/26/building-rpms-on-any-platform-with-maven/</link>
+          <guid>https://dentrassi.de/2016/04/26/building-rpms-on-any-platform-with-maven/</guid>
           <description>&lt;p&gt;In several occasions I had to build RPM packages for installing software. In the past I mostly did it with a Maven build using the &lt;q&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.mojohaus.org&#x2F;rpm-maven-plugin&#x2F;&quot;&gt;RPM Maven Plugin&lt;&#x2F;a&gt;&lt;&#x2F;q&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;The process is simple: At the end of your build you gather up all resources, try to understand the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.mojohaus.org&#x2F;rpm-maven-plugin&#x2F;map-params.html&quot;&gt;mapping configuration&lt;&#x2F;a&gt;, bang your head a few times in order to figure out way to work with &lt;code&gt;-SNAPSHOT&lt;&#x2F;code&gt; versions and that’s it. In the end you have a few RPM files.&lt;&#x2F;p&gt;
 </description>
@@ -800,8 +800,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Writing RPM files … in plain Java</title>
           <pubDate>Fri, 15 Apr 2016 11:12:51 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/04/15/writing-rpm-files-in-plain-java/</link>
-          <guid>https://dentrassi.de/blog/2016/04/15/writing-rpm-files-in-plain-java/</guid>
+          <link>https://dentrassi.de/2016/04/15/writing-rpm-files-in-plain-java/</link>
+          <guid>https://dentrassi.de/2016/04/15/writing-rpm-files-in-plain-java/</guid>
           <description>&lt;p&gt;Now creating an RPM file is easy. There are a lot of tutorials &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.google.com&#x2F;#q=create+rpm&quot;&gt;out there&lt;&#x2F;a&gt; on how write a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.rpm.org&#x2F;max-rpm&#x2F;ch-rpm-inside.html&quot;&gt;SPEC file&lt;&#x2F;a&gt; and build your RPM. Even when you are using Maven … with the exception that when you are on Windows or Mac OS X, the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.mojohaus.org&#x2F;rpm-maven-plugin&#x2F;&quot;&gt;Maven RPM plugin&lt;&#x2F;a&gt; will still try to invoke &lt;code&gt;rpmbuild&lt;&#x2F;code&gt; in order to actually build the RPM file. The maven bundle simply creates a SPEC file, layout out the payload data and lets &lt;code&gt;rpmbuild&lt;&#x2F;code&gt; do the processing.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -843,8 +843,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Eclipse Mattermost – What&#x27;s the state?!</title>
           <pubDate>Fri, 29 Jan 2016 16:47:40 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/01/29/eclipse-mattermost-whats-the-state/</link>
-          <guid>https://dentrassi.de/blog/2016/01/29/eclipse-mattermost-whats-the-state/</guid>
+          <link>https://dentrassi.de/2016/01/29/eclipse-mattermost-whats-the-state/</link>
+          <guid>https://dentrassi.de/2016/01/29/eclipse-mattermost-whats-the-state/</guid>
           <description>&lt;p&gt;A few weeks ago we started to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2015&#x2F;12&#x2F;16&#x2F;test-driving-mattermost-at-the-eclipse-foundation&#x2F;&quot;&gt;test Mattermost&lt;&#x2F;a&gt; as a communication channel for Eclipse Foundation projects. So, how is it going?&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -852,8 +852,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Java 8 magic with method references</title>
           <pubDate>Wed, 20 Jan 2016 10:49:24 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2016/01/20/java-8-magic-with-method-references/</link>
-          <guid>https://dentrassi.de/blog/2016/01/20/java-8-magic-with-method-references/</guid>
+          <link>https://dentrassi.de/2016/01/20/java-8-magic-with-method-references/</link>
+          <guid>https://dentrassi.de/2016/01/20/java-8-magic-with-method-references/</guid>
           <description>&lt;p&gt;When you start learning a new programming language you often encounter snippets of code which you have no idea why they work. The more you learn about that programming language to more you understand and these moments become rare.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -861,8 +861,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Testing Diaspora – Part 3</title>
           <pubDate>Thu, 31 Dec 2015 17:26:21 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/12/31/testing-diaspora-part-3/</link>
-          <guid>https://dentrassi.de/blog/2015/12/31/testing-diaspora-part-3/</guid>
+          <link>https://dentrassi.de/2015/12/31/testing-diaspora-part-3/</link>
+          <guid>https://dentrassi.de/2015/12/31/testing-diaspora-part-3/</guid>
           <description>&lt;p&gt;This is the third time I am testing &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;diasporafoundation.org&#x2F;&quot;&gt;Diaspora&lt;&#x2F;a&gt;. I never wrote about the other attempts, but between Christmas and New Year a had a bit of time writing this together.&lt;&#x2F;p&gt;
 &lt;p&gt;Motivated by &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.heise.de&#x2F;newsticker&#x2F;meldung&#x2F;32C3-Gegen-Gated-Communities-Facebook-muss-seine-Mauern-einreissen-3057076.html&quot;&gt;the article at Heise about diaspora&lt;&#x2F;a&gt;, I decided it is time to give diaspora another try. I did try the first version after the crowdfunding campaign and one or two years later.&lt;&#x2F;p&gt;
 </description>
@@ -871,8 +871,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Christmas presents – sell&#x2F;recycle for charity</title>
           <pubDate>Tue, 29 Dec 2015 18:07:21 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/12/29/christmas-presents-sellrecycle-for-charity/</link>
-          <guid>https://dentrassi.de/blog/2015/12/29/christmas-presents-sellrecycle-for-charity/</guid>
+          <link>https://dentrassi.de/2015/12/29/christmas-presents-sellrecycle-for-charity/</link>
+          <guid>https://dentrassi.de/2015/12/29/christmas-presents-sellrecycle-for-charity/</guid>
           <description>&lt;p&gt;Before and on Christmas most people think about people in need, and hopefully donate something. Not necessarily money, but presents as well.&lt;&#x2F;p&gt;
 &lt;p&gt;But after Christmas there are lots of unwanted presents and things you don’t need, don’t like or will ever use. In most cases these items end up in the trash, at some shelf or, at best, being returned to the store.&lt;&#x2F;p&gt;
 </description>
@@ -881,8 +881,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Test driving &quot;Mattermost&quot; at the Eclipse Foundation</title>
           <pubDate>Wed, 16 Dec 2015 13:05:59 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/12/16/test-driving-mattermost-at-the-eclipse-foundation/</link>
-          <guid>https://dentrassi.de/blog/2015/12/16/test-driving-mattermost-at-the-eclipse-foundation/</guid>
+          <link>https://dentrassi.de/2015/12/16/test-driving-mattermost-at-the-eclipse-foundation/</link>
+          <guid>https://dentrassi.de/2015/12/16/test-driving-mattermost-at-the-eclipse-foundation/</guid>
           <description>&lt;p&gt;Thanks to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;bruncedric&quot;&gt;@bruncedric&lt;&#x2F;a&gt; and the Eclipse Webmasters we were able to quickly start a test of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.mattermost.org&#x2F;&quot;&gt;Mattermost&lt;&#x2F;a&gt; at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mattermost-test.eclipse.org&quot;&gt;https:&#x2F;&#x2F;mattermost-test.eclipse.org&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;“Mattermost” is a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;slack.com&#x2F;&quot;&gt;Slack&lt;&#x2F;a&gt;&#x2F;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.hipchat.com&#x2F;&quot;&gt;HipChat&lt;&#x2F;a&gt;&#x2F;… like web messaging system (aka webchat). I don’t want to go into too much detail of the system itself, but the main idea is to have a “faster-than-email” communication form for a team of people. Comparable to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Internet_Relay_Chat&quot;&gt;IRC&lt;&#x2F;a&gt;, but more HTML5-ish. It also features a REST API, which can be used to automate inbound and outbound messages to the different channels.&lt;&#x2F;p&gt;
 </description>
@@ -891,8 +891,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Parsing RPMs in Java</title>
           <pubDate>Thu, 03 Dec 2015 21:36:52 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/12/03/parsing-rpms-in-java/</link>
-          <guid>https://dentrassi.de/blog/2015/12/03/parsing-rpms-in-java/</guid>
+          <link>https://dentrassi.de/2015/12/03/parsing-rpms-in-java/</link>
+          <guid>https://dentrassi.de/2015/12/03/parsing-rpms-in-java/</guid>
           <description>&lt;p&gt;The core idea of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;packagedrone.org&quot;&gt;Package Drone&lt;&#x2F;a&gt; is to extract meta data from files and generated some sort of repository index. And although Package Drone’s main focus is on OSGi, we did want to implement a YUM repository adapter and for this we needed to extract metadata from RPM files.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -900,8 +900,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>The ConPanion</title>
           <pubDate>Sun, 29 Nov 2015 21:12:19 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/11/29/the-conpanion/</link>
-          <guid>https://dentrassi.de/blog/2015/11/29/the-conpanion/</guid>
+          <link>https://dentrassi.de/2015/11/29/the-conpanion/</link>
+          <guid>https://dentrassi.de/2015/11/29/the-conpanion/</guid>
           <description>&lt;p&gt;While preparing for EclipseCon Europe 2015 (a few weeks back I have to say, it was a great conference) I again wanted to a have a small mobile helper. So instead of forgetting (again) about it, this time I briefly wrote it down. So here it is.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -929,8 +929,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>You left your phone!</title>
           <pubDate>Fri, 02 Oct 2015 10:14:04 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/10/02/you-left-your-phone/</link>
-          <guid>https://dentrassi.de/blog/2015/10/02/you-left-your-phone/</guid>
+          <link>https://dentrassi.de/2015/10/02/you-left-your-phone/</link>
+          <guid>https://dentrassi.de/2015/10/02/you-left-your-phone/</guid>
           <description>&lt;p&gt;Dear Google,&lt;&#x2F;p&gt;
 &lt;p&gt;Today it happened again. I left my mobile phone at home. I realized that before entering the train, so I went back, grabbed it and went back to catch the next train. This gave me a few minutes to think about that ;-)&lt;&#x2F;p&gt;
 </description>
@@ -939,8 +939,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Java 8 streaming – or not?</title>
           <pubDate>Fri, 18 Sep 2015 15:35:50 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/09/18/java-8-streaming-or-not/</link>
-          <guid>https://dentrassi.de/blog/2015/09/18/java-8-streaming-or-not/</guid>
+          <link>https://dentrassi.de/2015/09/18/java-8-streaming-or-not/</link>
+          <guid>https://dentrassi.de/2015/09/18/java-8-streaming-or-not/</guid>
           <description>&lt;p&gt;One of the most advertised use cases of the new lambdas in Java 8 is the possibility to &lt;q&gt;stream&lt;&#x2F;q&gt; collections and transform it. The “series of tubes” has a lot of examples on how to do this, I just wanted to look at it from a different perspective, readability.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -948,8 +948,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Searching for lyrics in Google Music</title>
           <pubDate>Tue, 01 Sep 2015 10:06:53 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/09/01/searching-for-lyrics-in-google-music/</link>
-          <guid>https://dentrassi.de/blog/2015/09/01/searching-for-lyrics-in-google-music/</guid>
+          <link>https://dentrassi.de/2015/09/01/searching-for-lyrics-in-google-music/</link>
+          <guid>https://dentrassi.de/2015/09/01/searching-for-lyrics-in-google-music/</guid>
           <description>&lt;p&gt;Dear Google,&lt;&#x2F;p&gt;
 &lt;p&gt;as a subscriber of Google Music I often search for music I listened to in the past. In many cases I do know the title, artist or sometime the name of the album.&lt;&#x2F;p&gt;
 </description>
@@ -958,8 +958,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Calling from Google search</title>
           <pubDate>Sat, 15 Aug 2015 17:31:51 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/08/15/calling-from-google-search/</link>
-          <guid>https://dentrassi.de/blog/2015/08/15/calling-from-google-search/</guid>
+          <link>https://dentrassi.de/2015/08/15/calling-from-google-search/</link>
+          <guid>https://dentrassi.de/2015/08/15/calling-from-google-search/</guid>
           <description>&lt;p&gt;Dear Google …&lt;&#x2F;p&gt;
 &lt;p&gt;… I just did a search for some business an Google and actually the first hit and the suggestion box on the right side is the perfect match for what I was looking for. The &lt;a href=&quot;&#x2F;wp-content&#x2F;uploads&#x2F;Bildschirmfoto-2015-08-15-um-17.18.49.png&quot;&gt;info box&lt;&#x2F;a&gt; contains all the relevant information, including the phone number, which is a clickable link.&lt;&#x2F;p&gt;
 </description>
@@ -968,8 +968,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Maven Tycho&#x2F;JGit based build timestamps and the `target` directory</title>
           <pubDate>Tue, 28 Jul 2015 09:39:20 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/07/28/maven-tychojgit-based-build-timestamps-and-the-target-directory/</link>
-          <guid>https://dentrassi.de/blog/2015/07/28/maven-tychojgit-based-build-timestamps-and-the-target-directory/</guid>
+          <link>https://dentrassi.de/2015/07/28/maven-tychojgit-based-build-timestamps-and-the-target-directory/</link>
+          <guid>https://dentrassi.de/2015/07/28/maven-tychojgit-based-build-timestamps-and-the-target-directory/</guid>
           <description>&lt;p&gt;Now when you build OSGi bundles using Maven &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eclipse.org&#x2F;tycho&#x2F;&quot;&gt;Tycho&lt;&#x2F;a&gt;, you probably ran into the issue of creating a meaningful version qualifier (remember, an OSGi versions always is &lt;code&gt;major.minor.micro.qualifier&lt;&#x2F;code&gt;, so no dash and definitely no &lt;code&gt;-SNAPSHOT&lt;&#x2F;code&gt;).&lt;&#x2F;p&gt;
 &lt;p&gt;There are a few approaches ranging from fully manual assignment of the build qualifier, simple timestamps and timestamps based on the last Git change.&lt;&#x2F;p&gt;
 </description>
@@ -978,8 +978,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Safer surfing for kids – My wishlist</title>
           <pubDate>Sun, 26 Jul 2015 19:15:30 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/07/26/safer-surfing-for-kids-my-wishlist/</link>
-          <guid>https://dentrassi.de/blog/2015/07/26/safer-surfing-for-kids-my-wishlist/</guid>
+          <link>https://dentrassi.de/2015/07/26/safer-surfing-for-kids-my-wishlist/</link>
+          <guid>https://dentrassi.de/2015/07/26/safer-surfing-for-kids-my-wishlist/</guid>
           <description>&lt;p&gt;At some point my son will start surfing … the web. Now as with all other things, I’d like to protect him, but I also know, there is nothing like a 100% security, neither in real life, nor in the internet. The main task for me, as a parent, it so prepare him. I’d like a bit of technical help though. Here is my list of wishes.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -987,8 +987,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>A bit of Java 8 Optional&lt;T&gt;</title>
           <pubDate>Wed, 22 Jul 2015 17:33:20 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/07/22/a-bit-of-java-8-optional/</link>
-          <guid>https://dentrassi.de/blog/2015/07/22/a-bit-of-java-8-optional/</guid>
+          <link>https://dentrassi.de/2015/07/22/a-bit-of-java-8-optional/</link>
+          <guid>https://dentrassi.de/2015/07/22/a-bit-of-java-8-optional/</guid>
           <description>&lt;p&gt;For me Java 8 wasn’t a big deal … until I had to go back to Java 7. Suddenly I started missing things I started using without even realizing it. Here comes &lt;tt&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.oracle.com&#x2F;javase&#x2F;8&#x2F;docs&#x2F;api&#x2F;java&#x2F;util&#x2F;Optional.html&quot;&gt;Optional&amp;lt;T&amp;gt;&lt;&#x2F;a&gt;&lt;&#x2F;tt&gt;:&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -996,8 +996,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>IAdapterFactory with generics</title>
           <pubDate>Fri, 17 Jul 2015 12:37:00 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/07/17/iadapterfactory-with-generics/</link>
-          <guid>https://dentrassi.de/blog/2015/07/17/iadapterfactory-with-generics/</guid>
+          <link>https://dentrassi.de/2015/07/17/iadapterfactory-with-generics/</link>
+          <guid>https://dentrassi.de/2015/07/17/iadapterfactory-with-generics/</guid>
           <description>&lt;p&gt;Now I have been working with the Eclipse platform for quite a while. If you do so, you already might have run into the “adaptable” mechanism the Eclipse platform provides (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.eclipsezone.com&#x2F;articles&#x2F;what-is-iadaptable&#x2F;&quot;&gt;article on EclipseZone&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1005,8 +1005,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Programmatically adding a host key with JSch</title>
           <pubDate>Mon, 13 Jul 2015 18:18:29 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/07/13/programmatically-adding-a-host-key-with-jsch/</link>
-          <guid>https://dentrassi.de/blog/2015/07/13/programmatically-adding-a-host-key-with-jsch/</guid>
+          <link>https://dentrassi.de/2015/07/13/programmatically-adding-a-host-key-with-jsch/</link>
+          <guid>https://dentrassi.de/2015/07/13/programmatically-adding-a-host-key-with-jsch/</guid>
           <description>&lt;p&gt;This article explains how to programmatically add a host key in Java with JSch. I did update the article early 2018, taking care of the missing argument to the &lt;code&gt;add&lt;&#x2F;code&gt; method.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1014,8 +1014,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>The curated Play Store &#x2F; App Store</title>
           <pubDate>Sat, 04 Jul 2015 16:57:49 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/07/04/the-curated-play-store-app-store/</link>
-          <guid>https://dentrassi.de/blog/2015/07/04/the-curated-play-store-app-store/</guid>
+          <link>https://dentrassi.de/2015/07/04/the-curated-play-store-app-store/</link>
+          <guid>https://dentrassi.de/2015/07/04/the-curated-play-store-app-store/</guid>
           <description>&lt;p&gt;Dear Google,&lt;&#x2F;p&gt;
 &lt;p&gt;every now and then I come up with idea of buying another game in the play store (yes, a mobile game, for Android). So I browse and browse and finally give up again. The main entry views give me a few promoted items, which mostly are uninteresting as a game, the top lists show games which I already checked out the last time, or already bought, the recommendation show hardly any interesting games. The same is true for non-game apps (I wouldn’t always call them productive apps ;-) ).&lt;&#x2F;p&gt;
 </description>
@@ -1024,8 +1024,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>OSGi + JSP + JSTL</title>
           <pubDate>Thu, 18 Jun 2015 16:57:29 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/06/18/osgi-jsp-jstl/</link>
-          <guid>https://dentrassi.de/blog/2015/06/18/osgi-jsp-jstl/</guid>
+          <link>https://dentrassi.de/2015/06/18/osgi-jsp-jstl/</link>
+          <guid>https://dentrassi.de/2015/06/18/osgi-jsp-jstl/</guid>
           <description>&lt;p&gt;What is so easy with a standard JEE setup becomes quite painful using OSGi. Although there are very interesting projects and approaches like &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;enroute.osgi.org&quot;&gt;OSGi enRoute&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ops4j&#x2F;org.ops4j.pax.web&quot;&gt;Pax Web&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;eclipse.org&#x2F;equinox&#x2F;server&#x2F;jsp_support.php&quot;&gt;Equinox JSP&lt;&#x2F;a&gt; (and probably a few more), taking a step beyond “Hello World” starts to get quite painful.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1033,8 +1033,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Package Drone – what&#x27; next?!</title>
           <pubDate>Fri, 08 May 2015 19:09:43 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/05/08/package-drone-whats-next/</link>
-          <guid>https://dentrassi.de/blog/2015/05/08/package-drone-whats-next/</guid>
+          <link>https://dentrassi.de/2015/05/08/package-drone-whats-next/</link>
+          <guid>https://dentrassi.de/2015/05/08/package-drone-whats-next/</guid>
           <description>&lt;p&gt;Every now and then there is some time for Package Drone. So let’s peek ahead what will happen in the next few weeks.&lt;&#x2F;p&gt;
 &lt;p&gt;First of all, there is the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;packagedrone.org&#x2F;2015&#x2F;05&#x2F;06&#x2F;package-drone-eclipse-democamp-mars-2015-in-munich&#x2F;&quot;&gt;Eclipse DemoCamp&lt;&#x2F;a&gt; in Munich, at which Package Drone will be presented. So if you want to talk in person, come over and pay us a visit.&lt;&#x2F;p&gt;
 </description>
@@ -1043,8 +1043,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Meanwhile @ Package Drone</title>
           <pubDate>Sat, 14 Mar 2015 15:32:45 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/03/14/meanwhile-package-drone/</link>
-          <guid>https://dentrassi.de/blog/2015/03/14/meanwhile-package-drone/</guid>
+          <link>https://dentrassi.de/2015/03/14/meanwhile-package-drone/</link>
+          <guid>https://dentrassi.de/2015/03/14/meanwhile-package-drone/</guid>
           <description>&lt;p&gt;Since &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; title=&quot;Package Drone&quot; href=&quot;http:&#x2F;&#x2F;packagedrone.org&quot;&gt;Package Drone&lt;&#x2F;a&gt; has its own home now, I would simple like to sum up here what progress Package Drone has made in the last few weeks.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1052,8 +1052,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Controlling the screen resolution of a Windows Guest in VirtualBox</title>
           <pubDate>Tue, 24 Feb 2015 14:18:09 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/02/24/controlling-the-screen-resolution-of-a-windows-guest-in-virtualbox/</link>
-          <guid>https://dentrassi.de/blog/2015/02/24/controlling-the-screen-resolution-of-a-windows-guest-in-virtualbox/</guid>
+          <link>https://dentrassi.de/2015/02/24/controlling-the-screen-resolution-of-a-windows-guest-in-virtualbox/</link>
+          <guid>https://dentrassi.de/2015/02/24/controlling-the-screen-resolution-of-a-windows-guest-in-virtualbox/</guid>
           <description>&lt;p&gt;Now I wanted to create another screencast for &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;packagedrone.org&quot;&gt;Package Drone&lt;&#x2F;a&gt; and stumbled over the same issue again. Time to document it ;-)&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1061,8 +1061,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Maven basic authentication fails</title>
           <pubDate>Tue, 17 Feb 2015 18:06:17 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/02/17/maven-basic-authentication-fails/</link>
-          <guid>https://dentrassi.de/blog/2015/02/17/maven-basic-authentication-fails/</guid>
+          <link>https://dentrassi.de/2015/02/17/maven-basic-authentication-fails/</link>
+          <guid>https://dentrassi.de/2015/02/17/maven-basic-authentication-fails/</guid>
           <description>&lt;p&gt;While working on Package Drone, I stumbled over an &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;issues&#x2F;38&quot;&gt;interesting issue&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Deploying to Package Drone using Maven requires a deploy key. A random token, generated by the server which has to be used as either username or password on the basic authentication process of HTTP.&lt;&#x2F;p&gt;
 </description>
@@ -1071,8 +1071,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>😸 Just a Test</title>
           <pubDate>Sat, 14 Feb 2015 11:16:18 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/02/14/just-a-test/</link>
-          <guid>https://dentrassi.de/blog/2015/02/14/just-a-test/</guid>
+          <link>https://dentrassi.de/2015/02/14/just-a-test/</link>
+          <guid>https://dentrassi.de/2015/02/14/just-a-test/</guid>
           <description>&lt;p&gt;This is just a test about Unicode characters. 🐢🐰&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1080,8 +1080,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Package Drone 0.1.0</title>
           <pubDate>Fri, 06 Feb 2015 16:51:56 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/02/06/package-drone-0-1-0/</link>
-          <guid>https://dentrassi.de/blog/2015/02/06/package-drone-0-1-0/</guid>
+          <link>https://dentrassi.de/2015/02/06/package-drone-0-1-0/</link>
+          <guid>https://dentrassi.de/2015/02/06/package-drone-0-1-0/</guid>
           <description>&lt;p&gt;See the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;packagedrone.org&#x2F;2015&#x2F;02&#x2F;06&#x2F;package-drone-0-1-0&#x2F;&quot;&gt;full announcement of Package Drone 0.1.0&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1089,8 +1089,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Package Drone 0.0.8</title>
           <pubDate>Fri, 30 Jan 2015 16:24:01 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/01/30/package-drone-0-0-8/</link>
-          <guid>https://dentrassi.de/blog/2015/01/30/package-drone-0-0-8/</guid>
+          <link>https://dentrassi.de/2015/01/30/package-drone-0-0-8/</link>
+          <guid>https://dentrassi.de/2015/01/30/package-drone-0-0-8/</guid>
           <description>&lt;p&gt;See the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;packagedrone.org&#x2F;2015&#x2F;01&#x2F;30&#x2F;package-drone-0-0-8&#x2F;&quot;&gt;release announcement at packagedrone.org&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1098,8 +1098,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Package Drone 0.0.7</title>
           <pubDate>Fri, 23 Jan 2015 16:53:24 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/01/23/package-drone-0-0-7/</link>
-          <guid>https://dentrassi.de/blog/2015/01/23/package-drone-0-0-7/</guid>
+          <link>https://dentrassi.de/2015/01/23/package-drone-0-0-7/</link>
+          <guid>https://dentrassi.de/2015/01/23/package-drone-0-0-7/</guid>
           <description>&lt;p&gt;The release announcement is at the new homepage.&lt;&#x2F;p&gt;
 &lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;packagedrone.org&#x2F;2015&#x2F;01&#x2F;23&#x2F;package-drone-0-0-7&#x2F;&quot;&gt;http:&#x2F;&#x2F;packagedrone.org&#x2F;2015&#x2F;01&#x2F;23&#x2F;package-drone-0-0-7&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </description>
@@ -1108,8 +1108,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Package Drone 0.0.6</title>
           <pubDate>Wed, 21 Jan 2015 15:32:00 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/01/21/package-drone-0-0-6/</link>
-          <guid>https://dentrassi.de/blog/2015/01/21/package-drone-0-0-6/</guid>
+          <link>https://dentrassi.de/2015/01/21/package-drone-0-0-6/</link>
+          <guid>https://dentrassi.de/2015/01/21/package-drone-0-0-6/</guid>
           <description>&lt;p&gt;Here is another release of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;releases&#x2F;tag&#x2F;v0.0.6&quot;&gt;Package Drone – 0.0.6&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
 &lt;p&gt;Be sure to check out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;releases&quot;&gt;the most recent release&lt;&#x2F;a&gt; on github.&lt;&#x2F;p&gt;
 </description>
@@ -1118,8 +1118,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Package Drone 0.0.5</title>
           <pubDate>Fri, 16 Jan 2015 10:42:27 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/01/16/package-drone-0-0-5/</link>
-          <guid>https://dentrassi.de/blog/2015/01/16/package-drone-0-0-5/</guid>
+          <link>https://dentrassi.de/2015/01/16/package-drone-0-0-5/</link>
+          <guid>https://dentrassi.de/2015/01/16/package-drone-0-0-5/</guid>
           <description>&lt;p&gt;I am happy to announce yet another version of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;releases&#x2F;tag&#x2F;v0.0.5&quot;&gt;Package Drone – 0.0.5&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Be sure to check out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;releases&quot;&gt;the most recent release&lt;&#x2F;a&gt; on github.&lt;&#x2F;p&gt;
 </description>
@@ -1128,8 +1128,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Package Drone 0.0.4</title>
           <pubDate>Wed, 14 Jan 2015 12:31:27 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/01/14/package-drone-0-0-4/</link>
-          <guid>https://dentrassi.de/blog/2015/01/14/package-drone-0-0-4/</guid>
+          <link>https://dentrassi.de/2015/01/14/package-drone-0-0-4/</link>
+          <guid>https://dentrassi.de/2015/01/14/package-drone-0-0-4/</guid>
           <description>&lt;p&gt;I am happy to announce that &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;releases&#x2F;tag&#x2F;v0.0.4&quot;&gt;package drone 0.0.4 is released&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Be sure to check out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;releases&quot;&gt;the most recent release&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
@@ -1138,8 +1138,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Eclipse theme after Linux Mint Upgrade</title>
           <pubDate>Mon, 12 Jan 2015 13:02:44 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2015/01/12/eclipse-theme-after-linux-mint-upgrade/</link>
-          <guid>https://dentrassi.de/blog/2015/01/12/eclipse-theme-after-linux-mint-upgrade/</guid>
+          <link>https://dentrassi.de/2015/01/12/eclipse-theme-after-linux-mint-upgrade/</link>
+          <guid>https://dentrassi.de/2015/01/12/eclipse-theme-after-linux-mint-upgrade/</guid>
           <description>&lt;p&gt;A while ago I wrote about a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; title=&quot;Fixing the Mint-X theme for Eclipse&#x2F;SWT&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2013&#x2F;04&#x2F;23&#x2F;fixing-the-mint-x-theme-for-eclipseswt&#x2F;&quot;&gt;theming issue&lt;&#x2F;a&gt; with Linux Mint and Eclipse. It took a while longer than expected, but the change &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bugs.launchpad.net&#x2F;linuxmint&#x2F;+bug&#x2F;1168281&quot;&gt;finally made it into&lt;&#x2F;a&gt; Linux Mint in version 17.1.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1147,8 +1147,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Package Drone 0.0.3 in action</title>
           <pubDate>Thu, 18 Dec 2014 10:04:54 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/12/18/package-drone-0-0-3-in-action/</link>
-          <guid>https://dentrassi.de/blog/2014/12/18/package-drone-0-0-3-in-action/</guid>
+          <link>https://dentrassi.de/2014/12/18/package-drone-0-0-3-in-action/</link>
+          <guid>https://dentrassi.de/2014/12/18/package-drone-0-0-3-in-action/</guid>
           <description>&lt;p&gt;Here is a short video showing how &lt;a href=&quot;&#x2F;pages&#x2F;projects&#x2F;package-drone&#x2F;&quot; title=&quot;Package Drone&quot;&gt;package drone&lt;&#x2F;a&gt; works.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1156,8 +1156,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Package Drone 0.0.3</title>
           <pubDate>Wed, 17 Dec 2014 18:49:24 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/12/17/package-drone-0-0-3/</link>
-          <guid>https://dentrassi.de/blog/2014/12/17/package-drone-0-0-3/</guid>
+          <link>https://dentrassi.de/2014/12/17/package-drone-0-0-3/</link>
+          <guid>https://dentrassi.de/2014/12/17/package-drone-0-0-3/</guid>
           <description>&lt;p&gt;There is a new version of package drone – 0.0.3!&lt;&#x2F;p&gt;
 &lt;p&gt;See the release notes on github for &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;releases&#x2F;tag&#x2F;v0.0.3&quot;&gt;Version 0.0.3&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Beside a lot new features, which are described in the release notes, the two most interesting topics are:&lt;&#x2F;p&gt;
@@ -1181,8 +1181,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Released &quot;Package Drone 0.0.2&quot;</title>
           <pubDate>Fri, 28 Nov 2014 17:53:49 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/11/28/released-package-drone-0-0-2/</link>
-          <guid>https://dentrassi.de/blog/2014/11/28/released-package-drone-0-0-2/</guid>
+          <link>https://dentrassi.de/2014/11/28/released-package-drone-0-0-2/</link>
+          <guid>https://dentrassi.de/2014/11/28/released-package-drone-0-0-2/</guid>
           <description>&lt;p&gt;Work on package drone continues.&lt;&#x2F;p&gt;
 &lt;p&gt;See the release notes on github for &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;releases&#x2F;tag&#x2F;v0.0.2&quot;&gt;Version 0.0.2&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </description>
@@ -1191,8 +1191,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Releasing &quot;Package Drone 0.0.1&quot;</title>
           <pubDate>Tue, 25 Nov 2014 20:14:19 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/11/25/releasing-package-drone-0-0-1/</link>
-          <guid>https://dentrassi.de/blog/2014/11/25/releasing-package-drone-0-0-1/</guid>
+          <link>https://dentrassi.de/2014/11/25/releasing-package-drone-0-0-1/</link>
+          <guid>https://dentrassi.de/2014/11/25/releasing-package-drone-0-0-1/</guid>
           <description>&lt;p&gt;A package repository for Maven Tycho, OSGi and all the rest.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Itch&lt;&#x2F;strong&gt;: I want to have a software repository where Maven Tycho can deploy to and P2 can read from. Also I would like to re-use this repository as an OBR or OSGi R5 repository, and possibly as Maven repository.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Scratch&lt;&#x2F;strong&gt;: Package Drone, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;package-drone&#x2F;releases&#x2F;tag&#x2F;v0.0.1&quot;&gt;version 0.0.1&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -1202,8 +1202,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Google Play Store Forums</title>
           <pubDate>Sat, 22 Nov 2014 15:18:52 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/11/22/google-play-store-forums/</link>
-          <guid>https://dentrassi.de/blog/2014/11/22/google-play-store-forums/</guid>
+          <link>https://dentrassi.de/2014/11/22/google-play-store-forums/</link>
+          <guid>https://dentrassi.de/2014/11/22/google-play-store-forums/</guid>
           <description>&lt;p&gt;Dear Google,&lt;&#x2F;p&gt;
 &lt;p&gt;since I did not find a better play to post this idea, I just did it right here ;-)&lt;&#x2F;p&gt;
 &lt;p&gt;For openSCADA, the open source project I am working on, we use Google Groups as a communication channel with end users. This works quite fine actually, and I think that Google Groups are a fine instrument for that.&lt;&#x2F;p&gt;
@@ -1213,8 +1213,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Spring WebMVC – Bad request for most pages</title>
           <pubDate>Fri, 21 Nov 2014 13:21:29 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/11/21/spring-webmvc-bad-request-for-most-pages/</link>
-          <guid>https://dentrassi.de/blog/2014/11/21/spring-webmvc-bad-request-for-most-pages/</guid>
+          <link>https://dentrassi.de/2014/11/21/spring-webmvc-bad-request-for-most-pages/</link>
+          <guid>https://dentrassi.de/2014/11/21/spring-webmvc-bad-request-for-most-pages/</guid>
           <description>&lt;p&gt;Today I stumbled over an easy configuration mistake you can make, which will cause “400 Bad request” for most static resources. It took me a little bit of time to figure out what went wrong.&lt;&#x2F;p&gt;
 &lt;p&gt;I had a classic Spring WebMVC setup, DispatcherServlet, resource mapping for static resources (CSS mostly).&lt;&#x2F;p&gt;
 </description>
@@ -1232,8 +1232,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>OSGi EE – Modular Web Applications</title>
           <pubDate>Fri, 14 Nov 2014 17:10:12 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/11/14/osgi-ee-modular-web-applications/</link>
-          <guid>https://dentrassi.de/blog/2014/11/14/osgi-ee-modular-web-applications/</guid>
+          <link>https://dentrassi.de/2014/11/14/osgi-ee-modular-web-applications/</link>
+          <guid>https://dentrassi.de/2014/11/14/osgi-ee-modular-web-applications/</guid>
           <description>&lt;p&gt;Creating a modular web application in Java still is a tricky task. While there has been some improvement with web fragments, this still is far away from what you actually want.&lt;&#x2F;p&gt;
 &lt;p&gt;But what is it that you (or better I) want:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -1246,8 +1246,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Identify GSM modem devices using udev</title>
           <pubDate>Mon, 03 Nov 2014 16:22:37 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/11/03/identify-gsm-modem-devices-using-udev/</link>
-          <guid>https://dentrassi.de/blog/2014/11/03/identify-gsm-modem-devices-using-udev/</guid>
+          <link>https://dentrassi.de/2014/11/03/identify-gsm-modem-devices-using-udev/</link>
+          <guid>https://dentrassi.de/2014/11/03/identify-gsm-modem-devices-using-udev/</guid>
           <description>&lt;p&gt;Again an interesting problem, I do have a Linux box and it has two GSM modems and an RS-232 FTDI USB device built in. Each GSM modem brings three USB serial devices. Now I do want to dial up using the first of these modems and therefore I do need the device name, e.g. &lt;code&gt;&#x2F;dev&#x2F;ttyUSB2&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1255,8 +1255,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>IEC 60870 Explorer</title>
           <pubDate>Wed, 24 Sep 2014 22:34:30 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/09/24/iec-60870-explorer/</link>
-          <guid>https://dentrassi.de/blog/2014/09/24/iec-60870-explorer/</guid>
+          <link>https://dentrassi.de/2014/09/24/iec-60870-explorer/</link>
+          <guid>https://dentrassi.de/2014/09/24/iec-60870-explorer/</guid>
           <description>&lt;p&gt;Finally we put a few functions and classes together that we already had, and made a simple, easy to use and jet powerful tool which we would liked to have ourselves ;-) Sadly it did not exist when we would have needed it, so we had to make it ourselves.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1264,8 +1264,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Creating a Mac OS App Bundle with Maven Tycho</title>
           <pubDate>Tue, 09 Sep 2014 15:09:56 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/09/09/creating-a-mac-os-app-bundle-with-maven-tycho/</link>
-          <guid>https://dentrassi.de/blog/2014/09/09/creating-a-mac-os-app-bundle-with-maven-tycho/</guid>
+          <link>https://dentrassi.de/2014/09/09/creating-a-mac-os-app-bundle-with-maven-tycho/</link>
+          <guid>https://dentrassi.de/2014/09/09/creating-a-mac-os-app-bundle-with-maven-tycho/</guid>
           <description>&lt;p&gt;Using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; title=&quot;Maven Tycho&quot; href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0CB8QFjAA&amp;amp;url=http%3A%2F%2Fwww.eclipse.org%2Ftycho%2F&amp;amp;ei=4fgOVP23PObXyQPSr4DoDw&amp;amp;usg=AFQjCNGx8I2dPaFgwDailli6vmc1ufJFsg&amp;amp;sig2=s1I6dsQrtlAQ-2RbTq7yag&amp;amp;bvm=bv.74649129,d.bGQ&quot;&gt;Maven Tycho&lt;&#x2F;a&gt; it is possible to build OSGi applications and therefore Eclipse RCP applications easily with Maven. Creating a ready to run product is &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;git.eclipse.org&#x2F;c&#x2F;tycho&#x2F;org.eclipse.tycho-demo.git&#x2F;tree&#x2F;&quot;&gt;already described&lt;&#x2F;a&gt; on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.vogella.com&#x2F;tutorials&#x2F;EclipseTycho&#x2F;article.html&quot;&gt;the internet&lt;&#x2F;a&gt; a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;codeandme.blogspot.de&#x2F;2012&#x2F;12&#x2F;tycho-build-1-building-plug-ins.html&quot;&gt;few times&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1282,8 +1282,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Eclipse Equinox as a Windows Service</title>
           <pubDate>Fri, 28 Feb 2014 15:55:20 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/02/28/eclipse-equinox-as-a-windows-service/</link>
-          <guid>https://dentrassi.de/blog/2014/02/28/eclipse-equinox-as-a-windows-service/</guid>
+          <link>https://dentrassi.de/2014/02/28/eclipse-equinox-as-a-windows-service/</link>
+          <guid>https://dentrassi.de/2014/02/28/eclipse-equinox-as-a-windows-service/</guid>
           <description>&lt;p&gt;In the Eclipse SCADA project we finally wanted to create a setup of the server components for the Windows platform. Ideally all the server tasks should be integrated into the Windows service framework, so that you can stop and start services “the Windows way”.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1291,8 +1291,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Creating Mac OS X Icons (icns) on Linux</title>
           <pubDate>Tue, 25 Feb 2014 09:58:58 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/02/25/creating-mac-os-x-icons-icns-on-linux/</link>
-          <guid>https://dentrassi.de/blog/2014/02/25/creating-mac-os-x-icons-icns-on-linux/</guid>
+          <link>https://dentrassi.de/2014/02/25/creating-mac-os-x-icons-icns-on-linux/</link>
+          <guid>https://dentrassi.de/2014/02/25/creating-mac-os-x-icons-icns-on-linux/</guid>
           <description>&lt;p&gt;Time again for some new icons for an Eclipse RCP launcher. While The Gimp can easily create XPM and Windows ICO files, when it comes to Mac OS “icns” format, you won’t have any built in support.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1300,8 +1300,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Eclipse SCADA Website</title>
           <pubDate>Wed, 12 Feb 2014 17:16:09 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2014/02/12/eclipse-scada-website/</link>
-          <guid>https://dentrassi.de/blog/2014/02/12/eclipse-scada-website/</guid>
+          <link>https://dentrassi.de/2014/02/12/eclipse-scada-website/</link>
+          <guid>https://dentrassi.de/2014/02/12/eclipse-scada-website/</guid>
           <description>&lt;p&gt;Finally, we had the time to complete the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.eclipse.org&#x2F;eclipsescada&quot;&gt;Eclipse SCADA Website&lt;&#x2F;a&gt;. There is still a lot missing, but I think it is a good start.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1541,8 +1541,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Registering EMF models in plain java</title>
           <pubDate>Sat, 29 Jun 2013 15:28:44 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2013/06/29/registering-emf-models-in-plain-java/</link>
-          <guid>https://dentrassi.de/blog/2013/06/29/registering-emf-models-in-plain-java/</guid>
+          <link>https://dentrassi.de/2013/06/29/registering-emf-models-in-plain-java/</link>
+          <guid>https://dentrassi.de/2013/06/29/registering-emf-models-in-plain-java/</guid>
           <description>&lt;p&gt;Using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; title=&quot;Eclipse EMF&#x2F;ECore&quot; href=&quot;http:&#x2F;&#x2F;www.eclipse.org&#x2F;modeling&#x2F;emf&#x2F;?project=emf#emf&quot;&gt;Eclipse EMF&#x2F;Ecore&lt;&#x2F;a&gt; models inside the Eclipse Platform is quite easy. Loading an XML&#x2F;XMI serialized model file is only a matter of some lines of code. The most interesting thing about this is that the whole Eclipse platform can handle the registration of models and model factories for you. So instead of knowing what model type you are loading, it will be detected and the right model factory will be used for loading and creating your model instance. Even better is the fact that also derived model objects can be loaded that way.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1550,8 +1550,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Fixing the theming issue with Eclipse RCP applications in E4</title>
           <pubDate>Thu, 06 Jun 2013 13:47:35 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2013/06/06/fixing-the-theming-issue-with-eclipse-rcp-applications-in-e4/</link>
-          <guid>https://dentrassi.de/blog/2013/06/06/fixing-the-theming-issue-with-eclipse-rcp-applications-in-e4/</guid>
+          <link>https://dentrassi.de/2013/06/06/fixing-the-theming-issue-with-eclipse-rcp-applications-in-e4/</link>
+          <guid>https://dentrassi.de/2013/06/06/fixing-the-theming-issue-with-eclipse-rcp-applications-in-e4/</guid>
           <description>&lt;p&gt;It seems that migrating from Eclipse RCP 3.x to E4 (Eclipse 4.x) is not a quick win. If you already have an RCP based application the switch to E4 turns out to be a real problem. As is the E4 way if you want some sort of “custom” application that features some IDE components (like a perspective switcher or about dialog). It seems a bit strange that the migration from 3 to 4 is such a bumpy ride. Although there a are lots of tutorials, they mostly only scratch the surface of the task to convert a full-blown RCP application. But this should be a rant on E4, I hope that the next releases improve that situation a lot.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1559,8 +1559,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Fixing the Mint-X theme for Eclipse&#x2F;SWT</title>
           <pubDate>Tue, 23 Apr 2013 15:15:52 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2013/04/23/fixing-the-mint-x-theme-for-eclipseswt/</link>
-          <guid>https://dentrassi.de/blog/2013/04/23/fixing-the-mint-x-theme-for-eclipseswt/</guid>
+          <link>https://dentrassi.de/2013/04/23/fixing-the-mint-x-theme-for-eclipseswt/</link>
+          <guid>https://dentrassi.de/2013/04/23/fixing-the-mint-x-theme-for-eclipseswt/</guid>
           <description>&lt;p&gt;If you are running Mint, Eclipse and you like the Mint-X theme, you might be a bit frustrated every time you open up Eclipse. Especially with Eclipse 4.2 the design of the toolbars is pretty messed up. See the launchpad bug entry: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bugs.launchpad.net&#x2F;linuxmint&#x2F;+bug&#x2F;1168281&quot;&gt;https:&#x2F;&#x2F;bugs.launchpad.net&#x2F;linuxmint&#x2F;+bug&#x2F;1168281&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1568,8 +1568,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Issues with Eclipse Acceleo and sub-packages in the meta model</title>
           <pubDate>Mon, 18 Feb 2013 13:30:02 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2013/02/18/issues-with-eclipse-acceleo-and-sub-packages-in-the-meta-model/</link>
-          <guid>https://dentrassi.de/blog/2013/02/18/issues-with-eclipse-acceleo-and-sub-packages-in-the-meta-model/</guid>
+          <link>https://dentrassi.de/2013/02/18/issues-with-eclipse-acceleo-and-sub-packages-in-the-meta-model/</link>
+          <guid>https://dentrassi.de/2013/02/18/issues-with-eclipse-acceleo-and-sub-packages-in-the-meta-model/</guid>
           <description>&lt;p&gt;Today I stumbled over an issue that was unsolved in my workspace for some days now. Finally I got the time to fix it. I have a ECore meta-model which consists of three sub-packages and has no class in the main package. Generating model, edit and editor for this I had a nice start for my task. Then I wanted to generate code from this meta model and ran into a strange problem. On the console I simply got the following message when I tried to launch the Acceleo UI generator action:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#fafafa;color:#383a42;&quot;&gt;&lt;code&gt;&lt;span&gt;The type of the first parameter of the main template named &amp;#39;generateElement&amp;#39; is a proxy.
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
@@ -1579,8 +1579,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Build your own SIP trunk with Asterisk and mISDN</title>
           <pubDate>Tue, 22 Jan 2013 16:37:34 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2013/01/22/build-your-own-sip-trunk-with-asterisk-and-misdn/</link>
-          <guid>https://dentrassi.de/blog/2013/01/22/build-your-own-sip-trunk-with-asterisk-and-misdn/</guid>
+          <link>https://dentrassi.de/2013/01/22/build-your-own-sip-trunk-with-asterisk-and-misdn/</link>
+          <guid>https://dentrassi.de/2013/01/22/build-your-own-sip-trunk-with-asterisk-and-misdn/</guid>
           <description>&lt;p&gt;The mission: “save some bucks by using a free PBX using a cheap isdn card”. Don’t try! Buy something working in the first place. But if you have to, here is one example how it can be done. There are, for sure, many others!&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1588,8 +1588,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Eclipse Draw2D Border Magic</title>
           <pubDate>Tue, 13 Nov 2012 12:47:03 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2012/11/13/eclipse-draw2d-border-magic/</link>
-          <guid>https://dentrassi.de/blog/2012/11/13/eclipse-draw2d-border-magic/</guid>
+          <link>https://dentrassi.de/2012/11/13/eclipse-draw2d-border-magic/</link>
+          <guid>https://dentrassi.de/2012/11/13/eclipse-draw2d-border-magic/</guid>
           <description>&lt;p&gt;While using Eclipse Draw2D I stumbled over some quite interesting behaviour on win32 using rectangles and scaling.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1597,8 +1597,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Setting the page size and orientation with ODFDOM for tables aka spreadsheets</title>
           <pubDate>Mon, 27 Aug 2012 17:36:27 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2012/08/27/setting-the-page-size-and-orientation-with-odfdom-for-tables-aka-spreadsheets/</link>
-          <guid>https://dentrassi.de/blog/2012/08/27/setting-the-page-size-and-orientation-with-odfdom-for-tables-aka-spreadsheets/</guid>
+          <link>https://dentrassi.de/2012/08/27/setting-the-page-size-and-orientation-with-odfdom-for-tables-aka-spreadsheets/</link>
+          <guid>https://dentrassi.de/2012/08/27/setting-the-page-size-and-orientation-with-odfdom-for-tables-aka-spreadsheets/</guid>
           <description>&lt;p&gt;Most tasks that seem to be quite easy tend to turn out as a desaster. Setting the page size and orientation with ODFDOM was such a thing. While styling with ODFDOM is powerfull and a horror at the same time. You actually never know where the attribute have to be placed or which attributes to use.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1606,8 +1606,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Extending OpenWRT</title>
           <pubDate>Thu, 26 Jul 2012 15:35:32 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2012/07/26/extending-openwrt/</link>
-          <guid>https://dentrassi.de/blog/2012/07/26/extending-openwrt/</guid>
+          <link>https://dentrassi.de/2012/07/26/extending-openwrt/</link>
+          <guid>https://dentrassi.de/2012/07/26/extending-openwrt/</guid>
           <description>&lt;p&gt;We recently switched from IPfire to OpenWRT in our office. Not only because we let OpenWRT run on an ALIX board (which also IPfire could do), but mostly due to the fact that if you want to extend the system you really can do it. Development of IPfire seems to be quite difficutly, not only technically.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1615,8 +1615,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Working with ODFDOM</title>
           <pubDate>Thu, 26 Jan 2012 15:46:24 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2012/01/26/working-with-odfdom/</link>
-          <guid>https://dentrassi.de/blog/2012/01/26/working-with-odfdom/</guid>
+          <link>https://dentrassi.de/2012/01/26/working-with-odfdom/</link>
+          <guid>https://dentrassi.de/2012/01/26/working-with-odfdom/</guid>
           <description>&lt;p&gt;While working a little bit with ODFDOM to automatically generate some documentation I found some tasks rather difficult to accomplish due to the fact that they were hardly documented. There is a lot of ODF documentation, but how to use it with ODFDOM is another story.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1624,8 +1624,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Bye bye Lotus Notes</title>
           <pubDate>Mon, 12 Dec 2011 10:19:53 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/12/12/bye-bye-lotus-notes/</link>
-          <guid>https://dentrassi.de/blog/2011/12/12/bye-bye-lotus-notes/</guid>
+          <link>https://dentrassi.de/2011/12/12/bye-bye-lotus-notes/</link>
+          <guid>https://dentrassi.de/2011/12/12/bye-bye-lotus-notes/</guid>
           <description>&lt;p&gt;We used it for some time. It was nice. But now our ways seem to …&lt;&#x2F;p&gt;
 &lt;p&gt;well, let me just say: PNG, 64bit Linux, Windows 7, …&lt;&#x2F;p&gt;
 &lt;p&gt;I was migrating E-Mails from Notes to Courier IMAP using “&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;freecode.com&#x2F;projects&#x2F;imapsync&quot;&gt;imapsync&lt;&#x2F;a&gt;” when I stumbled over two strange problems…&lt;&#x2F;p&gt;
@@ -1644,8 +1644,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>JPA, EJB and Spring</title>
           <pubDate>Tue, 11 Oct 2011 18:20:36 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/10/11/jpa-ejb-and-spring/</link>
-          <guid>https://dentrassi.de/blog/2011/10/11/jpa-ejb-and-spring/</guid>
+          <link>https://dentrassi.de/2011/10/11/jpa-ejb-and-spring/</link>
+          <guid>https://dentrassi.de/2011/10/11/jpa-ejb-and-spring/</guid>
           <description>&lt;p&gt;Today I stumbled over a rather interesting issue in combination with JBoss, Hibernate, Spring, JPA and EJB.&lt;&#x2F;p&gt;
 &lt;p&gt;First of all, we have mixed environment of EJB3 and Spring 3 using JPA2. All in JBoss 6 AS, with default Hibernate 3.6 as JPA provider. Now for a long time everything works fine until we re-organize the dependencies of our modules. Starting with that we got some strange JPA behavior like “class is not an entity” and some rather weird getter issues.&lt;&#x2F;p&gt;
 </description>
@@ -1654,8 +1654,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Struggling with Acceleo 3.0 after Eclipse 3.7 upgrade</title>
           <pubDate>Thu, 11 Aug 2011 09:46:04 +0200</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/08/11/struggling-with-acceleo-3-0-after-eclipse-3-7-upgrade/</link>
-          <guid>https://dentrassi.de/blog/2011/08/11/struggling-with-acceleo-3-0-after-eclipse-3-7-upgrade/</guid>
+          <link>https://dentrassi.de/2011/08/11/struggling-with-acceleo-3-0-after-eclipse-3-7-upgrade/</link>
+          <guid>https://dentrassi.de/2011/08/11/struggling-with-acceleo-3-0-after-eclipse-3-7-upgrade/</guid>
           <description>&lt;p&gt;While the upgrade from Eclipse 3.6.2 to 3.7 went without nearly any trouble the upgrade of the Acceleo plugins to the versions provided with Eclipse Indigo was “a little bit more” problematic.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1663,8 +1663,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>openscada.org update</title>
           <pubDate>Thu, 10 Mar 2011 09:45:25 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/03/10/openscada-org-update/</link>
-          <guid>https://dentrassi.de/blog/2011/03/10/openscada-org-update/</guid>
+          <link>https://dentrassi.de/2011/03/10/openscada-org-update/</link>
+          <guid>https://dentrassi.de/2011/03/10/openscada-org-update/</guid>
           <description>&lt;p&gt;Finally we made it! &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;openscada.org&quot;&gt;openscada.org&lt;&#x2F;a&gt; has been updated to look good and contain new information. Finally :)&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1672,8 +1672,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Fancy tooltips in Eclipse</title>
           <pubDate>Mon, 21 Feb 2011 12:34:39 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/02/21/fancy-tooltips-in-eclipse/</link>
-          <guid>https://dentrassi.de/blog/2011/02/21/fancy-tooltips-in-eclipse/</guid>
+          <link>https://dentrassi.de/2011/02/21/fancy-tooltips-in-eclipse/</link>
+          <guid>https://dentrassi.de/2011/02/21/fancy-tooltips-in-eclipse/</guid>
           <description>&lt;p&gt;Tooltips are quick way to add information to a widget that received the users attention. While one can argue about the pros and cons of tooltips this post focuses on the style of tooltips once you decided to use them.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1681,8 +1681,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Some thoughts on software testing</title>
           <pubDate>Thu, 17 Feb 2011 12:17:35 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/02/17/some-thoughts-on-software-testing/</link>
-          <guid>https://dentrassi.de/blog/2011/02/17/some-thoughts-on-software-testing/</guid>
+          <link>https://dentrassi.de/2011/02/17/some-thoughts-on-software-testing/</link>
+          <guid>https://dentrassi.de/2011/02/17/some-thoughts-on-software-testing/</guid>
           <description>&lt;p&gt;If you are working as a software developer in a project based development environment you will, hopefully, encounter the day the customer wants to see the result that was promised to him. The worst thing that can happen is that after months of development you finally end up in a scenario of &lt;q&gt;it is not working&lt;&#x2F;q&gt; or &lt;q&gt;it is not what we need&lt;&#x2F;q&gt;. Sure there are numerous reasons of why this happened and what types development process you could have used. But often quality management and software development definitions are written once and never lived as described. developers consider it a burden that is unnecessary and is blocking them in their daily task of creating new functionality.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1690,8 +1690,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Access to WMI in Java using Eclipse SWT OLE integration</title>
           <pubDate>Fri, 04 Feb 2011 17:58:44 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/02/04/access-to-wmi-in-java-using-eclipse-swt-ole-integration/</link>
-          <guid>https://dentrassi.de/blog/2011/02/04/access-to-wmi-in-java-using-eclipse-swt-ole-integration/</guid>
+          <link>https://dentrassi.de/2011/02/04/access-to-wmi-in-java-using-eclipse-swt-ole-integration/</link>
+          <guid>https://dentrassi.de/2011/02/04/access-to-wmi-in-java-using-eclipse-swt-ole-integration/</guid>
           <description>&lt;p&gt;Today I ran into a problem which could easily solved using a short WMI query. The problem was that the query must be executed within a Java UI application. Googling for a solution I came only up with either quite some ugly workarounds (like generating a VBScript fragment, forking off the VBScript runtime and parsing the result) or some full blown COM&#x2F;DCOM interfaces (like J-Integra or J-Interop). Although I really like J-Interop (we are using it for DCOM when accessing OPC server in OpenSCADA Utgard) it has some drawbacks. For J-Interop every access (even local access) is a network based access. Since J-Interop only supports DCOM it is free of any platform specific code but required the machine to be accessible using “remoting” functionality (DCOM). Since I wanted to query the WMI from a UI application and I am sure that the WMI query will stay on the Win32 version of the application I was not keen on adding “remoting” as a requirement to the UI application.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1699,8 +1699,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Eclipse Install Issue</title>
           <pubDate>Fri, 04 Feb 2011 16:25:56 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/02/04/eclipse-install-issue/</link>
-          <guid>https://dentrassi.de/blog/2011/02/04/eclipse-install-issue/</guid>
+          <link>https://dentrassi.de/2011/02/04/eclipse-install-issue/</link>
+          <guid>https://dentrassi.de/2011/02/04/eclipse-install-issue/</guid>
           <description>&lt;p&gt;I just stumbled over a strange issue when installing an additional plugin into a fresh Eclipse installation:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#fafafa;color:#383a42;&quot;&gt;&lt;code&gt;&lt;span&gt;An error occurred while collecting items to be installed&amp;lt;br&amp;gt;&amp;lt;&#x2F;br&amp;gt;session context was:(profile=SDKProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
 &lt;&#x2F;span&gt;&lt;span&gt;
@@ -1713,8 +1713,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Workaround for LoadTimeWeaver issue with JBoss 6 and Spring 3</title>
           <pubDate>Tue, 01 Feb 2011 11:21:12 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/02/01/workaround-for-loadtimeweaver-issue-with-jboss-6-and-spring-3/</link>
-          <guid>https://dentrassi.de/blog/2011/02/01/workaround-for-loadtimeweaver-issue-with-jboss-6-and-spring-3/</guid>
+          <link>https://dentrassi.de/2011/02/01/workaround-for-loadtimeweaver-issue-with-jboss-6-and-spring-3/</link>
+          <guid>https://dentrassi.de/2011/02/01/workaround-for-loadtimeweaver-issue-with-jboss-6-and-spring-3/</guid>
           <description>&lt;p&gt;A possible workaround for the LTW issue that appeared in JBoss 6 using Spring 3 (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; title=&quot;SPR-7887&quot; href=&quot;https:&#x2F;&#x2F;jira.springsource.org&#x2F;browse&#x2F;SPR-7887&quot;&gt;SPR-7887&lt;&#x2F;a&gt;) is to add an empty &lt;tt&gt;jboss-scanning.xml&lt;&#x2F;tt&gt; file to EAR &lt;em&gt;and&lt;&#x2F;em&gt; WAR files.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1722,8 +1722,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <title>Name that pattern</title>
           <pubDate>Fri, 28 Jan 2011 10:50:27 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/01/28/name-that-pattern/</link>
-          <guid>https://dentrassi.de/blog/2011/01/28/name-that-pattern/</guid>
+          <link>https://dentrassi.de/2011/01/28/name-that-pattern/</link>
+          <guid>https://dentrassi.de/2011/01/28/name-that-pattern/</guid>
           <description>&lt;p&gt;In my day to day work I encounter several interesting programming pattern that I don’t have a name for. Maybe you have?! So name the following pattern:&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1781,8 +1781,8 @@ The commercial use of our contents without permission of the originator is prohi
           <title>Combo viewer requirements</title>
           <pubDate>Wed, 26 Jan 2011 18:47:17 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/01/26/combo-viewer-requirements/</link>
-          <guid>https://dentrassi.de/blog/2011/01/26/combo-viewer-requirements/</guid>
+          <link>https://dentrassi.de/2011/01/26/combo-viewer-requirements/</link>
+          <guid>https://dentrassi.de/2011/01/26/combo-viewer-requirements/</guid>
           <description>&lt;p&gt;Today I tried to create a combo viewer in Eclipse with a different approach than the it seems the widgets was designed. I have an object which has to main properties an ID and a descriptive name. While this is nothing unusual following requirements seems to be:&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1790,8 +1790,8 @@ The commercial use of our contents without permission of the originator is prohi
           <title>Hello world!</title>
           <pubDate>Wed, 26 Jan 2011 11:54:05 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2011/01/26/hello-world/</link>
-          <guid>https://dentrassi.de/blog/2011/01/26/hello-world/</guid>
+          <link>https://dentrassi.de/2011/01/26/hello-world/</link>
+          <guid>https://dentrassi.de/2011/01/26/hello-world/</guid>
           <description>&lt;p&gt;After upgrading my server and cleanup up stuff I thought it would be nice to work a little bit on the homepage again.
 Since iWeb seems to be stuck and I am working mostly on Linux now I thought it would be interesting to give WordPress
 a try.&lt;&#x2F;p&gt;
@@ -1915,8 +1915,8 @@ Sometimes found employed on Vogon Constructor Fleets, the Dentrassis are The bes
           <title>Reading Object Streams in OSGi</title>
           <pubDate>Tue, 02 Mar 2010 18:56:26 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2010/03/02/reading-object-streams-in-osgi/</link>
-          <guid>https://dentrassi.de/blog/2010/03/02/reading-object-streams-in-osgi/</guid>
+          <link>https://dentrassi.de/2010/03/02/reading-object-streams-in-osgi/</link>
+          <guid>https://dentrassi.de/2010/03/02/reading-object-streams-in-osgi/</guid>
           <description>&lt;p&gt;Reading an object from an ObjectInputStream is easy. But using OSGi it can be a little bit more difficult. Due to the class loader system of OSGi the ObjectInputStream might not know the class that was stored. Assume you have a Bundle A, B and C. B provides the storing capabilities that stores objects somewhere and C provides the data object itself. Now if A tells B to store some object from C this will not be a problem, since the object class is attached to the object instance. But reading back the object will result in a ClassNotFoundException since B has no reference to C and therefore does not know any classes of C.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -1924,8 +1924,8 @@ Sometimes found employed on Vogon Constructor Fleets, the Dentrassis are The bes
           <title>Equinox Remote Terminal Console</title>
           <pubDate>Thu, 25 Feb 2010 18:54:26 +0100</pubDate>
           <author>Unknown</author>
-          <link>https://dentrassi.de/blog/2010/02/25/equinox-remote-terminal-console/</link>
-          <guid>https://dentrassi.de/blog/2010/02/25/equinox-remote-terminal-console/</guid>
+          <link>https://dentrassi.de/2010/02/25/equinox-remote-terminal-console/</link>
+          <guid>https://dentrassi.de/2010/02/25/equinox-remote-terminal-console/</guid>
           <description>&lt;p&gt;Although Equinox offers some sort of remote TCP console it is not what you actually want to have. Being limited to one session, having not authentication and allowing the user to execute any command and shut down the OSGi container is not an option for a productive system.&lt;&#x2F;p&gt;
 </description>
       </item>
