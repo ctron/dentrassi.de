@@ -3,6 +3,20 @@
 
 {% extends "base.html" %}
 
+{% block head %}
+<meta name="description" content="{{ config.description }}">
+<script>
+    var pagination = {};
+    {%- if paginator.previous %}
+    pagination.prev = "{{ paginator.previous | safe }}";
+    {%- endif %}
+    {%- if paginator.next %}
+    pagination.next = "{{ paginator.next | safe }}";
+    {%- endif %}
+
+</script>
+{% endblock head %}
+
 {% block content %}
 
 {% for page in paginator.pages %}

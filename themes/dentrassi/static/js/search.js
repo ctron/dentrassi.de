@@ -21,6 +21,12 @@ function inputFocus(e) {
         suggestions.classList.add('d-none');
     }
 
+    if (e.key === "ArrowRight" && e.shiftKey && pagination.next !== undefined) {
+        window.location = pagination.next;
+    } else if (e.key === "ArrowLeft" && e.shiftKey && pagination.prev !== undefined) {
+        window.location = pagination.prev;
+    }
+
 }
 
 document.addEventListener('click', function(event) {
