@@ -5,38 +5,4 @@
 @import "blockquote";
 @import "code";
 @import "search";
-
-// post image
-.de-c-post-info {
-  @extend .clearfix;
-}
-
-.de-c-post-info img {
-  @extend .float-end;
-  padding-left: 1rem;
-  max-width: 10rem;
-}
-
-.de-c-post-info {
-  padding-bottom: 1rem;
-}
-
-.de-c-post-info__meta hr {
-  color: $secondary-border-subtle;
-  opacity: 1;
-  max-width: 10rem;
-}
-
-// post metadata
-
-.de-c-post-meta {
-  margin-top: .75rem;
-}
-
-.de-c-post-meta li.list-inline-item {
-  margin-right: 0;
-}
-
-.de-c-post-meta li + li:before {
-  content: '·';
-}
+@import "post";
