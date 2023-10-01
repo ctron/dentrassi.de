@@ -9,4 +9,4 @@
 * [x] Fix search 
 * [ ] Improve SEO
 * [ ] Fix lead images (metadata, index, and post)
-* [ ] Pagination
+* [x] Pagination
