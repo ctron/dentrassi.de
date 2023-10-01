@@ -8,5 +8,6 @@
 * [x] Fix for mobile
 * [x] Fix search 
 * [ ] Improve SEO
-* [ ] Fix lead images (metadata, index, and post)
+* [x] Fix lead images (metadata, index, and post)
 * [x] Pagination
+* [ ] fix bootstrap scroolspy
