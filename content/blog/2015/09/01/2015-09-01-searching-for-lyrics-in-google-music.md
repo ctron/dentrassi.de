@@ -17,9 +17,13 @@ tags:
     - google
     - Ideas
     - music
+extra:
+  articleImage:
+    src: /wp-content/uploads/gmusic.png
+    alt: google music logo
 ---
 
-![google music logo](//dentrassi.de/wp-content/uploads/gmusic-150x150.png)Dear Google,
+Dear Google,
 
 as a subscriber of Google Music I often search for music I listened to in the past. In many cases I do know the title, artist or sometime the name of the album.
 

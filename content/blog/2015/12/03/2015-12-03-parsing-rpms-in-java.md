@@ -18,9 +18,13 @@ tags:
     - Eclipse
     - 'Package Drone'
     - RPM
+extra:
+  articleImage:
+    src: /wp-content/uploads/RPM_Logo.svg_.png
+    alt: RPM
 ---
 
-![RPM](https://dentrassi.de/wp-content/uploads/RPM_Logo.svg_.png)The core idea of [Package Drone](http://packagedrone.org) is to extract meta data from files and generated some sort of repository index. And although Package Drone’s main focus is on OSGi, we did want to implement a YUM repository adapter and for this we needed to extract metadata from RPM files.
+The core idea of [Package Drone](http://packagedrone.org) is to extract meta data from files and generated some sort of repository index. And although Package Drone’s main focus is on OSGi, we did want to implement a YUM repository adapter and for this we needed to extract metadata from RPM files.
 
 <!-- more -->
 

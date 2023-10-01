@@ -4,6 +4,10 @@ title: 'Eclipse Kura on the Intel UP² with CentOS'
 date: '2018-05-16T13:01:27+02:00'
 author: 'Jens Reimann'
 layout: post
+extra:
+    articleImage:
+        src: /wp-content/uploads/20180515_171043.jpg
+        alt: "Intel UP²"
 guid: 'https://dentrassi.de/?p=3874'
 permalink: /2018/05/16/intel-up%c2%b2-eclipse-kura/
 fabulous-fluid-layout-option:
@@ -25,7 +29,7 @@ tags:
     - Kura
 ---
 
-![Intel UP²](https://dentrassi.de/wp-content/uploads/20180515_171043-292x300.jpg) In the past I was testing modifications to Kura with a Raspberry Pi 3 and Fedora for ARM. But I got a nice little Intel UP² just recently, and so I decided to perform my next Kura tests, with the modifications to the Apache Camel runtime in Kura, on this nice board. Creating a new device profile for Kura using CentOS 7 and the Intel UP² looked like a good idea anyway.
+In the past I was testing modifications to Kura with a Raspberry Pi 3 and Fedora for ARM. But I got a nice little Intel UP² just recently, and so I decided to perform my next Kura tests, with the modifications to the Apache Camel runtime in Kura, on this nice board. Creating a new device profile for Kura using CentOS 7 and the Intel UP² looked like a good idea anyway.
 
 <!-- more -->
 

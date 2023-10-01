@@ -31,9 +31,13 @@ tags:
     - IoT
     - Milo
     - 'OPC UA'
+extra:
+  articleImage:
+    src: /wp-content/uploads/eclipse-IoT-light.png
+    alt: Eclipse IoT
 ---
 
-![Eclipse IoT](https://dentrassi.de/wp-content/uploads/eclipse-IoT-light-300x269.png)This article walks you through the first steps of creating an OPC UA solution based on [Eclipse Milo](https://eclipse.org/milo). OPC UA, also known as IEC 62541, is an IoT solution for connecting industrial automation systems. Eclipse Milo™ is an open-source Java based implementation.
+This article walks you through the first steps of creating an OPC UA solution based on [Eclipse Milo](https://eclipse.org/milo). OPC UA, also known as IEC 62541, is an IoT solution for connecting industrial automation systems. Eclipse Milo™ is an open-source Java based implementation.
 
 <!-- more -->
 

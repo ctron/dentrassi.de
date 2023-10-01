@@ -24,9 +24,11 @@ categories:
 tags:
     - Eclipse
     - IoT
+extra:
+    articleImage:
+        src: /wp-content/uploads/eclipse-IoT-light.png
+        alt: Eclipse IoT
 ---
-
-[![Eclipse IoT](https://dentrassi.de/wp-content/uploads/eclipse-IoT-light-300x269.png)](https://iot.eclipse.org)
 
 The Eclipse IoT ecosystem consists of around 40 different projects, ranging from embedded devices, to IoT gateways and up to cloud scale solutions. Many of those projects stand alone as “building blocks”, rather than ready to run solutions. And there is a good reason for that: you can take these building blocks, and incorporate them into your own solution, rather than adopting a complete, pre-built solution.
 

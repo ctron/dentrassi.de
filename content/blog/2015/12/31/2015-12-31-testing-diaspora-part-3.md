@@ -14,9 +14,13 @@ categories:
     - 'Technical Stuff'
 tags:
     - diaspora
+extra:
+    articleImage:
+        src: /wp-content/uploads/diaspora.png
+        alt: diaspora logo
 ---
 
-![diaspora](https://dentrassi.de/wp-content/uploads/diaspora.png)This is the third time I am testing [Diaspora](https://diasporafoundation.org/). I never wrote about the other attempts, but between Christmas and New Year a had a bit of time writing this together.
+This is the third time I am testing [Diaspora](https://diasporafoundation.org/). I never wrote about the other attempts, but between Christmas and New Year a had a bit of time writing this together.
 
 Motivated by [the article at Heise about diaspora](http://www.heise.de/newsticker/meldung/32C3-Gegen-Gated-Communities-Facebook-muss-seine-Mauern-einreissen-3057076.html), I decided it is time to give diaspora another try. I did try the first version after the crowdfunding campaign and one or two years later.
 

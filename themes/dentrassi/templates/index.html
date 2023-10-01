@@ -13,7 +13,11 @@
       </a>
     </h2>
 
-    <div class="de-c-post-info__summary" itemprop="articleSummary">
+    <div class="de-c-post-info__summary clearfix" itemprop="articleSummary">
+      {% if page.extra.articleImage.src %}
+      <img class="de-c-article-image" itemprop="image" src="{{ page.extra.articleImage.src }}" alt="{{ page.extra.articleImage.alt }}">
+      {%  endif %}
+
       {{ page.summary | safe }}
     </div>
 
