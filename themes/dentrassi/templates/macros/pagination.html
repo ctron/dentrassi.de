@@ -7,7 +7,37 @@
 </li>
 {% endmacro %}
 
+{% macro dropdown_item(paginator,i) %}
+<li>
+  <a
+    href="{{ paginator.base_url}}{{i+1}}"
+    class="dropdown-item {% if paginator.current_index == i + 1 %}active{% endif %}" {% if paginator.current_index == i + 1 %}aria-current="page"{% endif %} aria-label="Page {{ i + 1 }}" aria-current="page">
+      {{ i + 1}}
+  </a>
+</li>
+{% endmacro %}
+
 {% macro pagination(paginator) %}
+<div class="d-flex justify-content-center de-c-pagination">
+  <div class="btn-group" role="group" aria-label="Pagination group">
+    <a class="btn btn-light{% if not paginator.previous %} disabled{% endif %}" href="{{ paginator.base_url}}1">⇤</a>
+    <a class="btn btn-light{% if not paginator.previous %} disabled{% endif%}" {% if paginator.previous %}href='{{ paginator.previous }}'{% else%}href='' aria-disabled {% endif %} aria-label="Previous">❬</a>
+    <div class="btn-group dropup" role="group">
+      <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        {{ paginator.current_index }}
+      </button>
+      <ul class="dropdown-menu">
+        {% for i in range(end=paginator.number_pagers) %}
+        {{ pagination::dropdown_item(paginator=paginator,i=i) }}
+        {% endfor %}
+      </ul>
+    </div>
+    <a class="btn btn-light{% if not paginator.next %} disabled{% endif%}" {% if paginator.next %}href='{{ paginator.next }}'{% else%}href='' aria-disabled{% endif %} aria-label="Next">❭</a>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro paginationX(paginator) %}
 <nav class="" role="navigation" aria-label="pagination">
 
   <ul class="pagination justify-content-center">
