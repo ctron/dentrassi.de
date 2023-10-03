@@ -7,7 +7,67 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://staging.dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 15 Sep 2022 08:44:34 +0200</lastBuildDate>
+      <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>A fresh start</title>
+          <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://staging.dentrassi.de/2023/10/03/a-fresh-start/</link>
+          <guid>https://staging.dentrassi.de/2023/10/03/a-fresh-start/</guid>
+          <description>&lt;p&gt;More than &lt;a href=&quot;https:&#x2F;&#x2F;staging.dentrassi.de&#x2F;2011&#x2F;01&#x2F;26&#x2F;hello-world&#x2F;&quot;&gt;10 years ago&lt;&#x2F;a&gt;, I switch my personal blog from iWeb to WordPress.
+iWeb was fun for a small, personal homepage. But it also stopped working, and so I decided to give WordPress a try.
+Turns out, it was fun too. It was super easy to write posts, which lead to a good number of posts over the last few
+years.&lt;&#x2F;p&gt;
+&lt;p&gt;And yet, there’s a big gap between this post and the last.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wordpress-oh-wordpress&quot;&gt;WordPress, oh WordPress&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;The good:&lt;&#x2F;strong&gt; Installing WordPress was simple, … trivial actually. And once it’s on a server, creating a new post is
+even simpler. I never had any issues upgrading, for more than 10 years. That’s an amazing record. So the barrier of
+adding more content was actually rather low.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;The bad:&lt;&#x2F;strong&gt; Themes! The defaults ones never really worked for me. Except the one which didn’t really support mobile.
+Finding a good theme is hard, creating one a monstrous task. The web still feels like a mess, and with WordPress,
+creating your own theme doesn’t only include HTML, CSS, and JS … but also PHP. In the end, I bought a theme, and I have
+no problem paying for that work. But as with the plugins, that also leads to the dilemma developers face.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;The ugly:&lt;&#x2F;strong&gt; Feature bloat! Paying for decent plugins and themes is ok. Someone needs to do the work. But if people
+pay money, they expect features. So developers keep adding stuff to their products, because that is what customers
+expect. And so you end up with a super-massive theme, and giant plugins. Which sometimes cause trouble, and yet you’re
+missing another option, forcing you to get yet another plugin.&lt;&#x2F;p&gt;
+&lt;p&gt;The worst part of this: all those plugins and themes leave a trail through your actual content. WordPress migrated to a
+nice “block” system. Themes contribute new blocks, but only as long as you use those themes. And if you don’t re-work
+all the old blog posts, it becomes even more of a mess.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;meanwhile&quot;&gt;Meanwhile …&lt;&#x2F;h2&gt;
+&lt;p&gt;… I worked on some projects which used static page generators for creating their homepage or blog. Writing content in
+markdown is something I always wanted for WordPress too, but couldn’t get there. So the motivation to fiddle around with
+content blocks, theme settings, and other problems, just to get out a new blog post … well, I was avoiding my own blog
+and posted stuff elsewhere.&lt;&#x2F;p&gt;
+&lt;p&gt;Up until I wrote a blog post on Rust and WebAssembly. It was targeted for &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;opensource.com&#x2F;&quot;&gt;opensource.com&lt;&#x2F;a&gt;.
+But as you might have noticed, that’s no longer an option. Wouldn’t it be great to have my own place to publish stuff?
+Wait a second, …&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;keep-it-static-simple&quot;&gt;Keep it static simple&lt;&#x2F;h2&gt;
+&lt;p&gt;Assuming I could start from scratch, what would I want? Write some kind of Markdown, and get stuff published. Sure I
+want a supportive editor, but there are plenty of them for Markdown these days. Oh, and git. Storing markdown files in
+git is just way easier than storing WordPress content blocks in a SQL database.&lt;&#x2F;p&gt;
+&lt;p&gt;There are a bunch of options out there which give you a markdown to static HTML pipeline. &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gohugo.io&#x2F;&quot;&gt;Hugo&lt;&#x2F;a&gt;
+might come to your mind. However, I had to use it, and everytime I have to use &lt;code&gt;gotpl&lt;&#x2F;code&gt; when using Helm, I am close to
+getting insane. Then there is Jekyll, which I struggled with a lot when it comes to Ruby. Though
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt; itself is nice and flexible.&lt;&#x2F;p&gt;
+&lt;p&gt;And then, there is &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;. It’s kind of a mix between Hugo and Jekyll. And the best of all,
+it is written in Rust&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;What I did not want to, is to lose the old content. Or the old structure and their links. Luckily, there’s a WordPress
+plugin, which exports WordPress to Jekyll, and that also worked quite nice with Zola. It took a bit of time to create
+a new template, but the whole process also forced me to groom through the old posts and clean up issues that get
+introduced by various WordPress plugins and migrations over time.&lt;&#x2F;p&gt;
+&lt;p&gt;The only thing that didn’t make it to the new setup are comments. That’s the downside of a static blog. And while I am
+pretty sure I will miss the great feedback I sometimes got for my posts, I am sure I won’t miss the (literally) millions
+of spam comments which &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;akismet.com&#x2F;&quot;&gt;Akismet&lt;&#x2F;a&gt; filtered out, and the hundreds I still had to remove manually.&lt;&#x2F;p&gt;
+&lt;p&gt;So, I want to say “hi”, or “thank you”, maybe &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mastodon.dentrassi.de&#x2F;@ctron&quot;&gt;find me on Mastodon&lt;&#x2F;a&gt; where I hang
+out these days, or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#%2F%40ctron%3Adentrassi.de&quot;&gt;ping me on Matrix&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-to-expect&quot;&gt;What to expect?&lt;&#x2F;h2&gt;
+&lt;p&gt;Just writing this blog post was already fun. I am sure there are still some more things that need mopping up. But I
+really want to get out a few blog posts around Rust, WebAssembly, and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yew.rs&#x2F;&quot;&gt;Yew&lt;&#x2F;a&gt;. Or maybe some other stuff
+I stumbled upon. Hope to see you.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; Honestly, it doesn’t matter. But I still like it.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Contact</title>
           <pubDate>Thu, 15 Sep 2022 08:44:34 +0200</pubDate>
