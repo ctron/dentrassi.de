@@ -15,7 +15,6 @@
       <a class="page-link" {% if paginator.previous %}href='{{ paginator.previous }}'{% else%}href=''{% endif %} aria-label="Previous">&laquo;</a>
     </li>
 
-
     {% if paginator.number_pagers > 10 %}
 
       {{ pagination::page_item(paginator=paginator,i=0) }}
