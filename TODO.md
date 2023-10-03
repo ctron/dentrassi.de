@@ -1,8 +1,9 @@
 # To-do
 
-* [ ] Serve feed at `https://dentrassi.de/feed/`
+* [x] Serve feed at `https://dentrassi.de/feed/`
 * [x] Fix content
 * [ ] Categories and/or tags
+* [ ] fix bootstrap scrollspy
 * [ ] `Uncaught DOMException: Element.querySelector: '#/@ctron:dentrassi.de' is not a valid selector`
 * [x] Add more "old projects"
 * [x] Fix for mobile
@@ -10,4 +11,3 @@
 * [ ] Improve SEO
 * [x] Fix lead images (metadata, index, and post)
 * [x] Pagination
-* [ ] fix bootstrap scroolspy
