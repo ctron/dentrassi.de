@@ -8,6 +8,6 @@
 * [x] Add more "old projects"
 * [x] Fix for mobile
 * [x] Fix search 
-* [ ] Improve SEO
+* [x] Improve SEO
 * [x] Fix lead images (metadata, index, and post)
 * [x] Pagination
