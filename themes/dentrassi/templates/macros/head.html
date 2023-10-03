@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="{{ get_url(path='main.css', cachebust=true) | safe }}">
 {% endmacro %}
 
+{% macro matomo() %}
 <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
     _paq.push(['trackPageView']);
@@ -28,3 +29,4 @@
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
     })();
 </script>
+{% endmacro %}
