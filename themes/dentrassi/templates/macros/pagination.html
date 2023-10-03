@@ -21,7 +21,7 @@
 <div class="d-flex justify-content-center de-c-pagination">
   <div class="btn-group" role="group" aria-label="Pagination group">
     <a class="btn btn-light{% if not paginator.previous %} disabled{% endif %}" href="{{ paginator.base_url}}1">⇤</a>
-    <a class="btn btn-light{% if not paginator.previous %} disabled{% endif%}" {% if paginator.previous %}href='{{ paginator.previous }}'{% else%}href='' aria-disabled {% endif %} aria-label="Previous">❬</a>
+    <a class="btn btn-light{% if not paginator.previous %} disabled{% endif%}" {% if paginator.previous %}href='{{ paginator.previous }}'{% else%}href='/' aria-disabled {% endif %} aria-label="Previous">❬</a>
     <div class="btn-group dropup" role="group">
       <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
         {{ paginator.current_index }}
@@ -32,7 +32,7 @@
         {% endfor %}
       </ul>
     </div>
-    <a class="btn btn-light{% if not paginator.next %} disabled{% endif%}" {% if paginator.next %}href='{{ paginator.next }}'{% else%}href='' aria-disabled{% endif %} aria-label="Next">❭</a>
+    <a class="btn btn-light{% if not paginator.next %} disabled{% endif%}" {% if paginator.next %}href='{{ paginator.next }}'{% else%}href='/' aria-disabled{% endif %} aria-label="Next">❭</a>
   </div>
 </div>
 {% endmacro %}
