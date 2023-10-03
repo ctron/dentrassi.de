@@ -15,15 +15,3 @@
 {% macro stylesheet() %}
 <link rel="stylesheet" href="{{ get_url(path='main.css', cachebust=true) | safe }}">
 {% endmacro %}
-
-{% macro meta(page) %}
-<meta name="description" content="{{ head::description(page=page) }}">
-{% endmacro %}
-
-{% macro description(page) -%}
-{% if page.description -%}
-{{ page.description }}
-{%- elif page.summary -%}
-{{ page.summary | striptags }}
-{%- endif %}
-{%- endmacro description %}
