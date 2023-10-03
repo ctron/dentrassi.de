@@ -14,6 +14,8 @@ years.
 
 And yet, there's a big gap between this post and the last.
 
+<!-- more -->
+
 ## WordPress, oh WordPress
 
 **The good:** Installing WordPress was simple, … trivial actually. And once it's on a server, creating a new post is
