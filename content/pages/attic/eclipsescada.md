@@ -1,6 +1,6 @@
 ---
 title: 'Eclipse SCADA'
-date: '2014-01-01T00:00:00'
+date: '2014-01-01T00:00:00Z'
 author: 'Jens Reimann'
 layout: page
 ---
