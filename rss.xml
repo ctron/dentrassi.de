@@ -7,7 +7,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 14 Oct 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>trunk-ng, the fork of trunk</title>
+          <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://dentrassi.de/2023/10/14/trunk-ng-the-fork-of-trunk/</link>
+          <guid>https://dentrassi.de/2023/10/14/trunk-ng-the-fork-of-trunk/</guid>
+          <description>&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;trunkrs.dev&#x2F;&quot;&gt;&lt;code&gt;trunk&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; is a great piece of software! When I started with Rust on the frontend, the
+webpack &lt;code&gt;wasm-pack&lt;&#x2F;code&gt; plugin was the best tooling one could get to compile and package a Rust-based web application.
+However, that also included a toolchain full of JavaScript tools, the kind of stuff I actually tried to avoid. When
+Its development came to a halt, &lt;code&gt;trunk&lt;&#x2F;code&gt; showed up, and it was the tool I was hoping for.&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately, it seems that the development of trunk came to a halt too. Now what?&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>A fresh start</title>
           <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
