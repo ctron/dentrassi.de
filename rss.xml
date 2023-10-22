@@ -7,7 +7,21 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://staging.dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 14 Oct 2023 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 22 Oct 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Yew components for OpenID connect and OAuth2</title>
+          <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://staging.dentrassi.de/2023/10/22/yew-oauth2/</link>
+          <guid>https://staging.dentrassi.de/2023/10/22/yew-oauth2/</guid>
+          <description>&lt;p&gt;The &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yew.rs&#x2F;&quot;&gt;Yew&lt;&#x2F;a&gt; project is a framework for creating web application in Rust. Similar to what
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;react.dev&#x2F;&quot;&gt;ReactJS&lt;&#x2F;a&gt; is in the JavaScript world. Of course, some web application will require integration with
+a single sign-on technology like OAuth2 or OpenID connect (OIDC). And of course, no one is really fond to start a new
+project by implementing some OIDC token handshake first.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;yew-oauth2&#x2F;&quot;&gt;&lt;code&gt;yew-oauth2&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; is a crate which does exactly that. Implement an OAuth2 or
+OpenID connect login flow using Yew components. Not making any assumption on the rest of the stack you’re going to use.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>trunk-ng, the fork of trunk</title>
           <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
