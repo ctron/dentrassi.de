@@ -64,7 +64,7 @@
 
     {% if page.date %}
     <li class="list-inline-item">
-      <span itemprop="datePublished" content='{{page.date | date(format="%Y-%m-%d")}}'>{{ page.date | date(format="%_d %B %Y") }}</span>
+      <span itemprop="datePublished" content='{{ page.date | date(format="%+", timezone="Europe/Berlin") }}'>{{ page.date | date(format="%_d %B %Y") }}</span>
     </li>
     {% endif %}
 
