@@ -8,12 +8,13 @@ guid: 'http://dentrassi.de/?p=277'
 permalink: /2013/04/23/fixing-the-mint-x-theme-for-eclipseswt/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:278;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
-    - linux
-    - mint
+    - Linux
+    - Mint
     - SWT
 ---
 

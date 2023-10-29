@@ -16,12 +16,14 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Infrastructure
     - 'Technical Stuff'
-tags:
+  tags:
     - Asterisk
     - SIP
+    - mISDN
 ---
 
 The mission: “save some bucks by using a free PBX using a cheap isdn card”. Don’t try! Buy something working in the first place. But if you have to, here is one example how it can be done. There are, for sure, many others!

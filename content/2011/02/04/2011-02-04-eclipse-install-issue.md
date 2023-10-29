@@ -8,9 +8,10 @@ guid: 'http://dentrassi.de/?p=52'
 permalink: /2011/02/04/eclipse-install-issue/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:53;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-tags:
+  tags:
     - Eclipse
 ---
 

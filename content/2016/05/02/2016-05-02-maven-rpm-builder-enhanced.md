@@ -10,13 +10,14 @@ spacious_page_layout:
     - default_layout
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
+    - 'Package Drone'
     - Java
-    - maven
+    - Maven
     - RPM
 ---
 

@@ -17,13 +17,14 @@ post_slider_check_key:
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";s:4:"4266";s:11:"_thumb_type";s:5:"thumb";}'
 image: /wp-content/uploads/rust-logo-512x512.png
-categories:
+taxonomies:
+  categories:
     - 'Technical Stuff'
-tags:
-    - container
-    - embedded
+  tags:
+    - Container
+    - Embedded
     - IoT
-    - rust
+    - Rust
 ---
 
 I have been working with ESPs, for playing around in the space of IoT, for a while now. Mostly using the ESP8266 and Espressif, through platform.io. In recent times, I have also started to really like Rust as programming language. And I really believe that all Rust has to offer, would be great match for embedded development. So when I had a bit of time, I wanted to give it a try. And here is what came out of it *…*

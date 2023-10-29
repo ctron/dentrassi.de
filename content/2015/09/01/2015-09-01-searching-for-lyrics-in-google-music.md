@@ -11,12 +11,12 @@ spacious_page_layout:
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";s:3:"668";s:11:"_thumb_type";s:5:"thumb";}'
 image: /wp-content/uploads/gmusic.png
-categories:
+taxonomies:
+  categories:
     - Ideas
-tags:
-    - google
-    - Ideas
-    - music
+  tags:
+    - Google
+    - Music
 extra:
   article_image:
     src: /wp-content/uploads/gmusic.png

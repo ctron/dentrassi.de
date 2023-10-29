@@ -10,15 +10,16 @@ spacious_page_layout:
     - default_layout
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Infrastructure
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
-    - mattermost
+    - Mattermost
 ---
 
-About half a year back [Cédric](https://twitter.com/bruncedric) and I did [start a test](https://dentrassi.de/2015/12/16/test-driving-mattermost-at-the-eclipse-foundation/) to see if Mattermost is a valuable tool for the Eclipse community. Failure was an option, since a new tool should bring some benefit to the community.
+About half a year back, [Cédric](https://twitter.com/bruncedric) and I did [start a test](https://dentrassi.de/2015/12/16/test-driving-mattermost-at-the-eclipse-foundation/) to see if Mattermost is a valuable tool for the Eclipse community. Failure was an option, since a new tool should bring some benefit to the community.
 
 <!-- more -->
 

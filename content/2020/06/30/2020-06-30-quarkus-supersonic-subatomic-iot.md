@@ -17,10 +17,11 @@ post_slider_check_key:
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:4452;s:11:"_thumb_type";s:5:"thumb";}'
 image: /wp-content/uploads/quarkus_icon_rgb_1024px_default.png
-categories:
+taxonomies:
+  categories:
     - Development
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
     - EnMasse
     - Hono

@@ -14,12 +14,14 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:3634;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - IoT
     - 'Technical Stuff'
 ---
 
-The deadline for the evaluations of phase for Google Summer of Code are pretty close. So it was time to take another look at what [Arthur](https://github.com/arthurdeschamps) did with the logistics simulation for [Eclipse Kapua](https://www.eclipse.org/kapua/).
+The deadline for the evaluations of phase for Google Summer of Code is pretty close.
+So it was time to take another look at what [Arthur](https://github.com/arthurdeschamps) did with the logistics simulation for [Eclipse Kapua](https://www.eclipse.org/kapua/).
 
 <!-- more -->
 

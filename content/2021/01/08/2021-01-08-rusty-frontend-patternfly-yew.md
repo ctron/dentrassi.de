@@ -16,12 +16,13 @@ post_slider_check_key:
     - '0'
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:4531;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - 'Technical Stuff'
-tags:
-    - frontend
-    - rust
+  tags:
+    - Frontend
+    - Rust
 ---
 
 A while back I started to become a real Rust fanboy, so when I wanted to “scratch an itch” of [our car sharing booking system](https://www.elkato.de/), of course I was using Rust for the backend. When it came to the frontend stuff, I was wondering if there is an alternative to JavaScript and so I found [Yew Stack](https://yew.rs), which is simply awesome and allows for a full-Rust solution.

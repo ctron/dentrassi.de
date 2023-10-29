@@ -14,15 +14,17 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:3587;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - IoT
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
     - IoT
     - Java
     - Kapua
+    - OpenShift
 ---
 
 Sometimes it is necessary to have some simulated data instead of fancy sensors attached to your IoT setup. As Eclipse Kapua starts to adopt Elasticsearch, it started to seem necessary to actually unit test the inbound telemetry stream of Kapua. Data coming from the gateway, being processed by Kapua, then stored into Elasticsearch and then retrieved back from Elasticsearch over the Kapua REST API. A lot can go wrong here ;-)

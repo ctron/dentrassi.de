@@ -3,6 +3,7 @@
 {%- import 'macros/header.html' as header -%}
 {%- import 'macros/footer.html' as footer -%}
 {%- import 'macros/side.html' as side -%}
+{%- import 'macros/taxonomies.html' as taxonomies -%}
 
 <!doctype html>
 <html lang="{{ config.extra.language_code | default(value='en-US') }}">
@@ -58,6 +59,7 @@
 
           {% block rightside %}
             {{ side::recent_posts() }}
+            {{ taxonomies::all_categories() }}
           {% endblock rightside %}
           </div>
         </aside>

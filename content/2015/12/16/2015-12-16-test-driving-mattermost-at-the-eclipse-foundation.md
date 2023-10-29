@@ -10,14 +10,15 @@ spacious_page_layout:
     - default_layout
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:721;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - Infrastructure
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
-    - mattermost
-    - packagedrone
+    - Mattermost
+    - 'Package Drone'
 extra:
     article_image:
         src: /wp-content/uploads/matermost_square.png

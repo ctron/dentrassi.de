@@ -18,11 +18,12 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:3883;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - IoT
     - 'Technical Stuff'
-tags:
+  tags:
     - CentOS
     - Eclipse
     - IoT

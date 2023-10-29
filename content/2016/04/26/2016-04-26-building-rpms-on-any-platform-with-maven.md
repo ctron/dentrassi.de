@@ -10,13 +10,14 @@ spacious_page_layout:
     - default_layout
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
-    - maven
+  tags:
+    - Maven
     - RPM
+    - 'Package Drone'
 ---
 
 In several occasions I had to build RPM packages for installing software. In the past I mostly did it with a Maven build using the <q>[RPM Maven Plugin](http://www.mojohaus.org/rpm-maven-plugin/)</q>.

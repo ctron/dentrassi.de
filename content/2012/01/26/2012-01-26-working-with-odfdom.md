@@ -8,11 +8,14 @@ guid: 'http://dentrassi.de/?p=153'
 permalink: /2012/01/26/working-with-odfdom/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
+  tags:
+    - ODF
 ---
 
-While working a little bit with ODFDOM to automatically generate some documentation I found some tasks rather difficult to accomplish due to the fact that they were hardly documented. There is a lot of ODF documentation, but how to use it with ODFDOM is another story.
+While working a little bit with ODFDOM to automatically generate some documentation, I found some tasks rather difficult to accomplish due to the fact that they were hardly documented. There is a lot of ODF documentation, but how to use it with ODFDOM is another story.
 
 <!-- more -->
 

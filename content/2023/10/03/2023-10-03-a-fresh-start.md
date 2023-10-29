@@ -3,8 +3,9 @@ title: A fresh start
 description: |
   An update on the state of the blog, it's migration away from WordPress to Zola, and what my plans for the future are.
 author: Jens Reimann
-categories:
-  - Technical Stuff
+taxonomies:
+  categories:
+    - Personal Stuff
 ---
 
 More than [10 years ago](@/2011/01/26/2011-01-26-hello-world.md), I switch my personal blog from iWeb to WordPress.

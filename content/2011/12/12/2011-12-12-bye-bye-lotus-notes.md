@@ -8,8 +8,12 @@ guid: 'http://dentrassi.de/?p=137'
 permalink: /2011/12/12/bye-bye-lotus-notes/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Infrastructure
+  tags:
+    - IMAP
+    - Lotus Notes
 ---
 
 We used it for some time. It was nice. But now our ways seem to …

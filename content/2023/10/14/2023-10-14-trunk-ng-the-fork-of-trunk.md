@@ -4,13 +4,14 @@ description: |
   This blog post lays out the reasons why I decided to fork trunk, what the current state is, and what could be the
   future.
 author: Jens Reimann
-categories:
-- Technical Stuff
-- Open Source
-tags:
-- rust
-- webassembly
-- frontend
+taxonomies:
+  categories:
+    - Technical Stuff
+    - Open Source
+  tags:
+    - Rust
+    - WebAssembly
+    - Frontend
 ---
 
 [`trunk`](https://trunkrs.dev/) is a great piece of software! When I started with Rust on the frontend, the

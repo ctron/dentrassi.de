@@ -8,12 +8,12 @@ guid: 'http://dentrassi.de/?p=514'
 permalink: /2015/02/06/package-drone-0-1-0/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - Infrastructure
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
     - OSGi
     - p2

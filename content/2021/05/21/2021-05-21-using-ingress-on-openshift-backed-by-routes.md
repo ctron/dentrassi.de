@@ -18,8 +18,12 @@ post_slider_check_key:
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:4286;s:11:"_thumb_type";s:5:"thumb";}'
 image: /wp-content/uploads/Logotype_RH_OpenShift_wLogo_RGB_Black_wordpress.png
-categories:
+taxonomies:
+  categories:
     - 'Technical Stuff'
+  tags:
+    - Kubernetes
+    - OpenShift
 ---
 
 When you want to get traffic into your OpenShift cluster, `Routes` are just awesome. But every now and then, using `Ingress` instead might provide some benefits. Here are a few tricks how you can have the best of both worlds.

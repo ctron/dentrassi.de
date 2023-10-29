@@ -8,10 +8,11 @@ guid: 'http://dentrassi.de/?p=417'
 permalink: /2014/11/14/osgi-ee-modular-web-applications/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
     - OSGi
 ---

@@ -14,13 +14,14 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:68;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-tags:
+  tags:
     - Eclipse
     - Java
     - SWT
-    - Win32
+    - Windows
 ---
 
 Today I ran into a problem which could easily solved using a short WMI query. The problem was that the query must be executed within a Java UI application. Googling for a solution I came only up with either quite some ugly workarounds (like generating a VBScript fragment, forking off the VBScript runtime and parsing the result) or some full blown COM/DCOM interfaces (like J-Integra or J-Interop). Although I really like J-Interop (we are using it for DCOM when accessing OPC server in OpenSCADA Utgard) it has some drawbacks. For J-Interop every access (even local access) is a network based access. Since J-Interop only supports DCOM it is free of any platform specific code but required the machine to be accessible using “remoting” functionality (DCOM). Since I wanted to query the WMI from a UI application and I am sure that the WMI query will stay on the Win32 version of the application I was not keen on adding “remoting” as a requirement to the UI application.

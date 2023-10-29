@@ -15,6 +15,11 @@ feed_filename = "rss.xml"
 
 build_search_index = true
 
+taxonomies = [
+    { name = "categories" },
+    { name = "tags" },
+]
+
 [markdown]
 highlight_code = true
 highlight_theme = "OneHalfLight"

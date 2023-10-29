@@ -8,16 +8,17 @@ guid: 'http://dentrassi.de/?p=478'
 permalink: /2015/01/14/package-drone-0-0-4/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
     - bndtools
     - Eclipse
-    - maven
+    - Maven
     - OSGi
-    - tycho
+    - Tycho
+    - 'Package Drone'
 ---
 
 I am happy to announce that [package drone 0.0.4 is released](https://github.com/ctron/package-drone/releases/tag/v0.0.4).

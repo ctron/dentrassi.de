@@ -1,0 +1,36 @@
+{%- import 'macros/post.html' as post -%}
+{%- import 'macros/toc.html' as toc -%}
+{%- import 'macros/meta.html' as meta -%}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section>
+  <h1>{{ taxonomy.name | capitalize }}</h1>
+
+  {% set_global letters = [] %}
+  {% for term in terms | map(attribute="slug") %}
+    {% set first = term | truncate(length=1, end="") | upper %}
+    {% set_global letters = letters | concat(with=first) %}
+  {% endfor %}
+
+  <div class="de-c-tag-index">
+    {% for t in letters | unique %}
+      <div class="de-c-tag-index__entry">
+        <h3>{{ t }}</h3>
+        <ul class="list-unstyled">
+          {% for term in terms %}
+            {% set path = term.slug | upper %}
+            {% if path is starting_with(t) %}
+              <li><a href="{{ term.path | safe }}">{{ term.name }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+
+</section>
+
+{% endblock content %}

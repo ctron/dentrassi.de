@@ -17,10 +17,11 @@ post_slider_check_key:
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";s:4:"4405";s:11:"_thumb_type";s:5:"thumb";}'
 image: /wp-content/uploads/icon_wp.png
-categories:
+taxonomies:
+  categories:
     - Development
     - IoT
-tags:
+  tags:
     - Eclipse
     - IoT
 ---

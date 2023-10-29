@@ -16,13 +16,14 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
     - Java
     - RPM
+    - 'Package Drone'
 ---
 
 Now creating an RPM file is easy. There are a lot of tutorials [out there](https://www.google.com/#q=create+rpm) on how write a [SPEC file](http://www.rpm.org/max-rpm/ch-rpm-inside.html) and build your RPM. Even when you are using Maven … with the exception that when you are on Windows or Mac OS X, the [Maven RPM plugin](http://www.mojohaus.org/rpm-maven-plugin/) will still try to invoke `rpmbuild` in order to actually build the RPM file. The maven bundle simply creates a SPEC file, layout out the payload data and lets `rpmbuild` do the processing.

@@ -8,12 +8,13 @@ guid: 'http://dentrassi.de/?p=594'
 permalink: /2015/06/18/osgi-jsp-jstl/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
     - OSGi
+    - 'Package Drone'
 ---
 
 What is so easy with a standard JEE setup becomes quite painful using OSGi. Although there are very interesting projects and approaches like [OSGi enRoute](http://enroute.osgi.org), [Pax Web](https://github.com/ops4j/org.ops4j.pax.web) or [Equinox JSP](http://eclipse.org/equinox/server/jsp_support.php) (and probably a few more), taking a step beyond “Hello World” starts to get quite painful.

@@ -8,7 +8,8 @@ guid: 'http://dentrassi.de/?p=518'
 permalink: /2015/02/14/just-a-test/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - 'Technical Stuff'
 ---
 

@@ -8,16 +8,19 @@ guid: 'http://dentrassi.de/?p=94'
 permalink: /2011/02/21/fancy-tooltips-in-eclipse/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:100;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-tags:
+  tags:
     - Eclipse
     - Java
     - JFace
     - SWT
+    - Tooltips
+    - UI
 ---
 
-Tooltips are quick way to add information to a widget that received the users attention. While one can argue about the pros and cons of tooltips this post focuses on the style of tooltips once you decided to use them.
+Tooltips are a quick way to add information to a widget that received the user's attention. While one can argue about the pros and cons of tooltips this post focuses on the style of tooltips once you decided to use them.
 
 <!-- more -->
 

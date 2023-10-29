@@ -16,13 +16,14 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - 'Technical Stuff'
-tags:
+  tags:
     - Java
     - jsch
-    - ssh
+    - SSH
 ---
 
 This article explains how to programmatically add a host key in Java with JSch. I did update the article early 2018, taking care of the missing argument to the `add` method.

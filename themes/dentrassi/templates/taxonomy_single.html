@@ -1,0 +1,18 @@
+{%- import 'macros/post.html' as post -%}
+{%- import 'macros/toc.html' as toc -%}
+{%- import 'macros/meta.html' as meta -%}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section>
+  <h1>{{ term.name }} <span class="badge bg-secondary">{{ taxonomy.name | capitalize }}</span> </h1>
+  <ul>
+    {% for page in term.pages %}
+    <li><a href="{{ page.path | safe }}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% endblock content %}

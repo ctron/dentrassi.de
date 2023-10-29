@@ -10,14 +10,15 @@ spacious_page_layout:
     - default_layout
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
     - Java
-    - maven
+    - Maven
     - RPM
+    - 'Package Drone'
 ---
 
 A few weeks back I wrote a blog post about [writing RPM files in plain Java](https://dentrassi.de/2016/04/15/writing-rpm-files-in-plain-java/).

@@ -8,8 +8,13 @@ guid: 'http://dentrassi.de/?p=404'
 permalink: /2014/09/09/creating-a-mac-os-app-bundle-with-maven-tycho/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
+  tags:
+    - Maven
+    - Tycho
+    - macOS
 ---
 
 Using [Maven Tycho](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=http%3A%2F%2Fwww.eclipse.org%2Ftycho%2F&ei=4fgOVP23PObXyQPSr4DoDw&usg=AFQjCNGx8I2dPaFgwDailli6vmc1ufJFsg&sig2=s1I6dsQrtlAQ-2RbTq7yag&bvm=bv.74649129,d.bGQ "Maven Tycho") it is possible to build OSGi applications and therefore Eclipse RCP applications easily with Maven. Creating a ready to run product is [already described](http://git.eclipse.org/c/tycho/org.eclipse.tycho-demo.git/tree/) on [the internet](http://www.vogella.com/tutorials/EclipseTycho/article.html) a [few times](http://codeandme.blogspot.de/2012/12/tycho-build-1-building-plug-ins.html).

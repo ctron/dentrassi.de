@@ -14,16 +14,18 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:3568;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - IoT
     - 'Technical Stuff'
-tags:
+  tags:
     - Docker
     - Eclipse
     - IDE
     - IoT
     - Kura
+    - Windows
 ---
 
 Every now and then it is fun to leave the environment you are used to and do something completely different. So this journey take me to IntelliJ and Windows 10. And yes, I am glad to be back in Linux/Eclipse-land. But still, I think something rather interesting came out of this.

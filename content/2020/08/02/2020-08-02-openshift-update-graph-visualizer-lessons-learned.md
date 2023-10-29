@@ -17,11 +17,13 @@ post_slider_check_key:
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:4486;s:11:"_thumb_type";s:5:"thumb";}'
 image: /wp-content/uploads/image.png
-categories:
+taxonomies:
+  categories:
     - Infrastructure
     - 'Technical Stuff'
-tags:
+  tags:
     - OpenShift
+    - JavaScript
 ---
 
 Since OpenShift 4, updates are rather trivial. You wait for the new update to appear, press the button (or use the CLI), wait a bit, and the update is done. True, in production you might want to complicate that process a bit, for good reason.
@@ -38,7 +40,7 @@ The tool behind the OpenShift update information is [openshift/cincinnati](https
 > 
 > <cite>https://github.com/openshift/cincinnati</cite>
 
-Which means, that this tool has all the information available, to show which upgrade is available. And from which version I can upgrade. It also has the information about all the different channels (like “fast”, “candidate”, or “stable”). And it is written in [Rust](https://www.rust-lang.org/), I love it already.
+Which means that this tool has all the information available to show which upgrade is available. And from which version I can upgrade. It also has the information about all the different channels (like “fast”, “candidate”, or “stable”). And it is written in [Rust](https://www.rust-lang.org/), I love it already.
 
 There is a little bit of [information on the data format](https://github.com/openshift/cincinnati-graph-data), but what about the data itself? It is available from the endpoint `https://api.openshift.com/api/upgrades_info`. So now have everything that we need.
 

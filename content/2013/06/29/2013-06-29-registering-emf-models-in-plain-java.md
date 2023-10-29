@@ -14,8 +14,12 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
+  tags:
+    - Java
+    - EMF
 ---
 
 Using [Eclipse EMF/Ecore](http://www.eclipse.org/modeling/emf/?project=emf#emf "Eclipse EMF/ECore") models inside the Eclipse Platform is quite easy. Loading an XML/XMI serialized model file is only a matter of some lines of code. The most interesting thing about this is that the whole Eclipse platform can handle the registration of models and model factories for you. So instead of knowing what model type you are loading, it will be detected and the right model factory will be used for loading and creating your model instance. Even better is the fact that also derived model objects can be loaded that way.

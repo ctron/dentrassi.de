@@ -10,12 +10,13 @@ spacious_page_layout:
     - default_layout
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:754;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Infrastructure
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
-    - mattermost
+    - Mattermost
 ---
 
 A few weeks ago we started to [test Mattermost](https://dentrassi.de/2015/12/16/test-driving-mattermost-at-the-eclipse-foundation/) as a communication channel for Eclipse Foundation projects. So, how is it going?

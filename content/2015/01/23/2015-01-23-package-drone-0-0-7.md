@@ -8,15 +8,16 @@ guid: 'http://dentrassi.de/?p=505'
 permalink: /2015/01/23/package-drone-0-0-7/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
     - OSGi
     - p2
-    - tycho
+    - Tycho
+    - 'Package Drone' 
 ---
 
 The release announcement is at the new homepage.

@@ -8,9 +8,10 @@ guid: 'http://dentrassi.de/?p=444'
 permalink: /2014/11/22/google-play-store-forums/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - 'Technical Stuff'
-tags:
+  tags:
     - android
     - google
     - 'play store'

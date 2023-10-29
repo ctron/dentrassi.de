@@ -16,11 +16,12 @@ post_slider_check_key:
     - '0'
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";N;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - IoT
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
 ---
 

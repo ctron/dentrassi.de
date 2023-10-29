@@ -11,10 +11,11 @@ spacious_page_layout:
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";s:3:"701";s:11:"_thumb_type";s:5:"thumb";}'
 image: /wp-content/uploads/RPM_Logo.svg_.png
-categories:
+taxonomies:
+  categories:
     - Development
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
     - 'Package Drone'
     - RPM

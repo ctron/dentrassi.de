@@ -16,8 +16,11 @@ post_slider_check_key:
     - '0'
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";N;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - 'Technical Stuff'
+  tags:
+    - Rust
 ---
 
 When you want to containerize your Rust application, you might be using a prepared Rust image. But maybe you are a bit more paranoid when it comes to trusting base layers and you want to create your own Rust base image. Or maybe you are just curios and want to try it yourself.

@@ -8,9 +8,10 @@ guid: 'http://dentrassi.de/?p=36'
 permalink: /2010/02/25/equinox-remote-terminal-console/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-tags:
+  tags:
     - Eclipse
     - Equinox
     - Java

@@ -8,16 +8,17 @@ guid: 'http://dentrassi.de/?p=454'
 permalink: /2014/11/28/released-package-drone-0-0-2/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - Infrastructure
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
     - maven
     - OSGi
     - tycho
+    - Package Drone
 ---
 
 Work on package drone continues.

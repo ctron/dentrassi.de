@@ -11,12 +11,12 @@ tc-thumb-fld:
 spacious_page_layout:
     - default_layout
 image: /wp-content/uploads/ibh_PD-Logo_2500x2500_150123-672x372.png
-categories:
+taxonomies:
+  categories:
     - Development
     - Infrastructure
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
     - OSGi
     - 'Package Drone'
 ---

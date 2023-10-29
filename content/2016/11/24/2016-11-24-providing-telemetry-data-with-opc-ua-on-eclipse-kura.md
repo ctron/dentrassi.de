@@ -17,11 +17,12 @@ fabulous-fluid-featured-image:
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";s:3:"906";s:11:"_thumb_type";s:5:"thumb";}'
 image: /wp-content/uploads/Apache-camel-logo.png
-categories:
+taxonomies:
+  categories:
     - Development
     - IoT
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
     - IoT
     - Kura

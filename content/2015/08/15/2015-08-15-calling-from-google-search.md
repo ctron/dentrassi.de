@@ -10,11 +10,12 @@ spacious_page_layout:
     - default_layout
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:656;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Ideas
     - 'Technical Stuff'
-tags:
-    - google
+  tags:
+    - Google
     - Mobile
     - Phone
 extra:

@@ -8,10 +8,13 @@ guid: 'http://dentrassi.de/?p=93'
 permalink: /2011/03/10/openscada-org-update/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Infrastructure
+  tags:
+    - OpenSCADA
 ---
 
-Finally we made it! [openscada.org](http://openscada.org) has been updated to look good and contain new information. Finally :)
+Finally, we made it! [openscada.org](http://openscada.org) has been updated to look good and contain new information. Finally :)
 
 <!-- more -->

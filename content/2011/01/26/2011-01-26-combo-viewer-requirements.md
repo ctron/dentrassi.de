@@ -8,9 +8,10 @@ guid: 'http://dentrassi.de/?p=32'
 permalink: /2011/01/26/combo-viewer-requirements/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-tags:
+  tags:
     - Eclipse
     - Java
     - SWT

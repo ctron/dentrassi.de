@@ -1,0 +1,14 @@
+.de-c-tag-index {
+  column-count: auto;
+  column-width: 20ch;
+
+  padding-top: 2rem;
+}
+
+.de-c-tag-index h3 {
+  margin-top: 0;
+}
+
+.de-c-tag-index__entry {
+  break-inside: avoid;
+}

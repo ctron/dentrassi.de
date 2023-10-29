@@ -1,39 +1,89 @@
-{% macro info(page,more=false) %}
+{%- import 'macros/taxonomies.html' as taxonomies -%}
 
-<ul class="de-c-post-meta list-inline text-muted">
+{% macro info_index(page) %}
 
-  <li class="list-inline-item">
-    <span>{{ page.reading_time }} minute read</span>
-    <meta itemprop="wordCount" content="{{page.word_count}}">
-    <span class="d-none" itemprop="author" itemscope itemtype="https://schema.org/Person">
-      <a itemprop="url" href="https://dentrassi.de">
-        <span itemprop="name">Jens Reimann</span>
-      </a>
-    </span>
-  </li>
+<div class="de-c-post-meta text-muted">
 
-  {% if page.date %}
-  <li class="list-inline-item">
-    <span itemprop="datePublished" content='{{page.date | date(format="%Y-%m-%d")}}'>{{ page.date | date(format="%_d %B %Y") }}</span>
-  </li>
-  {% endif %}
+  <ul class="list-inline">
 
-  {% if page.category %}
-  <li class="list-inline-item">
-    {% if config.generate_categories_pages %}
-    <span><a href="/categories/{{page.category | slugify }}">{{ page.category }}</a></span>
-    {% else %}
-    <span>{{ page.category }}</span>
+    <li class="list-inline-item">
+      <span>{{ page.reading_time }} minute read</span>
+      <meta itemprop="wordCount" content="{{page.word_count}}">
+      <span class="d-none" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <a itemprop="url" href="https://dentrassi.de">
+          <span itemprop="name">Jens Reimann</span>
+        </a>
+      </span>
+    </li>
+
+    {% if page.date %}
+    <li class="list-inline-item">
+      <span itemprop="datePublished" content='{{page.date | date(format="%Y-%m-%d")}}'>{{ page.date | date(format="%_d %B %Y") }}</span>
+    </li>
     {% endif %}
-  </li>
-  {% endif %}
 
-  {% if more %}
-  <li class="list-inline-item">
-    <a class="link-body-emphasis" href="{{ page.path | safe }}">Read&nbsp;more&nbsp;…</a>
-  </li>
-  {% endif %}
+    {% if page.taxonomies['categories'] %}
+    {% set category = page.taxonomies['categories'] | first %}
+    <li class="list-inline-item">
+      <span><a class="link-secondary" href="/categories/{{category | slugify }}">{{ category }}</a></span>
+    </li>
+    {% endif %}
 
-</ul>
+    <li class="list-inline-item">
+      <a class="link-body-emphasis" href="{{ page.path | safe }}">Read&nbsp;more&nbsp;…</a>
+    </li>
+
+  </ul>
+
+  <ul class="list-inline">
+    {% if page.taxonomies['tags'] %}
+    <li class="list-inline-item">
+      {{ taxonomies::tag_list(tags=page.taxonomies['tags'], info=true) }}
+    </li>
+    {% endif %}
+  </ul>
+
+</div>
+
+{% endmacro %}
+
+{% macro info_post(page) %}
+
+<div class="de-c-post-meta text-muted">
+  <ul class="list-inline">
+
+    <li class="list-inline-item">
+      <span>{{ page.reading_time }} minute read</span>
+      <meta itemprop="wordCount" content="{{page.word_count}}">
+      <span class="d-none" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <a itemprop="url" href="https://dentrassi.de">
+          <span itemprop="name">Jens Reimann</span>
+        </a>
+      </span>
+    </li>
+
+    {% if page.date %}
+    <li class="list-inline-item">
+      <span itemprop="datePublished" content='{{page.date | date(format="%Y-%m-%d")}}'>{{ page.date | date(format="%_d %B %Y") }}</span>
+    </li>
+    {% endif %}
+
+    {% if page.taxonomies['categories'] %}
+    {% set category = page.taxonomies['categories'] | first %}
+    <li class="list-inline-item">
+      <span><a class="link-secondary" href="/categories/{{category | slugify }}">{{ category }}</a></span>
+    </li>
+    {% endif %}
+  </ul>
+
+  <ul class="list-inline">
+
+    {% if page.taxonomies['tags'] %}
+    <li class="list-inline-item">
+      {{ taxonomies::tag_list(tags=page.taxonomies['tags'], info=true) }}
+    </li>
+    {% endif %}
+  </ul>
+</div>
 
 {% endmacro %}

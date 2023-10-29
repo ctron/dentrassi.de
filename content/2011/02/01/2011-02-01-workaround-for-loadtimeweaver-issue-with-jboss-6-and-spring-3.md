@@ -8,9 +8,10 @@ guid: 'http://dentrassi.de/?p=49'
 permalink: /2011/02/01/workaround-for-loadtimeweaver-issue-with-jboss-6-and-spring-3/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-tags:
+  tags:
     - AspectJ
     - Java
     - JBoss

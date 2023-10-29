@@ -10,14 +10,15 @@ spacious_page_layout:
     - default_layout
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - 'Technical Stuff'
-tags:
+  tags:
     - Java
-    - maven
+    - Maven
     - OSGi
-    - tycho
+    - Tycho
 ---
 
 Now when you build OSGi bundles using Maven [Tycho](https://eclipse.org/tycho/), you probably ran into the issue of creating a meaningful version qualifier (remember, an OSGi versions always is `major.minor.micro.qualifier`, so no dash and definitely no `-SNAPSHOT`).

@@ -1,0 +1,77 @@
+{% macro categories(page) %}
+{% if page.taxonomies['categories'] %}
+<div class="de-c-toc mb-4">
+
+  <h2 class="d-flex">
+    <span>Categories</span>
+
+    <span class="de-c-title__action">
+      <a href="{{ get_url(path='categories') | safe }}">All</a>
+    </span>
+  </h2>
+
+  <ul class="list-unstyled">
+    {% for term in page.taxonomies['categories'] %}
+    <li>
+      <a class="link-body-emphasis" href="{{ get_taxonomy_url(kind='categories', name=term, lang=page.lang) | safe }}">{{ term }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endif %}
+{% endmacro %}
+
+{% macro tags(page) %}
+{% if page.taxonomies['tags'] %}
+<div class="de-c-toc mb-4">
+
+  <h2 class="d-flex">
+    <span>Tags</span>
+
+    <span class="de-c-title__action">
+      <a href="{{ get_url(path='tags') | safe }}">All</a>
+    </span>
+  </h2>
+
+  {{ taxonomies::tag_list(tags=page.taxonomies['tags'])}}
+
+</div>
+{% endif %}
+{% endmacro %}
+
+{% macro tag_list(tags, info=false) %}
+  {% set lang = page.lang | default(value=section.lang) %}
+
+  {% if info %}
+  {% set class = "link-secondary" %}
+  {% else %}
+  {% set class = "link-body-emphasis" %}
+  {% endif %}
+
+  {% for term in tags %}
+    <a class="{{ class }}" href="{{ get_taxonomy_url(kind='tags', name=term, lang=lang) | safe }}">#{{ term | lower }}</a>
+  {% endfor %}
+{% endmacro %}
+
+{% macro all_categories() %}
+<div class="de-c-toc mb-4">
+
+  <h2 class="d-flex">
+    <span>Categories</span>
+
+    <span class="de-c-title__action">
+      <a href="{{ get_url(path='tags')}}">All Tags</a>
+    </span>
+  </h2>
+
+  <ul class="list-unstyled">
+    {% set categories = get_taxonomy(kind='categories') %}
+    {% for term in categories.items %}
+      <li><a class="link-body-emphasis" href="{{ term.path | safe }}">{{ term.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endmacro %}
+

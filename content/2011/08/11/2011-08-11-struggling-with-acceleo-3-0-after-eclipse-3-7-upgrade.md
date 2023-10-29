@@ -8,8 +8,12 @@ guid: 'http://dentrassi.de/?p=111'
 permalink: /2011/08/11/struggling-with-acceleo-3-0-after-eclipse-3-7-upgrade/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:112;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
+  tags:
+    - Acceleo
+    - Eclipse
 ---
 
 While the upgrade from Eclipse 3.6.2 to 3.7 went without nearly any trouble the upgrade of the Acceleo plugins to the versions provided with Eclipse Indigo was “a little bit more” problematic.

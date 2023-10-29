@@ -8,8 +8,11 @@ guid: 'http://dentrassi.de/?p=440'
 permalink: /2014/11/21/spring-webmvc-bad-request-for-most-pages/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
+  tags:
+    - Spring
 ---
 
 Today I stumbled over an easy configuration mistake you can make, which will cause “400 Bad request” for most static resources. It took me a little bit of time to figure out what went wrong.

@@ -14,11 +14,14 @@ fabulous-fluid-header-image:
     - default
 fabulous-fluid-featured-image:
     - default
-categories:
+taxonomies:
+  categories:
     - Development
     - Infrastructure
-    - 'Package Drone'
     - 'Technical Stuff'
+  tags:
+    - Maven
+    - 'Package Drone'
 ---
 
 While working on Package Drone, I stumbled over an [interesting issue](https://github.com/ctron/package-drone/issues/38).

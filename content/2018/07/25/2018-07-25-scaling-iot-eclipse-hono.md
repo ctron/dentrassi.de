@@ -22,11 +22,12 @@ layout_key:
     - ''
 post_slider_check_key:
     - '0'
-categories:
+taxonomies:
+  categories:
     - Development
     - IoT
     - 'Technical Stuff'
-tags:
+  tags:
     - Eclipse
     - Hono
     - IoT

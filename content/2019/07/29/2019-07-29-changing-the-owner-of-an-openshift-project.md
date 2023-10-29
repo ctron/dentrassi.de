@@ -17,10 +17,11 @@ post_slider_check_key:
 fpu-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";s:4:"4286";s:11:"_thumb_type";s:5:"thumb";}'
 image: /wp-content/uploads/Logotype_RH_OpenShift_wLogo_RGB_Black_wordpress.png
-categories:
+taxonomies:
+  categories:
     - Infrastructure
     - 'Technical Stuff'
-tags:
+  tags:
     - OpenShift
 ---
 

@@ -14,12 +14,13 @@ fabulous-fluid-featured-image:
     - disable
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:3856;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - Infrastructure
     - IoT
     - 'Technical Stuff'
-tags:
+  tags:
     - Cloud
     - Eclipse
     - Hono

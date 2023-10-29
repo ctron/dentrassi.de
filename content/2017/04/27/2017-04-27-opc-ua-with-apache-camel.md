@@ -14,17 +14,19 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:3598;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - IoT
     - 'Technical Stuff'
-tags:
+  tags:
     - Apache
     - Camel
     - Eclipse
     - IIoT
     - IoT
     - Milo
+    - OPC UA
 ---
 
 Apache Camel 2.19.0 is close to is release and the [OPC UA](https://en.wikipedia.org/wiki/OPC_Unified_Architecture) component called “camel-milo” will be part of it. This is my [Eclipse Milo](https://eclipse.org/milo) backed component which was previously hosted in my personal GitHub repository [ctron/de.dentrassi.camel.milo](https://github.com/ctron/de.dentrassi.camel.milo). It now got accepted into Apache Camel and will be part of the 2.19.0 release. As there are already a release candidates available, I think it is a great time to give a short introduction.

@@ -10,11 +10,11 @@ spacious_page_layout:
     - default_layout
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Ideas
-tags:
+  tags:
     - Christmas
-    - xmas
 ---
 
 Before and on Christmas most people think about people in need, and hopefully donate something. Not necessarily money, but presents as well.

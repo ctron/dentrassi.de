@@ -14,8 +14,14 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
+  tags:
+    - Eclipse
+    - Equinox
+    - OSGi
+    - Windows
 ---
 
 In the Eclipse SCADA project we finally wanted to create a setup of the server components for the Windows platform. Ideally all the server tasks should be integrated into the Windows service framework, so that you can stop and start services “the Windows way”.

@@ -14,14 +14,15 @@ fabulous-fluid-featured-image:
     - default
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:3798;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
     - IoT
     - 'Technical Stuff'
-tags:
-    - api
+  tags:
+    - Api
     - Java
-    - varlink
+    - Varlink
 ---
 
 Varlink for Java is a Java based implementation of the Varlink interface. This blog post shows how varlink can be used in the Java world to solve the problem of accessing operating system functionality.

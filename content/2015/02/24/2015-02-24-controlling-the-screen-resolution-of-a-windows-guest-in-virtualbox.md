@@ -14,7 +14,8 @@ fabulous-fluid-header-image:
     - default
 fabulous-fluid-featured-image:
     - default
-categories:
+taxonomies:
+  categories:
     - Infrastructure
     - 'Technical Stuff'
 ---

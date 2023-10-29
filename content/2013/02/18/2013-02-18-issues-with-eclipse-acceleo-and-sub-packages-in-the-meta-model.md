@@ -8,8 +8,12 @@ guid: 'http://dentrassi.de/?p=258'
 permalink: /2013/02/18/issues-with-eclipse-acceleo-and-sub-packages-in-the-meta-model/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
+  tags:
+    - Eclipse
+    - Acceleo
 ---
 
 Today I stumbled over an issue that was unsolved in my workspace for some days now. Finally I got the time to fix it. I have a ECore meta-model which consists of three sub-packages and has no class in the main package. Generating model, edit and editor for this I had a nice start for my task. Then I wanted to generate code from this meta model and ran into a strange problem. On the console I simply got the following message when I tried to launch the Acceleo UI generator action:

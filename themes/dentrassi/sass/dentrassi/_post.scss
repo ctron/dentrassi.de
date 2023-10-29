@@ -26,11 +26,17 @@
   margin-top: .75rem;
 }
 
+.de-c-post-meta ul:first-child {
+  margin-bottom: 0;
+}
+
 .de-c-post-meta li.list-inline-item {
   margin-right: 0;
 }
 
-.de-c-post-meta li + li:before {
+.de-c-post-meta {}
+
+.de-c-post-meta li:not(:last-child):after {
   margin-left: .5rem;
   margin-right: .5rem;
   content: '·';

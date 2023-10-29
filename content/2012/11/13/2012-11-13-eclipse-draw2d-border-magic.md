@@ -8,11 +8,15 @@ guid: 'http://dentrassi.de/?p=174'
 permalink: /2012/11/13/eclipse-draw2d-border-magic/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:187;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
+  tags:
+    - Eclipse
+    - Draw2D
 ---
 
-While using Eclipse Draw2D I stumbled over some quite interesting behaviour on win32 using rectangles and scaling.
+While using Eclipse Draw2D, I stumbled over some quite interesting behavior on win32 using rectangles and scaling.
 
 <!-- more -->
 

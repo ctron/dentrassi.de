@@ -8,8 +8,14 @@ guid: 'http://dentrassi.de/?p=116'
 permalink: /2011/10/11/jpa-ejb-and-spring/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
+  tags:
+    - Spring
+    - JPA
+    - EJB
+    - Hibernate
 ---
 
 Today I stumbled over a rather interesting issue in combination with JBoss, Hibernate, Spring, JPA and EJB.

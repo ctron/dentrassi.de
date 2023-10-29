@@ -8,11 +8,11 @@ guid: 'http://dentrassi.de/?p=529'
 permalink: /2015/03/14/meanwhile-package-drone/
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";i:532;s:11:"_thumb_type";s:10:"attachment";}'
-categories:
+taxonomies:
+  categories:
     - Development
-    - 'Package Drone'
     - 'Technical Stuff'
-tags:
+  tags:
     - OSGi
     - 'Package Drone'
 ---
