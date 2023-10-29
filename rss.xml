@@ -569,7 +569,8 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2017/07/27/gsoc-with-kapua-just-peeking/</link>
           <guid>https://dentrassi.de/2017/07/27/gsoc-with-kapua-just-peeking/</guid>
-          <description>&lt;p&gt;The deadline for the evaluations of phase for Google Summer of Code are pretty close. So it was time to take another look at what &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;arthurdeschamps&quot;&gt;Arthur&lt;&#x2F;a&gt; did with the logistics simulation for &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;kapua&#x2F;&quot;&gt;Eclipse Kapua&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;The deadline for the evaluations of phase for Google Summer of Code is pretty close.
+So it was time to take another look at what &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;arthurdeschamps&quot;&gt;Arthur&lt;&#x2F;a&gt; did with the logistics simulation for &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipse.org&#x2F;kapua&#x2F;&quot;&gt;Eclipse Kapua&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -798,7 +799,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2016/06/15/mattermost-at-eclipse/</link>
           <guid>https://dentrassi.de/2016/06/15/mattermost-at-eclipse/</guid>
-          <description>&lt;p&gt;About half a year back &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;bruncedric&quot;&gt;Cédric&lt;&#x2F;a&gt; and I did &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2015&#x2F;12&#x2F;16&#x2F;test-driving-mattermost-at-the-eclipse-foundation&#x2F;&quot;&gt;start a test&lt;&#x2F;a&gt; to see if Mattermost is a valuable tool for the Eclipse community. Failure was an option, since a new tool should bring some benefit to the community.&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;About half a year back, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;bruncedric&quot;&gt;Cédric&lt;&#x2F;a&gt; and I did &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2015&#x2F;12&#x2F;16&#x2F;test-driving-mattermost-at-the-eclipse-foundation&#x2F;&quot;&gt;start a test&lt;&#x2F;a&gt; to see if Mattermost is a valuable tool for the Eclipse community. Failure was an option, since a new tool should bring some benefit to the community.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1297,7 +1298,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2014/09/24/iec-60870-explorer/</link>
           <guid>https://dentrassi.de/2014/09/24/iec-60870-explorer/</guid>
-          <description>&lt;p&gt;Finally we put a few functions and classes together that we already had, and made a simple, easy to use and jet powerful tool which we would liked to have ourselves ;-) Sadly it did not exist when we would have needed it, so we had to make it ourselves.&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;Finally, we put a few functions and classes together that we already had, and made a simple, easy to use and jet powerful tool which we would like to have ourselves ;-) Sadly, it did not exist when we would have needed it, so we had to make it ourselves.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1630,7 +1631,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2012/11/13/eclipse-draw2d-border-magic/</link>
           <guid>https://dentrassi.de/2012/11/13/eclipse-draw2d-border-magic/</guid>
-          <description>&lt;p&gt;While using Eclipse Draw2D I stumbled over some quite interesting behaviour on win32 using rectangles and scaling.&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;While using Eclipse Draw2D, I stumbled over some quite interesting behavior on win32 using rectangles and scaling.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1639,7 +1640,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2012/08/27/setting-the-page-size-and-orientation-with-odfdom-for-tables-aka-spreadsheets/</link>
           <guid>https://dentrassi.de/2012/08/27/setting-the-page-size-and-orientation-with-odfdom-for-tables-aka-spreadsheets/</guid>
-          <description>&lt;p&gt;Most tasks that seem to be quite easy tend to turn out as a desaster. Setting the page size and orientation with ODFDOM was such a thing. While styling with ODFDOM is powerfull and a horror at the same time. You actually never know where the attribute have to be placed or which attributes to use.&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;Most tasks that seem to be quite easy tend to turn out as a disaster. Setting the page size and orientation with ODFDOM was such a thing. While styling with ODFDOM is powerful and a horror at the same time. You actually never know where the attribute has to be placed or which attributes to use.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1648,7 +1649,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2012/07/26/extending-openwrt/</link>
           <guid>https://dentrassi.de/2012/07/26/extending-openwrt/</guid>
-          <description>&lt;p&gt;We recently switched from IPfire to OpenWRT in our office. Not only because we let OpenWRT run on an ALIX board (which also IPfire could do), but mostly due to the fact that if you want to extend the system you really can do it. Development of IPfire seems to be quite difficutly, not only technically.&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;We recently switched from IPfire to OpenWRT in our office. Not only because we let OpenWRT run on an ALIX board (which also IPfire could do), but mostly due to the fact that if you want to extend the system, you really can do it. Development of IPfire seems to be quite difficult, not only technically.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1657,7 +1658,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2012/01/26/working-with-odfdom/</link>
           <guid>https://dentrassi.de/2012/01/26/working-with-odfdom/</guid>
-          <description>&lt;p&gt;While working a little bit with ODFDOM to automatically generate some documentation I found some tasks rather difficult to accomplish due to the fact that they were hardly documented. There is a lot of ODF documentation, but how to use it with ODFDOM is another story.&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;While working a little bit with ODFDOM to automatically generate some documentation, I found some tasks rather difficult to accomplish due to the fact that they were hardly documented. There is a lot of ODF documentation, but how to use it with ODFDOM is another story.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1705,7 +1706,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2011/03/10/openscada-org-update/</link>
           <guid>https://dentrassi.de/2011/03/10/openscada-org-update/</guid>
-          <description>&lt;p&gt;Finally we made it! &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;openscada.org&quot;&gt;openscada.org&lt;&#x2F;a&gt; has been updated to look good and contain new information. Finally :)&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;Finally, we made it! &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;openscada.org&quot;&gt;openscada.org&lt;&#x2F;a&gt; has been updated to look good and contain new information. Finally :)&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1714,7 +1715,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2011/02/21/fancy-tooltips-in-eclipse/</link>
           <guid>https://dentrassi.de/2011/02/21/fancy-tooltips-in-eclipse/</guid>
-          <description>&lt;p&gt;Tooltips are quick way to add information to a widget that received the users attention. While one can argue about the pros and cons of tooltips this post focuses on the style of tooltips once you decided to use them.&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;Tooltips are a quick way to add information to a widget that received the user’s attention. While one can argue about the pros and cons of tooltips this post focuses on the style of tooltips once you decided to use them.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1723,7 +1724,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2011/02/17/some-thoughts-on-software-testing/</link>
           <guid>https://dentrassi.de/2011/02/17/some-thoughts-on-software-testing/</guid>
-          <description>&lt;p&gt;If you are working as a software developer in a project based development environment you will, hopefully, encounter the day the customer wants to see the result that was promised to him. The worst thing that can happen is that after months of development you finally end up in a scenario of &lt;q&gt;it is not working&lt;&#x2F;q&gt; or &lt;q&gt;it is not what we need&lt;&#x2F;q&gt;. Sure there are numerous reasons of why this happened and what types development process you could have used. But often quality management and software development definitions are written once and never lived as described. developers consider it a burden that is unnecessary and is blocking them in their daily task of creating new functionality.&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;If you are working as a software developer in a project based development environment, you will, hopefully, encounter the day the customer wants to see the result that was promised to him. The worst thing that can happen is that after months of development, you finally end up in a scenario of &lt;q&gt;it is not working&lt;&#x2F;q&gt; or &lt;q&gt;it is not what we need&lt;&#x2F;q&gt;. Sure there are numerous reasons of why this happened and what types development process you could have used. But often quality management and software development definitions are written once and never lived as described. developers consider it a burden that is unnecessary and is blocking them in their daily task of creating new functionality.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1764,7 +1765,7 @@ using the Maven POM file.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://dentrassi.de/2011/01/28/name-that-pattern/</link>
           <guid>https://dentrassi.de/2011/01/28/name-that-pattern/</guid>
-          <description>&lt;p&gt;In my day to day work I encounter several interesting programming pattern that I don’t have a name for. Maybe you have?! So name the following pattern:&lt;&#x2F;p&gt;
+          <description>&lt;p&gt;In my day-to-day work, I encounter several interesting programming patterns that I don’t have a name for. Maybe you have?! So name the following pattern:&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -1832,8 +1833,8 @@ The commercial use of our contents without permission of the originator is prohi
           <author>Unknown</author>
           <link>https://dentrassi.de/2011/01/26/hello-world/</link>
           <guid>https://dentrassi.de/2011/01/26/hello-world/</guid>
-          <description>&lt;p&gt;After upgrading my server and cleanup up stuff I thought it would be nice to work a little bit on the homepage again.
-Since iWeb seems to be stuck and I am working mostly on Linux now I thought it would be interesting to give WordPress
+          <description>&lt;p&gt;After upgrading my server and cleaning up stuff, I thought it would be nice to work a little bit on the homepage again.
+Since iWeb seems to be stuck and I am working mostly on Linux now, I thought it would be interesting to give WordPress
 a try.&lt;&#x2F;p&gt;
 &lt;p&gt;Let’s see what happens …&lt;&#x2F;p&gt;
 </description>
