@@ -3,7 +3,7 @@
     <channel>
       <title>ctron&#x27;s blog</title>
       <link>https://dentrassi.de</link>
-      <description>Life, the Universe and Everything. A personal blog, with a focus on software engineering.</description>
+      <description>Life, the Universe and Everything</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
