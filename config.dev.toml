@@ -1,6 +1,7 @@
 base_url = "https://dentrassi.de"
 title = "ctron's blog"
 description = "Life, the Universe and Everything"
+# A personal blog, with a focus on software engineering.
 
 default_language = "en"
 
