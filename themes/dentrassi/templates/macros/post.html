@@ -29,10 +29,6 @@
     </li>
     {% endif %}
 
-    <li class="list-inline-item">
-      <a class="link-body-emphasis" href="{{ page.path | safe }}">Read&nbsp;more&nbsp;…</a>
-    </li>
-
   </ul>
 
   <ul class="list-inline">
@@ -77,13 +73,13 @@
   </ul>
 
   <ul class="list-inline">
-
     {% if page.taxonomies['tags'] %}
     <li class="list-inline-item">
       {{ taxonomies::tag_list(tags=page.taxonomies['tags'], info=true) }}
     </li>
     {% endif %}
   </ul>
+
 </div>
 
 {% endmacro %}
