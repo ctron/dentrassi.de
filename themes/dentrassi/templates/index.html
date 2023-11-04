@@ -6,7 +6,7 @@
 {% block head %}
 <meta name="description" content="{{ config.description }}">
 <script>
-    var pagination = {};
+    let pagination = {};
     {%- if paginator.previous %}
     pagination.prev = "{{ paginator.previous | safe }}";
     {%- endif %}
