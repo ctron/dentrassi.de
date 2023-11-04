@@ -30,3 +30,9 @@
     })();
 </script>
 {% endmacro %}
+
+{% macro canonical() %}
+{% if page is defined -%}
+  <link rel="canonical" href="{{ page.permalink | safe }}">
+{% endif %}
+{% endmacro %}
