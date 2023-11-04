@@ -13,7 +13,6 @@ tc-thumb-fld:
 taxonomies:
   categories:
     - 'Technical Stuff'
-    - Ideas
   tags:
     - Android
     - Google

@@ -11,15 +11,14 @@ spacious_page_layout:
 tc-thumb-fld:
     - 'a:2:{s:9:"_thumb_id";b:0;s:11:"_thumb_type";s:10:"attachment";}'
 taxonomies:
-  categories:
-    - Ideas
   tags:
     - Christmas
 ---
 
-Before and on Christmas most people think about people in need, and hopefully donate something. Not necessarily money, but presents as well.
+Before and on Christmas, most people think about people in need, and hopefully donate something. Not necessarily money, but presents as well.
 
-But after Christmas there are lots of unwanted presents and things you don’t need, don’t like or will ever use. In most cases these items end up in the trash, at some shelf or, at best, being returned to the store.
+But after Christmas, there are lots of unwanted presents and things you don’t need, don’t like or will ever use.
+In most cases, these items end up in the trash, at some shelf or, at best, being returned to the store.
 
 <!-- more -->
 
