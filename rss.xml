@@ -7,7 +7,18 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 14 Jan 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Good news everyone: Trunk is back</title>
+          <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://dentrassi.de/2024/01/16/good-news-everyone/</link>
+          <guid>https://dentrassi.de/2024/01/16/good-news-everyone/</guid>
+          <description>&lt;p&gt;Let’s start 2024 with something positive! At the end of 2023 I did fork &lt;code&gt;trunk&lt;&#x2F;code&gt;, a tool to build web application based
+on Rust and WebAssembly. I laid out the reasons in &lt;a href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2024&#x2F;01&#x2F;16&#x2F;good-news-everyone&#x2F;@2023&#x2F;10&#x2F;14&#x2F;2023-10-14-trunk-ng-the-fork-of-trunk.md&quot;&gt;a blog post&lt;&#x2F;a&gt;,
+but also said that I would merge things back into trunk if the project came back, and it did!&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Yew components for OpenID connect and OAuth2</title>
           <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
