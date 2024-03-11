@@ -7,7 +7,17 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://staging.dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 14 Jan 2024 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Release of Trunk 0.19.0</title>
+          <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://staging.dentrassi.de/2024/03/11/trunk-0-19-0/</link>
+          <guid>https://staging.dentrassi.de/2024/03/11/trunk-0-19-0/</guid>
+          <description>&lt;p&gt;The release of Trunk 0.19.0 has a focus on making life easier when creating Rust-based web applications. Find out
+what’s new in this blog post.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Good news everyone: Trunk is back</title>
           <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
