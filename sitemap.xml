@@ -496,6 +496,10 @@
         <lastmod>2024-03-11</lastmod>
     </url>
     <url>
+        <loc>https://dentrassi.de/2024/03/16/oidc-command-line-client/</loc>
+        <lastmod>2024-03-16</lastmod>
+    </url>
+    <url>
         <loc>https://dentrassi.de/archive/</loc>
     </url>
     <url>
@@ -760,6 +764,9 @@
         <loc>https://dentrassi.de/tags/asyncapi/</loc>
     </url>
     <url>
+        <loc>https://dentrassi.de/tags/authentication/</loc>
+    </url>
+    <url>
         <loc>https://dentrassi.de/tags/bndtools/</loc>
     </url>
     <url>
@@ -772,6 +779,9 @@
         <loc>https://dentrassi.de/tags/christmas/</loc>
     </url>
     <url>
+        <loc>https://dentrassi.de/tags/cli/</loc>
+    </url>
+    <url>
         <loc>https://dentrassi.de/tags/cloud/</loc>
     </url>
     <url>
@@ -779,6 +789,9 @@
     </url>
     <url>
         <loc>https://dentrassi.de/tags/crypto/</loc>
+    </url>
+    <url>
+        <loc>https://dentrassi.de/tags/development/</loc>
     </url>
     <url>
         <loc>https://dentrassi.de/tags/diaspora/</loc>
@@ -923,6 +936,9 @@
     </url>
     <url>
         <loc>https://dentrassi.de/tags/odf/</loc>
+    </url>
+    <url>
+        <loc>https://dentrassi.de/tags/oidc/</loc>
     </url>
     <url>
         <loc>https://dentrassi.de/tags/opc-ua/</loc>
