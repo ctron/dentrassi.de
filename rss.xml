@@ -7,7 +7,18 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://staging.dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>An OpenID Connect command line client</title>
+          <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://staging.dentrassi.de/2024/03/16/oidc-command-line-client/</link>
+          <guid>https://staging.dentrassi.de/2024/03/16/oidc-command-line-client/</guid>
+          <description>&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;openid.net&#x2F;developers&#x2F;how-connect-works&#x2F;&quot;&gt;OpenID Connect&lt;&#x2F;a&gt; isn’t the easiest thing to get into. Access tokens,
+ID tokens, refresh tokens. The different authentication flows. But all you want is a simple HTTP request from the
+command line. &lt;code&gt;oidc-cli&lt;&#x2F;code&gt; is here to help.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Release of Trunk 0.19.0</title>
           <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
