@@ -51,6 +51,8 @@
 
   {% for term in tags %}
     <a class="{{ class }}" href="{{ get_taxonomy_url(kind='tags', name=term, lang=lang) | safe }}">#{{ term | lower }}</a>
+    {# Add an empty span to keep some space #}
+    <span> </span>
   {% endfor %}
 {% endmacro %}
 
