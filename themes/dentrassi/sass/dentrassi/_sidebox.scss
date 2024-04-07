@@ -40,6 +40,10 @@
   text-decoration: none;
 }
 
+.de-sidebox a.link-body-emphasis:hover {
+  text-decoration: underline $secondary-border-subtle !important;
+}
+
 .de-sidebox li {
   padding-left: 1rem;
   text-indent: -1rem;
