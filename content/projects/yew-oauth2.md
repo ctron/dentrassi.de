@@ -1,6 +1,8 @@
 ---
 title: Yew OAuth2
 weight: 200
+description: |
+  A general purpose OAuth2 and OpenID Connect component for Yew.
 ---
 
 [![crates.io](https://img.shields.io/crates/v/yew-oauth2.svg)](https://crates.io/crates/yew-oauth2)

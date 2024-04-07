@@ -1,6 +1,8 @@
 ---
 title: PatternFly Yew
 weight: 100 
+description: |
+  Yew components for PatternFly
 ---
 
 [![crates.io](https://img.shields.io/crates/v/patternfly-yew.svg)](https://crates.io/crates/patternfly-yew)

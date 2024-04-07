@@ -5,6 +5,8 @@ weight: 500
 
 A visualizer of the OpenShift Update paths.
 
+<!-- more -->
+
 ## Links
 
 * Instance: <https://ctron.github.io/openshift-update-graph/>

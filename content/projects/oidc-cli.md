@@ -5,6 +5,8 @@ weight: 600
 
 An OpenID Connect (OIDC) command line client. Allowing you to create those "bearer tokens" without too much trouble.
 
+<!-- more -->
+
 For example:
 
 ```bash
