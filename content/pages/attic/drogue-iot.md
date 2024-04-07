@@ -1,9 +1,14 @@
 ---
 title: Drogue IoT
-weight: 400
+layout: page
+date: '2020-09-08T11:21:08Z'
+aliases:
+  - projects/drogue-iot
 ---
 
 Cloud native IoT & embedded Rust.
+
+<!-- more -->
 
 ## Links
 

@@ -1,5 +1,5 @@
 ---
-title: OIDC CLI
+title: OIDC Command Line Tool
 weight: 600
 ---
 
