@@ -1,38 +1,38 @@
 {% macro resource() %}
-<link rel="preload" as="font" href="{{ get_url(path='files/jost-latin-400-normal.woff2') | safe }}" type="font/woff2" crossorigin>
-<link rel="preload" as="font" href="{{ get_url(path='files/jost-latin-500-normal.woff2') | safe }}" type="font/woff2" crossorigin>
-<link rel="preload" as="font" href="{{ get_url(path='files/jost-latin-700-normal.woff2') | safe }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ get_url(path='files/jost-latin-400-normal.woff2') | safe }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ get_url(path='files/jost-latin-500-normal.woff2') | safe }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ get_url(path='files/jost-latin-700-normal.woff2') | safe }}" type="font/woff2" crossorigin>
 
-<link rel="preload" as="font" href="{{ get_url(path='files/noto-sans-latin-400-normal.woff2') | safe }}" type="font/woff2" crossorigin>
-<link rel="preload" as="font" href="{{ get_url(path='files/noto-sans-latin-500-normal.woff2') | safe }}" type="font/woff2" crossorigin>
-<link rel="preload" as="font" href="{{ get_url(path='files/noto-sans-latin-700-normal.woff2') | safe }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ get_url(path='files/noto-sans-latin-400-normal.woff2') | safe }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ get_url(path='files/noto-sans-latin-500-normal.woff2') | safe }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ get_url(path='files/noto-sans-latin-700-normal.woff2') | safe }}" type="font/woff2" crossorigin>
 
-<link rel="preload" as="font" href="{{ get_url(path='files/source-code-pro-latin-400-normal.woff2') | safe }}" type="font/woff2" crossorigin>
-<link rel="preload" as="font" href="{{ get_url(path='files/source-code-pro-latin-500-normal.woff2') | safe }}" type="font/woff2" crossorigin>
-<link rel="preload" as="font" href="{{ get_url(path='files/source-code-pro-latin-700-normal.woff2') | safe }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ get_url(path='files/source-code-pro-latin-400-normal.woff2') | safe }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ get_url(path='files/source-code-pro-latin-500-normal.woff2') | safe }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ get_url(path='files/source-code-pro-latin-700-normal.woff2') | safe }}" type="font/woff2" crossorigin>
 {% endmacro %}
 
 {% macro stylesheet() %}
-<link rel="stylesheet" href="{{ get_url(path='main.css', cachebust=true) | safe }}">
+  <link rel="stylesheet" href="{{ get_url(path='main.css', cachebust=true) | safe }}">
 {% endmacro %}
 
 {% macro matomo() %}
-<script type="text/javascript">
-    var _paq = window._paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-        var u="https://logs.dentrassi.de/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-</script>
+  <script type="text/javascript">
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+          var u="https://logs.dentrassi.de/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '1']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
 {% endmacro %}
 
 {% macro canonical() %}
-{% if page is defined -%}
-  <link rel="canonical" href="{{ page.permalink | safe }}">
-{% endif %}
+{% if current_url %}
+  <link rel="canonical" href="{{ current_url | safe }}">
+{%- endif %}
 {% endmacro %}

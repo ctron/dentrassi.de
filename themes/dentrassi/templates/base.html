@@ -13,18 +13,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ head::resource() }}
   {{ head::stylesheet() }}
-  {{ head::matomo() }}
-  {{ head::canonical() }}
 
-  {% block head %}
+  {%- block head %}
   <meta name="description" content="{{ config.description }}">
-  {% endblock head %}
+  {%- endblock head %}
 
   <title>{% block title %}{{ config.title }} – {{ config.description}}{% endblock title %}</title>
 
-  {% if config.generate_feed %}
+  {{- head::canonical() }}
+  {%- if config.generate_feed %}
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path=config.feed_filename, trailing_slash=false) | safe  }}">
-  {% endif %}
+  {%- endif %}
+
+  {{- head::matomo() }}
 
 </head>
 
