@@ -1,5 +1,5 @@
 
-// @import "colors";
+@import "colors";
 @import "variables";
 
 @import "../build/node_modules/bootstrap/scss/bootstrap";
@@ -10,5 +10,5 @@
 @import "dentrassi";
 
 nav.navbar {
-  background-color: #ffe85d !important;
+  background-color: $themeMain !important;
 }

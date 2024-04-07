@@ -4,6 +4,15 @@
   font-weight: $headings-font-weight;
 }
 
+.navbar {
+  .link-secondary {
+    color: darken($themeMain, 50%) !important;
+  }
+  .link-secondary:hover {
+    color: darken($themeMain, 70%) !important;
+  }
+}
+
 // try fluid images
 
 main img {
