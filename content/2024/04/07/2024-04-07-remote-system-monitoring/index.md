@@ -172,7 +172,7 @@ For you? Maybe give it a try? If you're missing some features, create an issue a
 
 Maybe also peek at the repository of the underlying [homeassistant-agent](https://github.com/ctron/homeassistant-agent/).
 ReSyMo is just one application built on top of it. If you want to create your own device capable of using
-Home Assistant's MQTT integration in Rust, that might a something to try out.
+Home Assistant's MQTT integration in Rust, that might a something for you to try out.
 
 ## Links
 
