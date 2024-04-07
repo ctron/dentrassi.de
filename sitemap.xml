@@ -660,6 +660,14 @@
         <lastmod>2018-04-25T10:19:38+02:00</lastmod>
     </url>
     <url>
+        <loc>https://dentrassi.de/pages/attic/drogue-iot/</loc>
+        <lastmod>2020-09-08T11:21:08Z</lastmod>
+    </url>
+    <url>
+        <loc>https://dentrassi.de/pages/attic/eclipse-iot-packages/</loc>
+        <lastmod>2019-10-10T13:51:43Z</lastmod>
+    </url>
+    <url>
         <loc>https://dentrassi.de/pages/attic/eclipsescada/</loc>
         <lastmod>2014-01-01T00:00:00Z</lastmod>
     </url>
@@ -723,10 +731,7 @@
         <loc>https://dentrassi.de/projects/</loc>
     </url>
     <url>
-        <loc>https://dentrassi.de/projects/drogue-iot/</loc>
-    </url>
-    <url>
-        <loc>https://dentrassi.de/projects/ecliipse-iot-packages/</loc>
+        <loc>https://dentrassi.de/projects/oidc-cli/</loc>
     </url>
     <url>
         <loc>https://dentrassi.de/projects/openshift-update-graph/</loc>

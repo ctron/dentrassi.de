@@ -129,6 +129,15 @@ years.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
+          <title>Drogue IoT</title>
+          <pubDate>Tue, 08 Sep 2020 11:21:08 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://dentrassi.de/pages/attic/drogue-iot/</link>
+          <guid>https://dentrassi.de/pages/attic/drogue-iot/</guid>
+          <description xml:base="https://dentrassi.de/pages/attic/drogue-iot/">&lt;p&gt;Cloud native IoT &amp;amp; embedded Rust.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
           <title>OpenShift Update Graph Visualizer, lessons learned</title>
           <pubDate>Sun, 02 Aug 2020 14:01:21 +0200</pubDate>
           <author>Unknown</author>
@@ -163,6 +172,16 @@ years.&lt;&#x2F;p&gt;
           <link>https://dentrassi.de/2019/12/19/update-on-eclipse-iot-packages/</link>
           <guid>https://dentrassi.de/2019/12/19/update-on-eclipse-iot-packages/</guid>
           <description xml:base="https://dentrassi.de/2019/12/19/update-on-eclipse-iot-packages/">&lt;p&gt;A lot has happened, since &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dentrassi.de&#x2F;2019&#x2F;09&#x2F;10&#x2F;from-building-blocks-to-iot-solutions&#x2F;&quot;&gt;I wrote last about the Eclipse IoT Packages project&lt;&#x2F;a&gt;. We had some great discussions at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eclipsecon.org&#x2F;europe2019&quot;&gt;EclipseCon Europe&lt;&#x2F;a&gt;, and started to work together online, having new ideas in the progress. Right before the end of the year, I think it is a good time to give an update, and peek a bit into the future.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Eclipse IoT Packages</title>
+          <pubDate>Thu, 10 Oct 2019 13:51:43 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://dentrassi.de/pages/attic/eclipse-iot-packages/</link>
+          <guid>https://dentrassi.de/pages/attic/eclipse-iot-packages/</guid>
+          <description xml:base="https://dentrassi.de/pages/attic/eclipse-iot-packages/">&lt;p&gt;Eclipse IoT Packages™ is an effort by the Eclipse IoT working group, to create easy to deploy Eclipse IoT based, end-to-end scenarios, on top of Kubernetes and Helm.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;eclipse&#x2F;packages&#x2F;master&#x2F;logo&#x2F;EiotP_logo_20191017_RGB.png&quot; alt=&quot;Logo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
