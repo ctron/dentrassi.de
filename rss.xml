@@ -7,7 +7,19 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>ReSyMo: Remote System Monitoring</title>
+          <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://dentrassi.de/2024/04/07/remote-system-monitoring/</link>
+          <guid>https://dentrassi.de/2024/04/07/remote-system-monitoring/</guid>
+          <description>&lt;p&gt;If you’re a technically interested person like me, you might have a few servers and Raspberry Pis that you’re running.
+However, do you know which one is running out of disk space? Sure, you can &lt;code&gt;ssh&lt;&#x2F;code&gt; into them. But having a
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.home-assistant.io&#x2F;&quot;&gt;Home Assistant&lt;&#x2F;a&gt; instance anyway, couldn’t life be a bit better?&lt;&#x2F;p&gt;
+&lt;p&gt;Here’s my scratch to that itch: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;resymo&quot;&gt;ReSyMo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>An OpenID Connect command line client</title>
           <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>

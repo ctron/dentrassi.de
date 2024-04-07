@@ -500,6 +500,10 @@
         <lastmod>2024-03-16</lastmod>
     </url>
     <url>
+        <loc>https://dentrassi.de/2024/04/07/remote-system-monitoring/</loc>
+        <lastmod>2024-04-07</lastmod>
+    </url>
+    <url>
         <loc>https://dentrassi.de/archive/</loc>
     </url>
     <url>
@@ -845,6 +849,9 @@
         <loc>https://dentrassi.de/tags/hibernate/</loc>
     </url>
     <url>
+        <loc>https://dentrassi.de/tags/home-assistant/</loc>
+    </url>
+    <url>
         <loc>https://dentrassi.de/tags/hono/</loc>
     </url>
     <url>
@@ -986,7 +993,13 @@
         <loc>https://dentrassi.de/tags/rust/</loc>
     </url>
     <url>
+        <loc>https://dentrassi.de/tags/server-monitoring/</loc>
+    </url>
+    <url>
         <loc>https://dentrassi.de/tags/sip/</loc>
+    </url>
+    <url>
+        <loc>https://dentrassi.de/tags/smart-home/</loc>
     </url>
     <url>
         <loc>https://dentrassi.de/tags/smarthome/</loc>
