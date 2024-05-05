@@ -57,7 +57,7 @@ output, and give you a ready-to-serve output folder.
 
 ## The initializing process
 
-When you load up the `inedx.html`, that will trigger the initialization of the WebAssembly asset. Loading the BLOB using
+When you load up the `index.html`, that will trigger the initialization of the WebAssembly asset. Loading the BLOB using
 the Fetch API, setting up a [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) instance, and start it.
 
 Depending on the complexity and size of your application, that might take a bit. Running WebAssembly is quite fast, but
