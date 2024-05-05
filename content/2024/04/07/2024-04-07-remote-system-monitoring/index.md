@@ -5,6 +5,7 @@ description: |
 author: Jens Reimann
 taxonomies:
   categories:
+    - Infrastructure
     - Technical Stuff
     - Open Source
   tags:
