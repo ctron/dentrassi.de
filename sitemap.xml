@@ -743,6 +743,9 @@
         <loc>https://staging.dentrassi.de/projects/rpm-builder/</loc>
     </url>
     <url>
+        <loc>https://staging.dentrassi.de/projects/trunk/</loc>
+    </url>
+    <url>
         <loc>https://staging.dentrassi.de/projects/yew-oauth2/</loc>
     </url>
     <url>
