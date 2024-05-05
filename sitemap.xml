@@ -504,6 +504,10 @@
         <lastmod>2024-04-07</lastmod>
     </url>
     <url>
+        <loc>https://staging.dentrassi.de/2024/05/05/webassembly-loading-process-visualization-trunk/</loc>
+        <lastmod>2024-05-05</lastmod>
+    </url>
+    <url>
         <loc>https://staging.dentrassi.de/archive/</loc>
     </url>
     <url>
@@ -599,6 +603,9 @@
     </url>
     <url>
         <loc>https://staging.dentrassi.de/page/25/</loc>
+    </url>
+    <url>
+        <loc>https://staging.dentrassi.de/page/26/</loc>
     </url>
     <url>
         <loc>https://staging.dentrassi.de/page/3/</loc>
@@ -1026,6 +1033,9 @@
     </url>
     <url>
         <loc>https://staging.dentrassi.de/tags/tooltips/</loc>
+    </url>
+    <url>
+        <loc>https://staging.dentrassi.de/tags/trunk/</loc>
     </url>
     <url>
         <loc>https://staging.dentrassi.de/tags/tycho/</loc>
