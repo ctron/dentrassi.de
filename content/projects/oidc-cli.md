@@ -1,6 +1,8 @@
 ---
 title: OIDC Command Line Tool
 weight: 600
+extra:
+  menuLabel: OIDC CLI
 ---
 
 An OpenID Connect (OIDC) command line client. Allowing you to create those "bearer tokens" without too much trouble.

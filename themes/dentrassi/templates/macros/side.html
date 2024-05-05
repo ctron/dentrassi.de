@@ -6,8 +6,8 @@
   <ul class="list-unstyled">
 
     {% set pages = get_section(path="projects/_index.md") %}
-    {% for page in pages.pages %}
-    <li><a class="link-body-emphasis" href="{{ page.path | safe }}">{{ page.title }}</a></li>
+    {% for p in pages.pages %}
+    <li><a class="link-body-emphasis" href="{{ p.path | safe }}">{{ p.extra.menuLabel | default(value=p.title) }}</a></li>
     {% endfor %}
 
   </ul>
