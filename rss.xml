@@ -7,7 +7,18 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 05 May 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>WebAssembly loading progress visualization with Trunk</title>
+          <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://dentrassi.de/2024/05/05/webassembly-loading-process-visualization-trunk/</link>
+          <guid>https://dentrassi.de/2024/05/05/webassembly-loading-process-visualization-trunk/</guid>
+          <description xml:base="https://dentrassi.de/2024/05/05/webassembly-loading-process-visualization-trunk/">&lt;p&gt;In version 0.19.x Trunk gained an &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;trunkrs.dev&#x2F;guide&#x2F;advanced&#x2F;initializer.html&quot;&gt;“initializer” framework&lt;&#x2F;a&gt;,
+which can be used to hook in code into the process of loading and initializing the WebAssembly application. This blog
+post shows how this can be used to create a visual progress meter for the loading process.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>ReSyMo: Remote System Monitoring</title>
           <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
