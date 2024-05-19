@@ -131,17 +131,17 @@ So I started to create some [Patternfly components for Rust](https://github.com/
 
 That early example comes from a while back. As always, when you start something, and you like it, you might re-use it yourself. So every now and then, I need some more components, and simply map them:
 
-[![](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-1-1024x881.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-1.png)
+[![Screenshot of an example with the Badge component](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-1-1024x881.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-1.png)
 
-[![](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-3-1024x935.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-3.png)
+[![Screenshot of examples with the Label component](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-3-1024x935.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-3.png)
 
-[![](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-4-1024x472.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-4.png)
+[![Screenshot of examples with the Popover component](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-4-1024x472.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-4.png)
 
-[![](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-1024x782.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart.png)
+[![Screenshot of examples with the Alert component](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart-1024x782.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Patternfly-Yew-Quickstart.png)
 
-[![](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Drogue-IoT-Console-1024x881.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Drogue-IoT-Console.png)
+[![Screenshot of the Drogue IoT message spy](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Drogue-IoT-Console-1024x881.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Drogue-IoT-Console.png)
 
-[![](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Drogue-IoT-Console-2-e1610121200551-1024x443.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Drogue-IoT-Console-2-e1610121200551.png)
+[![Screenshot of some forms](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Drogue-IoT-Console-2-e1610121200551-1024x443.png)](https://dentrassi.de/wp-content/uploads/Screenshot_2021-01-08-Drogue-IoT-Console-2-e1610121200551.png)
 
 ## Lessons learned
 
@@ -149,21 +149,21 @@ First of all, writing web frontends in Rust is fun. At least if you are a Rust f
 
 ### No more JavaScript … mostly
 
-All of the compile time checking that Rust offers, are just as helpful in the web world. Assigning a wrong type to a property, forgot to add a match-clause after adding a new enum literal, all caught by the compiler (like calling a wrong method or passing in wrong arguments). No more [JavaScript madness](https://www.youtube.com/watch?v=et8xNAc2ic8)!
+All the compile time checking that Rust offers is just as helpful in the web world. Assigning a wrong type to a property, forgot to add a match-clause after adding a new enum literal, all caught by the compiler (like calling a wrong method or passing in wrong arguments). No more [JavaScript madness](https://www.youtube.com/watch?v=et8xNAc2ic8)!
 
-Well … not fully. First of all, you need to package your web application somehow. Which means that you need to also include Patternfly, and also may need to run a SASS compiler. Packaging all that up, `wasm-pack` and thus `npm` and `webpack` might come in handy. Still, this is only used for running parts of the build, but it requires you to have a Node JS installation, or a least a container of that.
+Well … not fully. First of all, you need to package your web application somehow. Which means that you need to also include Patternfly, and also may need to run a SASS compiler. Packaging all that up, `wasm-pack` and thus `npm` and `webpack` might come in handy. Still, this is only used for running parts of the build, but it requires you to have a NodeJS installation, or at least a container of that.
 
-Second: every now and then, you need to integrate with some existing JavaScript library or browser API. Patternfly for example places popovers using [popper.js](https://popper.js.org/), and so you somehow need to integrate that into your Rust web application. The bright side of that is, using `wasm-bind` and the Yew component system, you can easily hide all of that behind a nice API. It is pretty similar to interfacing Rust to C using FFI.
+Second: every now and then, you need to integrate with some existing JavaScript library or browser API. PatternFly, for example, places popovers using [popper.js](https://popper.js.org/), and so you somehow need to integrate that into your Rust web application. The bright side of that is, using `wasm-bind` and the Yew component system, you can easily hide all of that behind a nice API. It is pretty similar to interfacing Rust to C using FFI.
 
 On the other side, a bit of JavaScript, hidden behind proper APIs, isn’t too bad if you can use Rust for all the other parts of the backend and frontend. And yes, you can actually re-use the same code from the backend in the frontend as well.
 
 ### Yew Stack
 
-Yew is a great framework. But it also can be quite overwhelming when getting started. True, the documentation of Yew could be better, and yes I didn’t contribute as much as I could. Shame on me. However, the Yew community has a few [discord channels](https://discord.gg/VQck8X4) and is willing to help.
+Yew is a great framework. But it also can be quite overwhelming when getting started. True, the documentation of Yew could be better, and yes, I didn’t contribute as much as I could. Shame on me. However, the Yew community has a few [discord channels](https://discord.gg/VQck8X4) and is willing to help.
 
 ### WASM
 
-Initially I wasn’t sure if all browsers, desktop and mobile, would be happy executing WASM, but so far, I didn’t have any issues. Fingers crossed!
+Initially, I wasn't sure if all browsers, desktop and mobile would be happy executing WASM, but so far, I didn’t have any issues. Fingers crossed!
 
 ## I even could…
 
@@ -177,9 +177,9 @@ However, there are two downsides to this approach. First, I would need to let go
 
 If you are a fan of Rust and allergic to JavaScript as well, you might appreciate Yew and maybe the [Patternfly components for Yew](https://github.com/ctron/patternfly-yew). You can take a quick look at [the quickstart application](https://github.com/ctron/patternfly-yew-quickstart), or direct your browser to [the running version](https://ctron.github.io/patternfly-yew-quickstart/) of that.
 
-I was able to not only able parse the ancient HTML 3-ish output of our booking system, but also able to provide a decent API and state of the art web frontend. All using the same programming language, re-using my Rust experience and even data structures and code between frontend and backend. Fixing my original problem with truly small service.
+I was able to not only parse the ancient HTML 3-ish output of our booking system, but also able to provide a decent API and state-of-the-art web frontend. All using the same programming language, re-using my Rust experience and even data structures and code between frontend and backend. Fixing my original problem with truly small service.
 
-While you already can do quite a lot, the Patternfly Yew components are far from complete. A bunch of components and properties are still missing. As needed I will be adding new features over time, but contributions are always welcome 😉
+While you already can do quite a lot, the Patternfly Yew components are far from complete. A bunch of components and properties are still missing. As needed, I will be adding new features over time, but contributions are always welcome 😉
 
 ## See also
 
