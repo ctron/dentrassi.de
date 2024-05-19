@@ -508,6 +508,10 @@
         <lastmod>2024-05-05</lastmod>
     </url>
     <url>
+        <loc>https://dentrassi.de/2024/05/19/csaf-walker/</loc>
+        <lastmod>2024-05-19</lastmod>
+    </url>
+    <url>
         <loc>https://dentrassi.de/archive/</loc>
     </url>
     <url>
@@ -738,6 +742,9 @@
         <loc>https://dentrassi.de/projects/</loc>
     </url>
     <url>
+        <loc>https://dentrassi.de/projects/csaf-walker/</loc>
+    </url>
+    <url>
         <loc>https://dentrassi.de/projects/oidc-cli/</loc>
     </url>
     <url>
@@ -760,6 +767,9 @@
     </url>
     <url>
         <loc>https://dentrassi.de/tags/acceleo/</loc>
+    </url>
+    <url>
+        <loc>https://dentrassi.de/tags/advisories/</loc>
     </url>
     <url>
         <loc>https://dentrassi.de/tags/amqp/</loc>
@@ -808,6 +818,9 @@
     </url>
     <url>
         <loc>https://dentrassi.de/tags/crypto/</loc>
+    </url>
+    <url>
+        <loc>https://dentrassi.de/tags/csaf/</loc>
     </url>
     <url>
         <loc>https://dentrassi.de/tags/development/</loc>
@@ -1026,6 +1039,9 @@
         <loc>https://dentrassi.de/tags/ssh/</loc>
     </url>
     <url>
+        <loc>https://dentrassi.de/tags/supply-chain/</loc>
+    </url>
+    <url>
         <loc>https://dentrassi.de/tags/swt/</loc>
     </url>
     <url>
@@ -1045,6 +1061,9 @@
     </url>
     <url>
         <loc>https://dentrassi.de/tags/varlink/</loc>
+    </url>
+    <url>
+        <loc>https://dentrassi.de/tags/vex/</loc>
     </url>
     <url>
         <loc>https://dentrassi.de/tags/webassembly/</loc>
