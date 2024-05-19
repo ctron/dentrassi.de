@@ -7,10 +7,10 @@
     "build": "bash build.sh"
   },
   "dependencies": {
-    "bootstrap": "^5.3.2",
-    "@fontsource/jost": "^5.0.8",
-    "@fontsource/noto-sans": "^5.0.8",
-    "@fontsource/source-code-pro": "^5.0.8",
-    "feather-icons": "^4.29.1"
+    "bootstrap": "^5.3.3",
+    "@fontsource/jost": "^5.0.18",
+    "@fontsource/noto-sans": "^5.0.22",
+    "@fontsource/source-code-pro": "^5.0.18",
+    "feather-icons": "^4.29.2"
   }
 }
