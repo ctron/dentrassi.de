@@ -2,6 +2,11 @@ html {
   scroll-padding-top: calc($nav-link-height + 2rem);
 }
 
+.navbar-brand h1 {
+  all: inherit;
+  padding: 0;
+}
+
 $sidebox-top-padding: $top-padding;
 
 @include media-breakpoint-up(lg) {

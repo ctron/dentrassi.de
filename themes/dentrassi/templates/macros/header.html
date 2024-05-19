@@ -1,10 +1,16 @@
 {%- import 'macros/social.html' as social -%}
 
-{% macro header() %}
+{% macro header(h1=false) %}
 
 <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
   <div class="container">
-    <a class="navbar-brand" href="{{ get_url(path='/') | safe }}">{{ config.title }}</a>
+    <a class="navbar-brand" href="{{ get_url(path='/') | safe }}">
+    {% if h1 %}
+      <h1>{{ config.title }}</h1>
+    {% else %}
+      {{ config.title }}
+    {% endif %}
+    </a>
 
     {% if config.build_search_index %}
     <form class="de-c-search-form d-none d-lg-flex ms-auto me-3">
@@ -24,3 +30,4 @@
 </nav>
 
 {% endmacro %}
+

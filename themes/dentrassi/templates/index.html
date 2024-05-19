@@ -17,6 +17,10 @@
   </script>
 {% endblock head %}
 
+{% block header %}
+{{ header::header(h1=true) }}
+{% endblock header %}
+
 {% block content %}
 
 {% for page in paginator.pages %}
