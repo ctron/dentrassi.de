@@ -42,14 +42,14 @@ jobs:
           zola build --base-url https://staging.dentrassi.de --output-dir public.staging
 
       - name: Deploy (prod)
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: publish/prod
 
       - name: Deploy (staging)
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public.staging
