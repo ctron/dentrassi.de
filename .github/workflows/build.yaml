@@ -54,3 +54,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public.staging
           publish_branch: publish/staging
+
+      - name: Trigger rollout
+        env:
+          URL: ${{ secrets.PLESK_WEBHOOK }}
+        run:
+          curl -XPOST "$URL"
