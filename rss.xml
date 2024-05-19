@@ -7,7 +7,18 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://staging.dentrassi.de/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 05 May 2024 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>CSAF Walker: Working with CSAF providers in Rust</title>
+          <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://staging.dentrassi.de/2024/05/19/csaf-walker/</link>
+          <guid>https://staging.dentrassi.de/2024/05/19/csaf-walker/</guid>
+          <description xml:base="https://staging.dentrassi.de/2024/05/19/csaf-walker/">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&#x2F;csaf-walker&quot;&gt;CSAF Walker&lt;&#x2F;a&gt; is a project, written in Rust, which allows retrieving of CSAF
+documents from CSAF providers. Either as a library, or as a ready to run command line tool. This blog post gives a
+quick introduction to the project.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>WebAssembly loading progress visualization with Trunk</title>
           <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
@@ -109,7 +120,28 @@ years.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://staging.dentrassi.de/legal/contact/</link>
           <guid>https://staging.dentrassi.de/legal/contact/</guid>
-          <description xml:base="https://staging.dentrassi.de/legal/contact/">&lt;dl&gt;&lt;dt&gt;E-Mail&lt;&#x2F;dt&gt;&lt;dd&gt;ctron@dentrassi.de ([PGP Key](https:&#x2F;&#x2F;dentrassi.de&#x2F;pgp-key&#x2F;))&lt;&#x2F;dd&gt;&lt;dt&gt;Fediverse (Mastodon)&lt;&#x2F;dt&gt;&lt;dd&gt;[@ctron@dentrassi.de ](https:&#x2F;&#x2F;mastodon.dentrassi.de&#x2F;@ctron)&lt;&#x2F;dd&gt;&lt;dt&gt;Matrix&lt;&#x2F;dt&gt;&lt;dd&gt;[@ctron:dentrassi.de](https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@ctron:dentrassi)&lt;&#x2F;dd&gt;&lt;dt&gt;GitHub&lt;&#x2F;dt&gt;&lt;dd&gt;[@ctron](https:&#x2F;&#x2F;github.com&#x2F;ctron)&lt;&#x2F;dd&gt;&lt;&#x2F;dl&gt;
+          <description xml:base="https://staging.dentrassi.de/legal/contact/">&lt;dl&gt;
+&lt;dt&gt;E-Mail&lt;&#x2F;dt&gt;
+&lt;dd&gt;
+&lt;p&gt;ctron@dentrassi.de&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;Fediverse (Mastodon)&lt;&#x2F;dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mastodon.dentrassi.de&#x2F;@ctron&quot;&gt;@ctron@dentrassi.de &lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;Matrix&lt;&#x2F;dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@ctron:dentrassi&quot;&gt;@ctron:dentrassi.de&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;GitHub&lt;&#x2F;dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctron&quot;&gt;@ctron&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;LinkedIn&lt;&#x2F;dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;ctron&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;ctron&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
 </description>
       </item>
       <item>
