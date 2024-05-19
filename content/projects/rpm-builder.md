@@ -1,6 +1,6 @@
 ---
 title: Maven RPM Builder
-weight: 800
+weight: 900
 description: |
   A Maven plugin for building RPMs using plain Java.
 ---
