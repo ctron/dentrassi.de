@@ -18,6 +18,8 @@
 <meta name="twitter:title" content="{{ page.title }}" />
 <meta name="twitter:description" content="{{ meta::description(page=page) }}">
 
+<meta name="fediverse:creator" content="@ctron@dentrassi.de">
+
 {% if page.extra.article_image.src %}
 <meta property="og:image" content="{{ meta::abs_url(page=page, url= page.extra.article_image.src) }}">
 
